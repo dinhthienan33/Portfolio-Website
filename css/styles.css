@@ -261,6 +261,10 @@ html {
         margin-bottom: 1rem;
     }
 
+    .header-icon {
+        text-decoration: none;
+    }
+
     b.about-content {
         display: block;
         margin-bottom: 1rem;
