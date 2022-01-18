@@ -7,173 +7,275 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <!-- Meta data sets initial website features -->
+        <!-- Meta Data -->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- Include links to CSS stylesheets -->
-        <link rel="stylesheet" href="css/styles.css">
-        <link rel="stylesheet" href="">
+        <!-- CSS Speadsheets -->
+        <link type="text/css" rel="stylesheet" href="css/styles.css">
+        <link type="text/css" rel="stylesheet" href="">
+        <link rel="stylesheet" href="css/font-mfizz-2.4.1/font-mfizz.css">
 
-        <!-- Include a link to an icon to display for the website -->
-        <!-- IMPORTANT: MAYBE ANIMATE THE ICON YOU DISPLAY FOR YOUR PORTFOLIO SITE -->
+        <!-- Icon for Tab Display -->
         <link rel="shortcut icon" href="images/KrauseMonologoCircle.png" type="image/x-icon">
 
-        <!-- Include links to JavaScript files -->
-        <script src="" async defer></script>
-        <script src="" async defer></script>
-
-        <!-- Include a link to a specific font for the website -->
+        <!-- Sans Serif Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
         
+        <!-- Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
         <!-- Include a link to the icons source, fonawesome, for the webiste -->
         <script src="https://kit.fontawesome.com/55b918ce29.js" crossorigin="anonymous"></script> 
 
         <!-- Title of website -->
         <title>Andrew Krause</title>
     </head>
-    <body>
-        <main>
-            <!-- Here a responsive, fixed navbar is created for the website -->
+    <body id="top">
+        <main> 
+            <!-- Responsive navbar -->
             <header id="navbar">
-                <nav class="navbar-container container">
-                    <a href="#top-section" class="home-link">
-                        <div class="navbar-logo"></div>
-                        Andrew Krause
-                    </a>
-                    <button
-                        type="button"
-                        id="navbar-toggle"
-                        aria-controls="navbar-menu"
-                        aria-label="Toggle menu"
-                        aria-expanded="false"
-                    >
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <div id="navbar-menu" aria-labelledby="navbar-toggle">
-                        <ul class="navbar-links">
-                            <li class="navbar-item"><a class="navbar-link" href="#top-section">About</a></li>
-                            <li class="navbar-item"><a class="navbar-link" href="#projects-section">Projects</a></li>
-                            <li class="navbar-item"><a class="navbar-link" href="#contact-section">Contact</a></li>
+                <nav>
+                    <div class="navbar-container">
+                        <a class="nav-heading-text" href="#top">
+                            <b class="nav-heading">Andrew Krause</b>
+                        </a>
+                        <ul class="menu">
+                            <li>
+                                <a id="menu-about" class="is-active menu-link menu-about" href="index.html">About</a>
+                            </li>
+                            <li>
+                                <a id="menu-projects" class="menu-link menu-projects" href="#">Projects</a>
+                            </li>
+                            <li>
+                                <a id="menu-contact" class="menu-link menu-contact" href="#">Contact</a>
+                            </li>
                         </ul>
                     </div>
                 </nav>
             </header>
 
-            <!-- The first article or section includes the heading/about sections of the website -->
-            <article id="top-section" class="top-container">
-
-                <div class="top-card-area">
-                <!-- Create a div to display the name and title -->
-                <div class="top-text">
-                    <h1 class="top-heading">Andrew Krause</h1>
-                    <p class="top-subheading">Student - Software Developer</p>
-                    <div class="web-links">
-                        <div class="link">
-                            <a href="https://www.facebook.com/andrew.krause.35325/">
-                                <i class="fab fa-facebook fa-2x"></i>                                <!-- <p>Facebook</p> -->
-                            </a>
-                        </div>
-                        <div class="link">
-                            <a href="https://www.linkedin.com/in/andrew-krause-b6aa21179/">
-                                <i class="fab fa-linkedin fa-2x"></i>
-                                <!-- <p>LinkedIn</p> -->
-                            </a>
-                        </div>
-                        <div class="link">
-                            <a href="https://github.com/Krause2023">
-                                <i class="fab fa-github fa-2x"></i>      
-                                <!-- <p>GitHub</p> -->                      
-                            </a>
-                        </div>
-                        <div class="link last-link">
-                            <a href="mailto:aek.krause@gmail.com">
-                                <i class="fas fa-envelope fa-2x"></i>
-                                <!-- <p>Contact</p> -->                       
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Create a div to display the about me section and the qualifications -->
-                <div class="">
-                    <div class="top-about">
-                        <div class="top-about-heading"> 
+            <!-- About -->
+            <section id="about">
+                <div class="container slide-from-left">
+                    <div class="row">
+                        <div class="col-sm-12 col-lg-4 pic-column">
                             <img class="profile-pic" src="images/PersonalImage-circle.png" alt="profile-img">
-                            <!-- <img class="profile-pic img-top" src="images/profile-pics/KrauseMonologoCircle.png" alt="profile-logo"> -->
-                            <h1 class="profile-pic-text">About</h1>
+                            <ul>
+                                <li>
+                                    <a class="header-icon" href="https://www.facebook.com/andrew.krause.35325/" target="_blank">
+                                         <i class="fab fa-facebook fa-2x"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="header-icon" href="https://www.linkedin.com/in/andrew-krause-b6aa21179/" target="_blank">
+                                        <i class="fab fa-linkedin fa-2x"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="header-icon" href="https://github.com/Krause2023" target="_blank">
+                                        <i class="fab fa-github fa-2x"></i>   
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="header-icon" href="mailto:aek.krause@gmail.com" target="_blank">
+                                        <i class="fas mail fa-envelope fa-2x"></i>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
-                        <p>
-                            I am currently in my junior year at the
-                            University of Wisconsin - La Crosse. I am working towards obtaining my 
-                            bachelor's degree in Computer Science. At my university, I am also involved
-                            in Computer Science clubs such as the CS Club and CODERS.
-                            <br>
-                            <br>
-                            Outside of my academic life, I enjoy being active through running, hiking, 
-                            biking, and playing basketball. Family and friends are also important to me.
-                            When I have more time, I would love to travel the world and explore different
-                            places and cultures.
-                        </p>
+                        <div class="col-sm-12 col-lg-4 about-column">
+                            <h1 class="about-content">About Me</h1>
+                            <b class="about-content">UWL'23 Bachelor's of Computer Science, Software Developer, Web Dev Enthusiast</b>
+                            <p class="about-content">
+                                I am currently in my junior year at the University of Wisconsin - La Crosse
+                                working towards my bachelor's degree in Computer Science. At my university,
+                                I am also involved in Computer Science clubs such as the CS Club and CODERS.
+                            </p>
+                            <p class="about-content">
+                                Outside of my academic life, I enjoy being active through running, hiking, 
+                                biking, and playing basketball. Family and friends are important to me.
+                                When I have more time, I would love to travel the world, explore new places,
+                                and learn about different cultures.
+                            </p>
+                            <ul class="resume-courses">
+                                <li>
+                                    <a class="file" href="files/Current_Resume-(SoftwareandApplicationDevelopment).pdf" target="_blank">
+                                        <i class="black-file fas fa-file-pdf"></i> Resume
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="file" href="files/UWL_College_Courses_for_Four-Year-Plan.pdf" target="_blank">
+                                        <i class="black-file fas fa-file-pdf"></i> Courses
+                                    </a>
+                                </li> 
+                            </ul>
+                        </div>
+                    </div> 
+                </div>
+            </section>
+
+            <!-- Skills -->
+            <section id="skills">
+                <div class="skills-container slide-from-left">
+                    <div class="skills-section-heading">
+                        <h1 class="skills-heading">Skills</h1>
                     </div>
-                    <!-- Include links to your resume and your current course plan -->
-                    <div class="top-qualifications">
-                        <div class="download-resume">
-                            <a href="files/Current_Resume-(SoftwareandApplicationDevelopment).pdf" target="_blank">Resume</a>
+                    <div class="text-center mb-5">
+                        <p class="skills-content">I'm always looking to learn more.</p>
+                    </div>
+                    <div class="skills-row">
+                        <div class="col-lg-4 col-md-6 mb-5 specific-skill">
+                            <div>
+                                <span class="mb-3 rounded-circle skill-inline"> 
+                                    <i class="fab java fa-java fa-2x" style="padding-left: 15px; padding-top: 10px;"></i>
+                                </span> 
+                                <h4 class="skill-title skill-inline">
+                                    <b>Java</b>
+                                </h4>
+                            </div>
+                            <p class="specific-skill-text">
+                                I have had <b>3.5 years</b> of experience with Java. I have primarily used 
+                                the language for creating data structures such as binary trees(MODAL?) and hash tables(MODAL?).
+                                I have also used the language to create simple games including a simplified version
+                                of pong.
+                            </p>
                         </div>
-                        <div class="download-plan">
-                            <a href="files/" target="_blank">Resume</a>
+                        <div class="col-lg-4 col-md-6 mb-5 specific-skill"> 
+                            <div>
+                                <span class="mb-3 rounded-circle skill-inline">
+                                    <i class="fa c-programming icon-c fa-2x" style="padding-left: 15px; padding-top: 15px;"></i>
+                                </span>
+                                <h4 class="skill-title skill-inline">
+                                    <b>C-Programming</b>
+                                </h4>
+                            </div>
+                            <p class="specific-skill-text">
+                                I have worked with the C programming language for <b>3 years</b>. I have used
+                                the lower level language to create simple data structures such as linked lists
+                                as well as a simulation project.
+                            </p>
                         </div>
+                        <div class="col-lg-4 col-md-6 mb-5 specific-skill">
+                            <div>
+                                <span class="mb-3 rounded-circle skill-inline">
+                                    <i class="fab python fa-python fa-2x" style="padding-left: 13px; padding-top: 12px;"></i>
+                                </span>
+                                <h4 class="skill-title skill-inline">
+                                    <b>Python/Django</b>
+                                </h4>
+                            </div>
+                            <p class="specific-skill-text">
+                                I have had <b>1 year</b> of experience with Python and Django. I intend to further 
+                                my understanding of Python as popular higher-level programming language. I have used
+                                my knowledge of Django, a Python based web technology to build websites such as a 
+                                Park Finder application that allows users to find national parks and places in the
+                                United States (MODAL?).
+                            </p>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-5 specific-skill">
+                            <div>
+                                <span class="mb-3 rounded-circle skill-inline">
+                                    <i class="fas git fa-code-branch fa-2x" style="padding-left: 17px; padding-top: 15px;"></i>
+                                </span>
+                                <h4 class="skill-title skill-inline">
+                                    <b>Git/GitHub</b>
+                                </h4>
+                            </div>
+                            <p class="specific-skill-text">
+                                I have utilized both Git and GitHub throughout he process of creating my projects. I have
+                                a GitHub account where I host a number of projects in public repositories. I have used 
+                                version control to collaborate with team members and develop different web applications
+                                (MODAL?).
+                            </p>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-5 specific-skill">
+                            <div>
+                                <span class="mb-3 rounded-circle skill-inline">
+                                    <i class="fas code fa-code fa-2x" style="padding-left: 6px; padding-top: 12px;"></i>
+                                </span>
+                                <h4 class="skill-title skill-inline">
+                                    <b>HTML/CSS/JavaScript</b>
+                                </h4>
+                            </div>
+                            <p class="specific-skill-text">
+                                I have spent a significant amount of time familiarizing myself with HTML, CSS, and JavaScript 
+                                for web development. I have had about <b>1 year</b> working with these languages. I have built 
+                                web applications such as this website, my personal webpage, and a Team Aptiv application that 
+                                services different users (MODAL?).
+                            </p>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-5 specific-skill">
+                            <div>
+                                <span class="mb-3 rounded-circle skill-inline">
+                                    <i class="fab bootstrap fa-bootstrap fa-2x" style="padding-left: 8.5px; padding-top: 12px;"></i>
+                                </span>
+                                <h4 class="skill-title skill-inline">
+                                    <b>Bootstrap</b>
+                                </h4>
+                            </div>
+                            <p class="specific-skill-text">
+                                I have used Bootstrap as a frontend library for developing websites. Bootstrap provides a 
+                                plethora of useful tools for styling web applications, and I have learned an extensive 
+                                amount of information on the technology (MODAL?).
+                            </p>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-5 specific-skill">
+                            <div>
+                                <span class="mb-3 rounded-circle skill-inline">
+                                    <i class="fab node fa-node-js fa-2x" style="padding-left: 13px; padding-top: 12px;"></i>
+                                </span>
+                                <h4 class="skill-title skill-inline">
+                                    <b>Node.js</b>
+                                </h4>
+                            </div>
+                            <p class="specific-skill-text">
+                                I have used Node.js to help build the backend of different web applications. I am familiar
+                                with modules in Node.js such as Express, Request, Bcrypt and Oauth. I have been working with 
+                                this technology for about <b>1 year</b> (MODAL?).
+                            </p>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-5 specific-skill">
+                            <div>
+                                <span class="mb-3 rounded-circle skill-inline">
+                                    <i class="fa mongodb icon-mongodb fa-2x" style="padding-left: 11px; padding-top: 12px;"></i>
+                                </span>
+                                <h4 class="skill-title skill-inline">
+                                    <b>MongoDB</b>
+                                </h4>
+                            </div>
+                            <p class="specific-skill-text">
+                                I have had about <b>1 year</b> of experience with MongoDB. I have used it for
+                                the backends of the majority of my web application projcts. 
+                            </p>
+                        </div> 
                     </div>
                 </div>
-            </div>
-            </article>
+            </section>
 
-            <!-- The second article or section includes history and qualifications -->
-            <article id="projects-section" class="project-container">
-                <!-- Create a div that will act as a card -->
-                <div class="project-card">
-                    <!-- Create three divs that serve as placeholders for the title -->
-                    <div>
-                        <h1 class="project-card-heading">Projects</h1>
-                    </div>
-                    <div>
-                        <p>view project</p>
-                        <h1>Park Finder Website</h1>
-                        <p>Tools...</p>
-                        <p>Description...</p>
-                    </div>
+            <!-- Contact -->
+            <section id="contact">
 
-                    <!-- Include a rotate icon to encourage the user to click the card -->
-                    <!-- FIX THIS LATER!!! -->
-                    <!-- <div class="style-chevron">
-                        <i class="fas fa-sync-alt fa-5x"></i>
-                    </div> -->
-                    
-                    <!-- Include a chevron to encourage the user to scroll down -->
-                    <!-- <div class="style-chevron">
-                        <i class="fas fa-chevron-down fa-4x"></i>
-                    </div> -->
-                </div>
-            </article>
+            </section>
 
-            <!-- The third article contains the contact information -->
-            <!-- MAY NEED TO CHANGE THIS TO A DIV!!! -->
-            <article id="contact-section">
-                <div>
-                    <h1>Contact Information</h1>
-                </div>
-            </article>
+            <!-- Contact -->
+            <section id="contact">
+
+            </section>
         </main>
+
+        <!-- JavaScript Links -->
+        <script type="text/javascript" src="javascript/functions.js" async defer></script>
+        <script type="text/javascript" src="" async defer></script>        
     </body>
 
-    <!-- Include a footer for the website. The footer includes a dynamic JavaScript date -->
-    <footer style="text-align: center;" data-visible="true">
-        &copy <script>document.write(new Date().getFullYear())</script> Andrew Krause
+    <!-- Footer with name and dynamic year -->
+    <footer id="footer" data-visible="true">
+        <p>INCLUDE CONTACT INFO HERE</b>
+            <br>
+        Copyright &copy Andrew Krause <script>document.write(new Date().getFullYear())</script>
     </footer>
 </html>

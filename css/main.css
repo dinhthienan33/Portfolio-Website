@@ -232,6 +232,9 @@ html {
     .container {
         padding: 1.5rem;
         margin-bottom: 1rem;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .row {
@@ -362,10 +365,14 @@ html {
     #skills {
         padding-top: 0rem;
         color: var(--dark-font);
+        background-color: var(--whiter-color);
     }
 
     .skills-container {
+        max-width: 500px;
         padding: 1.5rem;
+        margin-left: auto;
+        margin-right: auto;
         background-color: var(--whiter-color);
     }
 
@@ -380,12 +387,12 @@ html {
     .skills-heading {
         margin-top: 1rem;
         font-size: 3rem;
-        text-align: center;
+        text-align: left;
         margin-bottom: 0.5rem;
     }
 
     .skills-content {
-        text-align: center;
+        text-align: left;
         margin-bottom: 1rem;
     }
 
@@ -515,7 +522,95 @@ html {
         display: inline-block;
     }
 
+    /* ====================================================================
+                            CERTIFICATIONS Section
+    ==================================================================== */
 
+    #certifications {
+        padding-top: 0rem;
+        color: var(--dark-font);
+        background-color: var(--bluer-color);
+    }
+
+    .certifications-container {
+        max-width: 500px;
+        padding: 1.5rem;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: var(--bluer-color);
+    }
+
+    .certifications-section-heading {
+        text-align: center;
+    }
+
+    .certifications-heading {
+        margin-top: 1rem;
+        font-size: 3rem;
+        text-align: left;
+        margin-bottom: 0.5rem;
+    }
+
+    .certifications-content {
+        text-align: left;
+        margin-bottom: 1rem;
+    }
+
+    .certifications-row {
+        display: flex;
+        flex-wrap: wrap; /* COULD DELETE LATER */
+        flex-direction: column;
+        min-width: fit-content;
+    }
+
+    .certification-card {
+        background-color: var(--whiter-color);
+        border-radius: 0.5em;
+        padding: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .certificate-pic {
+        margin-left: 0;
+        margin-right: auto;
+        height: 60px; /* height: 120px; */
+        width: 60px; /* width: 120px; */
+        border-radius: 50%;
+        /* display: inline-block; */
+        vertical-align: bottom;
+    }
+
+    .certification-title {
+        /* margin-top: auto;
+        margin-bottom: auto; */
+        height: fit-content;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-left: 5px;
+        font-size: 24px; /* 1.5rem; */
+        vertical-align: 40%;
+    }
+
+    .certification-inline {
+        display: inline-block;
+    }
+
+    .specific-certification-heading {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .specific-certification-text {
+        margin-top: 0.5rem;
+    }
+
+  
+             
+
+    /* ====================================================================
+                             HONORS/AWARDS/VOLUNTEER
+    ==================================================================== */
 
 
 
@@ -523,8 +618,11 @@ html {
 
 
     /* ====================================================================
-                        HONORS/AWARDS/VOLUNTEER Section
+                            TIMELINE Section
     ==================================================================== */
+
+
+
 
 
 
@@ -536,9 +634,11 @@ html {
 
 
 
+
     /* ====================================================================
                             CONTACT Section
     ==================================================================== */
+
 
 
 
