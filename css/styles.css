@@ -529,7 +529,7 @@ html {
     #certifications {
         padding-top: 0rem;
         color: var(--dark-font);
-        background-color: var(--bluer-color);
+        background-color: var(--dark-font);
     }
 
     .certifications-container {
@@ -537,7 +537,7 @@ html {
         padding: 1.5rem;
         margin-left: auto;
         margin-right: auto;
-        background-color: var(--bluer-color);
+        background-color: var(--dark-font);
     }
 
     .certifications-section-heading {
@@ -549,11 +549,13 @@ html {
         font-size: 3rem;
         text-align: left;
         margin-bottom: 0.5rem;
+        color: var(--whiter-color);
     }
 
     .certifications-content {
         text-align: left;
         margin-bottom: 1rem;
+        color: var(--whiter-color);
     }
 
     .certifications-row {
@@ -571,25 +573,29 @@ html {
         margin-bottom: 20px;
     }
 
+    .certificate-image-heading {
+        white-space: nowrap;
+    }
+
     .certificate-pic {
         margin-left: 0;
-        margin-right: auto;
+        margin-right: 0;
+        margin-top: auto;
+        margin-bottom: auto;
         height: 60px; /* height: 120px; */
         width: 60px; /* width: 120px; */
         border-radius: 50%;
-        /* display: inline-block; */
-        vertical-align: bottom;
+        vertical-align: middle;
     }
 
     .certification-title {
-        /* margin-top: auto;
-        margin-bottom: auto; */
+        white-space: normal;
+        display: inline-block;
+        width: calc(100% - 75px);
+        margin-left: 10px;
         height: fit-content;
-        padding-top: 2px;
-        padding-bottom: 2px;
-        padding-left: 5px;
-        font-size: 24px; /* 1.5rem; */
-        vertical-align: 40%;
+        font-size: 20px; /* 1.5rem; */
+        vertical-align: middle; /* 40% */
     }
 
     .certification-inline {
@@ -604,9 +610,6 @@ html {
     .specific-certification-text {
         margin-top: 0.5rem;
     }
-
-  
-             
 
     /* ====================================================================
                              HONORS/AWARDS/VOLUNTEER
