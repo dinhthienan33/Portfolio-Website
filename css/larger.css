@@ -24,7 +24,7 @@
   * ANYTHING ELSE???
   */
 
-/* Larger Mobile or Desktop View (For Navbar Only) */
+/* Larger Mobile or Desktop View (For Navbar Padding) */
 @media (min-width: 630px) {
 
     .navbar-container {
@@ -68,8 +68,14 @@
     }
 
     #about {
-        /* MAYBE DELETE LATER!!! */
-        /* height: 200vh; */
+        padding-top: 60px;
+    }
+
+    #projects {
+        padding-top: 60px;
+    }
+
+    #contact {
         padding-top: 60px;
     }
 }
