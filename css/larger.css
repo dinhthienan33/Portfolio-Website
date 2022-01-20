@@ -1,0 +1,81 @@
+/**
+ * DESCRIPTION...
+ *
+ * Author: Andrew Krause
+ * Date: CURRENT
+ *
+ */
+
+ /** 
+  *
+  * KEEP ANIMATIONS MINIMAL.
+  * CERTAINLY INCLUDE A FEATURE LIKE THE DROPDOWN FEATURE YOU USED IN YOUR 
+  * PARKFINDER WEB APPLICATION FOR VARIOUS PARTS OF THE PAGE.
+  *
+  * THREE MAIN SECTIONS: ABOUT/RESUME/QUALIFICATIONS, PROJECTS, AND CONTACT.
+  *
+  * ADD YOUR RESUME TO BE DOWNLOADED FROM THE ABOUT/RESUME/QUALIFICATIONS SECTION.
+  * ALSO ADD LINKS TO YOUR MAIL, GITHUB, AND LINKEDIN. YOU ARE GOING TO WANT TO ADD
+  * A SHARING FEATURE SO THAT USERS CAN SHARE YOUR SITE AS WELL!
+  * 
+  * PUT YOURSELF IN THE SHOES OF THE PEOPLE WHO WILL BE LOOKING AT THIS!
+  * MAKE IT SIMPLE - DON'T MAKE THEM WORK TO FIGURE OUT MORE ABOUT YOU.
+  * 
+  * ANYTHING ELSE???
+  */
+
+/* Larger Mobile or Desktop View (For Navbar Only) */
+@media (min-width: 630px) {
+
+    .navbar-container {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    .nav-heading {
+        color: var(--light-font);
+        font-size: 20px;
+        display: inline-block;
+        margin-top: 3px;
+        margin-left: 3.5px;
+    }
+
+    .menu {
+        margin-top: 0px;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: flex-end;
+        margin-right: 0;
+    }
+
+    .menu-link {
+        font-size: 17px;
+        font-weight: bold;
+        text-decoration: none;
+        color: var(--whiter-color);
+        position: relative;
+        margin-left: 30px;
+    }
+
+    nav {
+        top: 0;
+        position: fixed;
+    }
+
+    #about {
+        /* MAYBE DELETE LATER!!! */
+        /* height: 200vh; */
+        padding-top: 60px;
+    }
+}
+
+/* Larger Mobile or Desktop View */
+@media (min-width: 750px) {
+
+    
+}

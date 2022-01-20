@@ -13,8 +13,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- CSS Speadsheets -->
-        <link type="text/css" rel="stylesheet" href="css/styles.css">
-        <link type="text/css" rel="stylesheet" href="">
+        <link type="text/css" rel="stylesheet" href="css/mobile.css">
+        <link type="text/css" rel="stylesheet" href="css/larger.css">
+        <link type="text/css" rel="stylesheet" href="css/desktop.css">
         <link rel="stylesheet" href="css/font-mfizz-2.4.1/font-mfizz.css">
 
         <!-- Icon for Tab Display -->
@@ -48,10 +49,10 @@
                                 <a id="menu-about" class="is-active menu-link menu-about" href="index.html">About</a>
                             </li>
                             <li>
-                                <a id="menu-projects" class="menu-link menu-projects" href="#">Projects</a>
+                                <a id="menu-projects" class="menu-link menu-projects" href="projects.html">Projects</a>
                             </li>
                             <li>
-                                <a id="menu-contact" class="menu-link menu-contact" href="#">Contact</a>
+                                <a id="menu-contact" class="menu-link menu-contact" href="contact.html">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -277,7 +278,7 @@
                                 <div>
                                     <p class="specific-certification-heading"><i>Udemy Certification</i></p>
                                     <p class="specific-certification-text">
-                                        I earned the certification in the basics of Agile by working
+                                        I earned a certification in the basics of Agile by working
                                         on the course over the winter of 2020. The course was a total 
                                         of <b>4.5 hours</b>.
                                     </p>
@@ -292,7 +293,7 @@
                                 <div>
                                     <p class="specific-certification-heading"><i>Udemy Certification</i></p>
                                     <p class="specific-certification-text">
-                                        The certificate was earned by taking a course over the summer of
+                                        Certificate was earned by taking a course over the summer of
                                         2021 that equated to about <b>55 hours</b> of work. I learned the
                                         basics of web frontend and backend development.
                                     </p>
@@ -323,9 +324,9 @@
                                 <div>
                                     <p class="specific-certification-heading"><i>Code With Mosh Certification</i></p>
                                     <p class="specific-certification-text">
-                                        I earned the certification in the basics of Agile by working
-                                        on the course over the winter of 2020. The course was a total 
-                                        of <b>5 hours</b>.
+                                        The certification was earned by taking a course on the basics of
+                                        Django, a framework for web development in Python. The total amount
+                                        of work was <b>5 hours</b>.
                                     </p>
                                 </div>
                             </div>
@@ -414,9 +415,6 @@
                     <div class="text-center mb-5">
                         <p class="timeline-main-content">Summary of my work experience.</p>
                     </div>
-
-
-                    
                     <div class="timeline">
                         <div class="timeline-main-container timeline-left">
                             <img class="timeline-event-img timeline-left" src="images/trane.png" alt="uwl-img">
@@ -459,7 +457,7 @@
                             <img class="timeline-event-img timeline-left" src="images/pem.png" alt="uwl-img">
                             <div class="timeline-content">
                                 <h5 class="timeline-year">2015 - 2019</h5>
-                                <h4 class="timeline-event">High School at PEM, Plainview, MN</h4>
+                                <h4 class="timeline-event">PEM High School, Plainview, MN</h4>
                                 <p>
                                     I graduated from Plainview-Elgin-Millville high school 
                                     in 2019 at the top of my class and with high honors.
@@ -467,10 +465,6 @@
                             </div>
                         </div>
                     </div>
-
-
-
-
                 </div>
             </section>
         </main>
@@ -482,8 +476,43 @@
 
     <!-- Footer with name and dynamic year -->
     <footer id="footer" data-visible="true">
-        <p>INCLUDE CONTACT INFO HERE</b>
-        <br>
-        Copyright &copy Andrew Krause <script>document.write(new Date().getFullYear())</script>
+        <div class="footer-row">
+            <p class="footer-content">Copyright &copy Andrew Krause <script>document.write(new Date().getFullYear())</script></p>
+            <ul class="footer-icons">
+                <li>
+                    <a class="header-icon" href="https://www.facebook.com/andrew.krause.35325/" target="_blank">
+                         <i class="fab fa-facebook fa-2x"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="header-icon" href="https://www.linkedin.com/in/andrew-krause-b6aa21179/" target="_blank">
+                        <i class="fab fa-linkedin fa-2x"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="header-icon" href="https://github.com/Krause2023" target="_blank">
+                        <i class="fab fa-github fa-2x"></i>   
+                    </a>
+                </li>
+                <li>
+                    <a class="header-icon" href="mailto:aek.krause@gmail.com" target="_blank">
+                        <i class="fas mail fa-envelope fa-2x"></i>
+                    </a>
+                </li>
+            </ul>
+            <ul class="footer-links-list">
+                <li>
+                    <a class="footer-link" href="index.html">About</a>
+                </li>
+                <li>
+                    <a class="footer-link" href="contact.html">Contact</a>
+                </li>
+                <li>
+                    <a class="footer-link" href="files/Current_Resume-(SoftwareandApplicationDevelopment).pdf" target="_blank">
+                        <i class="fas footer-file-icon fa-file-pdf"></i> Resume
+                    </a>
+                </li>
+            </ul>
+        </div>
     </footer>
 </html>

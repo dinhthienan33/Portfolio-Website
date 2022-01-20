@@ -7,7 +7,6 @@
  */
 
  /** 
-  * ADD A NAV BAR AT THE TOP WITH YOUR LOGO (MAYBE). 
   *
   * KEEP ANIMATIONS MINIMAL.
   * CERTAINLY INCLUDE A FEATURE LIKE THE DROPDOWN FEATURE YOU USED IN YOUR 
@@ -94,8 +93,7 @@
 
 /* Set the background color of the website. */
 body {
-    /* --> MAY DELETE THIS LATER!!! height: 100vh; */ 
-    /* --> MAY DELETE THIS LATER!!! line-height: 1.6; */ 
+    line-height: 1.5; 
     margin: auto;
     background-color: var(--main-background);
     color: var(--light-font);
@@ -109,7 +107,7 @@ html {
 }
 
 /* Mobile View */
-@media (max-width: 630px) {
+@media (max-width: 750px) {
 
     /* ====================================================================
                         NAVBAR Section (All Pages)
@@ -118,9 +116,9 @@ html {
     .navbar-container {
         width: 100%;
         margin: 0 auto;
-        /* display: flex;
-        align-items: center;
-        justify-content: space-between; */
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
     }
 
     .nav-heading {
@@ -740,17 +738,6 @@ html {
         z-index: 99;
     }
 
-
-
-
-
-
-
-
-
-
-
-
     /* The actual timeline (the vertical ruler) */
     .timeline {
         position: relative;
@@ -827,17 +814,6 @@ html {
         margin-bottom: 5px;
     }
 
-
-
-
-
-
-
-
-
-
-
-
     /* THIS IS ONLY FOR SCREEN WIDTH 630px. */
     /* Place the timelime to the left */
     .timeline::after {
@@ -870,21 +846,88 @@ html {
         left: 0%;
     }
 
-
-
-
-
-
-    /* ====================================================================
-                            TIMELINE Section (Page 1)
-    ==================================================================== */
-
-
-
-
     /* ====================================================================
                             PROJECTS Section (Page 2)
     ==================================================================== */
+
+    #projects {
+        padding-top: 0rem;
+        color: var(--dark-font);
+        background-color: var(--dark-font);
+    }
+
+    .projects-container {
+        max-width: 500px;
+        padding: 1.5rem;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: var(--dark-font);
+    }
+
+    .projects-section-heading {
+        text-align: center;
+    }
+
+    .projects-heading {
+        margin-top: 1rem;
+        font-size: 3rem;
+        text-align: left;
+        margin-bottom: 0.5rem;
+        color: var(--whiter-color);
+    }
+
+    .projects-content {
+        text-align: left;
+        margin-bottom: 1rem;
+        color: var(--whiter-color);
+    }
+
+    .projects-row {
+        display: flex;
+        flex-wrap: wrap; /* COULD DELETE LATER */
+        flex-direction: column;
+        min-width: fit-content;
+    }
+
+    .projects-card {
+        background-color: var(--bluer-color);
+        border-radius: 0.5em;
+        padding: 15px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        height: 230px
+    }
+
+    .projects-title {
+        white-space: normal;
+        width: calc(100% - 75px);
+        margin-left: 0;
+        height: fit-content;
+        font-size: 24px; /* 1.5rem; */
+        vertical-align: middle; /* 40% */
+    }
+
+    .specific-projects-text {
+        font-size: 20px;
+        margin-top: 0.5rem;
+    }
+
+
+
+
+
+
+
+    .projects-pic {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: auto;
+        margin-bottom: auto;
+        height: 60px; /* height: 120px; */
+        width: 60px; /* width: 120px; */
+        border-radius: 50%;
+        vertical-align: middle;
+    }
 
 
 
@@ -905,22 +948,47 @@ html {
     #footer {
         border-top: 1px solid var(--gray-font);
         text-align: center;
-        padding-top: 3rem;
-        padding-bottom: 1rem;
+        padding-top: 64px;
+        padding-bottom: 32px;
+    }
+
+    .footer-row {
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-content {
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-bottom: 24px;
+    }
+
+    .footer-icons {
+        margin-bottom: 24px;
+    }
+
+    .footer-links-list {
+        text-align: center;
+    }
+
+    .footer-link {
+        margin-right: 2px;
+        margin-left: 2px;
+        text-decoration: none;
+        color: var(--bluer-color);
+    }
+
+    .footer-link:hover {
+        text-decoration: underline;
+    }
+
+    .footer-file-icon {
+        color: var(--bluer-color);
     }
 }
-
-/* Larger Mobile or Desktop View */
-@media (min-width: 630px) {
-    
-    
-}
-        
-/* Desktop View */    
-@media (min-width: 1000px){
-    
-    
-}
-      
-
- 
