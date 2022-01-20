@@ -729,6 +729,18 @@ html {
         color: var(--light-font);
     }
 
+    .timeline-event-img {
+        background-color: white;
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        right: 0px;
+        top: 15px;
+        border-radius: 50%;
+        z-index: 99;
+    }
+
+
 
 
 
@@ -774,11 +786,11 @@ html {
     .timeline-main-container::after {
         content: '';
         position: absolute;
-        width: 25px;
-        height: 25px;
+        width: 60px;
+        height: 60px;
         right: -17px;
         background-color: white;
-        border: 4px solid #FF9F55;
+        /* border: 4px solid #FF9F55; */
         top: 15px;
         border-radius: 50%;
         z-index: 1;
@@ -805,6 +817,16 @@ html {
         border-radius: 6px;
     }
 
+    .timeline-year {
+        font-size: 24px;
+        margin-bottom: 5px;
+    }
+
+    .timeline-event {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
 
 
 
@@ -825,8 +847,9 @@ html {
     /* Full-width containers */
     .timeline-main-container {
         width: 100%;
-        padding-left: 70px;
+        padding-left: 80px;
         padding-right: 25px;
+        padding-bottom: 40px;
     }
 
     /* Make sure that all arrows are pointing leftwards */
@@ -839,7 +862,7 @@ html {
 
     /* Make sure all circles are at the same spot */
     .timeline-left::after, .timeline-right::after {
-        left: 13px;
+        left: 0px;
     }
 
     /* Make all right containers behave like the left ones */
@@ -880,6 +903,7 @@ html {
     ==================================================================== */
 
     #footer {
+        border-top: 1px solid var(--gray-font);
         text-align: center;
         padding-top: 3rem;
         padding-bottom: 1rem;
