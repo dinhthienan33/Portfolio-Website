@@ -109,6 +109,7 @@ html {
 /* Prevents scrolling in cases like when a modal is open. */
 .overflowHidden {
     overflow: hidden;
+    max-width: 100%;
 }
 
 /* Mobile View */
