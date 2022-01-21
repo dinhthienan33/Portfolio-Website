@@ -108,7 +108,9 @@ html {
 
 /* Prevents scrolling in cases like when a modal is open. */
 .overflowHidden {
+    height: 100%;
     overflow: hidden;
+    position: fixed;
     touch-action: none;
     -ms-touch-action: none;
 }
