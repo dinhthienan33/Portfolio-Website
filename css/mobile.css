@@ -110,9 +110,22 @@ html {
 .overflowHidden {
     height: 100%;
     overflow: hidden;
-    position: fixed;
     touch-action: none;
     -ms-touch-action: none;
+}
+
+/* Mobile View for Scrolling */
+/* --> MAY CHANGE THIS LATER!!! */
+@media (max-width: 500px) {
+
+    /* The scrolling class is specialized here to work on mobile devices. */
+    .overflowHidden {
+        height: 100%;
+        overflow: hidden;
+        position: fixed;
+        touch-action: none;
+        -ms-touch-action: none;
+    }
 }
 
 /* Mobile View */
