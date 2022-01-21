@@ -78,10 +78,21 @@
     #contact {
         padding-top: 60px;
     }
+
+
+
+    /* EXAMPLE OF HOW MODAL SHOULD CHANGE ON LARGER SCREEN SIZE. */
+    /* .modal-body {
+        color: var(--dark-font);
+        height: 70vh;
+        width: 70vw;
+        max-width: 500px;
+        overflow-y: auto;
+    } */
 }
 
 /* Larger Mobile or Desktop View */
 @media (min-width: 750px) {
-
+    
     
 }
