@@ -156,7 +156,7 @@ anchor8.onclick = function() {
 
 // ==================================================================
 
-// Get the <span> element that closes the modal (the 'x').
+// Get the first <span> element that closes the modal (the big 'X').
 var span1 = document.getElementById("exit-modal1");
 
 span1.onclick = function() {

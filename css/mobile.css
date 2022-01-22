@@ -1013,6 +1013,7 @@ html {
     }
 
     .close-modal-position {
+        /* MAYBE CHANGE THE POSITIONING OF THE EXIT ICON TO FIXED AT SOME POINT!!! */
         text-align: right;
         margin-right: 15px;
         margin-top: 5px;
@@ -1021,8 +1022,6 @@ html {
     .modal-close {
         color: var(--dark-font);
         position: relative;
-        /* top: 10px;
-        right: 10px; */
         font-weight: bold;
         cursor: pointer;
     }
@@ -1031,19 +1030,15 @@ html {
         color: var(--dark-font);
     }
 
-    .fa-times:hover {
-        color: var(--bluer-color);
-    }
-
     .modal-information {
-        padding: 60px;
-        padding-top: 30px;
+        padding: 15px;
     }
 
     .modal-content {
         display: flex;
         /* justify-content: space-around; */
-        align-items: left;
+        /* align-items: left; */
+        text-align: left;
         flex-direction: column;
     }
 
@@ -1058,12 +1053,42 @@ html {
     .modal-heading {
         color: var(--dark-font);
         font-size: 3rem;
+        line-height: 1.2;
         margin-bottom: 1rem;
     }
 
     .modal-text {
         margin-bottom: 1rem;
         line-height: 1.5;
+    }
+
+    .modal-github-link {
+        color: var(--dark-font);
+    }
+
+    .modal-github-link:hover {
+        color: var(--bluer-color);
+    }
+
+    .bottom-button-container {
+        width: fit-content;
+        margin: auto;
+    }   
+
+    .bottom-modal-button {
+        display: inline-block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        height: 60px; /* Should match line-height attribute */
+        width: 130px;
+        background-color: var(--bluer-color);
+        color: var(--black-color);
+        text-decoration: none;
+        border-radius: 0.5em;
+        border-style: none;
+        align-items: center;
+        text-align: center;
+        line-height: 60px; /* Should match height attribute */
     }
 
 
