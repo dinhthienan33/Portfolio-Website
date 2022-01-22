@@ -225,13 +225,12 @@ html {
     }
 
     /* ====================================================================
-                             ABOUT Section (Page 1)
+                            HOME/ABOUT Section (Page 1)
     ==================================================================== */
     
     #about {
-        /* MAYBE DELETE LATER!!! */
-        /* height: 200vh; */
         padding-top: 0rem;
+        height: 100%;  /* KEEP AN EYE ON THIS!!! */
     }
     
     .slide-from-left {
@@ -283,12 +282,11 @@ html {
 
     .profile-pic {
         width: 15rem;
-        margin-bottom: 1rem;
     }
 
-    .header-icon {
+    /* .header-icon {
         text-decoration: none;
-    }
+    } */
 
     b.about-content {
         display: block;
@@ -338,6 +336,77 @@ html {
         color: var(--bluer-color);
     }
 
+    .about-links {
+        margin-top: 15px;
+        min-width: fit-content;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .about-me-link {
+        text-decoration: none;
+        display: inline-block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-right: 10px;
+        color: var(--bluer-color);
+        vertical-align: central;
+        align-items: center;
+        text-align: center;
+        line-height: 1.5; 
+    }
+
+    .about-me-link:hover {
+        text-decoration: underline;
+    }
+
+    /* ====================================================================
+                            RESUME Section (Page 2)
+    ==================================================================== */
+
+    #resume {
+        padding-top: 0rem;
+        color: var(--whiter-color);
+        background-color: var(--black-color);
+    }
+
+    .resume-container {
+        max-width: 500px;
+        padding: 1.5rem;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: var(--black-color);
+    }
+
+    .resume-section-heading {
+        text-align: center;
+    }
+
+    .resume-center {
+        text-align: center;
+    }
+
+    .resume-heading {
+        margin-top: 1rem;
+        font-size: 3rem;
+        text-align: left;
+        margin-bottom: 0.5rem;
+    }
+
+    .resume-content {
+        text-align: left;
+        margin-bottom: 1rem;
+    }
+
+    .resume-row {
+        display: flex;
+        flex-wrap: wrap; /* COULD DELETE LATER */
+        flex-direction: column;
+        min-width: fit-content;
+    }
+
     .fas.black-file {
         color: var(--black-color);
     }
@@ -348,16 +417,16 @@ html {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: flex-start;
+        justify-content: center;
     }
 
-    .file {
+    .resume-file {
         display: inline-block;
-        margin-top: 10px;
-        margin-bottom: 10px;
+        margin-top: 5px;
+        margin-bottom: 5px;
         margin-right: 10px;
         height: 60px; /* Should match line-height attribute */
-        width: 130px;
+        width: 200px;
         background-color: var(--bluer-color);
         text-decoration: none;
         color: var(--black-color);
@@ -369,12 +438,12 @@ html {
         line-height: 60px; /* Should match height attribute */
     }
 
-    .file:hover {
+    .resume-file:hover {
         background-color: var(--whiter-color);
     }
 
     /* ====================================================================
-                            SKILLS Section (Page 1)
+                            SKILLS Section (Page 2)
     ==================================================================== */
 
     #skills {
@@ -538,7 +607,7 @@ html {
     }
 
     /* ====================================================================
-                        CERTIFICATIONS Section (Page 1)
+                        CERTIFICATIONS Section (Page 2)
     ==================================================================== */
 
     #certifications {
@@ -629,7 +698,7 @@ html {
     }
 
     /* ====================================================================
-                    HONORS/AWARDS/VOLUNTEER Section (Page 1)
+                    HONORS/AWARDS/VOLUNTEER Section (Page 2)
     ==================================================================== */
 
     #volunteer {
@@ -719,7 +788,7 @@ html {
     }
 
     /* ====================================================================
-                            TIMELINE Section (Page 1)
+                            TIMELINE Section (Page 2)
     ==================================================================== */
 
     #timeline {
@@ -874,7 +943,7 @@ html {
     }
 
     /* ====================================================================
-                            PROJECTS Section (Page 2) --> WITH THIS SECTION, STOP SCROLL TO TOP WHEN MODAL CLOSES, AND START AT TOP ALWAYS WITHIN MODAL!!!
+                            PROJECTS Section (Page 3) --> WITH THIS SECTION, STOP SCROLL TO TOP WHEN MODAL CLOSES, AND START AT TOP ALWAYS WITHIN MODAL!!!
                                                       --> ALSO KEEP AN EYE ON THE FIXED "EXIT" ICON!!!
     ==================================================================== */
 
@@ -1069,11 +1138,11 @@ html {
         text-align: center;
     }
 
-    .modal-github-link {
+    .modal-viewer-link {
         color: var(--dark-font);
     }
 
-    .modal-github-link:hover {
+    .modal-viewer-link:hover {
         color: var(--bluer-color);
     }
 
@@ -1143,13 +1212,8 @@ html {
     }
 
     /* ====================================================================
-                            CONTACT Section (Page 3)
+                            CONTACT Section (Page 4)
     ==================================================================== */
-
-
-
-
-
 
     #contact {
         padding-top: 0rem;
@@ -1237,7 +1301,27 @@ html {
         color: var(--black-color);
     }
 
-    /* Title and Text in Skills Section */
+    .contact-linkedin {
+        margin-left: auto;
+        margin-right: auto;
+        color: var(--black-color);
+    }
+
+    .contact-linkedin:hover {
+        color: var(--black-color);
+    }
+
+    .contact-github {
+        margin-left: auto;
+        margin-right: auto;
+        color: var(--black-color);
+    }
+
+    .contact-github:hover {
+        color: var(--black-color);
+    }
+
+    /* Title and Text in Contact Section */
     .contact-skill-text {
         /* margin-top: auto;
         margin-bottom: auto; */
@@ -1257,12 +1341,6 @@ html {
         display: inline-block;
     }
 
-
-
-
-
-
-
     /* ====================================================================
                             FOOTER Section (All Pages)
     ==================================================================== */
@@ -1275,7 +1353,7 @@ html {
     }
 
     .footer-row {
-        max-width: 400px;
+        max-width: 350px;
         margin-left: auto;
         margin-right: auto;
         display: flex;
