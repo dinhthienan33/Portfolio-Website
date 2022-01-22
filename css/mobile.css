@@ -874,7 +874,8 @@ html {
     }
 
     /* ====================================================================
-                            PROJECTS Section (Page 2)
+                            PROJECTS Section (Page 2) --> WITH THIS SECTION, STOP SCROLL TO TOP WHEN MODAL CLOSES, AND START AT TOP ALWAYS WITHIN MODAL!!!
+                                                      --> ALSO KEEP AN EYE ON THE FIXED "EXIT" ICON!!!
     ==================================================================== */
 
     #projects {
@@ -974,7 +975,6 @@ html {
 
 
 
-
     /* Section for Modals */
     .modal-bg {
         position: fixed;
@@ -1013,25 +1013,34 @@ html {
     }
 
     .close-modal-position {
-        /* MAYBE CHANGE THE POSITIONING OF THE EXIT ICON TO FIXED AT SOME POINT!!! */
-        text-align: right;
-        margin-right: 15px;
-        margin-top: 5px;
+        width: 50px;
+        height: 50px;
+        background-color: var(--bluer-color);
+        border-radius: 50%;
+        position: fixed;
+        top: 25px; 
+        right: 10px;
     }
 
     .modal-close {
         color: var(--dark-font);
-        position: relative;
+        position: fixed;
         font-weight: bold;
         cursor: pointer;
+        top: 31px;
+        right: 23px; 
     }
 
     .fa-times {
         color: var(--dark-font);
     }
 
+    .fa-times:hover {
+        color: var(--dark-font);
+    }
+
     .modal-information {
-        padding: 15px;
+        padding: 20px;
     }
 
     .modal-content {
@@ -1040,6 +1049,7 @@ html {
         /* align-items: left; */
         text-align: left;
         flex-direction: column;
+        width: 100%;
     }
 
     .modal-row {
@@ -1062,6 +1072,10 @@ html {
         line-height: 1.5;
     }
 
+    .modal-text-center {
+        text-align: center;
+    }
+
     .modal-github-link {
         color: var(--dark-font);
     }
@@ -1075,20 +1089,28 @@ html {
         margin: auto;
     }   
 
+    .fa-times-bottom {
+        color: var(--whiter-color);
+    }
+
     .bottom-modal-button {
         display: inline-block;
         margin-top: 10px;
         margin-bottom: 10px;
         height: 60px; /* Should match line-height attribute */
         width: 130px;
-        background-color: var(--bluer-color);
-        color: var(--black-color);
+        background-color: var(--black-color);
+        color: var(--whiter-color);
         text-decoration: none;
         border-radius: 0.5em;
         border-style: none;
         align-items: center;
         text-align: center;
         line-height: 60px; /* Should match height attribute */
+    }
+
+    .bottom-modal-button:hover {
+        background-color: var(--bluer-color);
     }
 
 
