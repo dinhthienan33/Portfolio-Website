@@ -967,14 +967,6 @@ html {
         margin-top: 0.5rem;
     }
 
-
-
-
-
-
-
-
-
     /* Section for Modals */
     .modal-bg {
         position: fixed;
@@ -1041,6 +1033,7 @@ html {
 
     .modal-information {
         padding: 20px;
+        margin: auto;
     }
 
     .modal-content {
@@ -1113,18 +1106,158 @@ html {
         background-color: var(--bluer-color);
     }
 
+    /* Section for Descriptive Images in Modal */
+    .modal-pic-card {
+        background-color: var(--whiter-color);
+        margin-top: 25px;
+        margin-bottom: 25px;
+        height: 358; 
+        width: 510;
+        transition: all .2s ease-in-out;
+    }
 
+    .modal-info-pic {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: auto;
+        margin-bottom: auto;
+        width: 100%;
+        vertical-align: middle;
+    }
 
+    .modal-pic-container {
+        /* padding: 10px;
+        padding-left: 0;
+        padding-bottom: 0; */
+        padding-top: 5px;
+        height: fit-content;
+        width: fitcontent;
+    }
 
-  
-
-
-
-
+    .modal-pic-text {
+        padding-left: 5px;
+        padding-right: 5px;
+        text-align: left;
+        font-weight: bold;
+        font-size: 20px;
+    }
 
     /* ====================================================================
                             CONTACT Section (Page 3)
     ==================================================================== */
+
+
+
+
+
+
+    #contact {
+        padding-top: 0rem;
+        color: var(--whiter-color);
+        background-color: var(--black-color);
+        height: 100vh;
+    }
+
+    .contact-container {
+        max-width: 500px;
+        padding: 1.5rem;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: var(--black-color);
+    }
+
+    .contact-section-heading {
+        text-align: center;
+    }
+
+    .contact-text-center {
+        text-align: center;
+    }
+
+    .contact-heading {
+        margin-top: 1rem;
+        font-size: 3rem;
+        text-align: left;
+        margin-bottom: 0.5rem;
+    }
+
+    .contact-content {
+        text-align: left;
+        margin-bottom: 1rem;
+    }
+
+    .contact-row {
+        display: flex;
+        flex-wrap: wrap; /* COULD DELETE LATER */
+        flex-direction: column;
+        min-width: fit-content;
+    }
+
+    .contact-specific {
+        text-align: left; 
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+
+    .contact-link {
+        text-decoration: none;
+        color: var(--whiter-color);
+    }
+
+    .contact-circle {
+        margin-left: 0;
+        /* margin-bottom: 16px; */
+        margin-left: auto;
+        margin-right: auto;
+        height: 60px; /* height: 120px; */
+        width: 60px; /* width: 120px; */
+        background-color: var(--whiter-color);
+        border-radius: 50%;
+        display: inline-block;
+    }
+
+    /* Icons in Skills Section */
+    .fa-phone-alt {
+        margin-left: auto;
+        margin-right: auto;
+        color: var(--black-color);
+    }
+
+    .fa-phone-alt:hover {
+        color: var(--black-color);
+    }
+
+    .contact-envelope {
+        margin-left: auto;
+        margin-right: auto;
+        color: var(--black-color);
+    }
+
+    .contact-envelope:hover {
+        color: var(--black-color);
+    }
+
+    /* Title and Text in Skills Section */
+    .contact-skill-text {
+        /* margin-top: auto;
+        margin-bottom: auto; */
+        height: fit-content;
+        margin-top: 5px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-left: 5px;
+        vertical-align: 30%;
+    }
+
+    .contact-skill-text:hover {
+        text-decoration: underline;
+    }
+
+    .contact-inline {
+        display: inline-block;
+    }
+
+
 
 
 
