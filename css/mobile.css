@@ -396,6 +396,11 @@ html {
         margin-bottom: 1rem;
     }
 
+    .resume-page-link {
+        color: var(--bluer-color);
+        text-decoration: none;
+    }
+
     .resume-row {
         display: flex;
         flex-wrap: wrap; /* COULD DELETE LATER */
