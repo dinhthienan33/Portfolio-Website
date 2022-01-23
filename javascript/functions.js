@@ -1,13 +1,18 @@
 /*  
- * DESCRIPTION...
+ * The JavaScript file implements simple functions 
+ * on the portfolio website such as animating the
+ * links in the navigation bar. The JS also provides
+ * the functionality needed to implement the modals
+ * present on the website. The majority of the 
+ * JavaScript in this file is used for the features
+ * of each modal. 
  *
  * Author: Andrew Krause
- * Date: CURRENT
+ * Date: 01/31/2022
  * 
  */
 
-// COMMENT...
-// Offset this script until all of the HTML content is loaded
+// Wait to load the JavaScript until all of the HTML content is loaded (FIX LATER).
 // document.addEventListener("DOMContentLoaded", start);
 
 // // Create an array of objects to list out the projects on the website. --> WILL LIKELY COMPLETE LATER
@@ -17,45 +22,42 @@
 // ]
 
 
-// --> SECTION: Enable automatic scrolling on mobile.
+// // --> SECTION: Enable automatic scrolling on mobile.
 
-function scrollToSection(event) {
-  if (supportsSmoothScrolling()) {
-    return;
-  }
-  event.preventDefault();
-  const scrollToElem = document.getElementById("skills");
-  SmoothVerticalScrolling(scrollToElem, 300, "top");
-}
+// function scrollToSection(event) {
+//   if (supportsSmoothScrolling()) {
+//     return;
+//   }
+//   event.preventDefault();
+//   const scrollToElem = document.getElementById("skills");
+//   SmoothVerticalScrolling(scrollToElem, 300, "top");
+// }
 
-function supportsSmoothScrolling() {
-  const body = document.body;
-  const scrollSave = body.style.scrollBehavior;
-  body.style.scrollBehavior = 'smooth';
-  const hasSmooth = getComputedStyle(body).scrollBehavior === 'smooth';
-  body.style.scrollBehavior = scrollSave;
-  return hasSmooth;
-};
+// function supportsSmoothScrolling() {
+//   const body = document.body;
+//   const scrollSave = body.style.scrollBehavior;
+//   body.style.scrollBehavior = 'smooth';
+//   const hasSmooth = getComputedStyle(body).scrollBehavior === 'smooth';
+//   body.style.scrollBehavior = scrollSave;
+//   return hasSmooth;
+// };
  
-function SmoothVerticalScrolling(element, time, position) {
-  var eTop = element.getBoundingClientRect().top;
-  var eAmt = eTop / 100;
-  var curTime = 0;
-  while (curTime <= time) {
-    window.setTimeout(SVS_B, curTime, eAmt, position);
-    curTime += time / 100;
-  }
-}
+// function SmoothVerticalScrolling(element, time, position) {
+//   var eTop = element.getBoundingClientRect().top;
+//   var eAmt = eTop / 100;
+//   var curTime = 0;
+//   while (curTime <= time) {
+//     window.setTimeout(SVS_B, curTime, eAmt, position);
+//     curTime += time / 100;
+//   }
+// }
 
-function SVS_B(eAmt, position) {
-  if (position == "center" || position == "")
-  window.scrollBy(0, eAmt / 2);
-  if (position == "top")
-  window.scrollBy(0, eAmt);
-}
-
-
-
+// function SVS_B(eAmt, position) {
+//   if (position == "center" || position == "")
+//   window.scrollBy(0, eAmt / 2);
+//   if (position == "top")
+//   window.scrollBy(0, eAmt);
+// }
 
 // --> SECTION: Style the links in the navbar.
 
@@ -96,10 +98,6 @@ function contact() {
   document.getElementById("menu-projects").classList.remove("is-active");
   document.getElementById("menu-contact").classList.add("is-active");
 }
-
-
-
-
 
 // --> SECTION: Style the modals on the website.
 
@@ -222,11 +220,11 @@ bigX2.onclick = function() {
   document.body.classList.remove('overflowHidden');
 }
 
-// var bigX3 = document.getElementById("exit-modal3");
-// bigX3.onclick = function() {
-//   modal3.classList.remove('bg-active');
-//   document.body.classList.remove('overflowHidden');
-// }
+var bigX3 = document.getElementById("exit-modal3");
+bigX3.onclick = function() {
+  modal3.classList.remove('bg-active');
+  document.body.classList.remove('overflowHidden');
+}
 
 // var bigX4 = document.getElementById("exit-modal4");
 // bigX4.onclick = function() {
@@ -278,12 +276,12 @@ smallX2.onclick = function() {
   document.body.classList.remove('overflowHidden');
 }
 
-// var smallX3 = document.getElementById("bottom-exit-modal3");
+var smallX3 = document.getElementById("bottom-exit-modal3");
 
-// smallX3.onclick = function() {
-//   modal3.classList.remove('bg-active');
-//   document.body.classList.remove('overflowHidden');
-// }
+smallX3.onclick = function() {
+  modal3.classList.remove('bg-active');
+  document.body.classList.remove('overflowHidden');
+}
 
 // var smallX4 = document.getElementById("bottom-exit-modal4");
 

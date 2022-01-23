@@ -1,8 +1,12 @@
 /**
- * DESCRIPTION...
+ * The CSS in this file provides universal styles
+ * for the entire website. The primary purpose of
+ * the file is to style the elements of the website
+ * when being viewed on a smaller screen such as a 
+ * mobile device.
  *
  * Author: Andrew Krause
- * Date: CURRENT
+ * Date: 01/31/2022
  *
  */
 
@@ -93,9 +97,6 @@
 
 /* Set the background color of the website. */
 body {
-
-    scroll-behavior: smooth;
-
     line-height: 1.5; 
     margin: auto;
     background-color: var(--main-background);
