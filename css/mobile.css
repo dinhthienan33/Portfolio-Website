@@ -93,6 +93,9 @@
 
 /* Set the background color of the website. */
 body {
+
+    scroll-behavior: smooth;
+
     line-height: 1.5; 
     margin: auto;
     background-color: var(--main-background);
@@ -113,10 +116,6 @@ html {
     touch-action: none;
     -ms-touch-action: none;
 }
-
-.scroll-touch {
-    -webkit-overflow-scrolling: touch; /* Lets it scroll lazy */
-  }
 
 /* Mobile View for Scrolling */
 /* --> MAY CHANGE THIS LATER!!! */
