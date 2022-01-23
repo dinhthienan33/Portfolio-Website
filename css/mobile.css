@@ -114,6 +114,10 @@ html {
     -ms-touch-action: none;
 }
 
+.scroll-touch {
+    -webkit-overflow-scrolling: touch; /* Lets it scroll lazy */
+  }
+
 /* Mobile View for Scrolling */
 /* --> MAY CHANGE THIS LATER!!! */
 @media (max-width: 500px) {
