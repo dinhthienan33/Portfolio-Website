@@ -284,9 +284,9 @@ html {
         width: 15rem;
     }
 
-    /* .header-icon {
+    .header-icon {
         text-decoration: none;
-    } */
+    }
 
     b.about-content {
         display: block;
@@ -310,10 +310,6 @@ html {
         list-style-type: none;
         text-decoration: none;
         margin: 0.25rem;
-    }
-
-    .last-link {
-        margin-left: 0;
     }
 
     .fas {
@@ -417,7 +413,7 @@ html {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: flex-start;
     }
 
     .resume-file {
