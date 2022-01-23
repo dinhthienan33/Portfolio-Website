@@ -24,7 +24,7 @@ function scrollToSection(event) {
     return;
   }
   event.preventDefault();
-  const scrollToElem = document.getElementById("section");
+  const scrollToElem = document.getElementById("CHUNGUS");
   SmoothVerticalScrolling(scrollToElem, 300, "top");
 }
 
