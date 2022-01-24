@@ -234,14 +234,14 @@ bigX4.onclick = function() {
   document.body.classList.remove('overflowHidden');
 }
 
-/* UNCOMMENT WHEN YOU GET THE OTHER MODALS MADE */
-// var bigX5 = document.getElementById("exit-modal5");
+var bigX5 = document.getElementById("exit-modal5");
 
-// bigX5.onclick = function() {
-//   modal5.classList.remove('bg-active');
-//   document.body.classList.remove('overflowHidden');
-// }
-  
+bigX5.onclick = function() {
+  modal5.classList.remove('bg-active');
+  document.body.classList.remove('overflowHidden');
+}
+
+/* UNCOMMENT WHEN YOU GET THE OTHER MODALS MADE */
 // var bigX6 = document.getElementById("exit-modal6");
 
 // bigX6.onclick = function() {
@@ -295,14 +295,14 @@ smallX4.onclick = function() {
   document.body.classList.remove('overflowHidden');
 }
 
+var smallX5 = document.getElementById("bottom-exit-modal5");
+
+smallX5.onclick = function() {
+  modal5.classList.remove('bg-active');
+  document.body.classList.remove('overflowHidden');
+}
+
 /* UNCOMMENT WHEN YOU GET THE OTHER MODALS MADE */
-// var smallX5 = document.getElementById("bottom-exit-modal5");
-
-// smallX5.onclick = function() {
-//   modal5.classList.remove('bg-active');
-//   document.body.classList.remove('overflowHidden');
-// }
-
 // var smallX6 = document.getElementById("bottom-exit-modal6");
 
 // smallX6.onclick = function() {
@@ -359,6 +359,5 @@ window.onclick = function(event) {
   } else if(event.target == modal8) {
     modal8.classList.remove('bg-active');
     document.body.classList.remove('overflowHidden');
-
   }
 }
