@@ -241,27 +241,26 @@ bigX5.onclick = function() {
   document.body.classList.remove('overflowHidden');
 }
 
-/* UNCOMMENT WHEN YOU GET THE OTHER MODALS MADE */
-// var bigX6 = document.getElementById("exit-modal6");
+var bigX6 = document.getElementById("exit-modal6");
 
-// bigX6.onclick = function() {
-//   modal6.classList.remove('bg-active');
-//   document.body.classList.remove('overflowHidden');
-// }
+bigX6.onclick = function() {
+  modal6.classList.remove('bg-active');
+  document.body.classList.remove('overflowHidden');
+}
 
-// var bigX7 = document.getElementById("exit-modal7");
+var bigX7 = document.getElementById("exit-modal7");
 
-// bigX7.onclick = function() {
-//   modal7.classList.remove('bg-active');
-//   document.body.classList.remove('overflowHidden');
-// }
+bigX7.onclick = function() {
+  modal7.classList.remove('bg-active');
+  document.body.classList.remove('overflowHidden');
+}
 
-// var bigX8 = document.getElementById("exit-modal8");
+var bigX8 = document.getElementById("exit-modal8");
 
-// bigX8.onclick = function() {
-//   modal8.classList.remove('bg-active');
-//   document.body.classList.remove('overflowHidden');
-// }
+bigX8.onclick = function() {
+  modal8.classList.remove('bg-active');
+  document.body.classList.remove('overflowHidden');
+}
 
 // ==================================================================
 // Get the SECOND element that closes the modal (the small 'x').
@@ -302,27 +301,26 @@ smallX5.onclick = function() {
   document.body.classList.remove('overflowHidden');
 }
 
-/* UNCOMMENT WHEN YOU GET THE OTHER MODALS MADE */
-// var smallX6 = document.getElementById("bottom-exit-modal6");
+var smallX6 = document.getElementById("bottom-exit-modal6");
 
-// smallX6.onclick = function() {
-//   modal6.classList.remove('bg-active');
-//   document.body.classList.remove('overflowHidden');
-// }
+smallX6.onclick = function() {
+  modal6.classList.remove('bg-active');
+  document.body.classList.remove('overflowHidden');
+}
 
-// var smallX7 = document.getElementById("bottom-exit-modal7");
+var smallX7 = document.getElementById("bottom-exit-modal7");
 
-// smallX7.onclick = function() {
-//   modal7.classList.remove('bg-active');
-//   document.body.classList.remove('overflowHidden');
-// }
+smallX7.onclick = function() {
+  modal7.classList.remove('bg-active');
+  document.body.classList.remove('overflowHidden');
+}
 
-// var smallX8 = document.getElementById("bottom-exit-modal8");
+var smallX8 = document.getElementById("bottom-exit-modal8");
 
-// smallX8.onclick = function() {
-//   modal8.classList.remove('bg-active');
-//   document.body.classList.remove('overflowHidden');
-// }
+smallX8.onclick = function() {
+  modal8.classList.remove('bg-active');
+  document.body.classList.remove('overflowHidden');
+}
 
 // ==================================================================
 // When the user clicks anywhere outside of the modal, close it.

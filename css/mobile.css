@@ -116,6 +116,7 @@ html {
     overflow: hidden;
     touch-action: none;
     -ms-touch-action: none;
+    position: inherit;
 }
 
 /* Mobile View for Scrolling */
