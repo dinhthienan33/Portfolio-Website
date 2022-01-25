@@ -89,8 +89,6 @@
         padding-top: 60px;
     }
 
-
-
     /* EXAMPLE OF HOW MODAL SHOULD CHANGE ON LARGER SCREEN SIZE. */
     /* .modal-body {
         color: var(--dark-font);
@@ -103,6 +101,1291 @@
 
 /* Larger Mobile or Desktop View */
 @media (min-width: 750px) {
+
+    /* ====================================================================
+                        NAVBAR Section (All Pages)
+    ==================================================================== */
+
+    .navbar-container {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        margin-top: 10px;
+    }
+
+    /* .nav-heading {
+        color: var(--light-font);
+        font-size: 20px;
+        display: inline-block;
+        margin-top: 5px;
+        margin-left: 3.5px;
+    } */
+
+    .nav-heading {
+        color: var(--light-font);
+        font-size: 20px;
+        display: inline-block;
+        margin-top: 3px;
+        margin-left: 3.5px;
+    }
+
+    .nav-heading-text {
+        color: var(--light-font);
+        text-decoration: none;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 99;
+        background-color: var(--black-color);
+        padding: 8px 32px;
+        border-bottom: 1px solid var(--gray-font);
+        color: var(--light-font);
+    }
+
+    .menu {
+        margin-top: 0px;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: flex-end;
+        margin-right: 0;
+    }
+
+    .menu-link {
+        font-size: 17px;
+        font-weight: bold;
+        text-decoration: none;
+        color: var(--whiter-color);
+        position: relative;
+        margin-left: 30px;
+    }
+
+    /* nav {
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 99;
+        background-color: var(--black-color);
+        padding: 8px 32px;
+        border-bottom: 1px solid var(--gray-font);
+        color: var(--light-font);
+    }
+
+    .menu {
+        margin-top: 15px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu-link {
+        font-size: 17px;
+        font-weight: bold;
+        text-decoration: none;
+        color: var(--whiter-color);
+        position: relative;
+    } */
     
+    /* CHANGE THE SLIDER CODE LATER AT SOME POINT (ASK DAD IF YOU FORGET WHAT HE MEANT) */
+    .menu-link:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        bottom: 0;
+        left: 0;
+        background-color: var(--whiter-color);
+        visibility: hidden;
+        transform: scaleX(0);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .menu-link:hover:before {
+        visibility: visible;
+        transform: scaleX(1);
+    }
+
+    .is-active {
+        font-weight: bold;
+        text-decoration: none;
+        color: var(--whiter-color);
+        position: relative;
+    }
     
+    .is-active:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        bottom: 0;
+        left: 0;
+        background-color: var(--whiter-color);
+        visibility: visible;
+        transform: scaleX(1);
+    }
+
+    .menu-about {
+        margin-left: 0 !important;
+    }
+
+    /* ====================================================================
+                            HOME/ABOUT Section (Page 1)
+    ==================================================================== */
+    
+    #about {
+        padding-top: 60px;
+        height: 100%;  /* KEEP AN EYE ON THIS!!! */
+    }
+
+    .container {
+        padding: 1.5rem;
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .about-column {
+        height: fit-content;
+    }
+
+    .about-heading {
+        text-align: center;
+        font-size: 3rem; /* MAY CHANGE TO PIXELS LATER - MAYBE!!! */
+        margin-bottom: 1rem;
+    }
+    
+    .pic-column {
+        height: fit-content;
+        width: fit-content;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .profile-pic {
+        width: 15rem;
+    }
+
+    .header-icon {
+        text-decoration: none;
+    }
+
+    b.about-content {
+        display: block;
+        margin-bottom: 1rem;
+    }
+
+    .about-content {
+        margin-bottom: 1rem;
+        line-height: 1.5;
+    }
+
+    ul {
+        text-align: center !important;
+        margin-bottom: 0;
+        list-style-type: none;
+        text-decoration: none;
+    }
+
+    ul li {
+        display: inline;
+        list-style-type: none;
+        text-decoration: none;
+        margin: 0.25rem;
+    }
+
+    .fas {
+        color: var(--whiter-color);
+    }
+
+    .fas:hover {
+        color: var(--bluer-color);
+    }
+
+    .fab {
+        color: var(--whiter-color);
+    }
+
+    .fas .mail {
+        color: var(--black-color);
+    }
+
+    .fab:hover {
+        color: var(--bluer-color);
+    }
+
+    .about-links {
+        margin-top: 15px;
+        min-width: fit-content;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .about-me-link {
+        text-decoration: none;
+        display: inline-block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-right: 10px;
+        color: var(--bluer-color);
+        vertical-align: central;
+        align-items: center;
+        text-align: center;
+        line-height: 1.5; 
+    }
+
+    .about-me-link:hover {
+        text-decoration: underline;
+    }
+
+    /* ====================================================================
+                            RESUME Section (Page 2)
+    ==================================================================== */
+
+    #resume {
+        padding-top: 60px;
+        color: var(--whiter-color);
+        background-color: var(--black-color);
+    }
+
+    .resume-container {
+        max-width: 500px;
+        padding: 1.5rem;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: var(--black-color);
+    }
+
+    .resume-section-heading {
+        text-align: center;
+    }
+
+    .resume-center {
+        text-align: center;
+    }
+
+    .resume-heading {
+        margin-top: 1rem;
+        font-size: 3rem;
+        text-align: left;
+        margin-bottom: 0.5rem;
+    }
+
+    .resume-content {
+        text-align: left;
+        margin-bottom: 1rem;
+    }
+
+    .resume-page-link {
+        color: var(--bluer-color);
+        text-decoration: none;
+    }
+
+    .resume-row {
+        display: flex;
+        flex-wrap: wrap; /* COULD DELETE LATER */
+        flex-direction: column;
+        min-width: fit-content;
+    }
+
+    .fas.black-file {
+        color: var(--black-color);
+    }
+
+    .resume-courses {
+        margin-top: 15px;
+        min-width: fit-content;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .resume-file {
+        display: inline-block;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-right: 10px;
+        height: 60px; /* Should match line-height attribute */
+        width: 200px;
+        background-color: var(--bluer-color);
+        text-decoration: none;
+        color: var(--black-color);
+        border-radius: 0.5em;
+        border-style: none;
+        vertical-align: central;
+        align-items: center;
+        text-align: center;
+        line-height: 60px; /* Should match height attribute */
+    }
+
+    .resume-file:hover {
+        background-color: var(--whiter-color);
+    }
+
+    /* ====================================================================
+                            SKILLS Section (Page 2)
+    ==================================================================== */
+
+    #skills {
+        padding-top: 0rem;
+        color: var(--dark-font);
+        background-color: var(--whiter-color);
+    }
+
+    .skills-container {
+        max-width: 500px;
+        padding: 1.5rem;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: var(--whiter-color);
+    }
+
+    .skills-section-heading {
+        text-align: center;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .skills-heading {
+        margin-top: 1rem;
+        font-size: 3rem;
+        text-align: left;
+        margin-bottom: 0.5rem;
+    }
+
+    .skills-content {
+        text-align: left;
+        margin-bottom: 1rem;
+    }
+
+    .skills-row {
+        display: flex;
+        flex-wrap: wrap; /* COULD DELETE LATER */
+        flex-direction: column;
+        min-width: fit-content;
+    }
+
+    .specific-skill {
+        text-align: left; 
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+
+    .rounded-circle {
+        margin-left: 0;
+        /* margin-bottom: 16px; */
+        margin-left: auto;
+        margin-right: auto;
+        height: 60px; /* height: 120px; */
+        width: 60px; /* width: 120px; */
+        background-color: var(--black-color);
+        border-radius: 50%;
+        display: inline-block;
+    }
+
+    /* Icons in Skills Section */
+    .fa-java {
+        margin-left: auto;
+        margin-right: auto;
+        color: var(--whiter-color);
+    }
+
+    .fa-java:hover {
+        color: var(--whiter-color);
+    }
+
+    .fa-python {
+        margin-left: auto;
+        margin-right: auto;
+        color: var(--whiter-color);
+    }
+
+    .fa-python:hover {
+        color: var(--whiter-color);
+    }
+
+    .fa-code {
+        margin-left: auto;
+        margin-right: auto;
+        color: var(--whiter-color);
+    }
+
+    .fa-code:hover {
+        color: var(--whiter-color);
+    }
+
+    .fa-code-branch {
+        margin-left: auto;
+        margin-right: auto;
+        color: var(--whiter-color);
+    }
+
+    .fa-code-branch:hover {
+        color: var(--whiter-color);
+    }
+
+    .fa-node-js {
+        margin-left: auto;
+        margin-right: auto;
+        color: var(--whiter-color);
+    }
+
+    .fa-node-js:hover {
+        color: var(--whiter-color);
+    }
+
+    .fa-bootstrap {
+        margin-left: auto;
+        margin-right: auto;
+        color: var(--whiter-color);
+    }
+
+    .fa-bootstrap:hover {
+        color: var(--whiter-color);
+    }
+
+    .icon-mongodb {
+        margin-left: auto;
+        margin-right: auto;
+        color: var(--whiter-color);
+    }
+
+    .icon-mongodb:hover {
+        color: var(--whiter-color);
+    }
+
+    .icon-c {
+        margin-left: auto;
+        margin-right: auto;
+        color: var(--whiter-color);
+    }
+
+    .icon-c:hover {
+        color: var(--whiter-color);
+    }
+
+    /* Title and Text in Skills Section */
+    .skill-title {
+        /* margin-top: auto;
+        margin-bottom: auto; */
+        height: fit-content;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-left: 5px;
+        font-size: 24px; /* 1.5rem; */
+        vertical-align: text-bottom;
+    }
+
+    .specific-skill-text {
+        margin-top: 0.5rem;
+    }
+
+    .skill-inline {
+        display: inline-block;
+    }
+
+    /* ====================================================================
+                        CERTIFICATIONS Section (Page 2)
+    ==================================================================== */
+
+    #certifications {
+        padding-top: 0rem;
+        color: var(--dark-font);
+        background-color: var(--dark-font);
+    }
+
+    .certifications-container {
+        max-width: 500px;
+        padding: 1.5rem;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: var(--dark-font);
+    }
+
+    .certifications-section-heading {
+        text-align: center;
+    }
+
+    .certifications-heading {
+        margin-top: 1rem;
+        font-size: 3rem;
+        text-align: left;
+        margin-bottom: 0.5rem;
+        color: var(--whiter-color);
+    }
+
+    .certifications-content {
+        text-align: left;
+        margin-bottom: 1rem;
+        color: var(--whiter-color);
+    }
+
+    .certifications-row {
+        display: flex;
+        flex-wrap: wrap; /* COULD DELETE LATER */
+        flex-direction: column;
+        min-width: fit-content;
+    }
+
+    .certification-card {
+        background-color: var(--whiter-color);
+        border-radius: 0.5em;
+        padding: 15px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .certificate-image-heading {
+        white-space: nowrap;
+    }
+
+    .certificate-pic {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: auto;
+        margin-bottom: auto;
+        height: 60px; /* height: 120px; */
+        width: 60px; /* width: 120px; */
+        border-radius: 50%;
+        vertical-align: middle;
+    }
+
+    .certification-title {
+        white-space: normal;
+        display: inline-block;
+        width: calc(100% - 75px);
+        margin-left: 10px;
+        height: fit-content;
+        font-size: 24px; /* 1.5rem; */
+        vertical-align: middle; /* 40% */
+    }
+
+    .certification-inline {
+        display: inline-block;
+    }
+
+    .specific-certification-heading {
+        font-size: 20px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .specific-certification-text {
+        font-size: 20px;
+        margin-top: 0.5rem;
+    }
+
+    /* ====================================================================
+                    HONORS/AWARDS/VOLUNTEER Section (Page 2)
+    ==================================================================== */
+
+    #volunteer {
+        padding-top: 0rem;
+        color: var(--dark-font);
+        background-color: var(--whiter-color);
+    }
+
+    .volunteer-container {
+        max-width: 500px;
+        padding: 1.5rem;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: var(--whiter-color);
+    }
+
+    .volunteer-section-heading {
+        text-align: center;
+    }
+
+    .volunteer-heading {
+        margin-top: 1rem;
+        font-size: 3rem;
+        text-align: left;
+        margin-bottom: 0.5rem;
+        color: var(--dark-font);
+    }
+
+    .volunteer-content {
+        text-align: left;
+        margin-bottom: 1rem;
+        color: var(--dark-font);
+    }
+
+    .volunteer-row {
+        display: flex;
+        flex-wrap: wrap; /* COULD DELETE LATER */
+        flex-direction: column;
+        min-width: fit-content;
+    }
+
+    .specific-volunteering {
+        padding-bottom: 20px;
+        padding-top: 20px;
+        /* margin-top: 20px;
+        margin-bottom: 20px; */
+    }
+
+    .volunteer-image-heading {
+        white-space: nowrap;
+    }
+
+    .volunteer-pic {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: auto;
+        margin-bottom: auto;
+        height: 60px; /* height: 120px; */
+        width: 60px; /* width: 120px; */
+        border-radius: 0;
+        vertical-align: middle;
+    }
+
+    .volunteer-title {
+        white-space: normal;
+        display: inline-block;
+        width: calc(100% - 75px);
+        margin-left: 10px;
+        height: fit-content;
+        font-size: 24px; /* 1.5rem; */
+        vertical-align: middle; /* 40% */
+    }
+
+    .volunteer-inline {
+        display: inline-block;
+    }
+
+    .specific-volunteer-heading {
+        font-size: 20px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .specific-volunteer-text {
+        font-size: 20px;
+        margin-top: 0.5rem;
+    }
+
+    /* ====================================================================
+                            TIMELINE Section (Page 2)
+    ==================================================================== */
+
+    #timeline {
+        padding-top: 0rem;
+        color: var(--light-font);
+        background-color: var(--black-color);
+    }
+
+    .timeline-container {
+        max-width: 500px;
+        padding: 1.5rem;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: var(--black-color);
+    }
+
+    .timeline-section-heading {
+        text-align: center;
+    }
+
+    .timeline-heading {
+        margin-top: 1rem;
+        font-size: 3rem;
+        text-align: left;
+        margin-bottom: 0.5rem;
+        color: var(--light-font);
+    }
+
+    .timeline-main-content {
+        text-align: left;
+        margin-bottom: 1rem;
+        color: var(--light-font);
+    }
+
+    .timeline-event-img {
+        background-color: white;
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        right: 0px;
+        top: 15px;
+        border-radius: 50%;
+        z-index: 99;
+    }
+
+    /* The actual timeline (the vertical ruler) */
+    .timeline {
+        position: relative;
+        max-width: 1200px;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    
+    /* The actual timeline (the vertical ruler) */
+    .timeline::after {
+        content: '';
+        position: absolute;
+        width: 4px;
+        background-color: white;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        margin-left: -3px;
+    }
+    
+    /* Container around content */
+    .timeline-main-container {
+        padding-top: 10px;
+        padding-bottom: 20px;
+        padding-right: 40px;
+        padding-left: 40px;
+        position: relative;
+        background-color: inherit;
+        width: 50%;
+    }
+    
+    /* The circles on the timeline */
+    .timeline-main-container::after {
+        content: '';
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        right: -17px;
+        background-color: white;
+        /* border: 4px solid #FF9F55; */
+        top: 15px;
+        border-radius: 50%;
+        z-index: 1;
+    }
+    
+    /* Place the container to the left */
+    .timeline-left {
+        left: 0;
+    }
+    
+    /* Place the container to the right */
+    .timeline-right {
+        left: 50%;
+    }
+    
+    /* Fix the circle for containers on the right side */
+    .timeline-right::after {
+        left: -16px;
+    }
+    
+    /* The actual content */
+    .timeline-content {
+        position: relative;
+        border-radius: 6px;
+    }
+
+    .timeline-year {
+        font-size: 24px;
+        margin-bottom: 5px;
+    }
+
+    .timeline-event {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    /* THIS IS ONLY FOR SCREEN WIDTH 630px. */
+    /* Place the timelime to the left */
+    .timeline::after {
+        left: 31px;
+    }
+
+    /* Full-width containers */
+    .timeline-main-container {
+        width: 100%;
+        padding-left: 80px;
+        padding-right: 25px;
+        padding-bottom: 40px;
+    }
+
+    /* Make sure that all arrows are pointing leftwards */
+    .timelinecontainer::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+    }
+
+    /* Make sure all circles are at the same spot */
+    .timeline-left::after, .timeline-right::after {
+        left: 0px;
+    }
+
+    /* Make all right containers behave like the left ones */
+    .timeline-right {
+        left: 0%;
+    }
+
+    /* ====================================================================
+                            PROJECTS Section (Page 3) --> WITH THIS SECTION, STOP SCROLL TO TOP WHEN MODAL CLOSES, AND START AT TOP ALWAYS WITHIN MODAL!!!
+                                                      --> ALSO KEEP AN EYE ON THE FIXED "EXIT" ICON!!!
+    ==================================================================== */
+
+    #projects {
+        padding-top: 60px;
+        color: var(--dark-font);
+        background-color: var(--dark-font);
+    }
+
+    .projects-container {
+        max-width: 500px;
+        padding: 1.5rem;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: var(--dark-font);
+    }
+
+    .projects-section-heading {
+        text-align: center;
+    }
+
+    .projects-heading {
+        margin-top: 1rem;
+        font-size: 3rem;
+        text-align: left;
+        margin-bottom: 0.5rem;
+        color: var(--whiter-color);
+    }
+
+    .projects-content {
+        text-align: left;
+        margin-bottom: 1rem;
+        color: var(--whiter-color);
+    }
+
+    .projects-row {
+        display: flex;
+        flex-wrap: wrap; /* COULD DELETE LATER */
+        flex-direction: column;
+        min-width: fit-content;
+    }
+
+    .projects-card {
+        background-color: var(--bluer-color);
+        border-radius: 0.5em;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        height: 358; 
+        width: 510;
+        transition: all .2s ease-in-out;
+    }
+
+    /* .projects-card:hover {   INCLUDE THIS FOR LARGER SCREEN SIZES!!!
+        transform: scale(1.01);
+    } */
+
+    .portfolio-item {
+        text-decoration: none;
+        color: var(--dark-font);
+    }
+
+    .projects-pic {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: auto;
+        margin-bottom: auto;
+        width: 100%;
+        border-top-left-radius: 0.5em;
+        border-top-right-radius: 0.5em;
+        vertical-align: middle;
+    }
+
+    .projects-card-container {
+        padding: 15px;
+        height: fit-content;
+        width: fitcontent;
+    }
+
+    .projects-title {
+        white-space: normal;
+        width: calc(100% - 75px);
+        margin-left: 0;
+        height: fit-content;
+        font-size: 24px; /* 1.5rem; */
+        vertical-align: middle; /* 40% */
+    }
+
+    .specific-projects-text {
+        font-size: 20px;
+        margin-top: 0.5rem;
+    }
+
+    /* Section for Modals */
+    .modal-bg {
+        position: fixed;
+        z-index: 1050;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0,0,0,0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s, opacity 0.5s;
+    }
+
+    .bg-active {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .modal-dialog{
+        display: inline-block;
+        vertical-align: middle;
+        overflow-y: initial !important;
+    }
+
+    .modal-container {
+        background-color: var(--whiter-color);
+        color: var(--dark-font);
+        height: 90vh;
+        width: 90vw;
+        border-radius: 0.5em;
+        overflow-y: auto;
+    }
+
+    .close-modal-position {
+        width: 50px;
+        height: 50px;
+        background-color: var(--bluer-color);
+        border-radius: 50%;
+        position: fixed;
+        top: 25px; 
+        right: 10px;
+    }
+
+    .modal-close {
+        color: var(--dark-font);
+        position: fixed;
+        font-weight: bold;
+        cursor: pointer;
+        top: 31px;
+        right: 23px; 
+    }
+
+    .fa-times {
+        color: var(--dark-font);
+    }
+
+    .fa-times:hover {
+        color: var(--dark-font);
+    }
+
+    .modal-information {
+        padding: 20px;
+        margin: auto;
+    }
+
+    .modal-content {
+        display: flex;
+        /* justify-content: space-around; */
+        /* align-items: left; */
+        text-align: left;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .modal-row {
+        padding: 0; /* MAYBE ADD MORE LATER */
+    }
+
+    .modal-body {
+        padding: 0; /* MAYBE ADD MORE LATER */
+    }
+
+    .modal-heading {
+        color: var(--dark-font);
+        font-size: 3rem;
+        line-height: 1.2;
+        margin-bottom: 1rem;
+    }
+
+    .modal-text {
+        margin-bottom: 1rem;
+        line-height: 1.5;
+    }
+
+    .modal-text-center {
+        text-align: center;
+    }
+
+    .modal-viewer-link {
+        color: var(--dark-font);
+    }
+
+    .modal-viewer-link:hover {
+        color: var(--bluer-color);
+    }
+
+    .bottom-button-container {
+        width: fit-content;
+        margin: auto;
+    }   
+
+    .fa-times-bottom {
+        color: var(--whiter-color);
+    }
+
+    .bottom-modal-button {
+        display: inline-block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        height: 60px; /* Should match line-height attribute */
+        width: 130px;
+        background-color: var(--black-color);
+        color: var(--whiter-color);
+        text-decoration: none;
+        border-radius: 0.5em;
+        border-style: none;
+        align-items: center;
+        text-align: center;
+        line-height: 60px; /* Should match height attribute */
+    }
+
+    .bottom-modal-button:hover {
+        background-color: var(--bluer-color);
+    }
+
+    /* Section for Descriptive Images in Modal */
+    .modal-pic-card {
+        background-color: var(--whiter-color);
+        margin-top: 25px;
+        margin-bottom: 25px;
+        height: 358; 
+        width: 510;
+        transition: all .2s ease-in-out;
+    }
+
+    .modal-info-pic {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: auto;
+        margin-bottom: auto;
+        width: 100%;
+        vertical-align: middle;
+    }
+
+    .modal-pic-container {
+        /* padding: 10px;
+        padding-left: 0;
+        padding-bottom: 0; */
+        padding-top: 5px;
+        height: fit-content;
+        width: fitcontent;
+    }
+
+    .modal-pic-text {
+        padding-left: 5px;
+        padding-right: 5px;
+        text-align: left;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    /* ====================================================================
+                            CONTACT Section (Page 4)
+    ==================================================================== */
+
+    #contact {
+        padding-top: 60px;
+        color: var(--whiter-color);
+        background-color: var(--black-color);
+        height: 100vh;
+    }
+
+    .contact-container {
+        max-width: 500px;
+        padding: 1.5rem;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: var(--black-color);
+    }
+
+    .contact-section-heading {
+        text-align: center;
+    }
+
+    .contact-text-center {
+        text-align: center;
+    }
+
+    .contact-heading {
+        margin-top: 1rem;
+        font-size: 3rem;
+        text-align: left;
+        margin-bottom: 0.5rem;
+    }
+
+    .contact-content {
+        text-align: left;
+        margin-bottom: 1rem;
+    }
+
+    .contact-row {
+        display: flex;
+        flex-wrap: wrap; /* COULD DELETE LATER */
+        flex-direction: column;
+        min-width: fit-content;
+    }
+
+    .contact-specific {
+        text-align: left; 
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+
+    .contact-link {
+        text-decoration: none;
+        color: var(--whiter-color);
+    }
+
+    .contact-circle {
+        margin-left: 0;
+        /* margin-bottom: 16px; */
+        margin-left: auto;
+        margin-right: auto;
+        height: 60px; /* height: 120px; */
+        width: 60px; /* width: 120px; */
+        background-color: var(--whiter-color);
+        border-radius: 50%;
+        display: inline-block;
+    }
+
+    /* Icons in Skills Section */
+    .fa-phone-alt {
+        margin-left: auto;
+        margin-right: auto;
+        color: var(--black-color);
+    }
+
+    .fa-phone-alt:hover {
+        color: var(--black-color);
+    }
+
+    .contact-envelope {
+        margin-left: auto;
+        margin-right: auto;
+        color: var(--black-color);
+    }
+
+    .contact-envelope:hover {
+        color: var(--black-color);
+    }
+
+    .contact-linkedin {
+        margin-left: auto;
+        margin-right: auto;
+        color: var(--black-color);
+    }
+
+    .contact-linkedin:hover {
+        color: var(--black-color);
+    }
+
+    .contact-github {
+        margin-left: auto;
+        margin-right: auto;
+        color: var(--black-color);
+    }
+
+    .contact-github:hover {
+        color: var(--black-color);
+    }
+
+    /* Title and Text in Contact Section */
+    .contact-skill-text {
+        /* margin-top: auto;
+        margin-bottom: auto; */
+        height: fit-content;
+        margin-top: 5px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-left: 5px;
+        vertical-align: 30%;
+    }
+
+    .contact-skill-text:hover {
+        text-decoration: underline;
+    }
+
+    .contact-inline {
+        display: inline-block;
+    }
+
+    /* ====================================================================
+                            FOOTER Section (All Pages)
+    ==================================================================== */
+
+    #footer {
+        border-top: 1px solid var(--gray-font);
+        text-align: center;
+        padding-top: 64px;
+        padding-bottom: 40px;
+    }
+
+    .footer-row {
+        max-width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-content {
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-bottom: 24px;
+    }
+
+    .footer-icons {
+        margin-bottom: 24px;
+    }
+
+    .footer-links-list {
+        text-align: center;
+        margin-bottom: 24px;
+    }
+
+    .footer-link {
+        margin-right: 2px;
+        margin-left: 2px;
+        text-decoration: none;
+        color: var(--bluer-color);
+    }
+
+    .footer-link:hover {
+        text-decoration: underline;
+    }
+
+    .footer-file-icon {
+        color: var(--bluer-color);
+    }
 }
