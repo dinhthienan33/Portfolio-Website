@@ -238,8 +238,45 @@
     ==================================================================== */
     
     #about {
-        padding-top: 60px;
-        height: 100%;  /* KEEP AN EYE ON THIS!!! */
+        padding-top: 80px;
+        height: 100vh;  /* KEEP AN EYE ON THIS!!! */
+    }
+
+    .slide-from-left {
+        -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+        -moz-animation: fadein 1s; /* Firefox < 16 */
+        -ms-animation: fadein 1s; /* Internet Explorer */
+        -o-animation: fadein 1s; /* Opera < 12.1 */
+        animation: fadein 1s;
+    }
+      
+    @keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+    
+    /* Firefox < 16 */
+    @-moz-keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+    
+    /* Safari, Chrome and Opera > 12.1 */
+    @-webkit-keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+    
+    /* Internet Explorer */
+    @-ms-keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+    
+    /* Opera < 12.1 */
+    @-o-keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
     }
 
     .container {
@@ -361,10 +398,11 @@
         padding-top: 60px;
         color: var(--whiter-color);
         background-color: var(--black-color);
+        /* height: 100vh; */
     }
 
     .resume-container {
-        max-width: 500px;
+        max-width: 700px;
         padding: 1.5rem;
         margin-left: auto;
         margin-right: auto;
@@ -382,13 +420,17 @@
     .resume-heading {
         margin-top: 1rem;
         font-size: 3rem;
-        text-align: left;
+        text-align: center;
         margin-bottom: 0.5rem;
     }
 
     .resume-content {
         text-align: left;
         margin-bottom: 1rem;
+    }
+
+    .resume-top-content {
+        text-align: center;
     }
 
     .resume-page-link {
@@ -413,7 +455,7 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: flex-start;
+        justify-content: center;
     }
 
     .resume-file {
@@ -449,7 +491,7 @@
     }
 
     .skills-container {
-        max-width: 500px;
+        max-width: 700px;
         padding: 1.5rem;
         margin-left: auto;
         margin-right: auto;
@@ -467,12 +509,12 @@
     .skills-heading {
         margin-top: 1rem;
         font-size: 3rem;
-        text-align: left;
+        text-align: center;
         margin-bottom: 0.5rem;
     }
 
     .skills-content {
-        text-align: left;
+        text-align: center;
         margin-bottom: 1rem;
     }
 
@@ -613,7 +655,7 @@
     }
 
     .certifications-container {
-        max-width: 500px;
+        max-width: 700px;
         padding: 1.5rem;
         margin-left: auto;
         margin-right: auto;
@@ -627,13 +669,13 @@
     .certifications-heading {
         margin-top: 1rem;
         font-size: 3rem;
-        text-align: left;
+        text-align: center;
         margin-bottom: 0.5rem;
         color: var(--whiter-color);
     }
 
     .certifications-content {
-        text-align: left;
+        text-align: center;
         margin-bottom: 1rem;
         color: var(--whiter-color);
     }
@@ -704,7 +746,7 @@
     }
 
     .volunteer-container {
-        max-width: 500px;
+        max-width: 700px;
         padding: 1.5rem;
         margin-left: auto;
         margin-right: auto;
@@ -718,13 +760,13 @@
     .volunteer-heading {
         margin-top: 1rem;
         font-size: 3rem;
-        text-align: left;
+        text-align: center;
         margin-bottom: 0.5rem;
         color: var(--dark-font);
     }
 
     .volunteer-content {
-        text-align: left;
+        text-align: center;
         margin-bottom: 1rem;
         color: var(--dark-font);
     }
@@ -794,7 +836,7 @@
     }
 
     .timeline-container {
-        max-width: 500px;
+        max-width: 700px;
         padding: 1.5rem;
         margin-left: auto;
         margin-right: auto;
@@ -808,13 +850,13 @@
     .timeline-heading {
         margin-top: 1rem;
         font-size: 3rem;
-        text-align: left;
+        text-align: center;
         margin-bottom: 0.5rem;
         color: var(--light-font);
     }
 
     .timeline-main-content {
-        text-align: left;
+        text-align: center;
         margin-bottom: 1rem;
         color: var(--light-font);
     }
@@ -822,12 +864,34 @@
     .timeline-event-img {
         background-color: white;
         position: absolute;
-        width: 60px;
-        height: 60px;
+        width: 80px;
+        height: 80px;
         right: 0px;
         top: 15px;
         border-radius: 50%;
         z-index: 99;
+    }
+
+    .timeline-event-img-left {
+        background-color: white;
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        margin-left: 285px;
+        top: 15px;
+        border-radius: 50%;
+        z-index: 90;
+    }
+
+    .timeline-event-img-right {
+        background-color: white;
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        margin-left: -39px;
+        top: 15px;
+        border-radius: 50%;
+        z-index: 90;
     }
 
     /* The actual timeline (the vertical ruler) */
@@ -865,9 +929,9 @@
     .timeline-main-container::after {
         content: '';
         position: absolute;
-        width: 60px;
-        height: 60px;
-        right: -17px;
+        width: 80px;
+        height: 80px;
+        right: 0px;
         background-color: white;
         /* border: 4px solid #FF9F55; */
         top: 15px;
@@ -887,13 +951,20 @@
     
     /* Fix the circle for containers on the right side */
     .timeline-right::after {
-        left: -16px;
+        left: -39px;
+    }
+
+    /* Fix the circle for containers on the left side */
+    .timeline-left::after {
+        right: -39px;
     }
     
     /* The actual content */
     .timeline-content {
         position: relative;
         border-radius: 6px;
+        margin-right: 10px;
+        margin-left: 15px;
     }
 
     .timeline-year {
@@ -904,38 +975,6 @@
     .timeline-event {
         font-size: 20px;
         margin-bottom: 5px;
-    }
-
-    /* THIS IS ONLY FOR SCREEN WIDTH 630px. */
-    /* Place the timelime to the left */
-    .timeline::after {
-        left: 31px;
-    }
-
-    /* Full-width containers */
-    .timeline-main-container {
-        width: 100%;
-        padding-left: 80px;
-        padding-right: 25px;
-        padding-bottom: 40px;
-    }
-
-    /* Make sure that all arrows are pointing leftwards */
-    .timelinecontainer::before {
-        left: 60px;
-        border: medium solid white;
-        border-width: 10px 10px 10px 0;
-        border-color: transparent white transparent transparent;
-    }
-
-    /* Make sure all circles are at the same spot */
-    .timeline-left::after, .timeline-right::after {
-        left: 0px;
-    }
-
-    /* Make all right containers behave like the left ones */
-    .timeline-right {
-        left: 0%;
     }
 
     /* ====================================================================
@@ -950,7 +989,7 @@
     }
 
     .projects-container {
-        max-width: 500px;
+        max-width: 700px;
         padding: 1.5rem;
         margin-left: auto;
         margin-right: auto;
@@ -964,13 +1003,13 @@
     .projects-heading {
         margin-top: 1rem;
         font-size: 3rem;
-        text-align: left;
+        text-align: center;
         margin-bottom: 0.5rem;
         color: var(--whiter-color);
     }
 
     .projects-content {
-        text-align: left;
+        text-align: center;
         margin-bottom: 1rem;
         color: var(--whiter-color);
     }
@@ -978,8 +1017,12 @@
     .projects-row {
         display: flex;
         flex-wrap: wrap; /* COULD DELETE LATER */
-        flex-direction: column;
-        min-width: fit-content;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .projects-group {
+        max-width: 500px;
     }
 
     .projects-card {
@@ -1063,8 +1106,8 @@
     .modal-container {
         background-color: var(--whiter-color);
         color: var(--dark-font);
-        height: 90vh;
-        width: 90vw;
+        height: 85vh;
+        width: 85vw;
         border-radius: 0.5em;
         overflow-y: auto;
     }
@@ -1075,8 +1118,8 @@
         background-color: var(--bluer-color);
         border-radius: 50%;
         position: fixed;
-        top: 25px; 
-        right: 10px;
+        top: 50px; 
+        right: 50px;
     }
 
     .modal-close {
@@ -1084,8 +1127,8 @@
         position: fixed;
         font-weight: bold;
         cursor: pointer;
-        top: 31px;
-        right: 23px; 
+        top: 57px;
+        right: 63.5px; 
     }
 
     .fa-times {
@@ -1219,7 +1262,7 @@
     }
 
     .contact-container {
-        max-width: 500px;
+        max-width: 700px;
         padding: 1.5rem;
         margin-left: auto;
         margin-right: auto;
@@ -1237,13 +1280,15 @@
     .contact-heading {
         margin-top: 1rem;
         font-size: 3rem;
-        text-align: left;
+        text-align: center;
         margin-bottom: 0.5rem;
     }
 
     .contact-content {
-        text-align: left;
+        text-align: center;
         margin-bottom: 1rem;
+        margin-right: 10px;
+        margin-left: 10px;
     }
 
     .contact-row {
@@ -1254,9 +1299,11 @@
     }
 
     .contact-specific {
+        margin-left: 30%;
         text-align: left; 
         padding-bottom: 20px;
         padding-top: 20px;
+        flex: 40%;
     }
 
     .contact-link {
