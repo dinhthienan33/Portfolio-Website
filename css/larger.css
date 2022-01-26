@@ -239,7 +239,7 @@
     
     #about {
         padding-top: 80px;
-        height: 100vh;  /* KEEP AN EYE ON THIS!!! */
+        height: 100%;  /* KEEP AN EYE ON THIS!!! */
     }
 
     .slide-from-left {
@@ -864,8 +864,8 @@
     .timeline-event-img {
         background-color: white;
         position: absolute;
-        width: 80px;
-        height: 80px;
+        width: 60px;
+        height: 60px;
         right: 0px;
         top: 15px;
         border-radius: 50%;
@@ -875,9 +875,9 @@
     .timeline-event-img-left {
         background-color: white;
         position: absolute;
-        width: 80px;
-        height: 80px;
-        margin-left: 285px;
+        width: 60px;
+        height: 60px;
+        margin-left: 295px;
         top: 15px;
         border-radius: 50%;
         z-index: 90;
@@ -886,9 +886,9 @@
     .timeline-event-img-right {
         background-color: white;
         position: absolute;
-        width: 80px;
-        height: 80px;
-        margin-left: -39px;
+        width: 60px;
+        height: 60px;
+        margin-left: -31px;
         top: 15px;
         border-radius: 50%;
         z-index: 90;
@@ -929,8 +929,8 @@
     .timeline-main-container::after {
         content: '';
         position: absolute;
-        width: 80px;
-        height: 80px;
+        width: 60px;
+        height: 60px;
         right: 0px;
         background-color: white;
         /* border: 4px solid #FF9F55; */
@@ -951,20 +951,18 @@
     
     /* Fix the circle for containers on the right side */
     .timeline-right::after {
-        left: -39px;
+        left: -31px;
     }
 
     /* Fix the circle for containers on the left side */
     .timeline-left::after {
-        right: -39px;
+        right: -29px;
     }
     
     /* The actual content */
     .timeline-content {
         position: relative;
         border-radius: 6px;
-        margin-right: 10px;
-        margin-left: 15px;
     }
 
     .timeline-year {
@@ -1162,6 +1160,7 @@
     }
 
     .modal-heading {
+        text-align: center;
         color: var(--dark-font);
         font-size: 3rem;
         line-height: 1.2;
@@ -1171,6 +1170,10 @@
     .modal-text {
         margin-bottom: 1rem;
         line-height: 1.5;
+    }
+
+    .subheading-text-center {
+        text-align: center;
     }
 
     .modal-text-center {
@@ -1258,7 +1261,7 @@
         padding-top: 60px;
         color: var(--whiter-color);
         background-color: var(--black-color);
-        height: 100vh;
+        height: 100%;
     }
 
     .contact-container {
@@ -1294,8 +1297,12 @@
     .contact-row {
         display: flex;
         flex-wrap: wrap; /* COULD DELETE LATER */
-        flex-direction: column;
+        flex-direction: row;
         min-width: fit-content;
+    }
+
+    .contact-column {
+        flex: 40%;
     }
 
     .contact-specific {
@@ -1303,7 +1310,6 @@
         text-align: left; 
         padding-bottom: 20px;
         padding-top: 20px;
-        flex: 40%;
     }
 
     .contact-link {
@@ -1389,10 +1395,12 @@
     ==================================================================== */
 
     #footer {
+        width: 100%;
         border-top: 1px solid var(--gray-font);
         text-align: center;
         padding-top: 64px;
         padding-bottom: 40px;
+        bottom: 0;
     }
 
     .footer-row {
