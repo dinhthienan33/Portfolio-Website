@@ -68,7 +68,7 @@
 }
 
 /* REMEMBER TO LATER ADD A FEATURE THAT ENABLES YOU TO CHANGE THE COLOR SCHEME ON THE WEBSITE!!! */
-/* ALSO, CONVERT EVERYTHING FROM PIXELS TO rem WHEN YOU GET THE CHANCE!!! --> MAYBE.. */
+/* ALSO, CONVERT EVERYTHING FROM PIXELS TO rem WHEN YOU GET THE CHANCE!!! --> MAYBE... */
 
 /* Set the background color as well as some additional attributes of the website. */
 body {
@@ -218,7 +218,7 @@ html {
     
     #about {
         padding-top: 0rem;
-        height: 100%;  /* KEEP AN EYE ON THIS!!! */
+        height: 100%; 
     }
     
     .slide-from-left {
@@ -257,7 +257,7 @@ html {
     }
 
     .about-heading {
-        font-size: 3rem; /* MAY CHANGE TO PIXELS LATER - MAYBE!!! */
+        font-size: 3rem; 
         margin-bottom: 1rem;
     }
     
@@ -391,7 +391,7 @@ html {
 
     .resume-row {
         display: flex;
-        flex-wrap: wrap; /* COULD DELETE LATER */
+        flex-wrap: wrap; 
         flex-direction: column;
         min-width: fit-content;
     }
@@ -471,7 +471,7 @@ html {
 
     .skills-row {
         display: flex;
-        flex-wrap: wrap; /* COULD DELETE LATER */
+        flex-wrap: wrap;
         flex-direction: column;
         min-width: fit-content;
     }
@@ -484,7 +484,6 @@ html {
 
     .rounded-circle {
         margin-left: 0;
-        /* margin-bottom: 16px; */
         margin-left: auto;
         margin-right: auto;
         height: 60px; /* height: 120px; */
@@ -577,8 +576,6 @@ html {
 
     /* Title and Text in Skills Section */
     .skill-title {
-        /* margin-top: auto;
-        margin-bottom: auto; */
         height: fit-content;
         padding-top: 2px;
         padding-bottom: 2px;
@@ -633,7 +630,7 @@ html {
 
     .certifications-row {
         display: flex;
-        flex-wrap: wrap; /* COULD DELETE LATER */
+        flex-wrap: wrap;
         flex-direction: column;
         min-width: fit-content;
     }
@@ -667,8 +664,8 @@ html {
         width: calc(100% - 75px);
         margin-left: 10px;
         height: fit-content;
-        font-size: 24px; /* 1.5rem; */
-        vertical-align: middle; /* 40% */
+        font-size: 24px;
+        vertical-align: middle;
     }
 
     .certification-inline {
@@ -724,7 +721,7 @@ html {
 
     .volunteer-row {
         display: flex;
-        flex-wrap: wrap; /* COULD DELETE LATER */
+        flex-wrap: wrap; 
         flex-direction: column;
         min-width: fit-content;
     }
@@ -732,8 +729,6 @@ html {
     .specific-volunteering {
         padding-bottom: 20px;
         padding-top: 20px;
-        /* margin-top: 20px;
-        margin-bottom: 20px; */
     }
 
     .volunteer-image-heading {
@@ -757,8 +752,8 @@ html {
         width: calc(100% - 75px);
         margin-left: 10px;
         height: fit-content;
-        font-size: 24px; /* 1.5rem; */
-        vertical-align: middle; /* 40% */
+        font-size: 24px; 
+        vertical-align: middle; 
     }
 
     .volunteer-inline {
@@ -862,7 +857,6 @@ html {
         height: 60px;
         right: -17px;
         background-color: white;
-        /* border: 4px solid #FF9F55; */
         top: 15px;
         border-radius: 50%;
         z-index: 1;
@@ -970,7 +964,7 @@ html {
 
     .projects-row {
         display: flex;
-        flex-wrap: wrap; /* COULD DELETE LATER */
+        flex-wrap: wrap; 
         flex-direction: column;
         min-width: fit-content;
     }
@@ -982,10 +976,6 @@ html {
         margin-bottom: 30px;
         transition: all .2s ease-in-out;
     }
-
-    /* .projects-card:hover {   INCLUDE THIS FOR LARGER SCREEN SIZES!!!
-        transform: scale(1.01);
-    } */
 
     .portfolio-item {
         text-decoration: none;
@@ -1014,8 +1004,8 @@ html {
         width: calc(100% - 75px);
         margin-left: 0;
         height: fit-content;
-        font-size: 24px; /* 1.5rem; */
-        vertical-align: middle; /* 40% */
+        font-size: 24px; 
+        vertical-align: middle; 
     }
 
     .specific-projects-text {
@@ -1094,8 +1084,6 @@ html {
 
     .modal-content {
         display: flex;
-        /* justify-content: space-around; */
-        /* align-items: left; */
         text-align: left;
         flex-direction: column;
         width: 100%;
@@ -1182,9 +1170,6 @@ html {
     }
 
     .modal-pic-container {
-        /* padding: 10px;
-        padding-left: 0;
-        padding-bottom: 0; */
         padding-top: 5px;
         height: fit-content;
         width: fitcontent;
@@ -1239,7 +1224,7 @@ html {
 
     .contact-row {
         display: flex;
-        flex-wrap: wrap; /* COULD DELETE LATER */
+        flex-wrap: wrap; 
         flex-direction: column;
         min-width: fit-content;
     }
@@ -1257,7 +1242,6 @@ html {
 
     .contact-circle {
         margin-left: 0;
-        /* margin-bottom: 16px; */
         margin-left: auto;
         margin-right: auto;
         height: 60px; /* height: 120px; */
@@ -1310,8 +1294,6 @@ html {
 
     /* Title and Text in Contact Section */
     .contact-skill-text {
-        /* margin-top: auto;
-        margin-bottom: auto; */
         height: fit-content;
         margin-top: 5px;
         padding-top: 2px;

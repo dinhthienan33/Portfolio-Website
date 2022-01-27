@@ -12,6 +12,7 @@
  * 
  */
 
+// WORRY ABOUT LATER!!!
 // Wait to load the JavaScript until all of the HTML content is loaded (FIX LATER).
 // document.addEventListener("DOMContentLoaded", start);
 
@@ -20,7 +21,6 @@
 //     {},
 //     {},
 // ]
-
 
 // // --> SECTION: Enable automatic scrolling on mobile.
 
