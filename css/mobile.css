@@ -1191,7 +1191,7 @@ html {
         padding-top: 0rem;
         color: var(--whiter-color);
         background-color: var(--black-color);
-        height: 100vh;
+        height: 100%;
     }
 
     .contact-container {
