@@ -12,24 +12,6 @@
  *
  */
 
- /** 
-  *
-  * KEEP ANIMATIONS MINIMAL.
-  * CERTAINLY INCLUDE A FEATURE LIKE THE DROPDOWN FEATURE YOU USED IN YOUR 
-  * PARKFINDER WEB APPLICATION FOR VARIOUS PARTS OF THE PAGE.
-  *
-  * THREE MAIN SECTIONS: ABOUT/RESUME/QUALIFICATIONS, PROJECTS, AND CONTACT.
-  *
-  * ADD YOUR RESUME TO BE DOWNLOADED FROM THE ABOUT/RESUME/QUALIFICATIONS SECTION.
-  * ALSO ADD LINKS TO YOUR MAIL, GITHUB, AND LINKEDIN. YOU ARE GOING TO WANT TO ADD
-  * A SHARING FEATURE SO THAT USERS CAN SHARE YOUR SITE AS WELL!
-  * 
-  * PUT YOURSELF IN THE SHOES OF THE PEOPLE WHO WILL BE LOOKING AT THIS!
-  * MAKE IT SIMPLE - DON'T MAKE THEM WORK TO FIGURE OUT MORE ABOUT YOU.
-  * 
-  * ANYTHING ELSE???
-  */
-
 /* Larger Mobile or Desktop View (For Navbar Padding) */
 @media (min-width: 630px) {
 
@@ -88,15 +70,6 @@
     #resume {
         padding-top: 60px;
     }
-
-    /* EXAMPLE OF HOW MODAL SHOULD CHANGE ON LARGER SCREEN SIZE. */
-    /* .modal-body {
-        color: var(--dark-font);
-        height: 70vh;
-        width: 70vw;
-        max-width: 500px;
-        overflow-y: auto;
-    } */
 }
 
 /* Larger Mobile or Desktop View */
@@ -942,11 +915,13 @@
     /* Place the container to the left */
     .timeline-left {
         left: 0;
+        text-align: right;
     }
     
     /* Place the container to the right */
     .timeline-right {
         left: 50%;
+        text-align: left;
     }
     
     /* Fix the circle for containers on the right side */
@@ -1018,11 +993,8 @@
         justify-content: center;
     }
 
-    .projects-group {
-        max-width: 400px;
-    }
-
     .projects-card {
+        max-width: 400px;
         background-color: var(--bluer-color);
         border-radius: 0.5em;
         margin-top: 30px;
