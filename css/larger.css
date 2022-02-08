@@ -957,8 +957,6 @@
         max-width: 400px;
         background-color: var(--bluer-color);
         border-radius: 0.5em;
-        margin-top: 30px;
-        margin-bottom: 30px;
         height: 358; 
         width: 510;
         transition: all .2s ease-in-out;
@@ -971,6 +969,10 @@
     .portfolio-item {
         text-decoration: none;
         color: var(--dark-font);
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
     .projects-pic {

@@ -174,8 +174,8 @@
     }
 
     .specific-skill {
-        flex-basis: 0 0 33.25%;
-        max-width: 33.25%;
+        flex-basis: 0 0 33.31%; /* KEEP AN EYE ON THIS!!! */
+        max-width: 33.31%; /* KEEP AN EYE ON THIS!!! */
         text-align: left; 
         padding-bottom: 20px;
         padding-top: 20px;
@@ -678,13 +678,9 @@
 
     .projects-card {
         max-width: 400px;
-        flex: 33%;
-        margin-left: 20px;
-        margin-right: 20px;
+        flex: 30%;
         background-color: var(--bluer-color);
         border-radius: 0.5em;
-        margin-top: 30px;
-        margin-bottom: 30px;
         height: 400px; 
         width: 510;
         transition: all .2s ease-in-out;
@@ -697,6 +693,8 @@
     .portfolio-item {
         text-decoration: none;
         color: var(--dark-font);
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
     .projects-pic {
