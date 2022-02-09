@@ -747,40 +747,35 @@
     .bg-active {
         visibility: visible;
         opacity: 1;
+        overflow-y: auto;
     }
 
     .modal-dialog{
         display: inline-block;
         vertical-align: middle;
-        overflow-y: initial !important;
+        /* overflow-y: initial !important; */
     }
 
     .modal-container {
-        background-color: var(--whiter-color);
+        max-width: 700px;
         color: var(--dark-font);
-        height: 85vh;
-        width: 75vw;
-        border-radius: 0.5em;
-        overflow-y: auto;
+        height: 90vh;
+        width: 90vw;
     }
 
     .close-modal-position {
-        width: 50px;
-        height: 50px;
-        background-color: var(--bluer-color);
-        border-radius: 50%;
-        position: fixed;
-        top: 50px; 
-        right: 185px;
+        float: right;
+        width: 30px;
+        height: 0px;
+        margin-top: 2px;
+        margin-right: 2px;
     }
 
     .modal-close {
         color: var(--dark-font);
-        position: fixed;
+        position: absolute;
         font-weight: bold;
         cursor: pointer;
-        top: 57px;
-        right: 197.5px; 
     }
 
     .fa-times {
@@ -792,8 +787,10 @@
     }
 
     .modal-information {
-        padding: 40px;
+        padding: 20px;
         margin: auto;
+        background-color: var(--whiter-color);
+        border-radius: 0.5em;
     }
 
     .modal-content {
@@ -874,8 +871,6 @@
         background-color: var(--whiter-color);
         margin-top: 25px;
         margin-bottom: 25px;
-        height: 358; 
-        width: 510;
         transition: all .2s ease-in-out;
     }
 

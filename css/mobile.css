@@ -97,10 +97,10 @@ html {
 /* Prevents scrolling in cases like when a modal is open. */
 .overflowHidden {
     height: 100%;
-    overflow: hidden;
     touch-action: none;
     -ms-touch-action: none;
     position: inherit;
+    overflow: hidden;
 }
 
 /* Mobile View for Scrolling */
@@ -110,10 +110,10 @@ html {
     /* The scrolling class is specialized here to work on mobile devices. */
     .overflowHidden {
         height: 100%;
-        overflow: hidden;
         touch-action: none;
         -ms-touch-action: none;
         position: inherit;
+        overflow: hidden;
     }
 }
 
@@ -1019,16 +1019,6 @@ html {
         margin-top: 0.5rem;
     }
 
-
-
-
-
-
-
-
-
-
-
     /* Section for Modals */
     .modal-bg {
         position: fixed;
@@ -1043,13 +1033,11 @@ html {
         align-items: center;
         visibility: hidden;
         opacity: 0;
-
-
         transition: visibility 0s, opacity 0.5s;
     }
 
     .bg-active {
-        overflow: initial;
+        /* overflow: initial; */
         visibility: visible;
         opacity: 1;
         overflow-y: auto;
@@ -1058,30 +1046,31 @@ html {
     .modal-dialog {
         display: inline-block;
         vertical-align: middle;
-        overflow-y: initial !important; /* KEEP AN EYE ON THIS!!! */
+        /* overflow-y: initial !important; KEEP AN EYE ON THIS!!! */
     }
 
     .modal-container {
+        max-width: 500px;
         color: var(--dark-font);
-        height: 95vh;
+        height: 90vh;
         width: 90vw;
-        border-radius: 0.5em;
         /* overflow-y: auto; */ /* KEEP AN EYE ON THIS!!! */
-        overflow-y: initial !important;
+        /* overflow-y: initial !important; */
     }
 
     .close-modal-position {
-        margin-left: 0;
+        float: right;
+        width: 30px;
+        height: 0px;
+        margin-top: 2px;
+        margin-right: 2px;
     }
 
     .modal-close {
-        display: inline-block;
         color: var(--dark-font);
         position: absolute;
         font-weight: bold;
         cursor: pointer;
-        top: 25px;
-        right: 27px;
     }
 
     .fa-times {
@@ -1200,13 +1189,6 @@ html {
         font-weight: bold;
         font-size: 20px;
     }
-
-
-
-
-
-
-
 
     /* ====================================================================
                             CONTACT Section (Page 4)
