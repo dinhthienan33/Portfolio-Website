@@ -20,10 +20,11 @@ function loadContent(event) {
 
   // Add DOM objects using the following functions.
   addProjects();
+  addProjectModals();
   addModalFunctions();
 
   // Add an event listener for sending an email.
-  //  document.getElementById("contact-send").addEventListener("click", sendEmail);
+  // document.getElementById("contact-send").addEventListener("click", sendEmail);
 }
 
 // --> SECTION: Style the links in the navbar.
@@ -82,64 +83,64 @@ function contact() {
 // CAN ALWAYS ADD NEW OBJECTS HERE.
 let myProjects = [ 
   {
-    "project-id": "portfolio-item1",
-    "project-ref": "#portfolioModal1",
+    "project-id": "portfolio-item8",
+    "project-ref": "#portfolioModal8",
     "project-image": "images/parkfinder.png",
     "project-image-alt": "parkfinder-img",
     "project-name": "Park Finder",
     "project-brief": "Web application written using Django.",
   },
   {
-    "project-id": "portfolio-item2",
-    "project-ref": "#portfolioModal2",
+    "project-id": "portfolio-item7",
+    "project-ref": "#portfolioModal7",
     "project-image": "images/teamaptiv.png",
     "project-image-alt": "teamaptiv-img",
     "project-name": "Team Aptiv",
     "project-brief": "Web application written using Node.js.",
   },
   {
-    "project-id": "portfolio-item3",
-    "project-ref": "#portfolioModal3",
+    "project-id": "portfolio-item6",
+    "project-ref": "#portfolioModal6",
     "project-image": "images/apppromotion.png",
     "project-image-alt": "apppromotion-img",
     "project-name": "Promotional Webpage",
     "project-brief": "Webpage made to promote fictional app.",
   },
   {
-    "project-id": "portfolio-item4",
-    "project-ref": "#portfolioModal4",
+    "project-id": "portfolio-item5",
+    "project-ref": "#portfolioModal5",
     "project-image": "images/firstpersonal.png",
     "project-image-alt": "personalwebpage-img",
     "project-name": "First Personal Webpage",
     "project-brief": "First simple website made with HTML/CSS.",
   },
   {
-    "project-id": "portfolio-item5",
-    "project-ref": "#portfolioModal5",
+    "project-id": "portfolio-item4",
+    "project-ref": "#portfolioModal4",
     "project-image": "images/officesimulation.png",
     "project-image-alt": "officesimulation-img",
     "project-name": "Office Hours Simulation",
     "project-brief": "Simple program to simulate office hours.",
   },
   {
-    "project-id": "portfolio-item6",
-    "project-ref": "#portfolioModal6",
+    "project-id": "portfolio-item3",
+    "project-ref": "#portfolioModal3",
     "project-image": "images/hashtable.png",
     "project-image-alt": "hashtable-img",
     "project-name": "Hash Table",
     "project-brief": "Simple data structure written using Java.",
   },
   {
-    "project-id": "portfolio-item7",
-    "project-ref": "#portfolioModal7",
+    "project-id": "portfolio-item2",
+    "project-ref": "#portfolioModal2",
     "project-image": "images/javapong.png",
     "project-image-alt": "javapong-img",
     "project-name": "Java Pong",
     "project-brief": "Adaptation of the pong game.",
   },
   {
-    "project-id": "portfolio-item8",
-    "project-ref": "#portfolioModal8",
+    "project-id": "portfolio-item1",
+    "project-ref": "#portfolioModal1",
     "project-image": "images/firstdrawing.png",
     "project-image-alt": "firstdrawing-img",
     "project-name": "First Java Program",
@@ -212,25 +213,510 @@ function addProjects() {
 
 // List of project modals.
 // CAN ALWAYS ADD NEW MODALS HERE.
+let myProjectModals = [ 
+  {
+    "modal-id": "portfolioModal8",
+    "modal-span-id": "exit-modal8",
+    "modal-heading": "Park Finder",
+    "modal-subheading": "Simple application Django in web development.",
+    "modal-description": "Park Finder was created as a group semester project for a Python class that I took my junior year of college. The Park Finder website utilizes a simple API obtained from the National Park Services (NPS). The API provides information about national parks and places in the United States. I was responsible for connecting the backend framework of the website to the API and displaying the different locations on the website. Pictures on navigating the website are below.",
 
+    "modal-images-text": [
+      {
+        "modal-image": "images/parkfinder.png",
+        "modal-image-description": "Home page of Park Finder website.", 
+        "modal-image-alt": "parkfinder-img", 
+      }, 
+      {
+        "modal-image": "images/parkfinder-images/parkfinder-select.png", 
+        "modal-image-description": "State selection page. Users choose a state in order to find locations in that state.", 
+        "modal-image-alt": "parkfinder-select-img", 
+      }, 
+      {
+        "modal-image": "images/parkfinder-images/parkfinder-specific.png", 
+        "modal-image-description": "Parks and places to view are presented as a list of modules within any given state selected by the user.",
+        "modal-image-alt": "parkfinder-specific-img", 
+      }, 
+      {
+        "modal-image": "images/parkfinder-images/parkfinder-location.png",
+        "modal-image-description": "Each module, representing a location, can be expanded to view more details about that park or place.",
+        "modal-image-alt": "parkfinder-location-img", 
+      },
+      {
+        "modal-image": "images/parkfinder-images/parkfinder-login.png",
+        "modal-image-description": "Login screen for user to obtain an account with Park Finder (currently in development).",
+        "modal-image-alt": "parkfinder-login-img", 
+      },
+    ],
 
+    "modal-final-text": "The Park Finder website is hosted on a Heroku server. Heroku is a cloud platform that offers a secure place to host server-based projects on the world wide web.",
+    
+    "modal-links": [
+      {
+        "modal-link-reference": "https://github.com/Krause2023/CS224-ParkFinder-Web_App",
+        "modal-link-description": "View project on GitHub",
+      },
+      {
+        "modal-link-reference": "https://park-finder-project.herokuapp.com/",
+        "modal-link-description": "View project online",
+      },
+    ],
 
+    "modal-bottom-button": "bottom-exit-modal8",
+  },
+  {
+    "modal-id": "portfolioModal7",
+    "modal-span-id": "exit-modal7",
+    "modal-heading": "Team Aptiv",
+    "modal-subheading": "Web application created using Node.js as framework.",
+    "modal-description": "Team Aptiv was created as a collaborative semester long project for a Software Engineering class at my university. The project is an implementation of fullstack web development. Team Aptiv is a website created for the purpose of helping the nonprofit organization of Aptiv. The site hosts different community events created by an admin user. Other users have the ability  to view the events. If the other users obtain an account with the Team Aptiv website, they can sign up for the events and donate to the events.",
 
+    "modal-images-text": [
+      {
+        "modal-image": "images/teamaptiv.png",
+        "modal-image-description": "Home page of Team Aptiv website.", 
+        "modal-image-alt": "teamaptiv-img", 
+      }, 
+      {
+        "modal-image": "images/teamaptiv-images/teamaptiv-events.png", 
+        "modal-image-description": "Events page. Users can view the different community events that are created and posted by an admin user.", 
+        "modal-image-alt": "teamaptiv-events-img", 
+      }, 
+      {
+        "modal-image": "images/teamaptiv-images/teamaptiv-specific.png", 
+        "modal-image-description": "Specific event page. Users can view the details of each event such as the time, location, number of needed volunteers, and donation goal.",
+        "modal-image-alt": "teamaptiv-specific-img", 
+      }, 
+      {
+        "modal-image": "images/teamaptiv-images/teamaptiv-mission.png",
+        "modal-image-description": "Mission page. On this page, users can download a user help manual, see the organization mission statement, and make an unrestricted donation to the company (payment functions not implemented).",
+        "modal-image-alt": "teamaptiv-mission-img", 
+      },
+      {
+        "modal-image": "images/teamaptiv-images/teamaptiv-register.png",
+        "modal-image-description": "Registration screen for user to create an account with Team Aptiv. The user has the option to create an account using their Google account via Oauth.",
+        "modal-image-alt": "teamaptiv-register-img", 
+      },
+      {
+        "modal-image": "images/teamaptiv-images/teamaptiv-login.png",
+        "modal-image-description": "Login screen for user to obtain an account with Team Aptiv. The user has the ability to sign into their account with Google Oauth as well.",
+        "modal-image-alt": "teamaptiv-login-img", 
+      },
+      {
+        "modal-image": "images/teamaptiv-images/teamaptiv-user.png",
+        "modal-image-description": "User account page. A registered user can view events they have signed up for as well as change various settings on the website.",
+        "modal-image-alt": "teamaptiv-user-img", 
+      },
+      {
+        "modal-image": "images/teamaptiv-images/teamaptiv-admin.png",
+        "modal-image-description": "Admin account page. The admin has the abilities that a regular registered user has. The admin can also create events, cancel events, deactivate user accounts, and activate user accounts.",
+        "modal-image-alt": "teamaptiv-admin-img", 
+      },
+    ],
 
+    "modal-final-text": "The Team Aptiv website is hosted on a Heroku server. Heroku is a cloud platform that offers a secure place to host server-based projects on the world wide web.",
+    
+    "modal-links": [
+      {
+        "modal-link-reference": "https://github.com/Krause2023/CS341-Aptiv-Web_App",
+        "modal-link-description": "View project on GitHub",
+      },
+      {
+        "modal-link-reference": "https://team-aptiv-project.herokuapp.com/",
+        "modal-link-description": "View project online",
+      },
+    ],
 
+    "modal-bottom-button": "bottom-exit-modal7",
+  },
+  {
+    "modal-id": "portfolioModal6",
+    "modal-span-id": "exit-modal6",
+    "modal-heading": "Promotional Webpage",
+    "modal-subheading": "Website made to promote a fictional app.",
+    "modal-description": "The promotional webpage project was created to practice my skills in HTML and CSS. An important focus in the project was also to design a website that was responsive to different screen sizes. When the screen size changes, the website layout changes to maintain a clear, clean format that is easy to navigate. The theme of the website was to promte a fake application called Habit Helper.",
 
+    "modal-images-text": [
+      {
+        "modal-image": "images/apppromotion.png", 
+        "modal-image-description": "Home page of app promotion website.",
+        "modal-image-alt": "apppromotion-img", 
+      },
+      {
+        "modal-image": "images/apppromotion-images/apppromotion-ad.png",
+        "modal-image-description": "Attributes section of website. Here the top features of the app that the website is promoting are highlighted.", 
+        "modal-image-alt": "apppromotion-ad-img", 
+      }, 
+      {
+        "modal-image": "images/apppromotion-images/apppromotion-users.png", 
+        "modal-image-description": "User section of website. Users who have used the app are listed with a brief quote promoting the app. This information is presented through a Bootstrap carousel (users are fake just like the Habit Helper app they are reviewing).", 
+        "modal-image-alt": "apppromotion-users-img", 
+      }, 
+      {
+        "modal-image": "images/apppromotion-images/apppromotion-cost.png",
+        "modal-image-description": "Price plan section of the website. The different monthly plans and their respective prices are listed out.",
+        "modal-image-alt": "apppromotion-cost-img", 
+      },
+      {
+        "modal-image": "images/apppromotion-images/apppromotion-final.png",
+        "modal-image-description": "Final advertisement section of website. The last promotional section of the website is listed along with the options to download the fictional application.",
+        "modal-image-alt": "apppromotion-final-img", 
+      },
+    ],
 
+    "modal-final-text": "The promotional webpage is hosted on GitHub pages, which is a free service. Given the fact that the website is comprised of HTML and CSS only, hosting it on a more complex server that can process requests was not neccessary.",
+    
+    "modal-links": [
+      {
+        "modal-link-reference": "https://github.com/Krause2023/App-Promotion-Webpage",
+        "modal-link-description": "View project on GitHub",
+      },
+      {
+        "modal-link-reference": "https://krause2023.github.io/App-Promotion-Webpage/",
+        "modal-link-description": "View project online",
+      },
+    ],
 
+    "modal-bottom-button": "bottom-exit-modal6",
+  },
+  {
+    "modal-id": "portfolioModal5",
+    "modal-span-id": "exit-modal5",
+    "modal-heading": "First Personal Webpage",
+    "modal-subheading": "Implementation of HTML and CSS to create my first personal website.",
+    "modal-description": "My first personal website was created to help strengthen my skills in HTML and CSS. I also wanted to have my own webpage for job recuiters to view and assess my skill set. My personal site is comprised of three primary sections. The first section explains a little about me, the second section lists out my skills with brief descriptions, and the third section provides my contact information.",
 
+    "modal-images-text": [
+      {
+        "modal-image": "images/firstpersonal.png", 
+        "modal-image-description": "Home page of personal website.",
+        "modal-image-alt": "personalwebpage-img", 
+      },
+      {
+        "modal-image": "images/personalwebpage-images/firstpersonal-about.png",
+        "modal-image-description": "About section. I provide a brief description of my educational background as well as my interests and hobbies.", 
+        "modal-image-alt": "personalwebpage-about-img", 
+      }, 
+      {
+        "modal-image": "images/personalwebpage-images/firstpersonal-skills.png", 
+        "modal-image-description": "Skills section. I list my skills in Computer Science along with a brief description of each skill.", 
+        "modal-image-alt": "personalwebpage-skills-img", 
+      }, 
+      {
+        "modal-image": "images/personalwebpage-images/firstpersonal-contact.png",
+        "modal-image-description": "Contact section. I list out my contact information as well as a button linked to a mail application from which the user can message me from.",
+        "modal-image-alt": "personalwebpage-contact-img", 
+      },
+    ],
 
+    "modal-final-text": "The personal webpage is hosted on GitHub pages, which is a free service. Given the fact that the website is comprised of HTML and CSS only, hosting it on a more complex server that can process requests was not neccessary.",
+    
+    "modal-links": [
+      {
+        "modal-link-reference": "https://github.com/Krause2023/Personal-Webpage",
+        "modal-link-description": "View project on GitHub",
+      },
+      {
+        "modal-link-reference": "https://krause2023.github.io/Personal-Webpage/",
+        "modal-link-description": "View project online",
+      },
+    ],
 
+    "modal-bottom-button": "bottom-exit-modal5",
+  },
+  {
+    "modal-id": "portfolioModal4",
+    "modal-span-id": "exit-modal4",
+    "modal-heading": "Office Hours Simulation",
+    "modal-subheading": "Implementation of different queues such as FIFO to generate a professor's schedule based on varying availabilities.",
+    "modal-description": "The Office Hours Simulation was created as a final project for an introductory course in C programming at the University of Wisconsin - La Crosse. The program runs a simulation of office hours using a FIFO algorithm and a Priority algorithm. The program reads in a text file containing student availabilities, the professor's availability, and the type of meeting taking place. If the professor cannot meet with a student for all of their allotted time on a day given constraints, the student is given time on the next available day to complete the visit. A summary of the visits and additional statistics are printed out at the completion of the program on the terminal window.",
 
+    "modal-images-text": [
+      {
+        "modal-image": "images/officesimulation-images/officesimulation-run.png", 
+        "modal-image-description": "The project is run on a terminal window. The program is compiled via tools such as makefiles and commands pertaining to the C programming language.",
+        "modal-image-alt": "officesimulation-run-img", 
+      },
+      {
+        "modal-image": "images/officesimulation-images/officesimulation-final.png",
+        "modal-image-description": "Example output with a FIFO queue. The final statistics related to the simulation are printed out on the terminal window at the conclusion of the program.", 
+        "modal-image-alt": "officesimulation-final-img", 
+      }, 
+    ],
 
+    "modal-final-text": "The Offic Hour Simulation project is hosted in a GitHub repository on my account. To view more details about this project and run the simulation, visit my repository via the link provided below.",
+    
+    "modal-links": [
+      {
+        "modal-link-reference": "https://github.com/Krause2023/Office-Hour-Simulation",
+        "modal-link-description": "View project on GitHub",
+      },
+    ],
 
+    "modal-bottom-button": "bottom-exit-modal4",
+  },
+  {
+    "modal-id": "portfolioModal3",
+    "modal-span-id": "exit-modal3",
+    "modal-heading": "Hash Table",
+    "modal-subheading": "Data structure created using Java to practice mapping keys to values.",
+    "modal-description": "The Hash Table project was created as part of a software design course that I took during my sophomore year at my university. The data structure was created using the Eclipse integrated development environment (IDE) and Java. The hash table, in this implementation of the structure, is an array of linked lists. Keys are randomly generated and assigned to values in the hash table. In this case, the keys are the names of people and the values are numbers.",
 
+    "modal-images-text": [
+      {
+        "modal-image": "images/hashtable.png", 
+        "modal-image-description": "A hash table is a data structure that maps certain keys to different values. An example of utilizing a hash table would be encrypting user information such as account passwords.",
+        "modal-image-alt": "hashtable-img", 
+      },
+      {
+        "modal-image": "images/hashtable-images/hashtable-output.png",
+        "modal-image-description": "The project can be run on a terminal (like the one shown above) or in an IDE such as Eclipse. Please visit my GitHub repository (listed below) for additional details.", 
+        "modal-image-alt": "hashtable-output-img", 
+      }, 
+    ],
 
+    "modal-final-text": "The Hash Table project is hosted in a GitHub repository on my account. To view more details about this project and run it, visit my repository via the link provided below.",
+    
+    "modal-links": [
+      {
+        "modal-link-reference": "https://github.com/Krause2023/Hash-Table",
+        "modal-link-description": "View project on GitHub",
+      },
+    ],
 
+    "modal-bottom-button": "bottom-exit-modal3",
+  },
+  {
+    "modal-id": "portfolioModal2",
+    "modal-span-id": "exit-modal2",
+    "modal-heading": "Java Pong",
+    "modal-subheading": "Simplified version of the classic pong game that was written using Java.",
+    "modal-description": "The Java Pong project is a simple game where the user uses a slider at the bottom of the game screen to prevent the ball from getting past the bottom. The ball bounces off the different sides of the game screen and gradually makes its what towards the bottom of the screen where the user controls a blue slider. After coming in contact with the blue slider at the bottom of the screen, the ball bounces up along the sides of the screen again before beginning to make its way towards the bottom again. After every fifth bounce off of the blue slider at the bottom of the screen, the speed of the ball moving along the screen increases. The goal of the game is to try and get as many bounces off the blue slider as possible.",
 
+    "modal-images-text": [
+      {
+        "modal-image": "images/javapong-images/javapong-game.png", 
+        "modal-image-description": "Java pong game screen. The project can be run on a terminal or in an IDE such as Eclipse. Please visit my GitHub repository (listed below) for additional details.",
+        "modal-image-alt": "javapong-game-img", 
+      }, 
+    ],
+
+    "modal-final-text": "The Java Pong project is hosted in a GitHub repository on my account. To view more details about this project and run it, visit my repository via the link provided below.",
+    
+    "modal-links": [
+      {
+        "modal-link-reference": "https://github.com/Krause2023/Java-Pong",
+        "modal-link-description": "View project on GitHub",
+      },
+    ],
+
+    "modal-bottom-button": "bottom-exit-modal2",
+  },
+  {
+    "modal-id": "portfolioModal1",
+    "modal-span-id": "exit-modal1",
+    "modal-heading": "First Java Program",
+    "modal-subheading": "Simple drawing created using different shape classes in Java.",
+    "modal-description": "The project is a simple program written in Java that generates an image of a clock tower on my university campus as well as some background features. The image is comprised of different shapes that are manipulated in both size and location to form the simple image. I created this project during my freshman year of college in my first computer science class.",
+
+    "modal-images-text": [
+      {
+        "modal-image": "images/firstdrawing-images/firstdrawing2.png", 
+        "modal-image-description": "Drawing generated by the Java program. The drawing is a simple collection of shapes that form the image.",
+        "modal-image-alt": "firstdrawing2-img", 
+      }, 
+    ],
+
+    "modal-final-text": "The First Java Program project is hosted in a GitHub repository on my account. To view more details about this project and run it, visit my repository via the link provided below.",
+    
+    "modal-links": [
+      {
+        "modal-link-reference": "https://github.com/Krause2023/Java-Drawing",
+        "modal-link-description": "View project on GitHub",
+      },
+    ],
+
+    "modal-bottom-button": "bottom-exit-modal1",
+  },
+];
+
+/*
+ * The function adds the project modals to
+ * the DOM. The projects are displayed on
+ * the website.
+ */
+function addProjectModals() {
+
+  // Create a variable to obtain the div that 
+  // the project modals will be created within.
+  let modalList = document.querySelector(".modals-section");
+
+  // Loop through the list of objects and output
+  // the content to the website.
+  myProjectModals.forEach(myProjectModals => {
+
+    // Create a new div tag element for the modal.
+    let modalDiv = document.createElement("div");
+    modalDiv.setAttribute("id", myProjectModals["modal-id"]);
+    modalDiv.setAttribute("role", "dialog");
+    modalDiv.setAttribute("class", "modal-bg");
+    modalList.appendChild(modalDiv);
+
+    // Create a new div tag element for the modal-dialog.
+    let modalDialogDiv = document.createElement("div");
+    modalDialogDiv.setAttribute("class", "modal-dialog");
+    modalDiv.appendChild(modalDialogDiv);
+
+    // Create a new div tag element for the close-modal-position.
+    let modalCloseDiv = document.createElement("div");
+    modalCloseDiv.setAttribute("class", "close-modal-position");
+    modalDialogDiv.appendChild(modalCloseDiv);
+
+    // Create a new span tag element for the X-icon.
+    let exitSpanTag = document.createElement("span");
+    exitSpanTag.setAttribute("id", myProjectModals["modal-span-id"]);
+    exitSpanTag.setAttribute("class", "modal-close");
+    exitSpanTag.setAttribute("href", "#close");
+    modalCloseDiv.appendChild(exitSpanTag);
+
+    // Create the X-icon.
+    let exitIcon = document.createElement("i");
+    exitIcon.setAttribute("class", "fas fa-times fa-2x");
+    exitSpanTag.appendChild(exitIcon);
+
+    // Create the modal container div.
+    let modalContainerDiv = document.createElement("div");
+    modalContainerDiv.setAttribute("class", "modal-container");
+    modalDialogDiv.appendChild(modalContainerDiv);
+
+    // Create the modal information div.
+    let modalInformationDiv = document.createElement("div");
+    modalInformationDiv.setAttribute("class", "modal-information");
+    modalContainerDiv.appendChild(modalInformationDiv);
+
+    // Create the modal content div.
+    let modalContentDiv = document.createElement("div");
+    modalContentDiv.setAttribute("class", "modal-content");
+    modalInformationDiv.appendChild(modalContentDiv);
+
+    // Create the modal row div.
+    let modalRowDiv = document.createElement("div");
+    modalRowDiv.setAttribute("class", "modal-row");
+    modalContentDiv.appendChild(modalRowDiv);
+
+    // Create the modal column div.
+    let modalColumnDiv = document.createElement("div");
+    modalColumnDiv.setAttribute("class", "col-lg-10 mx-auto");
+    modalRowDiv.appendChild(modalColumnDiv);
+
+    // Create the modal body div.
+    let modalBodyDiv = document.createElement("div");
+    modalBodyDiv.setAttribute("class", "modal-body");
+    modalColumnDiv.appendChild(modalBodyDiv);
+
+    // Create the modal heading.
+    let modalHeading = document.createElement("h2");
+    modalHeading.setAttribute("class", "modal-heading");
+    modalHeading.appendChild(document.createTextNode(myProjectModals["modal-heading"]));
+    modalBodyDiv.appendChild(modalHeading);
+
+    // Create the modal subheading.
+    let modalSubHeading = document.createElement("p");
+    modalSubHeading.setAttribute("class", "modal-text subheading-text-center");
+    modalSubHeading.appendChild(document.createTextNode(myProjectModals["modal-subheading"]));
+    modalBodyDiv.appendChild(modalSubHeading);
+
+    // Create the first modal description.
+    let modalDescription = document.createElement("p");
+    modalDescription.setAttribute("class", "modal-text");
+    modalDescription.appendChild(document.createTextNode(myProjectModals["modal-description"]));
+    modalBodyDiv.appendChild(modalDescription);
+
+    // Create the pictures with descriptions for each modal.
+    // This is completed via a for-each loop that visits each
+    // element in the object images and captions attribute array.
+    myProjectModals["modal-images-text"].forEach(modalImages => {
+    
+      // Create the div that stores a given image and description.
+      let descriptiveDiv = document.createElement("div");
+      descriptiveDiv.setAttribute("class", "col-lg-4 col-md-6 mb-5 modal-pic-card");
+      modalBodyDiv.appendChild(descriptiveDiv);
+
+      // Create the descriptive image that goes within the div.
+      let descriptiveDivImage = document.createElement("img");
+      descriptiveDivImage.setAttribute("class", "modal-info-pic");
+      descriptiveDivImage.setAttribute("src", modalImages["modal-image"]);
+      descriptiveDivImage.setAttribute("alt", modalImages["modal-image-alt"]);
+      descriptiveDiv.appendChild(descriptiveDivImage);
+
+      // Create another div to store the actual description.
+      let descriptiveDivContainer = document.createElement("div");
+      descriptiveDivContainer.setAttribute("class", "modal-pic-container");
+      descriptiveDivContainer.setAttribute("src", modalImages["modal-image"]);
+      descriptiveDivContainer.setAttribute("alt", modalImages["modal-image-alt"]);
+      descriptiveDiv.appendChild(descriptiveDivContainer);
+
+      // Create a paragraph tag to store the actual description.
+      let descriptiveDivParagraph = document.createElement("p");
+      descriptiveDivParagraph.setAttribute("class", "modal-pic-text");
+      descriptiveDivParagraph.appendChild(document.createTextNode(modalImages["modal-image-description"]));
+      descriptiveDivContainer.appendChild(descriptiveDivParagraph);
+    });
+
+    // Create a paragraph tag to store the final description of the project.
+    let finalDescriptionParagraph = document.createElement("p");
+    finalDescriptionParagraph.setAttribute("class", "modal-text");
+    finalDescriptionParagraph.appendChild(document.createTextNode(myProjectModals["modal-final-text"]));
+    modalBodyDiv.appendChild(finalDescriptionParagraph);
+
+    // Create the link(s) to the project for each modal.
+    // This is completed via a for-each loop that visits each
+    // element in the object links attribute array.
+    myProjectModals["modal-links"].forEach(modalLink => {
+
+      // Create a div to store the links for the project.
+      let modalLinkDiv = document.createElement("div");
+      modalLinkDiv.setAttribute("class", "modal-text modal-text-center");
+      modalBodyDiv.appendChild(modalLinkDiv);
+
+      // Create an anchor tag to store the actual link for the project.
+      let modalLinkAnchor = document.createElement("a");
+      modalLinkAnchor.setAttribute("href", modalLink["modal-link-reference"]);
+      modalLinkAnchor.setAttribute("target", "_blank");
+      modalLinkAnchor.setAttribute("class", "modal-text modal-viewer-link");
+      modalLinkDiv.appendChild(modalLinkAnchor);
+
+      // Create a b tag to store the link text.
+      let modalLinkB = document.createElement("b");
+      modalLinkB.appendChild(document.createTextNode(modalLink["modal-link-description"]));
+      modalLinkAnchor.appendChild(modalLinkB);
+    });
+
+    // Create a break to add space between the links and the bottom button.
+    let modalBreakTag = document.createElement("br");
+    modalBodyDiv.appendChild(modalBreakTag);
+
+    // Create a div to store the bottom close button.
+    let modalCloseButtonDiv = document.createElement("div");
+    modalCloseButtonDiv.setAttribute("class", "bottom-button-container");
+    modalBodyDiv.appendChild(modalCloseButtonDiv);
+
+    // Create an anchor tag to show the bottom close button.
+    let modalCloseButtonAnchor = document.createElement("a");
+    modalCloseButtonAnchor.setAttribute("id", myProjectModals["modal-bottom-button"]);
+    modalCloseButtonAnchor.setAttribute("class", "btn btn-dark btn-l model-close bottom-modal-button");
+    modalCloseButtonAnchor.setAttribute("href", "#close");
+    modalCloseButtonDiv.appendChild(modalCloseButtonAnchor);
+
+    // Create an i tag to include the bottom close button icon.
+    let modalCloseButtonI = document.createElement("i");
+    modalCloseButtonI.setAttribute("class", "fa fa-times fa-times-bottom");
+    modalCloseButtonAnchor.appendChild(modalCloseButtonI);
+
+    // Add text to the anchor tag.
+    modalCloseButtonAnchor.appendChild(document.createTextNode(" Close"));
+  });
+}
 
 // --> SECTION: Style the modals on the website.
 

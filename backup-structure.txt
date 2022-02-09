@@ -1,0 +1,110 @@
+<!-- THIS IS BACKUP FOR THE STRUCTURE OF THE HTML -->
+<!-- THAT IS CREATED THROUGH YOUR JAVASCRIPT. -->
+
+<!-- HTML STRUCTURE OF MODALS CREATED ON PROJECTS -->
+<!-- PAGE OF WEBSITE THROUGH THE JAVASCRIPT. -->
+<!-- Park Finder Modal -->
+<div id="portfolioModal1" role="dialog" class="modal-bg">
+    <div class="modal-dialog">
+        <div class="close-modal-position">
+            <span id="exit-modal1" class="modal-close" href="#close"><i class="fas fa-times fa-2x"></i></span>
+        </div>
+        <div class="modal-container"> 
+            <!-- Modal Information and Content -->
+            <div class="modal-information">
+                <div class="modal-content">
+                    <div class="modal-row">
+                        <div class="col-lg-10 mx-auto">
+                            <div class="modal-body">
+                                <!-- Heading and Description -->
+                                <h2 class="modal-heading">Park Finder</h2>
+                                <p class="modal-text subheading-text-center">Simple application Django in web development.</p>
+                                <p class="modal-text">
+                                    Park Finder was created as a group semester project for a Python class that 
+                                    I took my junior year of college. The Park Finder website utilizes a simple
+                                    API obtained from the National Park Services (NPS). The API provides information
+                                    about national parks and places in the United States. I was responsible for
+                                    connecting the backend framework of the website to the API and displaying the
+                                    different locations on the website. Pictures on navigating the website are below.
+                                </p>
+                                <!-- Descriptive Modal Images -->
+                                <div class="col-lg-4 col-md-6 mb-5 modal-pic-card">
+                                    <img class="modal-info-pic" src="images/parkfinder.png" alt="parkfinder-img">
+                                    <div class="modal-pic-container">
+                                        <p class="modal-pic-text">
+                                            Home page of Park Finder website.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 mb-5 modal-pic-card">
+                                    <img class="modal-info-pic" src="images/parkfinder-images/parkfinder-select.png" alt="parkfinder-select-img">
+                                    <div class="modal-pic-container">
+                                        <p class="modal-pic-text">
+                                            State selection page. Users choose a state 
+                                            in order to find locations in that state.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 mb-5 modal-pic-card">
+                                    <img class="modal-info-pic" src="images/parkfinder-images/parkfinder-specific.png" alt="parkfinder-specific-img">
+                                    <div class="modal-pic-container">
+                                        <p class="modal-pic-text">
+                                            Parks and places to view are presented as a list of
+                                            modules within any given state selected by the user.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 mb-5 modal-pic-card">
+                                    <img class="modal-info-pic" src="images/parkfinder-images/parkfinder-location.png" alt="parkfinder-location-img">
+                                    <div class="modal-pic-container">
+                                        <p class="modal-pic-text">
+                                            Each module, representing a location, can be expanded
+                                            to view more  details about that park or place.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 mb-5 modal-pic-card">
+                                    <img class="modal-info-pic" src="images/parkfinder-images/parkfinder-login.png" alt="parkfinder-login-img">
+                                    <div class="modal-pic-container">
+                                        <p class="modal-pic-text">
+                                            Login screen for user to obtain an account with
+                                            Park Finder (currently in development).
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- More Description -->
+                                <p class="modal-text">
+                                    The Park Finder website is hosted on a Heroku server. Heroku is a cloud platform 
+                                    that offers a secure place to host server-based projects on the world wide web.
+                                </p>
+                                <!-- Link to Project on GitHub -->
+                                <div class="modal-text modal-text-center">
+                                    <a href="https://github.com/Krause2023/CS224-ParkFinder-Web_App" target="_blank" class="modal-text modal-viewer-link" >
+                                        <b>View project on GitHub</b>
+                                    </a>
+                                </div>
+                                <!-- Link to Project on the World Wide Web -->
+                                <div class="modal-text modal-text-center">
+                                    <a href="https://park-finder-project.herokuapp.com/" target="_blank" class="modal-text modal-viewer-link" >
+                                        <b>View project online</b>
+                                    </a>
+                                </div>
+                                <br>
+                                <!-- Close Button on Bottom of Modal -->
+                                <div class="bottom-button-container">
+                                    <a id="bottom-exit-modal1" class="btn btn-dark btn-l model-close bottom-modal-button" href="#close"> 
+                                        <i class="fa fa-times fa-times-bottom"></i> Close
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+</div>
+
+<!-- HTML STRUCTURE OF XXX CREATED ON RESUME -->
+<!-- PAGE OF WEBSITE THROUGH THE JAVASCRIPT. -->
