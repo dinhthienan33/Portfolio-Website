@@ -1,5 +1,7 @@
 # *Portfolio Website*
-## **[View my Portfolio Website Here](https://krause2023.github.io/Portfolio-Site/)**
+## **[View my Portfolio Website Here](andrewkrause.dev)**
+[//]: <> (https://krause2023.github.io/Portfolio-Site/)
+
 
 <p>&nbsp;</p>
 
