@@ -957,6 +957,7 @@
         max-width: 400px;
         background-color: var(--bluer-color);
         border-radius: 0.5em;
+        height: 400px;
         transition: all .2s ease-in-out;
     }
 
@@ -1027,17 +1028,14 @@
     }
 
     .modal-dialog{
-        display: inline-block;
-        vertical-align: middle;
-        /* overflow-y: initial !important; */
+        margin-top: auto;
+        padding-top: 40px;
+        margin-bottom: 40px;
     }
 
     .modal-container {
         max-width: 600px;
         color: var(--dark-font);
-        height: 90vh;
-        width: 90vw;
-        /* overflow-y: auto; */
     }
 
     .close-modal-position {
@@ -1055,13 +1053,14 @@
         cursor: pointer;
     }
 
-    .fa-times {
+    .fa-times-top {
         color: var(--dark-font);
         text-shadow: 0 0 10px var(--bluer-color);
     }
 
-    .fa-times:hover {
+    .fa-times-top:hover {
         color: var(--dark-font);
+        text-shadow: 0px 0px 0px var(--bluer-color);
     }
 
     .modal-information {

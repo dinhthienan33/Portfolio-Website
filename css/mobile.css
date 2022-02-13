@@ -927,8 +927,7 @@ html {
     }
 
     /* ====================================================================
-                            PROJECTS Section (Page 3) --> WITH THIS SECTION, STOP SCROLL TO TOP WHEN MODAL CLOSES, AND START AT TOP ALWAYS WITHIN MODAL!!!
-                                                      --> ALSO KEEP AN EYE ON THE FIXED "EXIT" ICON!!!
+                           PROJECTS Section (Page 3) --> WITH THIS SECTION, STOP SCROLL TO TOP WHEN MODAL CLOSES, AND START AT TOP ALWAYS WITHIN MODAL!!!                                                
     ==================================================================== */
 
     #projects {
@@ -971,15 +970,14 @@ html {
         justify-content: center;
     }
 
-    /* NEED TO UPDATE ACROSS THE BOARD!!! */
     .projects-card {
         max-width: 400px;
         background-color: var(--bluer-color);
         border-radius: 0.5em;
+        height: 400px;
         transition: all .2s ease-in-out;
     }
 
-    /* NEED TO UPDATE ACROSS THE BOARD!!! */
     .portfolio-item {
         text-decoration: none;
         color: var(--dark-font);
@@ -1044,18 +1042,17 @@ html {
     }
 
     .modal-dialog {
-        display: inline-block;
-        vertical-align: middle;
+        margin-top: auto;
+        padding-top: 40px;
+        margin-bottom: 40px;
+        margin-left: 20px;
+        margin-right: 20px;
         /* overflow-y: initial !important; KEEP AN EYE ON THIS!!! */
     }
 
     .modal-container {
         max-width: 500px;
         color: var(--dark-font);
-        height: 90vh;
-        width: 90vw;
-        /* overflow-y: auto; */ /* KEEP AN EYE ON THIS!!! */
-        /* overflow-y: initial !important; */
     }
 
     .close-modal-position {
@@ -1073,12 +1070,12 @@ html {
         cursor: pointer;
     }
 
-    .fa-times {
+    .fa-times-top {
         color: var(--dark-font);
         text-shadow: 0 0 10px var(--bluer-color);
     }
 
-    .fa-times:hover {
+    .fa-times-top:hover {
         color: var(--dark-font);
     }
 
@@ -1137,6 +1134,11 @@ html {
         color: var(--whiter-color);
     }
 
+    .fa-times-bottom:hover {
+        color: var(--whiter-color);
+        text-shadow: 0px 0px 0px var(--bluer-color);
+    }
+
     .bottom-modal-button {
         display: inline-block;
         margin-top: 10px;
@@ -1153,9 +1155,9 @@ html {
         line-height: 60px; /* Should match height attribute */
     }
 
-    .bottom-modal-button:hover {
+    /* .bottom-modal-button:hover {
         background-color: var(--bluer-color);
-    }
+    } */
 
     /* Section for Descriptive Images in Modal */
     .modal-pic-card {

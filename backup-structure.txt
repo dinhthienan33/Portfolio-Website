@@ -1,13 +1,91 @@
 <!-- THIS IS BACKUP FOR THE STRUCTURE OF THE HTML -->
 <!-- THAT IS CREATED THROUGH YOUR JAVASCRIPT. -->
 
+
+<!-- HTML STRUCTURE OF SKILLS CREATED ON RESUME -->
+<!-- PAGE OF WEBSITE THROUGH THE JAVASCRIPT. -->
+<div class="col-lg-4 col-md-6 mb-5 specific-skill">
+    <div>
+        <span class="mb-3 rounded-circle skill-inline"> 
+            <i class="fab java fa-java fa-2x" style="padding-left: 15px; padding-top: 10px;"></i>
+        </span> 
+        <h4 class="skill-title skill-inline">
+            <b>Java</b>
+        </h4>
+    </div>
+    <p class="specific-skill-text">
+        I have had <b>3.5 years</b> of experience with Java. I have used the language
+        primarily for creating data structures such as binary trees and hash tables.
+        I have also used the language to create simple games including a simplified
+        version of pong.
+    </p>
+</div>
+
+
+<!-- HTML STRUCTURE OF CERTIFICATIONS CREATED ON -->
+<!-- RESUME PAGE OF WEBSITE THROUGH THE JAVASCRIPT. -->
+<div class="col-lg-4 col-md-6 mb-5 certification-card">
+    <div class="certificate-image-heading">
+        <img class="certificate-pic certification-inline" src="images/udemy.png" alt="udemy-img">
+        <h4 class="certification-title certification-inline">Agile Fundamentals: Including Scrum and Kanban - 2020</h4>
+    </div>
+    <div>
+        <p class="specific-certification-heading"><i>Udemy Certification</i></p>
+        <p class="specific-certification-text">
+            I earned a certification in the basics of Agile by working
+            on the course over the winter of 2020. The course was a total 
+            of <b>4.5 hours</b>.
+        </p>
+    </div>
+</div>
+
+
+<!-- HTML STRUCTURE OF ACHIEVEMENTS CREATED ON -->
+<!-- RESUME PAGE OF WEBSITE THROUGH THE JAVASCRIPT. -->
+<div class="col-lg-4 col-md-6 mb-5 specific-volunteering">
+    <div class="volunteer-image-heading">
+        <img class="volunteer-pic volunteer-inline" src="images/uwl.png" alt="uwl-img">
+        <h4 class="volunteer-title volunteer-inline">UWL Campus Move-In Assistant</h4>
+    </div>
+    <div>
+        <p class="specific-volunteer-heading"><i>Volunteering, September 2021</i></p>
+        <p class="specific-volunteer-text">
+            I helped students move into their dormitory rooms for the Fall  
+            semester at the University of Wisconsin - La Crosse. I also helped
+            to set up the rooms for the new students.
+        </p>
+    </div>
+</div>
+
+
+<!-- HTML STRUCTURE OF PROJECT CARDS CREATED ON -->
+<!-- PROJECTS PAGE OF WEBSITE THROUGH THE JAVASCRIPT. -->
+<!-- Django Web Application -->
+<a id="portfolio-item8" onClick="get_id(this.id)" class="portfolio-item" data-toggle="modal" href="#portfolioModal8">
+    <script>
+        function get_ID(portItem) {
+            return portItem.id;
+        }
+    </script>
+    <div class="col-lg-4 col-md-6 mb-5 projects-card">
+        <img class="projects-pic" src="images/parkfinder.png" alt="parkfinder-img">
+        <div class="projects-card-container">
+            <h4 class="projects-title">Park Finder</h4>
+            <p class="specific-projects-text">
+                Web application written using Django.
+            </p>
+        </div>
+    </div>
+</a>
+
+
 <!-- HTML STRUCTURE OF MODALS CREATED ON PROJECTS -->
 <!-- PAGE OF WEBSITE THROUGH THE JAVASCRIPT. -->
 <!-- Park Finder Modal -->
-<div id="portfolioModal1" role="dialog" class="modal-bg">
+<div id="portfolioModal8" role="dialog" class="modal-bg">
     <div class="modal-dialog">
         <div class="close-modal-position">
-            <span id="exit-modal1" class="modal-close" href="#close"><i class="fas fa-times fa-2x"></i></span>
+            <span id="exit-modal8" class="modal-close" href="#close"><i class="fas fa-times fa-2x"></i></span>
         </div>
         <div class="modal-container"> 
             <!-- Modal Information and Content -->
@@ -93,7 +171,7 @@
                                 <br>
                                 <!-- Close Button on Bottom of Modal -->
                                 <div class="bottom-button-container">
-                                    <a id="bottom-exit-modal1" class="btn btn-dark btn-l model-close bottom-modal-button" href="#close"> 
+                                    <a id="bottom-exit-modal8" class="btn btn-dark btn-l model-close bottom-modal-button" href="#close"> 
                                         <i class="fa fa-times fa-times-bottom"></i> Close
                                     </a>
                                 </div>
@@ -105,6 +183,3 @@
         </div>
     </div> 
 </div>
-
-<!-- HTML STRUCTURE OF XXX CREATED ON RESUME -->
-<!-- PAGE OF WEBSITE THROUGH THE JAVASCRIPT. -->

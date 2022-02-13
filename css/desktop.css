@@ -402,7 +402,7 @@
         flex-wrap: wrap;
         flex-direction: row;
         min-width: fit-content;
-        justify-content: center;
+        justify-content: flex-start;
     }
 
     .specific-skill {
@@ -978,16 +978,14 @@
     }
 
     .modal-dialog {
-        display: inline-block;
-        vertical-align: middle;
-        /* overflow-y: initial !important; */
+        margin-top: auto;
+        padding-top: 40px;
+        margin-bottom: 40px;
     }
 
     .modal-container {
         max-width: 700px;
         color: var(--dark-font);
-        height: 90vh;
-        width: 90vw;
     }
 
     .close-modal-position {
@@ -1005,12 +1003,14 @@
         cursor: pointer;
     }
 
-    .fa-times {
+    .fa-times-top {
         color: var(--dark-font);
+        text-shadow: 0 0 10px var(--bluer-color);
     }
 
-    .fa-times:hover {
+    .fa-times-top:hover {
         color: var(--dark-font);
+        text-shadow: 0px 0px 0px var(--bluer-color);
     }
 
     .modal-information {
@@ -1071,6 +1071,12 @@
 
     .fa-times-bottom {
         color: var(--whiter-color);
+        text-shadow: 0px 0px 0px var(--bluer-color);
+    }
+
+    .fa-times-bottom:hover {
+        color: var(--whiter-color);
+        text-shadow: 0px 0px 0px var(--bluer-color);
     }
 
     .bottom-modal-button {

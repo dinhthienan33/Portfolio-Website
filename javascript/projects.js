@@ -6,6 +6,8 @@
  * present on the website. The majority of the 
  * JavaScript in this file is used for the features
  * of each modal. 
+ * 
+ * UPDATE DESCRIPTION...
  *
  * Author: Andrew Krause
  * Date: 01/31/2022
@@ -22,65 +24,12 @@ function loadContent(event) {
   addProjects();
   addProjectModals();
   addModalFunctions();
-
-  // Add an event listener for sending an email.
-  // document.getElementById("contact-send").addEventListener("click", sendEmail);
 }
-
-// --> SECTION: Style the links in the navbar.
-
-// Get the elements in the navbar by their ids.
-document.getElementById("menu-about").addEventListener("click", about);
-document.getElementById("menu-resume").addEventListener("click", resume);
-document.getElementById("menu-projects").addEventListener("click", projects);
-document.getElementById("menu-contact").addEventListener("click", contact);
-
-// Add a style (a highlight) to the "About" button if it is clicked.
-function about() {
-  document.getElementById("menu-about").classList.add("is-active");
-  document.getElementById("menu-resume").classList.remove("is-active");
-  document.getElementById("menu-projects").classList.remove("is-active");
-  document.getElementById("menu-contact").classList.remove("is-active");
-}
-
-// Add a style (a highlight) to the "Resume" button if it is clicked.
-function resume() {
-  document.getElementById("menu-about").classList.remove("is-active");
-  document.getElementById("menu-resume").classList.add("is-active");
-  document.getElementById("menu-projects").classList.remove("is-active");
-  document.getElementById("menu-contact").classList.remove("is-active");
-}
-
-// Add a style (a highlight) to the "Projects" button if it is clicked.
-function projects() {
-  document.getElementById("menu-about").classList.remove("is-active");
-  document.getElementById("menu-resume").classList.remove("is-active");
-  document.getElementById("menu-projects").classList.add("is-active");
-  document.getElementById("menu-contact").classList.remove("is-active");
-}
-
-// Add a style (a highlight) to the "Contact" button if it is clicked.
-function contact() {
-  document.getElementById("menu-about").classList.remove("is-active");
-  document.getElementById("menu-resume").classList.remove("is-active");
-  document.getElementById("menu-projects").classList.remove("is-active");
-  document.getElementById("menu-contact").classList.add("is-active");
-}
-
-
-
-
-// --> SECTION: Add skills list to the DOM.
-// DO THIS LATER!!!
-
-
-
-
 
 // --> SECTION: Add the project cards to the DOM.
 
 // List of project objects.
-// CAN ALWAYS ADD NEW OBJECTS HERE.
+// CAN ALWAYS ADD NEW PROJECT OBJECTS HERE.
 let myProjects = [ 
   {
     "project-id": "portfolio-item8",
@@ -159,8 +108,8 @@ function addProjects() {
   // the project objects will be created within.
   let projectList = document.querySelector(".projects-row");
 
-  // Loop through the list of objects and output
-  // the content to the website.
+  // Loop through the list of project objects
+  // and output the content to the website.
   myProjects.forEach(myProjects => {
 
     // Create a new anchor tag element for the project.
@@ -212,7 +161,7 @@ function addProjects() {
 // --> SECTION: Add the project modals to the DOM.
 
 // List of project modals.
-// CAN ALWAYS ADD NEW MODALS HERE.
+// CAN ALWAYS ADD NEW MODAL OBJECTS HERE.
 let myProjectModals = [ 
   {
     "modal-id": "portfolioModal8",
@@ -551,8 +500,8 @@ function addProjectModals() {
   // the project modals will be created within.
   let modalList = document.querySelector(".modals-section");
 
-  // Loop through the list of objects and output
-  // the content to the website.
+  // Loop through the list of modal objects
+  // and output the content to the website.
   myProjectModals.forEach(myProjectModals => {
 
     // Create a new div tag element for the modal.
@@ -581,7 +530,7 @@ function addProjectModals() {
 
     // Create the X-icon.
     let exitIcon = document.createElement("i");
-    exitIcon.setAttribute("class", "fas fa-times fa-2x");
+    exitIcon.setAttribute("class", "fas fa-times fa-times-top fa-2x");
     exitSpanTag.appendChild(exitIcon);
 
     // Create the modal container div.
