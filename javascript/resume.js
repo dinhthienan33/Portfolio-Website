@@ -1,5 +1,13 @@
 /*  
- * DESCRIPTION...
+ * The JavaScript file is utilized by the 
+ * resume.html page of the website. The 
+ * file adds skills, certifications, and
+ * achivements (volunteer and academic
+ * awards) to the resume page of the website
+ * by using the JavaScript property of 
+ * objects along with functions. The JS
+ * in this file builds HTML after other
+ * DOM elements are loaded on the website.
  *
  * Author: Andrew Krause
  * Date: 01/31/2022
@@ -15,6 +23,7 @@ function loadContent(event) {
   // Add DOM objects using the following functions.
   addSkills();
   addCertifications();
+  addVolunteer();
 }
 
 // --> SECTION: Add skills list to the DOM.
@@ -219,5 +228,102 @@ function addCertifications() {
     secondParagraphTag.setAttribute("class", "specific-certification-text");
     secondParagraphTag.appendChild(document.createTextNode(myCertifications["certification-description"]));
     thirdCertificationDiv.appendChild(secondParagraphTag);
+  });
+}
+
+// --> SECTION: Add volunteer list to the DOM.
+
+// List of volunteer objects
+// CAN ALWAYS ADD NEW VOLUNTEER OBJECTS HERE.
+let myVolunteer = [
+  {
+    "volunteer-img": "images/uwl.png",
+    "volunteer-alt": "uwl-img",
+    "volunteer-title": "UWL Campus Move-In Assistant",
+    "volunteer-subheading": "Volunteering, September 2021",
+    "volunteer-description": "I helped students move into their dormitory rooms for the Fall semester at the University of Wisconsin - La Crosse. I also helped to set up the rooms for the new students.",
+  },
+  {
+    "volunteer-img": "images/bestbuddies.png",
+    "volunteer-alt": "bestbuddies-img",
+    "volunteer-title": "Best Buddies Hot Food Stand",
+    "volunteer-subheading": "Volunteering, April 2021",
+    "volunteer-description": "I helped raise money for the special needs program, the Best Buddies, by running a hot dog stand in La Crosse.",
+  },
+  {
+    "volunteer-img": "images/deanslistuwl.png",
+    "volunteer-alt": "uwl-img",
+    "volunteer-title": "Dean's List Spring 2021",
+    "volunteer-subheading": "Academic Award",
+    "volunteer-description": "Maintained a GPA of 3.5 or higher for the semester.",
+  },
+  {
+    "volunteer-img": "images/deanslistuwl.png",
+    "volunteer-alt": "uwl-img",
+    "volunteer-title": "Dean's List Fall 2020",
+    "volunteer-subheading": "Academic Award",
+    "volunteer-description": "Maintained a GPA of 3.5 or higher for the semester.",
+  },
+];
+
+/*
+ * The function adds the volunteer
+ * objects to the DOM. The volunteer  
+ * objects are displayed as icons with 
+ * sections on the website.
+ */
+function addVolunteer() {
+
+  // Create a variable to obtain the div that 
+  // the volunteer objects will be created 
+  // within.
+  let volunteerList = document.querySelector(".volunteer-row");
+
+  // Loop through the list of volunteer objects 
+  // and output the content to the website.
+  myVolunteer.forEach(myVolunteer => {
+
+    // Create a new div tag element for the volunteer work.
+    let firstVolunteerDiv = document.createElement("div");
+    firstVolunteerDiv.setAttribute("class", "col-lg-4 col-md-6 mb-5 specific-volunteering");
+    volunteerList.appendChild(firstVolunteerDiv);
+
+    // Create a second div tag element for the volunteer work.
+    let secondVolunteerDiv = document.createElement("div");
+    secondVolunteerDiv.setAttribute("class", "volunteer-image-heading");
+    firstVolunteerDiv.appendChild(secondVolunteerDiv);
+
+    // Create an image element for the volunteer work.
+    let volunteerImage = document.createElement("img");
+    volunteerImage.setAttribute("class", "volunteer-pic volunteer-inline");
+    volunteerImage.setAttribute("src", myVolunteer["volunteer-img"]);
+    volunteerImage.setAttribute("alt", myVolunteer["volunteer-alt"]);
+    secondVolunteerDiv.appendChild(volunteerImage);
+  
+    // Create a header element for the volunteer work.
+    let volunteerHeading = document.createElement("h4");
+    volunteerHeading.setAttribute("class", "volunteer-title volunteer-inline");
+    volunteerHeading.appendChild(document.createTextNode(myVolunteer["volunteer-title"]));
+    secondVolunteerDiv.appendChild(volunteerHeading);
+  
+    // Create a third div tag element for the volunteer work.
+    let thirdVolunteerDiv = document.createElement("div");
+    firstVolunteerDiv.appendChild(thirdVolunteerDiv);
+  
+    // Create a paragraph tag element for the volunteer work.
+    let firstParagraphTagV = document.createElement("p");
+    firstParagraphTagV.setAttribute("class", "specific-volunteer-heading");
+    thirdVolunteerDiv.appendChild(firstParagraphTagV);
+  
+    // Create a italicize tag element for the volunteer work.
+    let italicizeTagV = document.createElement("i");
+    italicizeTagV.appendChild(document.createTextNode(myVolunteer["volunteer-subheading"]));
+    firstParagraphTagV.appendChild(italicizeTagV);
+
+    // Create a second paragraph tag element for the volunteer work.
+    let secondParagraphTagV = document.createElement("p");
+    secondParagraphTagV.setAttribute("class", "specific-volunteer-text");
+    secondParagraphTagV.appendChild(document.createTextNode(myVolunteer["volunteer-description"]));
+    thirdVolunteerDiv.appendChild(secondParagraphTagV);
   });
 }

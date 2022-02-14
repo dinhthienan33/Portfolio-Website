@@ -1156,9 +1156,9 @@ html {
         line-height: 60px; /* Should match height attribute */
     }
 
-    /* .bottom-modal-button:hover {
+    .bottom-modal-button:hover {
         background-color: var(--bluer-color);
-    } */
+    }
 
     /* Section for Descriptive Images in Modal */
     .modal-pic-card {

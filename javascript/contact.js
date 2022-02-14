@@ -1,5 +1,11 @@
 /*  
- * DESCRIPTION...
+ * The JavaScript file contains functions for
+ * the contact.html page of the website. The
+ * functions in this file help the user of the
+ * website send an email to the owner of the 
+ * site. The functions are not executed until
+ * the other DOM content of the website is
+ * loaded.
  *
  * Author: Andrew Krause
  * Date: 01/31/2022

@@ -432,7 +432,7 @@
     }
 
     .specific-volunteering {
-        flex: 40%;
+        flex-basis: 46.19%;
         padding-bottom: 20px;
         padding-top: 20px;
         margin-left: 20px;

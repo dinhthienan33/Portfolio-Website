@@ -1,13 +1,12 @@
 /*  
- * The JavaScript file implements simple functions 
- * on the portfolio website such as animating the
- * links in the navigation bar. The JS also provides
- * the functionality needed to implement the modals
- * present on the website. The majority of the 
- * JavaScript in this file is used for the features
- * of each modal. 
- * 
- * UPDATE DESCRIPTION...
+ * The JavaScript file provides functions to build
+ * the project cards and corresponding modals for 
+ * the projects.html page of the website. After 
+ * the other DOM elements of the website are loaded,
+ * this file executes the functions responsible for
+ * building the components of the projects.html page.
+ * JS objects are used to create new project cards
+ * and new modals on the projects page.
  *
  * Author: Andrew Krause
  * Date: 01/31/2022
@@ -668,6 +667,7 @@ function addProjectModals() {
 }
 
 // --> SECTION: Style the modals on the website.
+// WHENEVER YOU ADD A NEW MODAL, YOU MUST ALSO ADD NEW FUNCTION ATTRIBUTES.
 
 /*
  * The function adds the needed functions
