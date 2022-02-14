@@ -222,7 +222,7 @@ let myProjectModals = [
 
     "modal-images-text": [
       {
-        "modal-image": "images/teamaptiv.png",
+        "modal-image": "images/teamaptiv-images/teamaptiv-home.png",
         "modal-image-description": "Home page of Team Aptiv website.", 
         "modal-image-alt": "teamaptiv-img", 
       }, 

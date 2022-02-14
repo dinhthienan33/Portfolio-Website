@@ -566,10 +566,11 @@
         flex-wrap: wrap; 
         flex-direction: row;
         min-width: fit-content;
+        justify-content: flex-start;
     }
 
     .certification-card {
-        flex: 40%;
+        flex-basis: 45.3%;
         background-color: var(--whiter-color);
         border-radius: 0.5em;
         padding: 15px;
