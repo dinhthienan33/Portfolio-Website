@@ -1078,6 +1078,7 @@ html {
 
     .fa-times-top:hover {
         color: var(--dark-font);
+        text-shadow: 0px 0px 0px var(--bluer-color);
     }
 
     .modal-information {
