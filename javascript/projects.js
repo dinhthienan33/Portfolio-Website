@@ -176,6 +176,11 @@ let myProjectModals = [
         "modal-image-alt": "parkfinder-img", 
       }, 
       {
+        "modal-image": "images/parkfinder-images/parkfinder-about.png", 
+        "modal-image-description": "About page of Park Finder website. Descriptions of the site features are provided.", 
+        "modal-image-alt": "parkfinder-about-img", 
+      }, 
+      {
         "modal-image": "images/parkfinder-images/parkfinder-select.png", 
         "modal-image-description": "State selection page. Users choose a state in order to find locations in that state.", 
         "modal-image-alt": "parkfinder-select-img", 
