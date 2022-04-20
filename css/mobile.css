@@ -73,6 +73,7 @@
 /* Set the background color as well as some additional attributes of the website. */
 body {
     min-height: 100vh;
+    min-width: 100vw;
     display: flex;
     flex-direction: column;
     line-height: 1.5; 
@@ -1251,6 +1252,10 @@ html {
         color: var(--whiter-color);
     }
 
+    .contact-link:hover div p b {
+        text-decoration: underline;
+    }
+
     .contact-circle {
         margin-left: 0;
         margin-left: auto;
@@ -1329,9 +1334,10 @@ html {
         width: 100%;
         border-top: 1px solid var(--gray-font);
         text-align: center;
-        padding-top: 64px;
-        padding-bottom: 40px;
+        padding-top: 30px;
+        padding-bottom: 10px;
         bottom: 0;
+        margin-bottom: 0;
     }
 
     .footer-row {

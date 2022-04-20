@@ -32,7 +32,9 @@
   
     .pic-column {
         display: block;
-        margin-top: 0;
+        /* margin-top: 0; */
+        margin-top: auto;
+        margin-bottom: auto;
         align-items: start;
         padding: 1rem;
         flex: 20%;

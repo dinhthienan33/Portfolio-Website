@@ -56,7 +56,7 @@
     }
 
     #about {
-        padding-top: 60px;
+        padding-top: 80px;
     }
 
     #projects {
@@ -178,7 +178,6 @@
     
     #about {
         padding-top: 80px;
-        height: 100%;  
     }
 
     .slide-from-left {
@@ -1239,6 +1238,10 @@
         color: var(--whiter-color);
     }
 
+    .contact-link:hover div p b {
+        text-decoration: underline;
+    }
+
     .contact-circle {
         margin-left: 0;
         margin-left: auto;
@@ -1317,9 +1320,10 @@
         width: 100%;
         border-top: 1px solid var(--gray-font);
         text-align: center;
-        padding-top: 64px;
-        padding-bottom: 40px;
+        padding-top: 30px;
+        padding-bottom: 10px;
         bottom: 0;
+        margin-bottom: 0;
     }
 
     .footer-row {
