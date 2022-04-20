@@ -676,16 +676,15 @@
         display: flex;
         flex-wrap: wrap; 
         flex-direction: row;
-        justify-content: center;
+        justify-content: flex-start;
     }
 
     .projects-card {
         max-width: 400px;
-        flex: 30%;
         background-color: var(--bluer-color);
         border-radius: 0.5em;
         height: 400px; 
-        width: 510;
+        /* width: 510px; */
         transition: all .2s ease-in-out;
     }
 
@@ -698,6 +697,9 @@
         color: var(--dark-font);
         margin-top: 20px;
         margin-bottom: 20px;
+        margin-left: 25.3px;
+        margin-right: 25.3px;
+        /* flex-basis: auto; */
     }
 
     .projects-pic {
