@@ -688,6 +688,7 @@ function addModalFunctions() {
   // When the user clicks the button, open the modal.
   anchor1.onclick = function() {
     modal1.classList.add('bg-active');
+    modal1.scrollTo(0, 0);
     document.body.classList.add('overflowHidden');
   }
 
@@ -700,6 +701,7 @@ function addModalFunctions() {
   // When the user clicks the button, open the modal.
   anchor2.onclick = function() {
     modal2.classList.add('bg-active');
+    modal2.scrollTo(0, 0);
     document.body.classList.add('overflowHidden');
   }
 
@@ -712,6 +714,7 @@ function addModalFunctions() {
   // When the user clicks the button, open the modal.
   anchor3.onclick = function() {
     modal3.classList.add('bg-active');
+    modal3.scrollTo(0, 0);
     document.body.classList.add('overflowHidden');
   }
 
@@ -724,6 +727,7 @@ function addModalFunctions() {
   // When the user clicks the button, open the modal.
   anchor4.onclick = function() {
     modal4.classList.add('bg-active');
+    modal4.scrollTo(0, 0);
     document.body.classList.add('overflowHidden');
   }
 
@@ -736,6 +740,7 @@ function addModalFunctions() {
   // When the user clicks the button, open the modal.
   anchor5.onclick = function() {
     modal5.classList.add('bg-active');
+    modal5.scrollTo(0, 0);
     document.body.classList.add('overflowHidden');
   }
 
@@ -748,6 +753,7 @@ function addModalFunctions() {
   // When the user clicks the button, open the modal.
   anchor6.onclick = function() {
     modal6.classList.add('bg-active');
+    modal6.scrollTo(0, 0);
     document.body.classList.add('overflowHidden');
   }
 
@@ -760,6 +766,7 @@ function addModalFunctions() {
   // When the user clicks the button, open the modal.
   anchor7.onclick = function() {
     modal7.classList.add('bg-active');
+    modal7.scrollTo(0, 0);
     document.body.classList.add('overflowHidden');
   }
 
@@ -772,6 +779,7 @@ function addModalFunctions() {
   // When the user clicks the button, open the modal.
   anchor8.onclick = function() {
     modal8.classList.add('bg-active');
+    modal8.scrollTo(0, 0);
     document.body.classList.add('overflowHidden');
   }
 
