@@ -166,7 +166,7 @@ let myProjectModals = [
     "modal-id": "portfolioModal8",
     "modal-span-id": "exit-modal8",
     "modal-heading": "Park Finder",
-    "modal-subheading": "Simple application Django in web development.",
+    "modal-subheading": "Simple application of Django in web development.",
     "modal-description": "Park Finder was created as a group semester project for a Python class that I took my junior year of college. The Park Finder website utilizes a simple API obtained from the National Park Services (NPS). The API provides information about national parks and places in the United States. I was responsible for connecting the backend framework of the website to the API and displaying the different locations on the website. Pictures on navigating the website are below.",
 
     "modal-images-text": [
