@@ -115,7 +115,6 @@
     
     #about {
         padding-top: 60px;
-        /* padding-top: 80px; */
     }
 
     .slide-from-left {
@@ -186,8 +185,6 @@
     .pic-column {
         display: block;
         margin-top: 87px;
-        /* margin-top: auto;
-        margin-bottom: auto; */
         align-items: start;
         padding: 1rem;
         flex: 30%;
@@ -421,8 +418,8 @@
         margin-left: 0;
         margin-left: auto;
         margin-right: auto;
-        height: 60px; /* height: 120px; */
-        width: 60px; /* width: 120px; */
+        height: 60px;
+        width: 60px;
         background-color: var(--black-color);
         border-radius: 50%;
         display: inline-block;
@@ -601,8 +598,8 @@
         margin-right: 0;
         margin-top: auto;
         margin-bottom: auto;
-        height: 60px; /* height: 120px; */
-        width: 60px; /* width: 120px; */
+        height: 60px;
+        width: 60px;
         border-radius: 50%;
         vertical-align: middle;
     }
@@ -692,8 +689,8 @@
         margin-right: 0;
         margin-top: auto;
         margin-bottom: auto;
-        height: 60px; /* height: 120px; */
-        width: 60px; /* width: 120px; */
+        height: 60px;
+        width: 60px;
         border-radius: 0;
         vertical-align: middle;
     }
@@ -955,7 +952,6 @@
 
     .projects-title {
         white-space: normal;
-        width: calc(100% - 75px);
         margin-left: 0;
         height: fit-content;
         font-size: 24px; 
@@ -1215,8 +1211,8 @@
         margin-left: 0;
         margin-left: auto;
         margin-right: auto;
-        height: 60px; /* height: 120px; */
-        width: 60px; /* width: 120px; */
+        height: 60px;
+        width: 60px;
         background-color: var(--whiter-color);
         border-radius: 50%;
         display: inline-block;

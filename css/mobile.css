@@ -67,7 +67,7 @@
     padding: 0;
 }
 
-/* REMEMBER TO LATER ADD A FEATURE THAT ENABLES YOU TO CHANGE THE COLOR SCHEME ON THE WEBSITE!!! */
+/* REMEMBER TO LATER ADD A FEATURE THAT ENABLES YOU TO CHANGE THE COLOR SCHEME ON THE WEBSITE!!! --> MAYBE... */
 /* ALSO, CONVERT EVERYTHING FROM PIXELS TO rem WHEN YOU GET THE CHANCE!!! --> MAYBE... */
 
 /* Set the background color as well as some additional attributes of the website. */
@@ -82,7 +82,7 @@ body {
     color: var(--light-font);
     font-family: 'Open Sans', sans-serif;
     font-size: 120%;
-    scroll-behavior: smooth; /* KEEP AN EYE ON THIS!!! */
+    scroll-behavior: smooth;
 }
 
 /* Ensure that the footer always sticks to the bottom of the screen. */
@@ -488,8 +488,8 @@ html {
         margin-left: 0;
         margin-left: auto;
         margin-right: auto;
-        height: 60px; /* height: 120px; */
-        width: 60px; /* width: 120px; */
+        height: 60px;
+        width: 60px;
         background-color: var(--black-color);
         border-radius: 50%;
         display: inline-block;
@@ -665,8 +665,8 @@ html {
         margin-right: 0;
         margin-top: auto;
         margin-bottom: auto;
-        height: 60px; /* height: 120px; */
-        width: 60px; /* width: 120px; */
+        height: 60px;
+        width: 60px;
         border-radius: 50%;
         vertical-align: middle;
     }
@@ -753,8 +753,8 @@ html {
         margin-right: 0;
         margin-top: auto;
         margin-bottom: auto;
-        height: 60px; /* height: 120px; */
-        width: 60px; /* width: 120px; */
+        height: 60px;
+        width: 60px;
         border-radius: 0;
         vertical-align: middle;
     }
@@ -939,7 +939,7 @@ html {
     }
 
     /* ====================================================================
-                           PROJECTS Section (Page 3) --> WITH THIS SECTION, STOP SCROLL TO TOP WHEN MODAL CLOSES, AND START AT TOP ALWAYS WITHIN MODAL!!!                                                
+                            PROJECTS Section (Page 3) 
     ==================================================================== */
 
     #projects {
@@ -1017,7 +1017,6 @@ html {
 
     .projects-title {
         white-space: normal;
-        width: calc(100% - 75px);
         margin-left: 0;
         height: fit-content;
         font-size: 24px; 
@@ -1047,7 +1046,6 @@ html {
     }
 
     .bg-active {
-        /* overflow: initial; */
         visibility: visible;
         opacity: 1;
         overflow-y: auto;
@@ -1059,7 +1057,6 @@ html {
         margin-bottom: 20px;
         margin-left: 20px;
         margin-right: 20px;
-        /* overflow-y: initial !important; KEEP AN EYE ON THIS!!! */
     }
 
     .modal-container {
@@ -1270,8 +1267,8 @@ html {
         margin-left: 0;
         margin-left: auto;
         margin-right: auto;
-        height: 60px; /* height: 120px; */
-        width: 60px; /* width: 120px; */
+        height: 60px;
+        width: 60px;
         background-color: var(--whiter-color);
         border-radius: 50%;
         display: inline-block;

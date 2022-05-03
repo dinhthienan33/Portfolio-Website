@@ -694,7 +694,6 @@
         background-color: var(--bluer-color);
         border-radius: 0.5em;
         height: 400px; 
-        /* width: 510px; */
         transition: all .2s ease-in-out;
     }
 
@@ -709,7 +708,6 @@
         margin-bottom: 20px;
         margin-left: 25.3px;
         margin-right: 25.3px;
-        /* flex-basis: auto; */
     }
 
     .projects-pic {
@@ -730,7 +728,6 @@
 
     .projects-title {
         white-space: normal;
-        width: calc(100% - 75px);
         margin-left: 0;
         height: fit-content;
         font-size: 24px; 
