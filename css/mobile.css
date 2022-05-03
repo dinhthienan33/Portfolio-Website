@@ -566,6 +566,16 @@ html {
         color: var(--whiter-color);
     }
 
+    .fa-database {
+        margin-left: auto;
+        margin-right: auto;
+        color: var(--whiter-color);
+    }
+
+    .fa-database:hover {
+        color: var(--whiter-color);
+    }
+
     .icon-c {
         margin-left: auto;
         margin-right: auto;

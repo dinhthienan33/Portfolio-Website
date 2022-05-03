@@ -77,13 +77,13 @@ let mySkills = [
     "skill-icon": "fa mongodb icon-mongodb fa-2x",
     "skill-style-padding": "padding-left: 11px; padding-top: 12px;",
     "skill-name": "MongoDB",
-    "skill-description": "I have had about 1 year of experience with MongoDB. I have used it for the backends of the majority of my web application projcts.",
+    "skill-description": "I have had about 1 year of experience with MongoDB. I have used it to create databases for the majority of my web application projects.",
   },
   {
-    "skill-icon": "fab fa-solid fa-database fa-2x",
+    "skill-icon": "fas fa-solid fa-database fa-2x",
     "skill-style-padding": "padding-left: 13.5px; padding-top: 11px;",
     "skill-name": "SQL",
-    "skill-description": "I recently learned SQL during my junior year of college. Using the language, I created a simple website to display hospital data, which can be viewed, edited, and/or removed.",
+    "skill-description": "I recently learned SQL during my junior year of college. Using the language, I created a simple website to display hospital data. The data can be viewed, edited, and/or removed.",
   },
 ];
 
