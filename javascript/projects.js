@@ -29,7 +29,23 @@ function loadContent(event) {
 
 // List of project objects.
 // CAN ALWAYS ADD NEW PROJECT OBJECTS HERE.
-let myProjects = [ 
+let myProjects = [
+  {
+    "project-id": "portfolio-item10",
+    "project-ref": "#portfolioModal10",
+    "project-image": "images/compiler-grammar.png",
+    "project-image-alt": "compiler-grammar-img",
+    "project-name": "Simple Compiler",
+    "project-brief": "Compiler written for a C-like language.",
+  }, 
+  {
+    "project-id": "portfolio-item9",
+    "project-ref": "#portfolioModal9",
+    "project-image": "images/pcm-home.png",
+    "project-image-alt": "pcm-img",
+    "project-name": "Patient Care Manager",
+    "project-brief": "Web application written using Node.js.",
+  }, 
   {
     "project-id": "portfolio-item8",
     "project-ref": "#portfolioModal8",
@@ -86,14 +102,14 @@ let myProjects = [
     "project-name": "Java Pong",
     "project-brief": "Adaptation of the pong game.",
   },
-  {
-    "project-id": "portfolio-item1",
-    "project-ref": "#portfolioModal1",
-    "project-image": "images/firstdrawing.png",
-    "project-image-alt": "firstdrawing-img",
-    "project-name": "First Java Program",
-    "project-brief": "Simple drawing made with Java.",
-  },
+  // {
+  //   "project-id": "portfolio-item1",
+  //   "project-ref": "#portfolioModal1",
+  //   "project-image": "images/firstdrawing.png",
+  //   "project-image-alt": "firstdrawing-img",
+  //   "project-name": "First Java Program",
+  //   "project-brief": "Simple drawing made with Java.",
+  // },
 ];
 
 /*
@@ -162,6 +178,97 @@ function addProjects() {
 // List of project modals.
 // CAN ALWAYS ADD NEW MODAL OBJECTS HERE.
 let myProjectModals = [ 
+  {
+    "modal-id": "portfolioModal10",
+    "modal-span-id": "exit-modal10",
+    "modal-heading": "Simple Compiler",
+    "modal-subheading": "Compiler written to convert a C-like language into MIPS assembly code.",
+    "modal-description": "The Compiler was created as a semester project for my CS 442 course at my university. The project is a simple machine that can take a langage similar to C and convert it into MIPS assembly instructions. The generated programs, consisting of the MIPS instructions, can be run in a simulator such as Mars to obtain the results. The Compiler consists of five main parts: SymbolTable.c, IOMngr.c, lexFile.l, ExprEval.y, and Semantics.c. Each file is responsible for ensuring that the compilation process successfully executes. The three main file types are lex (flex for Mac), yacc (bison for Mac), and C. Makefiles and other scripts are used to run the compiler on the command line in order to process C-like programs that are passed in as input.",
+
+    "modal-images-text": [
+      {
+        "modal-image": "images/compiler-grammar.png", 
+        "modal-image-description": "Part of compiler grammar. The project can be executed on a terminal and the output can then be run in a Mars Simulator. Please contact me to visit my GitHub repository for additional details.",
+        "modal-image-alt": "compiler-grammar-img", 
+      }, 
+    ],
+
+    "modal-final-text": "The Compiler project is hosted in a GitHub repository on my account. Given the need to maintain academic integrity, I have restricted access to this project. If you wish to view it, please contact me.",
+    
+    "modal-links": [
+      {
+        "modal-link-reference": "contact.html",
+        "modal-link-description": "Contact me to view project",
+      },
+    ],
+
+    "modal-bottom-button": "bottom-exit-modal10",
+  },
+  {
+    "modal-id": "portfolioModal9",
+    "modal-span-id": "exit-modal9",
+    "modal-heading": "Patient Care Manager",
+    "modal-subheading": "Web application created using Node.js as framework.",
+    "modal-description": "Patient Care Manager (PCM) was created as a semester project for a databases class at my university. The project is an implementation of fullstack web development. HTML, CSS, JavaScript, and a SQL database were used to create the website. The PCM project was created for the purpose of helping Mayo Clinic (in actuality it is not used by the health organization), a leading provider in health care, organize and manage hospital information. Users can interact with Patient, Treatment, Provider, and Department data. Users have the ability to view the different entity types in the database, create new data, edit existing data, and remove data.",
+
+    "modal-images-text": [
+      {
+        "modal-image": "images/pcm-home.png",
+        "modal-image-description": "Home page of Patient Care Manager website.", 
+        "modal-image-alt": "pcm-img", 
+      },  
+      {
+        "modal-image": "images/patientcaremanager-images/pcm-about.png", 
+        "modal-image-description": "About page. Users can read about the features of the web application as well as download a project document with additional details.",
+        "modal-image-alt": "pcm-about-img", 
+      }, 
+      {
+        "modal-image": "images/patientcaremanager-images/pcm-view.png", 
+        "modal-image-description": "Views page. Users can select which table in the database they would like to view and interact with. In the following images below, the user has selected the Patients table.", 
+        "modal-image-alt": "pcm-views-img", 
+      },
+      {
+        "modal-image": "images/patientcaremanager-images/pcm-patients.png",
+        "modal-image-description": "Patients page. On this page, users can view all of the patients in the database. The patients page is one of five other pages with data that the user can view.",
+        "modal-image-alt": "pcm-patients-img", 
+      },
+      {
+        "modal-image": "images/patientcaremanager-images/pcm-patients-expanded.png",
+        "modal-image-description": "Expanded view of a specific patient. To view more patient details, users can click the info (i) icon listed as one of the buttons on a given patient.",
+        "modal-image-alt": "pcm-patients-expanded-img", 
+      },
+      {
+        "modal-image": "images/patientcaremanager-images/pcm-patients-create.png",
+        "modal-image-description": "Create new patient page for users to add a new patient to the patient table of the database. Data validation is included for the input fields on this page.",
+        "modal-image-alt": "pcm-patients-create-img", 
+      },
+      {
+        "modal-image": "images/patientcaremanager-images/pcm-patients-edit.png",
+        "modal-image-description": "Edit patient page. Users can click on the pencil icon for any given patient to edit the data attributes for that patient and submit the changes to the database.",
+        "modal-image-alt": "pcm-patients-edit-img", 
+      },
+      {
+        "modal-image": "images/patientcaremanager-images/pcm-patients-delete.png",
+        "modal-image-description": "Patient delete action. Users have the ability to remove any given patient in the database. Users must confirm that they wish to proceed with removing a patient from the database.",
+        "modal-image-alt": "pcm-patients-delete-img", 
+      },
+    ],
+
+    "modal-final-text": "The Patient Care Manager website is hosted on a Heroku server. Heroku is a cloud platform that offers a secure place to host server-based projects on the world wide web.",
+    
+    "modal-links": [
+      {
+        "modal-link-reference": "https://github.com/Krause2023/Patient-Care-Manager",
+        "modal-link-description": "View project on GitHub",
+      },
+      {
+        "modal-link-reference": "https://patient-care-manager.herokuapp.com/home",
+        "modal-link-description": "View project online",
+      },
+    ],
+
+    "modal-bottom-button": "bottom-exit-modal9",
+  },
   {
     "modal-id": "portfolioModal8",
     "modal-span-id": "exit-modal8",
@@ -465,32 +572,32 @@ let myProjectModals = [
 
     "modal-bottom-button": "bottom-exit-modal2",
   },
-  {
-    "modal-id": "portfolioModal1",
-    "modal-span-id": "exit-modal1",
-    "modal-heading": "First Java Program",
-    "modal-subheading": "Simple drawing created using different shape classes in Java.",
-    "modal-description": "The project is a simple program written in Java that generates an image of a clock tower on my university campus as well as some background features. The image is comprised of different shapes that are manipulated in both size and location to form the simple image. I created this project during my freshman year of college in my first computer science class.",
+  // {
+  //   "modal-id": "portfolioModal1",
+  //   "modal-span-id": "exit-modal1",
+  //   "modal-heading": "First Java Program",
+  //   "modal-subheading": "Simple drawing created using different shape classes in Java.",
+  //   "modal-description": "The project is a simple program written in Java that generates an image of a clock tower on my university campus as well as some background features. The image is comprised of different shapes that are manipulated in both size and location to form the simple image. I created this project during my freshman year of college in my first computer science class.",
 
-    "modal-images-text": [
-      {
-        "modal-image": "images/firstdrawing-images/firstdrawing2.png", 
-        "modal-image-description": "Drawing generated by the Java program. The drawing is a simple collection of shapes that form the image.",
-        "modal-image-alt": "firstdrawing2-img", 
-      }, 
-    ],
+  //   "modal-images-text": [
+  //     {
+  //       "modal-image": "images/firstdrawing-images/firstdrawing2.png", 
+  //       "modal-image-description": "Drawing generated by the Java program. The drawing is a simple collection of shapes that form the image.",
+  //       "modal-image-alt": "firstdrawing2-img", 
+  //     }, 
+  //   ],
 
-    "modal-final-text": "The First Java Program project is hosted in a GitHub repository on my account. To view more details about this project and run it, visit my repository via the link provided below.",
+  //   "modal-final-text": "The First Java Program project is hosted in a GitHub repository on my account. To view more details about this project and run it, visit my repository via the link provided below.",
     
-    "modal-links": [
-      {
-        "modal-link-reference": "https://github.com/Krause2023/Java-Drawing",
-        "modal-link-description": "View project on GitHub",
-      },
-    ],
+  //   "modal-links": [
+  //     {
+  //       "modal-link-reference": "https://github.com/Krause2023/Java-Drawing",
+  //       "modal-link-description": "View project on GitHub",
+  //     },
+  //   ],
 
-    "modal-bottom-button": "bottom-exit-modal1",
-  },
+  //   "modal-bottom-button": "bottom-exit-modal1",
+  // },
 ];
 
 /*
@@ -682,15 +789,15 @@ function addProjectModals() {
 function addModalFunctions() {
 
   // MODAL 1
-  var anchor1 = document.getElementById("portfolio-item1");
-  var modal1 = document.getElementById("portfolioModal1");
+  // var anchor1 = document.getElementById("portfolio-item1");
+  // var modal1 = document.getElementById("portfolioModal1");
 
-  // When the user clicks the button, open the modal.
-  anchor1.onclick = function() {
-    modal1.classList.add('bg-active');
-    modal1.scrollTo(0, 0);
-    document.body.classList.add('overflowHidden');
-  }
+  // // When the user clicks the button, open the modal.
+  // anchor1.onclick = function() {
+  //   modal1.classList.add('bg-active');
+  //   modal1.scrollTo(0, 0);
+  //   document.body.classList.add('overflowHidden');
+  // }
 
   // ==================================================================
 
@@ -784,15 +891,41 @@ function addModalFunctions() {
   }
 
   // ==================================================================
+
+  // MODAL 9
+  var anchor9 = document.getElementById("portfolio-item9");
+  var modal9 = document.getElementById("portfolioModal9");
+
+  // When the user clicks the button, open the modal.
+  anchor9.onclick = function() {
+    modal9.classList.add('bg-active');
+    modal9.scrollTo(0, 0);
+    document.body.classList.add('overflowHidden');
+  }
+
+  // ==================================================================
+
+  // MODAL 10
+  var anchor10 = document.getElementById("portfolio-item10");
+  var modal10 = document.getElementById("portfolioModal10");
+
+  // When the user clicks the button, open the modal.
+  anchor10.onclick = function() {
+    modal10.classList.add('bg-active');
+    modal10.scrollTo(0, 0);
+    document.body.classList.add('overflowHidden');
+  }
+
+  // ==================================================================
   // Get the FIRST element that closes the modal (the big 'X').
   // ==================================================================
 
-  var bigX1 = document.getElementById("exit-modal1");
+  // var bigX1 = document.getElementById("exit-modal1");
 
-  bigX1.onclick = function() {
-    modal1.classList.remove('bg-active');
-    document.body.classList.remove('overflowHidden');
-  }
+  // bigX1.onclick = function() {
+  //   modal1.classList.remove('bg-active');
+  //   document.body.classList.remove('overflowHidden');
+  // }
 
   var bigX2 = document.getElementById("exit-modal2");
 
@@ -843,16 +976,30 @@ function addModalFunctions() {
     document.body.classList.remove('overflowHidden');
   }
 
+  var bigX9 = document.getElementById("exit-modal9");
+
+  bigX9.onclick = function() {
+    modal9.classList.remove('bg-active');
+    document.body.classList.remove('overflowHidden');
+  }
+
+  var bigX10 = document.getElementById("exit-modal10");
+
+  bigX10.onclick = function() {
+    modal10.classList.remove('bg-active');
+    document.body.classList.remove('overflowHidden');
+  }
+
   // ==================================================================
   // Get the SECOND element that closes the modal (the small 'x').
   // ==================================================================
 
-  var smallX1 = document.getElementById("bottom-exit-modal1");
+  // var smallX1 = document.getElementById("bottom-exit-modal1");
 
-  smallX1.onclick = function() {
-    modal1.classList.remove('bg-active');
-    document.body.classList.remove('overflowHidden');
-  }
+  // smallX1.onclick = function() {
+  //   modal1.classList.remove('bg-active');
+  //   document.body.classList.remove('overflowHidden');
+  // }
 
   var smallX2 = document.getElementById("bottom-exit-modal2");
 
@@ -903,15 +1050,30 @@ function addModalFunctions() {
     document.body.classList.remove('overflowHidden');
   }
 
+  var smallX9 = document.getElementById("bottom-exit-modal9");
+
+  smallX9.onclick = function() {
+    modal9.classList.remove('bg-active');
+    document.body.classList.remove('overflowHidden');
+  }
+
+  var smallX10 = document.getElementById("bottom-exit-modal10");
+
+  smallX10.onclick = function() {
+    modal10.classList.remove('bg-active');
+    document.body.classList.remove('overflowHidden');
+  }
+
   // ==================================================================
   // When the user clicks anywhere outside of the modal, close it.
   // ==================================================================
   window.onclick = function(event) {
-    if (event.target == modal1) {
-      modal1.classList.remove('bg-active');
-      document.body.classList.remove('overflowHidden');
+    // if (event.target == modal1) {
+    //   modal1.classList.remove('bg-active');
+    //   document.body.classList.remove('overflowHidden');
 
-    } else if(event.target == modal2) {
+    // } 
+    if(event.target == modal2) {
       modal2.classList.remove('bg-active');
       document.body.classList.remove('overflowHidden');
 
@@ -937,6 +1099,14 @@ function addModalFunctions() {
 
     } else if(event.target == modal8) {
       modal8.classList.remove('bg-active');
+      document.body.classList.remove('overflowHidden');
+
+    } else if(event.target == modal9) {
+      modal9.classList.remove('bg-active');
+      document.body.classList.remove('overflowHidden');
+
+    } else if(event.target == modal10) {
+      modal10.classList.remove('bg-active');
       document.body.classList.remove('overflowHidden');
     }
   }

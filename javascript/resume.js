@@ -47,7 +47,7 @@ let mySkills = [
     "skill-icon": "fab python fa-python fa-2x",
     "skill-style-padding": "padding-left: 13px; padding-top: 12px;",
     "skill-name": "Python/Django",
-    "skill-description": "I have had 1 year of experience with Python and Django. I intend to further my understanding of Python as popular higher-level programming language. I have used my knowledge of Django, a Python based web technology to build websites such as a Park Finder application that allows users to find national parks and places in the United States.",
+    "skill-description": "I have had 1 year of experience with Python and Django. I intend to further my understanding of Python as a popular higher-level programming language. I have used my knowledge of Django, a Python based web technology to build websites such as a Park Finder application that allows users to find national parks and places in the United States.",
   },
   {
     "skill-icon": "fas git fa-code-branch fa-2x",
@@ -78,6 +78,12 @@ let mySkills = [
     "skill-style-padding": "padding-left: 11px; padding-top: 12px;",
     "skill-name": "MongoDB",
     "skill-description": "I have had about 1 year of experience with MongoDB. I have used it for the backends of the majority of my web application projcts.",
+  },
+  {
+    "skill-icon": "fab fa-solid fa-database fa-2x",
+    "skill-style-padding": "padding-left: 13.5px; padding-top: 11px;",
+    "skill-name": "SQL",
+    "skill-description": "I recently learned SQL during my junior year of college. Using the language, I created a simple website to display hospital data, which can be viewed, edited, and/or removed.",
   },
 ];
 
