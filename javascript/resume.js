@@ -81,7 +81,7 @@ let mySkills = [
   },
   {
     "skill-icon": "fas fa-solid fa-database fa-2x",
-    "skill-style-padding": "padding-left: 13.5px; padding-top: 11px;",
+    "skill-style-padding": "padding-left: 13.15px; padding-top: 11px;",
     "skill-name": "SQL",
     "skill-description": "I recently learned SQL during my junior year of college. Using the language, I created a simple website to display hospital data. The data can be viewed, edited, and/or removed.",
   },
