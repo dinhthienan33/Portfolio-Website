@@ -688,17 +688,14 @@
         flex-direction: row;
         justify-content: flex-start;
     }
-
+    
     .projects-card {
+        position: relative;
         max-width: 400px;
         background-color: var(--bluer-color);
         border-radius: 0.5em;
         height: 400px; 
         transition: all .2s ease-in-out;
-    }
-
-    .projects-card:hover {  
-        transform: scale(1.02);
     }
 
     .portfolio-item {
@@ -711,19 +708,51 @@
     }
 
     .projects-pic {
+        opacity: 1;
+        display: block;
+        transition: .5s ease;
         margin-left: 0;
         margin-right: 0;
         margin-top: auto;
         margin-bottom: auto;
         width: 100%;
+        height: 295px;
         border-top-left-radius: 0.5em;
         border-top-right-radius: 0.5em;
-        vertical-align: middle;
+    }
+
+    .projects-pic-info {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        left: 50%;
+        height: 295px;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .projects-pic-info-text {
+        color: black;
+    }
+
+    .projects-card:hover .projects-pic {  
+        opacity: 0.2;
+    }
+
+    .projects-card:hover .projects-pic-info {  
+        opacity: 1;
+    }
+
+    .projects-card:hover {
+        transform: scale(1.02);
     }
 
     .projects-card-container {
         padding: 15px;
-        height: fit-content;
+        min-height: 106px;
+        max-height: 106px;
+        text-align: center;
     }
 
     .projects-title {
@@ -736,7 +765,8 @@
 
     .specific-projects-text {
         font-size: 20px;
-        margin-top: 0.5rem;
+        margin-top: 4px;
+        font-style: italic;
     }
 
     /* Section for Modals */

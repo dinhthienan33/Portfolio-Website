@@ -68,7 +68,7 @@ let myProjects = [
     "project-image": "images/apppromotion.png",
     "project-image-alt": "apppromotion-img",
     "project-name": "Promotional Webpage",
-    "project-brief": "Webpage made to promote fictional app.",
+    "project-brief": "Webpage made to practice Bootstrap.",
   },
   {
     "project-id": "portfolio-item5",
@@ -76,7 +76,7 @@ let myProjects = [
     "project-image": "images/firstpersonal.png",
     "project-image-alt": "personalwebpage-img",
     "project-name": "First Personal Webpage",
-    "project-brief": "First simple website made with HTML/CSS.",
+    "project-brief": "Simple website made with HTML/CSS.",
   },
   {
     "project-id": "portfolio-item4",
@@ -84,7 +84,7 @@ let myProjects = [
     "project-image": "images/officesimulation.png",
     "project-image-alt": "officesimulation-img",
     "project-name": "Office Hours Simulation",
-    "project-brief": "Simple program to simulate office hours.",
+    "project-brief": "Program to simulate office hours.",
   },
   {
     "project-id": "portfolio-item3",
@@ -92,7 +92,7 @@ let myProjects = [
     "project-image": "images/hashtable.png",
     "project-image-alt": "hashtable-img",
     "project-name": "Hash Table",
-    "project-brief": "Simple data structure written using Java.",
+    "project-brief": "Data structure written using Java.",
   },
   {
     "project-id": "portfolio-item2",
@@ -153,6 +153,21 @@ function addProjects() {
     innerAnchorImage.setAttribute("src", myProjects["project-image"]);
     innerAnchorImage.setAttribute("alt", myProjects["project-image-alt"]);
     innerAnchorDiv.appendChild(innerAnchorImage);
+
+    // Create a div element to create a different hover effect.
+    let innerInfoDiv = document.createElement("div");
+    innerInfoDiv.setAttribute("class", "projects-pic-info");
+    innerAnchorDiv.appendChild(innerInfoDiv);
+
+    // Create a div element to hold an "info" icon.
+    let innerInfoTextDiv = document.createElement("div");
+    innerInfoTextDiv.setAttribute("class", "projects-pic-info-text");
+    innerInfoDiv.appendChild(innerInfoTextDiv);
+
+    // Create an icon element to show the "info" icon.
+    let innerInfoIcon = document.createElement("i");
+    innerInfoIcon.setAttribute("class", "fa-solid fa-circle-info fa-3x");
+    innerInfoTextDiv.appendChild(innerInfoIcon);
 
     // Create a second div element for the project.
     let secondInnerAnchorDiv = document.createElement("div");
