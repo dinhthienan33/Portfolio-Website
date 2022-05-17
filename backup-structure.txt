@@ -69,6 +69,11 @@
     </script>
     <div class="col-lg-4 col-md-6 mb-5 projects-card">
         <img class="projects-pic" src="images/parkfinder.png" alt="parkfinder-img">
+        <div class="projects-pic-info">
+            <div class="projects-pic-info-text">
+                <i class="fa-solid fa-circle-info fa-3x"></i>
+            </div>
+        </div>
         <div class="projects-card-container">
             <h4 class="projects-title">Park Finder</h4>
             <p class="specific-projects-text">

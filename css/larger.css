@@ -980,7 +980,8 @@
     .projects-card {
         position: relative;
         max-width: 400px;
-        background-color: var(--bluer-color);
+        /* background-color: var(--bluer-color); */
+        background-color: var(--whiter-color);
         border-radius: 0.5em;
         height: 400px;
         transition: all .2s ease-in-out;
@@ -1023,7 +1024,7 @@
     }
 
     .projects-card:hover .projects-pic {  
-        opacity: 0.2;
+        opacity: 0.1;
     }
 
     .projects-card:hover .projects-pic-info {  
@@ -1039,6 +1040,9 @@
         min-height: 106px;
         max-height: 106px;
         text-align: center;
+        background-color: var(--bluer-color);
+        border-bottom-left-radius: 0.5em;
+        border-bottom-right-radius: 0.5em;
     }
 
     .projects-title {
