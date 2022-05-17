@@ -871,6 +871,21 @@
         margin-bottom: 5px;
     }
 
+    .timeline-event-heading {
+        color: var(--bluer-color);
+        text-decoration: none;
+    }
+
+    .timeline-event-heading:hover {
+        color: var(--bluer-color);
+        text-decoration: underline;
+    }
+
+    .timeline-event-linked-img:hover ~ .timeline-content a {
+        color: var(--bluer-color);
+        text-decoration: underline;
+    }
+
     /* ====================================================================
                           PROJECTS Section (Page 3)                             
     ==================================================================== */
