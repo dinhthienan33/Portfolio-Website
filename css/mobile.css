@@ -77,7 +77,7 @@ body {
     margin: auto;
     background-color: var(--main-background);
     color: var(--light-font);
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', serif;
     font-size: 120%;
     scroll-behavior: smooth;
 }
@@ -115,13 +115,13 @@ h5 {
 /* Set the font style for a tags. */
 a {
     font-family: 'Montserrat', serif;
-    font-size: 21px !important;
+    font-size: 20px !important;
 }
 
 /* Set the font style for b tags. */
 b {
     font-family: 'Montserrat', serif;
-    font-size: 21px !important;
+    font-size: 20px !important;
 }
 
 /* Set the font style for label tags. */
@@ -139,7 +139,7 @@ button {
 /* Set the font style for p tags. */
 p {
     font-family: 'Montserrat', serif;
-    font-size: 18px !important;
+    font-size: 18px;
 }
 
 /* =============================== */
@@ -1153,7 +1153,7 @@ html {
     }
 
     .specific-projects-text {
-        font-size: 18px;
+        font-size: 17px;
         margin-top: 4px;
         font-style: italic;
     }
