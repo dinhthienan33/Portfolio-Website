@@ -108,6 +108,7 @@
     }
 
     .resume-file {
+        /* font-family: 'Open Sans', sans-serif; */
         display: inline-block;
         margin-top: 5px;
         margin-bottom: 5px;
@@ -635,11 +636,13 @@
     .timeline-year {
         font-size: 24px;
         margin-bottom: 5px;
+        line-height: 1.2;
     }
 
     .timeline-event {
         font-size: 20px;
         margin-bottom: 5px;
+        line-height: 1.2;
     }
 
     .timeline-event-heading {
@@ -752,13 +755,14 @@
         color: black;
     }
 
-    .projects-card:hover .projects-pic {  
+    /* UNCOMMENT THIS IF YOU WANT TO SEE THE "INFO" HOVER EFFECT */
+    /* .projects-card:hover .projects-pic {
         opacity: 0.1;
     }
 
     .projects-card:hover .projects-pic-info {  
         opacity: 1;
-    }
+    } */
 
     .projects-card:hover {
         transform: scale(1.02);

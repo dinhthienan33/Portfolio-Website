@@ -59,6 +59,7 @@
     }
 
     .menu-link {
+        /* font-family: 'Open Sans', sans-serif; */
         font-size: 17px;
         font-weight: bold;
         text-decoration: none;
@@ -337,6 +338,7 @@
     }
 
     .resume-file {
+        /* font-family: 'Open Sans', sans-serif; */
         display: inline-block;
         margin-top: 5px;
         margin-bottom: 5px;
@@ -864,11 +866,13 @@
     .timeline-year {
         font-size: 24px;
         margin-bottom: 5px;
+        line-height: 1.2;
     }
 
     .timeline-event {
         font-size: 20px;
         margin-bottom: 5px;
+        line-height: 1.2;
     }
 
     .timeline-event-heading {
@@ -974,13 +978,14 @@
         color: black;
     }
 
-    .projects-card:hover .projects-pic {  
+    /* UNCOMMENT THIS IF YOU WANT TO SEE THE "INFO" HOVER EFFECT */
+    /* .projects-card:hover .projects-pic {  
         opacity: 0.1;
     }
 
     .projects-card:hover .projects-pic-info {  
         opacity: 1;
-    }
+    } */
 
     .projects-card:hover {
         transform: scale(1.02);
@@ -1314,6 +1319,7 @@
         padding-bottom: 2px;
         padding-left: 5px;
         vertical-align: 30%;
+        font-size: 20px;
     }
 
     .contact-skill-text:hover {
@@ -1351,9 +1357,8 @@
 
     .footer-content {
         flex: 30%;
-        padding-right: 15px;
-        padding-left: 15px;
         margin-bottom: 24px;
+        font-size: 18px;
     }
 
     .footer-icons {

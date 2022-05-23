@@ -77,68 +77,68 @@ body {
     margin: auto;
     background-color: var(--main-background);
     color: var(--light-font);
-    font-family: 'Montserrat', serif;
-    font-size: 120%;
+    font-family: 'Lora', serif;
+    font-size: 18px;
     scroll-behavior: smooth;
 }
 
 /* Set the font style for h1 tags. */
 h1 {
-    font-family: 'Raleway', serif;
-    font-size: 55px !important;
+    font-family: 'Lora', serif;
+    font-size: 50px !important;
 }
 
 /* Set the font style for h2 tags. */
 h2 {
-    font-family: 'Raleway', serif;
+    font-family: 'Lora', serif;
     font-size: 50px !important;
 }
 
 /* Set the font style for h3 tags. */
 h3 {
-    font-family: 'Raleway', serif;
-    font-size: 25px !important;
+    font-family: 'Lora', serif;
+    font-size: 22px !important;
 }
 
 /* Set the font style for h4 tags. */
 h4 {
-    font-family: 'Raleway', serif;
-    font-size: 25px !important;
+    font-family: 'Lora', serif;
+    font-size: 22px !important;
 }
 
 /* Set the font style for h5 tags. */
 h5 {
-    font-family: 'Raleway', serif;
-    font-size: 25px !important;
-}
-
-/* Set the font style for a tags. */
-a {
-    font-family: 'Montserrat', serif;
-    font-size: 20px !important;
-}
-
-/* Set the font style for b tags. */
-b {
-    font-family: 'Montserrat', serif;
-    font-size: 20px !important;
+    font-family: 'Lora', serif;
+    font-size: 22px !important;
 }
 
 /* Set the font style for label tags. */
 label {
-    font-family: 'Montserrat', serif;
+    font-family: 'Lora', serif;
     font-size: 22px !important;
 }
 
 /* Set the font style for button tags. */
 button {
-    font-family: 'Montserrat', serif;
+    font-family: 'Lora', serif;
     font-size: 22px !important;
+}
+
+/* Set the font style for a tags. */
+a {
+    font-family: 'Lora', serif;
+    font-size: 18px !important;
+}
+
+/* Set the font style for b tags. */
+b {
+    font-family: 'Lora', serif;
+    /* font-size: 20px !important; */
 }
 
 /* Set the font style for p tags. */
 p {
-    font-family: 'Montserrat', serif;
+    font-family: 'Lora', serif;
     font-size: 18px;
 }
 
@@ -242,6 +242,7 @@ html {
     }
 
     .menu-link {
+        /* font-family: 'Open Sans', sans-serif; */
         font-size: 17px;
         font-weight: bold;
         text-decoration: none;
@@ -489,6 +490,7 @@ html {
     }
 
     .resume-file {
+        /* font-family: 'Open Sans', sans-serif; */
         display: inline-block;
         margin-top: 5px;
         margin-bottom: 5px;
@@ -976,11 +978,13 @@ html {
     .timeline-year {
         font-size: 24px;
         margin-bottom: 5px;
+        line-height: 1.2;
     }
 
     .timeline-event {
         font-size: 20px;
         margin-bottom: 5px;
+        line-height: 1.2;
     }
 
     .timeline-event-heading {
@@ -1122,13 +1126,14 @@ html {
         color: black;
     }
 
-    .projects-card:hover .projects-pic {  
+    /* UNCOMMENT THIS IF YOU WANT TO SEE THE "INFO" HOVER EFFECT */
+    /* .projects-card:hover .projects-pic {  
         opacity: 0.1;
     }
 
     .projects-card:hover .projects-pic-info {  
         opacity: 1;
-    }
+    } */
 
     .projects-card:hover {
         transform: scale(1.02);
@@ -1329,7 +1334,7 @@ html {
         padding-right: 5px;
         text-align: left;
         font-weight: bold;
-        font-size: 20px;
+        font-size: 18px;
     }
 
     /* ====================================================================
@@ -1453,6 +1458,7 @@ html {
         padding-bottom: 2px;
         padding-left: 5px;
         vertical-align: 30%;
+        font-size: 20px;
     }
 
     .contact-skill-text:hover {
@@ -1489,9 +1495,8 @@ html {
     }
 
     .footer-content {
-        padding-right: 15px;
-        padding-left: 15px;
         margin-bottom: 24px;
+        font-size: 18px;
     }
 
     .footer-icons {
