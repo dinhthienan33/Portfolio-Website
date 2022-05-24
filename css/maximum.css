@@ -187,20 +187,19 @@
     }
 
     .rounded-circle {
-        margin-left: 0;
-        margin-left: auto;
-        margin-right: auto;
-        height: 60px; /* height: 120px; */
-        width: 60px; /* width: 120px; */
         background-color: var(--black-color);
+        height: 60px;
+        width: 60px;
         border-radius: 50%;
-        display: inline-block;
+        color: white;
+        display: table-cell;
+        vertical-align: middle; 
+        text-align: center;
+        text-decoration: none;
     }
 
     /* Icons in Skills Section */
     .fa-java {
-        margin-left: auto;
-        margin-right: auto;
         color: var(--whiter-color);
     }
 
@@ -209,8 +208,6 @@
     }
 
     .fa-python {
-        margin-left: auto;
-        margin-right: auto;
         color: var(--whiter-color);
     }
 
@@ -219,8 +216,6 @@
     }
 
     .fa-code {
-        margin-left: auto;
-        margin-right: auto;
         color: var(--whiter-color);
     }
 
@@ -229,8 +224,6 @@
     }
 
     .fa-code-branch {
-        margin-left: auto;
-        margin-right: auto;
         color: var(--whiter-color);
     }
 
@@ -239,8 +232,6 @@
     }
 
     .fa-node-js {
-        margin-left: auto;
-        margin-right: auto;
         color: var(--whiter-color);
     }
 
@@ -249,8 +240,6 @@
     }
 
     .fa-bootstrap {
-        margin-left: auto;
-        margin-right: auto;
         color: var(--whiter-color);
     }
 
@@ -259,8 +248,6 @@
     }
 
     .icon-mongodb {
-        margin-left: auto;
-        margin-right: auto;
         color: var(--whiter-color);
     }
 
@@ -269,8 +256,6 @@
     }
 
     .fa-database {
-        margin-left: auto;
-        margin-right: auto;
         color: var(--whiter-color);
     }
 
@@ -279,8 +264,6 @@
     }
 
     .icon-c {
-        margin-left: auto;
-        margin-right: auto;
         color: var(--whiter-color);
     }
 
@@ -294,8 +277,8 @@
         padding-top: 2px;
         padding-bottom: 2px;
         padding-left: 5px;
-        font-size: 24px; /* 1.5rem; */
-        vertical-align: text-bottom;
+        font-size: 24px;
+        vertical-align: 70%;
     }
 
     .specific-skill-text {

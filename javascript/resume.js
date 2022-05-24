@@ -33,55 +33,55 @@ function loadContent(event) {
 let mySkills = [
   {
     "skill-icon": "fab java fa-java fa-2x",
-    "skill-style-padding": "padding-left: 15px; padding-top: 10px;",
+    "skill-style-padding": "padding-left: 0px; padding-top: 0px;",
     "skill-name": "Java",
     "skill-description": "I have had 3.5 years of experience with Java. I have used the language primarily for creating data structures such as binary trees and hash tables. I have also used the language to create simple games including a simplified version of pong.",
   },
   {
     "skill-icon": "fa c-programming icon-c fa-2x",
-    "skill-style-padding": "padding-left: 15px; padding-top: 15px;",
+    "skill-style-padding": "padding-left: 8px; padding-top: 14px;",
     "skill-name": "C-Programming",
     "skill-description": "I have worked with the C programming language for 3 years. I have used the lower level language to create simple data structures such as linked lists as well as a simulation project.",
   },
   {
     "skill-icon": "fab python fa-python fa-2x",
-    "skill-style-padding": "padding-left: 13px; padding-top: 12px;",
+    "skill-style-padding": "padding-left: 0px; padding-top: 2px;",
     "skill-name": "Python/Django",
-    "skill-description": "I have had 1 year of experience with Python and Django. I intend to further my understanding of Python as a popular higher-level programming language. I have used my knowledge of Django, a Python based web technology to build websites such as a Park Finder application that allows users to find national parks and places in the United States.",
+    "skill-description": "I have had 1 year of experience with Python and Django. I have used my knowledge of Django, a Python-based web technology, to build websites such as a Park Finder application that allows users to find national parks and places in the United States.",
   },
   {
     "skill-icon": "fas git fa-code-branch fa-2x",
-    "skill-style-padding": "padding-left: 17px; padding-top: 15px;",
+    "skill-style-padding": "padding-left: 0px; padding-top: 2px;",
     "skill-name": "Git/GitHub",
     "skill-description": "I have utilized both Git and GitHub throughout the process of creating my projects. I have a GitHub account where I host a number of projects in public repositories. I have used version control to collaborate with team members and develop different web applications.",
   },
   {
     "skill-icon": "fas code fa-code fa-2x",
-    "skill-style-padding": "padding-left: 6px; padding-top: 12px;",
+    "skill-style-padding": "padding-left: 0px; padding-top: 2px;",
     "skill-name": "HTML/CSS/JavaScript",
     "skill-description": "I have spent a significant amount of time familiarizing myself with HTML, CSS, and JavaScript for web development. I have had about 1 year working with these languages. I have built web applications such as this website, my personal webpage, and a Team Aptiv application that services different users.",
   },
   {
     "skill-icon": "fab bootstrap fa-bootstrap fa-2x",
-    "skill-style-padding": "padding-left: 8.5px; padding-top: 12px;",
+    "skill-style-padding": "padding-left: 0px; padding-top: 1px;",
     "skill-name": "Bootstrap",
     "skill-description": "I have used Bootstrap as a frontend library for developing websites. Bootstrap provides a plethora of useful tools for styling web applications, and I have learned an extensive amount of information about the technology.",
   },
   {
     "skill-icon": "fab node fa-node-js fa-2x",
-    "skill-style-padding": "padding-left: 13px; padding-top: 12px;",
+    "skill-style-padding": "padding-left: 0px; padding-top: 1px;",
     "skill-name": "Node.js",
     "skill-description": "I have used Node.js to help build the backend of different web applications. I am familiar with modules in Node.js such as Express, Request, Bcrypt and Oauth. I have been working with this technology for about 1 year.",
   },
   {
     "skill-icon": "fa mongodb icon-mongodb fa-2x",
-    "skill-style-padding": "padding-left: 11px; padding-top: 12px;",
+    "skill-style-padding": "padding-left: 0px; padding-top: 8px;",
     "skill-name": "MongoDB",
     "skill-description": "I have had about 1 year of experience with MongoDB. I have used it to create databases for the majority of my web application projects.",
   },
   {
     "skill-icon": "fas fa-solid fa-database fa-2x",
-    "skill-style-padding": "padding-left: 13.15px; padding-top: 11.3px;",
+    "skill-style-padding": "padding-left: 0px; padding-top: 1px;",
     "skill-name": "SQL",
     "skill-description": "I recently learned SQL during my junior year of college. Using the language, I created a simple website to display hospital data. The data can be viewed, edited, and/or removed.",
   },
@@ -111,10 +111,15 @@ function addSkills() {
     let secondSkillDiv = document.createElement("div");
     firstSkillDiv.appendChild(secondSkillDiv);
 
+    // Create a third div tag element for the skill.
+    let thirdSkillDiv = document.createElement("div");
+    thirdSkillDiv.setAttribute("class", "skill-inline");
+    secondSkillDiv.appendChild(thirdSkillDiv);
+
     // Create a span element for the skill.
     let spanElement = document.createElement("span");
-    spanElement.setAttribute("class", "mb-3 rounded-circle skill-inline");
-    secondSkillDiv.appendChild(spanElement);
+    spanElement.setAttribute("class", "mb-3 rounded-circle");
+    thirdSkillDiv.appendChild(spanElement);
 
     // Create an i element for the skill.
     let iElement = document.createElement("i");
@@ -259,16 +264,16 @@ let myVolunteer = [
   {
     "volunteer-img": "images/deanslistuwl.png",
     "volunteer-alt": "uwl-img",
-    "volunteer-title": "Dean's List Spring 2021",
+    "volunteer-title": "Dean's List Spring 2022",
     "volunteer-subheading": "Academic Award",
     "volunteer-description": "Maintained a GPA of 3.5 or higher for the semester.",
   },
   {
     "volunteer-img": "images/deanslistuwl.png",
     "volunteer-alt": "uwl-img",
-    "volunteer-title": "Dean's List Fall 2020",
+    "volunteer-title": "Dean's List Sophomore Year",
     "volunteer-subheading": "Academic Award",
-    "volunteer-description": "Maintained a GPA of 3.5 or higher for the semester.",
+    "volunteer-description": "Maintained a GPA of 3.5 or higher for the Fall 2020 semester and the Spring 2021 semester.",
   },
 ];
 

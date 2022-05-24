@@ -472,20 +472,19 @@
     }
 
     .rounded-circle {
-        margin-left: 0;
-        margin-left: auto;
-        margin-right: auto;
+        background-color: var(--black-color);
         height: 60px;
         width: 60px;
-        background-color: var(--black-color);
         border-radius: 50%;
-        display: inline-block;
+        color: white;
+        display: table-cell;
+        vertical-align: middle; 
+        text-align: center;
+        text-decoration: none;
     }
 
     /* Icons in Skills Section */
     .fa-java {
-        margin-left: auto;
-        margin-right: auto;
         color: var(--whiter-color);
     }
 
@@ -494,8 +493,6 @@
     }
 
     .fa-python {
-        margin-left: auto;
-        margin-right: auto;
         color: var(--whiter-color);
     }
 
@@ -504,8 +501,6 @@
     }
 
     .fa-code {
-        margin-left: auto;
-        margin-right: auto;
         color: var(--whiter-color);
     }
 
@@ -514,8 +509,6 @@
     }
 
     .fa-code-branch {
-        margin-left: auto;
-        margin-right: auto;
         color: var(--whiter-color);
     }
 
@@ -524,8 +517,6 @@
     }
 
     .fa-node-js {
-        margin-left: auto;
-        margin-right: auto;
         color: var(--whiter-color);
     }
 
@@ -534,8 +525,6 @@
     }
 
     .fa-bootstrap {
-        margin-left: auto;
-        margin-right: auto;
         color: var(--whiter-color);
     }
 
@@ -544,8 +533,6 @@
     }
 
     .icon-mongodb {
-        margin-left: auto;
-        margin-right: auto;
         color: var(--whiter-color);
     }
 
@@ -554,8 +541,6 @@
     }
 
     .fa-database {
-        margin-left: auto;
-        margin-right: auto;
         color: var(--whiter-color);
     }
 
@@ -564,8 +549,6 @@
     }
 
     .icon-c {
-        margin-left: auto;
-        margin-right: auto;
         color: var(--whiter-color);
     }
 
@@ -580,7 +563,7 @@
         padding-bottom: 2px;
         padding-left: 5px;
         font-size: 24px; 
-        vertical-align: text-bottom;
+        vertical-align: 70%;
     }
 
     .specific-skill-text {
@@ -1304,20 +1287,19 @@
     }
 
     .contact-circle {
-        margin-left: 0;
-        margin-left: auto;
-        margin-right: auto;
+        background-color: var(--whiter-color);
         height: 60px;
         width: 60px;
-        background-color: var(--whiter-color);
         border-radius: 50%;
-        display: inline-block;
+        color: white;
+        display: table-cell;
+        vertical-align: middle; 
+        text-align: center;
+        text-decoration: none;
     }
 
     /* Icons in Skills Section */
     .fa-phone-alt {
-        margin-left: auto;
-        margin-right: auto;
         color: var(--black-color);
     }
 
@@ -1326,8 +1308,6 @@
     }
 
     .contact-envelope {
-        margin-left: auto;
-        margin-right: auto;
         color: var(--black-color);
     }
 
@@ -1336,8 +1316,6 @@
     }
 
     .contact-linkedin {
-        margin-left: auto;
-        margin-right: auto;
         color: var(--black-color);
     }
 
@@ -1346,8 +1324,6 @@
     }
 
     .contact-github {
-        margin-left: auto;
-        margin-right: auto;
         color: var(--black-color);
     }
 
@@ -1362,7 +1338,7 @@
         padding-top: 2px;
         padding-bottom: 2px;
         padding-left: 5px;
-        vertical-align: 30%;
+        vertical-align: 70%;
         font-size: 20px;
     }
 
