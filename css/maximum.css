@@ -692,6 +692,7 @@
     
     .projects-card {
         position: relative;
+        min-width: 400px;
         max-width: 400px;
         /* background-color: var(--bluer-color); */
         background-color: var(--whiter-color);

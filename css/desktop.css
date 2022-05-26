@@ -918,6 +918,7 @@
 
     .projects-card {
         position: relative;
+        min-width: 400px;
         max-width: 400px;
         flex: 50%;
         /* background-color: var(--bluer-color); */

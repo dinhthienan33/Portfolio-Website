@@ -88,10 +88,30 @@ h1 {
     font-size: 50px !important;
 }
 
+/* Set the font style for h1 tags on smaller screen */
+/* sizes such as Samsung Galaxy screens. */
+@media (max-width: 400px) {
+
+    h1 {
+        font-family: 'Lora', serif;
+        font-size: 45px !important;
+    }
+}
+
 /* Set the font style for h2 tags. */
 h2 {
     font-family: 'Lora', serif;
     font-size: 50px !important;
+}
+
+/* Set the font style for h2 tags on smaller screen */
+/* sizes such as Samsung Galaxy screens. */
+@media (max-width: 400px) {
+
+    h2 {
+        font-family: 'Lora', serif;
+        font-size: 45px !important;
+    }
 }
 
 /* Set the font style for h3 tags. */
@@ -1063,12 +1083,27 @@ html {
 
     .projects-card {
         position: relative;
-        max-width: 400px;
+        min-width: 365px;
+        max-width: 365px;
         /* background-color: var(--bluer-color); */
         background-color: var(--whiter-color);
         border-radius: 0.5em;
         height: 400px;
         transition: all .2s ease-in-out;
+    }
+
+    @media (max-width: 400px) {
+
+        .projects-card {
+            position: relative;
+            min-width: 310px;
+            max-width: 310px;
+            /* background-color: var(--bluer-color); */
+            background-color: var(--whiter-color);
+            border-radius: 0.5em;
+            height: 400px;
+            transition: all .2s ease-in-out;
+        }
     }
 
     .portfolio-item {
