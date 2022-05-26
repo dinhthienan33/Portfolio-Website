@@ -1083,13 +1083,27 @@ html {
 
     .projects-card {
         position: relative;
-        min-width: 365px;
-        max-width: 365px;
+        min-width: 400px;
+        max-width: 400px;
         /* background-color: var(--bluer-color); */
         background-color: var(--whiter-color);
         border-radius: 0.5em;
         height: 400px;
         transition: all .2s ease-in-out;
+    }
+
+    @media (max-width: 450px) {
+
+        .projects-card {
+            position: relative;
+            min-width: 365px;
+            max-width: 365px;
+            /* background-color: var(--bluer-color); */
+            background-color: var(--whiter-color);
+            border-radius: 0.5em;
+            height: 400px;
+            transition: all .2s ease-in-out;
+        }
     }
 
     @media (max-width: 400px) {
