@@ -694,7 +694,6 @@
         position: relative;
         min-width: 400px;
         max-width: 400px;
-        /* background-color: var(--bluer-color); */
         background-color: var(--whiter-color);
         border-radius: 0.5em;
         height: 400px; 
@@ -825,14 +824,19 @@
         cursor: pointer;
     }
 
-    .fa-times-top {
-        color: var(--dark-font);
-        text-shadow: 0 0 10px var(--bluer-color);
+    .modal-x-icon {
+        position: absolute;
+        top: -10px;
+        right: -40px;
+        color: var(--bluer-color);
+        background-color: var(--black-color);
+        border-radius: 50%;
+        font-size: 45px !important;
+        transition-duration: 0.25s;
     }
 
-    .fa-times-top:hover {
-        color: var(--dark-font);
-        text-shadow: 0px 0px 0px var(--bluer-color);
+    .fa-circle-xmark:hover {
+        transform: scale(1.1);
     }
 
     .modal-information {
@@ -916,7 +920,8 @@
         line-height: 60px; /* Should match height attribute */
     }
 
-    .bottom-modal-button:hover {
+    .bottom-button-container:hover * {
+        color: var(--black-color);
         background-color: var(--bluer-color);
     }
 
@@ -934,7 +939,11 @@
         margin-top: auto;
         margin-bottom: auto;
         width: 100%;
+        border-radius: 0.625rem;
         vertical-align: middle;
+        -moz-box-shadow: 0 0 20px #ccc;
+        -webkit-box-shadow: 0 0 20px #ccc;
+        box-shadow: 0 0 20px #ccc;
     }
 
     .modal-pic-container {

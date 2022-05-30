@@ -136,6 +136,7 @@ function addProjects() {
     anchorTag.setAttribute("href", myProjects["project-ref"]);
     projectList.appendChild(anchorTag);
 
+    // Create a short script in order to open the correct modal.
     let scriptTag = document.createElement("script");
     scriptTag.appendChild(document.createTextNode("function get_ID(portItem) {"));
     scriptTag.appendChild(document.createTextNode("    return portItem.id;"));
@@ -656,7 +657,7 @@ function addProjectModals() {
 
     // Create the X-icon.
     let exitIcon = document.createElement("i");
-    exitIcon.setAttribute("class", "fas fa-times fa-times-top fa-2x");
+    exitIcon.setAttribute("class", "modal-x-icon fa fa-solid fa-circle-xmark fa-2x");
     exitSpanTag.appendChild(exitIcon);
 
     // Create the modal container div.

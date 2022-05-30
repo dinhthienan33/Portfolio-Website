@@ -90,7 +90,7 @@
 <div id="portfolioModal8" role="dialog" class="modal-bg">
     <div class="modal-dialog">
         <div class="close-modal-position">
-            <span id="exit-modal8" class="modal-close" href="#close"><i class="fas fa-times fa-2x"></i></span>
+            <span id="exit-modal8" class="modal-close" href="#close"><i class="modal-x-icon fa fa-solid fa-circle-xmark fa-2x"></i></span>
         </div>
         <div class="modal-container"> 
             <!-- Modal Information and Content -->

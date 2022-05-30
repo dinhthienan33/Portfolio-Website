@@ -1,27 +1,50 @@
-/*  
+/* 
  * The JavaScript file contains functions for
  * the contact.html page of the website. The
  * functions in this file help the user of the
  * website send an email to the owner of the 
- * site. The functions are not executed until
- * the other DOM content of the website is
- * loaded.
- *
+ * site through the message button that is
+ * unique to the "contact" page of the site. 
+ * The functions are not executed until the
+ * other DOM content of the website is loaded.
+ * 
  * Author: Andrew Krause
  * Date: 01/31/2022
  * 
  */
 
-// Wait to load the JavaScript until all of the HTML content is loaded (FIX LATER).
-// document.addEventListener("DOMContentLoaded", loadContent); // --> UNCOMMENT LATER!!!
+// Wait to load the JavaScript until all of the HTML content is loaded (DON'T NEED THIS???).
+// document.addEventListener("DOMContentLoaded", loadContent); // --> COMMENT OUT FOR NOW!!!
 
-// // Add the content to the page.
-// function loadContent(event) { // --> MAYBE CHANGE FUNCTION NAME AT SOME POINT
+// --> SECTION: Add the functions for the email feature on the contact page.
 
-//   // Add DOM objects using the following functions.
+// Wait to load the JavaScript until all of the HTML content is loaded.
+document.addEventListener("DOMContentLoaded", loadContent);
 
-//   // Add an event listener for sending an email.
-//   // document.getElementById("contact-send").addEventListener("click", sendEmail);
-// }
+// Add the email functionality to the page.
+function loadContent(event) {
 
+    // Add DOM objects and functionality 
+    // using the following function.
+    addMessageModalFunctionsContactPage();
+}
 
+/*
+ * The function adds the needed functions
+ * to the message modal when the message
+ * icon unique to the "contact" page of
+ * the website is clicked to open it.
+ */
+function addMessageModalFunctionsContactPage() {
+
+    // Add functionality for opening the message modal.
+    var messageAnchorContactPage = document.getElementById("contact-message-item");
+
+    // When the user clicks the button unique to the 
+    // contact page of the website, open the modal.
+    messageAnchorContactPage.onclick = function() {
+        messageModal.classList.add('message-bg-active');
+        messageModal.scrollTo(0, 0);
+        document.body.classList.add('overflowHidden');
+    }
+}

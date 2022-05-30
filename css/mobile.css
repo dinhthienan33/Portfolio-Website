@@ -141,7 +141,7 @@ label {
 /* Set the font style for button tags. */
 button {
     font-family: 'Lora', serif;
-    font-size: 22px !important;
+    font-size: 22px;
 }
 
 /* Set the font style for a tags. */
@@ -1085,7 +1085,6 @@ html {
         position: relative;
         min-width: 400px;
         max-width: 400px;
-        /* background-color: var(--bluer-color); */
         background-color: var(--whiter-color);
         border-radius: 0.5em;
         height: 400px;
@@ -1098,7 +1097,6 @@ html {
             position: relative;
             min-width: 365px;
             max-width: 365px;
-            /* background-color: var(--bluer-color); */
             background-color: var(--whiter-color);
             border-radius: 0.5em;
             height: 400px;
@@ -1112,7 +1110,6 @@ html {
             position: relative;
             min-width: 310px;
             max-width: 310px;
-            /* background-color: var(--bluer-color); */
             background-color: var(--whiter-color);
             border-radius: 0.5em;
             height: 400px;
@@ -1155,7 +1152,7 @@ html {
     }
 
     .projects-pic-info-text {
-        color: black;
+        color: var(--black-color);;
     }
 
     /* UNCOMMENT THIS IF YOU WANT TO SEE THE "INFO" HOVER EFFECT */
@@ -1246,14 +1243,19 @@ html {
         cursor: pointer;
     }
 
-    .fa-times-top {
-        color: var(--dark-font);
-        text-shadow: 0 0 10px var(--bluer-color);
+    .modal-x-icon {
+        position: absolute;
+        top: -10px;
+        right: -40px;
+        color: var(--bluer-color);
+        background-color: var(--black-color);
+        border-radius: 50%;
+        font-size: 45px !important;
+        transition-duration: 0.25s;
     }
 
-    .fa-times-top:hover {
-        color: var(--dark-font);
-        text-shadow: 0px 0px 0px var(--bluer-color);
+    .fa-circle-xmark:hover {
+        transform: scale(1.1);
     }
 
     .modal-information {
@@ -1283,11 +1285,18 @@ html {
         font-size: 3rem;
         line-height: 1.2;
         margin-bottom: 1rem;
+        text-align: center;
+        padding-left: 5px;
+        padding-right: 5px;
     }
 
     .modal-text {
         margin-bottom: 1rem;
         line-height: 1.5;
+    }
+
+    .subheading-text-center {
+        text-align: center;
     }
 
     .modal-text-center {
@@ -1332,7 +1341,8 @@ html {
         line-height: 60px; /* Should match height attribute */
     }
 
-    .bottom-modal-button:hover {
+    .bottom-button-container:hover * {
+        color: var(--black-color);
         background-color: var(--bluer-color);
     }
 
@@ -1352,7 +1362,11 @@ html {
         margin-top: auto;
         margin-bottom: auto;
         width: 100%;
+        border-radius: 0.625rem;
         vertical-align: middle;
+        -moz-box-shadow: 0 0 20px #ccc;
+        -webkit-box-shadow: 0 0 20px #ccc;
+        box-shadow: 0 0 20px #ccc;
     }
 
     .modal-pic-container {
@@ -1494,6 +1508,292 @@ html {
         display: inline-block;
     }
 
+    /* ====================================================================== 
+                            MESSAGE Section (All pages)
+    ====================================================================== */ 
+
+    /* Section for Message Modals */
+    .message-modal-bg {
+        position: fixed;
+        z-index: 1050;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s, opacity 0.5s;
+    }
+
+    .message-bg-active {
+        visibility: visible;
+        opacity: 1;
+        overflow-y: auto;
+    }
+
+    .message-modal-dialog {
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .message-modal-container {
+        max-width: 500px;
+        color: var(--dark-font);
+    }
+
+    .message-close-modal-position {
+        float: right;
+        width: 30px;
+        height: 0px;
+        margin-top: 2px;
+        margin-right: 2px;
+    }
+
+    .message-modal-close {
+        color: var(--dark-font);
+        position: absolute;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .message-modal-x-icon {
+        position: absolute;
+        top: -10px;
+        right: -40px;
+        color: var(--bluer-color);
+        background-color: var(--black-color);
+        border-radius: 50%;
+        font-size: 45px !important;
+        transition-duration: 0.25s;
+    }
+
+    .fa-circle-xmark:hover {
+        transform: scale(1.1);
+    }
+
+    .message-modal-information {
+        padding: 20px;
+        margin: auto;
+        background-color: var(--whiter-color);
+        border-radius: 0.5em;
+    }
+
+    .message-modal-content {
+        display: flex;
+        text-align: left;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .message-modal-row {
+        padding: 0; /* MAYBE ADD MORE LATER */
+    }
+
+    .message-modal-body {
+        padding: 0; /* MAYBE ADD MORE LATER */
+    }
+
+    .message-modal-heading {
+        color: var(--dark-font);
+        font-size: 3rem;
+        line-height: 1.2;
+        margin-bottom: 0.5rem;
+        text-align: center;
+    }
+
+    .message-modal-text {
+        margin-bottom: 1rem;
+        line-height: 1.5;
+    }
+
+    .message-subheading-text-center {
+        text-align: center;
+    }
+
+    input[type="email"] {
+        font-family: 'Lora', serif;
+        font-size: 22px;
+        border: 1px solid var(--black-color);
+        border-radius: .15em;
+        transition: var(--main-transition);
+    }
+
+    input[type="text"] {
+        font-family: 'Lora', serif;
+        font-size: 22px;
+        border: 1px solid var(--black-color);
+        border-radius: .15em;
+        transition: var(--main-transition);
+    }
+
+    .message-email-subject-input {
+        font-family: 'Lora', serif;
+        font-size: 22px;
+        padding: 0.5em;
+        margin: 1em 0;
+        margin-bottom: 11px;
+        margin-top: 11px;
+        background-color: transparent;
+        border: 1px solid var(--black-color);
+        width: 100%;
+        border-radius: .15em;
+        font-family: sans-serif;
+        font-size: 1.15rem;
+    }
+    
+    .message-body-input {
+        font-family: 'Lora', serif;
+        font-size: 22px;
+        padding: 0.5em;
+        margin: 1em 0;
+        margin-bottom: 11px;
+        margin-top: 11px;
+        background-color: transparent;
+        border: 1px solid var(--black-color);
+        width: 100%;
+        border-radius: .15em;
+        height: 250px; 
+        resize: none;
+    }
+
+    .message-bottom-button-container {
+        width: fit-content;
+        margin: auto;
+    }   
+
+    .message-bottom-modal-button {
+        font-size: 18px;
+        display: inline-block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        height: 60px; /* Should match line-height attribute */
+        width: 130px;
+        background-color: var(--black-color);
+        color: var(--whiter-color);
+        text-decoration: none;
+        border-radius: 0.5em;
+        border-style: none;
+        align-items: center;
+        text-align: center;
+        line-height: 60px; /* Should match height attribute */
+    }
+
+    .message-bottom-button-container:hover * {
+        color: var(--black-color);
+        background-color: var(--bluer-color);
+    }
+
+    /* ====================================================================== 
+                            CONFIRM Section (All pages)
+    ====================================================================== */ 
+
+    /* Section for Message Modals */
+    .confirm-modal-bg {
+        position: fixed;
+        z-index: 1050;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s, opacity 0.5s;
+    }
+
+    .confirm-bg-active {
+        visibility: visible;
+        opacity: 1;
+        overflow-y: auto;
+    }
+
+    .confirm-modal-dialog {
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .confirm-modal-container {
+        max-width: 500px;
+        color: var(--dark-font);
+    }
+
+    .confirm-modal-information {
+        padding: 20px;
+        margin: auto;
+        background-color: var(--whiter-color);
+        border-radius: 0.5em;
+    }
+
+    .confirm-modal-content {
+        display: flex;
+        text-align: left;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .confirm-modal-row {
+        padding: 0; /* MAYBE ADD MORE LATER */
+    }
+
+    .confirm-modal-body {
+        padding: 0; /* MAYBE ADD MORE LATER */
+    }
+
+    .confirm-modal-heading {
+        color: var(--dark-font);
+        font-size: 3rem;
+        line-height: 1.2;
+        margin-bottom: 0.5rem;
+        text-align: center;
+    }
+
+    .confirm-modal-text {
+        margin-bottom: 1rem;
+        line-height: 1.5;
+    }
+
+    .confirm-subheading-text-center {
+        text-align: center;
+    }
+
+    .message-bottom-button-container {
+        width: fit-content;
+        margin: auto;
+    }   
+
+    .confirm-bottom-modal-button {
+        font-size: 18px;
+        display: inline-block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        height: 60px; /* Should match line-height attribute */
+        width: 130px;
+        background-color: var(--black-color);
+        color: var(--whiter-color);
+        text-decoration: none;
+        border-radius: 0.5em;
+        border-style: none;
+        align-items: center;
+        text-align: center;
+        line-height: 60px; /* Should match height attribute */
+    }
+
+    .confirm-bottom-button-container:hover * {
+        color: var(--black-color);
+        background-color: var(--bluer-color);
+    }
+    
     /* ====================================================================
                             FOOTER Section (All Pages)
     ==================================================================== */
