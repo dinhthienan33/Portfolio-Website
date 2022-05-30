@@ -8,6 +8,10 @@
  * The functions are not executed until the
  * other DOM content of the website is loaded.
  * 
+ * NOTE: All of the window click events and
+ * functions are located in the windows.js 
+ * file!
+ * 
  * Author: Andrew Krause
  * Date: 01/31/2022
  * 

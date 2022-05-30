@@ -7,7 +7,11 @@
  * building the components of the projects.html page.
  * JS objects are used to create new project cards
  * and new modals on the projects page.
- *
+ * 
+ * NOTE: All of the window click events and
+ * functions are located in the windows.js 
+ * file!
+ * 
  * Author: Andrew Krause
  * Date: 01/31/2022
  * 
@@ -1078,52 +1082,5 @@ function addModalFunctions() {
   smallX10.onclick = function() {
     modal10.classList.remove('bg-active');
     document.body.classList.remove('overflowHidden');
-  }
-
-  // ==================================================================
-  // When the user clicks anywhere outside of the modal, close it.
-  // ==================================================================
-  window.onclick = function(event) {
-    // if (event.target == modal1) {
-    //   modal1.classList.remove('bg-active');
-    //   document.body.classList.remove('overflowHidden');
-
-    // } 
-    if(event.target == modal2) {
-      modal2.classList.remove('bg-active');
-      document.body.classList.remove('overflowHidden');
-
-    } else if(event.target == modal3) {
-      modal3.classList.remove('bg-active');
-      document.body.classList.remove('overflowHidden');
-
-    } else if(event.target == modal4) {
-      modal4.classList.remove('bg-active');
-      document.body.classList.remove('overflowHidden');
-
-    } else if(event.target == modal5) {
-      modal5.classList.remove('bg-active');
-      document.body.classList.remove('overflowHidden');
-
-    } else if(event.target == modal6) {
-      modal6.classList.remove('bg-active');
-      document.body.classList.remove('overflowHidden');
-
-    } else if(event.target == modal7) {
-      modal7.classList.remove('bg-active');
-      document.body.classList.remove('overflowHidden');
-
-    } else if(event.target == modal8) {
-      modal8.classList.remove('bg-active');
-      document.body.classList.remove('overflowHidden');
-
-    } else if(event.target == modal9) {
-      modal9.classList.remove('bg-active');
-      document.body.classList.remove('overflowHidden');
-
-    } else if(event.target == modal10) {
-      modal10.classList.remove('bg-active');
-      document.body.classList.remove('overflowHidden');
-    }
   }
 }

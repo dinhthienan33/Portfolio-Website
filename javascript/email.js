@@ -1,10 +1,14 @@
 /*  
- * The JavaScript file is utilized by all pages
+ * The JavaScript file is utilized by ALL pages
  * of the website given that all pages contain
  * the email option. The file provides simple
  * functions for sending an email to the owner
  * of the portfolio website by using an API
  * called EmailJS.
+ * 
+ * NOTE: All of the window click events and
+ * functions are located in the windows.js 
+ * file!
  *
  * Author: Andrew Krause
  * Date: 01/31/2022
@@ -33,9 +37,9 @@ function loadContent(event) {
 }
 
 /*
- * The function adds the needed functions
- * to the message modal when the message
- * icon is clicked to open it.
+ * The function adds the appropriate behavior
+ * to the message modal when the message icon
+ * is clicked to open it.
  */
 function addMessageModalFunctions() {
 
@@ -64,24 +68,6 @@ function addMessageModalFunctions() {
     bigMessageX.onclick = function() {
         messageModal.classList.remove('message-bg-active');
         document.body.classList.remove('overflowHidden');
-    }
-
-    // ======================================================
-
-    // When any area outside of the message modal
-    // is clicked, close the message modal.
-    window.onclick = function(event) {
-
-        // Include a conditional to check if either of the modals
-        // have features that are currently open on the website.
-        if(event.target == messageModal || event.target == confirmModal) {
-
-            // Remove any classes that are causing any features
-            // part of the message or confirm modals to show.
-            messageModal.classList.remove('message-bg-active');
-            confirmModal.classList.remove('message-bg-active');
-            document.body.classList.remove('overflowHidden');
-        }
     }
 }
 
@@ -114,26 +100,11 @@ function addConfirmModalFunctions() {
     var okayButton = document.getElementById("confirm-bottom-exit");
 
     okayButton.onclick = function() {
+
+        // Remove the classes that show the confirm
+        // modal on the website.
         confirmModal.classList.remove('confirm-bg-active');
         document.body.classList.remove('overflowHidden');
-    }
-
-    // ======================================================
-
-    // When any area outside of the confirm modal
-    // is clicked, close the confirm modal.
-    window.onclick = function(event) {
-
-        // Include a conditional to check if either of the modals
-        // have features that are currently open on the website.
-        if(event.target == confirmModal || event.target == messageModal) {
-
-            // Remove any classes that are causing any features
-            // part of the message or confirm modals to show.
-            confirmModal.classList.remove('confirm-bg-active');
-            messageModal.classList.remove('message-bg-active');
-            document.body.classList.remove('overflowHidden');
-        }
     }
 }
 
