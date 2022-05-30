@@ -241,7 +241,7 @@
 
     .about-heading {
         text-align: center;
-        font-size: 3rem; 
+        font-size: 50px; 
         margin-bottom: 1rem;
     }
     
@@ -358,7 +358,7 @@
 
     .resume-heading {
         margin-top: 1rem;
-        font-size: 3rem;
+        font-size: 50px;
         text-align: center;
         margin-bottom: 0.5rem;
     }
@@ -373,7 +373,7 @@
     }
 
     .resume-page-link {
-        color: var(--bluer-color);
+        color: var(--whiter-color);
         text-decoration: none;
     }
 
@@ -448,7 +448,7 @@
 
     .skills-heading {
         margin-top: 1rem;
-        font-size: 3rem;
+        font-size: 50px;
         text-align: center;
         margin-bottom: 0.5rem;
     }
@@ -598,7 +598,7 @@
 
     .certifications-heading {
         margin-top: 1rem;
-        font-size: 3rem;
+        font-size: 50px;
         text-align: center;
         margin-bottom: 0.5rem;
         color: var(--whiter-color);
@@ -690,7 +690,7 @@
 
     .volunteer-heading {
         margin-top: 1rem;
-        font-size: 3rem;
+        font-size: 50px;
         text-align: center;
         margin-bottom: 0.5rem;
         color: var(--dark-font);
@@ -946,7 +946,7 @@
 
     .projects-heading {
         margin-top: 1rem;
-        font-size: 3rem;
+        font-size: 50px;
         text-align: center;
         margin-bottom: 0.5rem;
         color: var(--whiter-color);
@@ -1257,7 +1257,7 @@
 
     .contact-heading {
         margin-top: 1rem;
-        font-size: 3rem;
+        font-size: 50px;
         text-align: center;
         margin-bottom: 0.5rem;
     }
@@ -1453,7 +1453,7 @@
 
     .message-modal-heading {
         color: var(--dark-font);
-        font-size: 3rem;
+        font-size: 50px;
         line-height: 1.2;
         margin-bottom: 0.5rem;
         text-align: center;
@@ -1604,7 +1604,7 @@
 
     .confirm-modal-heading {
         color: var(--dark-font);
-        font-size: 3rem;
+        font-size: 50px;
         line-height: 1.2;
         margin-bottom: 0.5rem;
         text-align: center;

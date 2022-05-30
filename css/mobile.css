@@ -101,7 +101,7 @@ h1 {
 /* Set the font style for h2 tags. */
 h2 {
     font-family: 'Lora', serif;
-    font-size: 50px !important;
+    font-size: 50px;
 }
 
 /* Set the font style for h2 tags on smaller screen */
@@ -110,7 +110,7 @@ h2 {
 
     h2 {
         font-family: 'Lora', serif;
-        font-size: 45px !important;
+        font-size: 45px;
     }
 }
 
@@ -357,8 +357,16 @@ html {
     }
 
     .about-heading {
-        font-size: 3rem; 
+        font-size: 50px; 
         margin-bottom: 1rem;
+    }
+
+    @media (max-width: 400px) {
+
+        .about-heading {
+            font-size: 45px; 
+            margin-bottom: 1rem;
+        }
     }
     
     .pic-column {
@@ -474,9 +482,19 @@ html {
 
     .resume-heading {
         margin-top: 1rem;
-        font-size: 3rem;
+        font-size: 50px;
         text-align: left;
         margin-bottom: 0.5rem;
+    }
+
+    @media (max-width: 400px) {
+
+        .resume-heading {
+            margin-top: 1rem;
+            font-size: 45px;
+            text-align: left;
+            margin-bottom: 0.5rem;
+        }
     }
 
     .resume-content {
@@ -485,7 +503,7 @@ html {
     }
 
     .resume-page-link {
-        color: var(--bluer-color);
+        color: var(--whiter-color);
         text-decoration: none;
     }
 
@@ -560,9 +578,19 @@ html {
 
     .skills-heading {
         margin-top: 1rem;
-        font-size: 3rem;
+        font-size: 50px;
         text-align: left;
         margin-bottom: 0.5rem;
+    }
+
+    @media (max-width: 400px) {
+
+        .skills-heading {
+            margin-top: 1rem;
+            font-size: 45px;
+            text-align: left;
+            margin-bottom: 0.5rem;
+        }
     }
 
     .skills-content {
@@ -710,10 +738,21 @@ html {
 
     .certifications-heading {
         margin-top: 1rem;
-        font-size: 3rem;
+        font-size: 50px;
         text-align: left;
         margin-bottom: 0.5rem;
         color: var(--whiter-color);
+    }
+
+    @media (max-width: 400px) {
+
+        .certifications-heading {
+            margin-top: 1rem;
+            font-size: 45px;
+            text-align: left;
+            margin-bottom: 0.5rem;
+            color: var(--whiter-color);
+        }
     }
 
     .certifications-content {
@@ -802,10 +841,21 @@ html {
 
     .volunteer-heading {
         margin-top: 1rem;
-        font-size: 3rem;
+        font-size: 50px;
         text-align: left;
         margin-bottom: 0.5rem;
         color: var(--dark-font);
+    }
+
+    @media (max-width: 400px) {
+
+        .volunteer-heading {
+            margin-top: 1rem;
+            font-size: 45px;
+            text-align: left;
+            margin-bottom: 0.5rem;
+            color: var(--dark-font);
+        }
     }
 
     .volunteer-content {
@@ -890,10 +940,21 @@ html {
 
     .timeline-heading {
         margin-top: 1rem;
-        font-size: 3rem;
+        font-size: 50px;
         text-align: left;
         margin-bottom: 0.5rem;
         color: var(--light-font);
+    }
+
+    @media (max-width: 400px) {
+
+        .timeline-heading {
+            margin-top: 1rem;
+            font-size: 45px;
+            text-align: left;
+            margin-bottom: 0.5rem;
+            color: var(--light-font);
+        }
     }
 
     .timeline-main-content {
@@ -1061,10 +1122,21 @@ html {
 
     .projects-heading {
         margin-top: 1rem;
-        font-size: 3rem;
+        font-size: 50px;
         text-align: left;
         margin-bottom: 0.5rem;
         color: var(--whiter-color);
+    }
+
+    @media (max-width: 400px) {
+
+        .projects-heading {
+            margin-top: 1rem;
+            font-size: 45px;
+            text-align: left;
+            margin-bottom: 0.5rem;
+            color: var(--whiter-color);
+        }
     }
 
     .projects-content {
@@ -1412,9 +1484,19 @@ html {
 
     .contact-heading {
         margin-top: 1rem;
-        font-size: 3rem;
+        font-size: 50px;
         text-align: left;
         margin-bottom: 0.5rem;
+    }
+
+    @media (max-width: 400px) {
+
+        .contact-heading {
+            margin-top: 1rem;
+            font-size: 45px;
+            text-align: left;
+            margin-bottom: 0.5rem;
+        }
     }
 
     .contact-content {
@@ -1601,10 +1683,21 @@ html {
 
     .message-modal-heading {
         color: var(--dark-font);
-        font-size: 3rem;
+        font-size: 50px;
         line-height: 1.2;
         margin-bottom: 0.5rem;
         text-align: center;
+    }
+
+    @media (max-width: 400px) {
+
+        .message-modal-heading {
+            color: var(--dark-font);
+            font-size: 45px;
+            line-height: 1.2;
+            margin-bottom: 0.5rem;
+            text-align: center;
+        }
     }
 
     .message-modal-text {
@@ -1752,10 +1845,21 @@ html {
 
     .confirm-modal-heading {
         color: var(--dark-font);
-        font-size: 3rem;
+        font-size: 50px;
         line-height: 1.2;
         margin-bottom: 0.5rem;
         text-align: center;
+    }
+    
+    @media (max-width: 400px) {
+
+        .confirm-modal-heading {
+            color: var(--dark-font);
+            font-size: 45px;
+            line-height: 1.2;
+            margin-bottom: 0.5rem;
+            text-align: center;
+        }
     }
 
     .confirm-modal-text {
