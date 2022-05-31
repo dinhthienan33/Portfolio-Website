@@ -47,11 +47,6 @@ function addMessageModalFunctions() {
     var messageAnchor = document.getElementById("message-item");
     var messageModal = document.getElementById("messageModal");
 
-    // Select the confirm modal in order to ensure that all
-    // features are properly closed in an event where the
-    // user wishes to close the messaging features.
-    var confirmModal = document.getElementById("confirmModal");
-
     // When the user clicks the button, open the modal.
     messageAnchor.onclick = function() {
         messageModal.classList.add('message-bg-active');
@@ -65,7 +60,12 @@ function addMessageModalFunctions() {
     // the large "X" icon is clicked by a user on the site.
     var bigMessageX = document.getElementById("exit-message-modal");
 
+    // When the user clicks the "X" icon on the modal,
+    // remove classes in order to close the modal.
     bigMessageX.onclick = function() {
+
+        // Remove the classes that show the
+        // message modal on the website.
         messageModal.classList.remove('message-bg-active');
         document.body.classList.remove('overflowHidden');
     }
@@ -82,11 +82,6 @@ function addConfirmModalFunctions() {
     // the message by the user has been sent on the site.
     var confirmModal = document.getElementById("confirmModal");
 
-    // Select the message modal in order to ensure that all
-    // features are properly closed in an event where the
-    // user wishes to close the messaging features.
-    var messageModal = document.getElementById("messageModal");
-
     // After the user sends their message, open the 
     // confirm modal.
     confirmModal.classList.add('confirm-bg-active');
@@ -99,10 +94,12 @@ function addConfirmModalFunctions() {
     // the "Okay" button is clicked by a user on the site.
     var okayButton = document.getElementById("confirm-bottom-exit");
 
+    // When the user clicks the "Okay" button on the
+    // modal, remove classes in order to close it.
     okayButton.onclick = function() {
 
-        // Remove the classes that show the confirm
-        // modal on the website.
+        // Remove the classes that show the
+        // confirm modal on the website.
         confirmModal.classList.remove('confirm-bg-active');
         document.body.classList.remove('overflowHidden');
     }

@@ -71,88 +71,120 @@ function addWindowClearFunctions() {
         if(messageModal && event.target == messageModal) {
 
             // Close the message modal by removing the class.
+            // Also remove the overflowHidden class to enable
+            // page scrolling again.
             messageModal.classList.remove('message-bg-active');
+            document.body.classList.remove('overflowHidden');
 
         // If the confirmation modal exists on the
         // page and is currently open, then close it.
         } else if(confirmModal && event.target == confirmModal) {
 
             // Close the confirm modal by removing the class.
+            // Also remove the overflowHidden class to enable
+            // page scrolling again.
             confirmModal.classList.remove('confirm-bg-active');
+            document.body.classList.remove('overflowHidden');
 
         // // If modal1 exists on the page and
         // // is currently open, then close it.
         // } else if(modal1 && event.target == modal1) {
 
         //     // Close modal1 by removing the class.
+        //     // Also remove the overflowHidden class
+        //     // to enable page scrolling again.
         //     modal1.classList.remove('bg-active');
+        //     document.body.classList.remove('overflowHidden');
 
         // If modal2 exists on the page and
         // is currently open, then close it.
         } else if(modal2 && event.target == modal2) {
 
             // Close modal2 by removing the class.
+            // Also remove the overflowHidden class
+            // to enable page scrolling again.
             modal2.classList.remove('bg-active');
+            document.body.classList.remove('overflowHidden');
 
         // If modal3 exists on the page and
         // is currently open, then close it.
         } else if(modal3 && event.target == modal3) {
 
             // Close modal3 by removing the class.
+            // Also remove the overflowHidden class
+            // to enable page scrolling again.
             modal3.classList.remove('bg-active');
+            document.body.classList.remove('overflowHidden');
 
         // If modal4 exists on the page and
         // is currently open, then close it.
         } else if(modal4 && event.target == modal4) {
 
             // Close modal4 by removing the class.
+            // Also remove the overflowHidden class
+            // to enable page scrolling again.
             modal4.classList.remove('bg-active');
+            document.body.classList.remove('overflowHidden');
 
         // If modal5 exists on the page and
         // is currently open, then close it.
         } else if(modal5 && event.target == modal5) {
 
             // Close modal5 by removing the class.
+            // Also remove the overflowHidden class
+            // to enable page scrolling again.
             modal5.classList.remove('bg-active');
+            document.body.classList.remove('overflowHidden');
 
         // If modal6 exists on the page and
         // is currently open, then close it.
         } else if(modal6 && event.target == modal6) {
 
             // Close modal6 by removing the class.
+            // Also remove the overflowHidden class
+            // to enable page scrolling again.
             modal6.classList.remove('bg-active');
+            document.body.classList.remove('overflowHidden');
 
         // If modal7 exists on the page and
         // is currently open, then close it.
         } else if(modal7 && event.target == modal7) {
 
             // Close modal7 by removing the class.
+            // Also remove the overflowHidden class
+            // to enable page scrolling again.
             modal7.classList.remove('bg-active');
+            document.body.classList.remove('overflowHidden');
 
         // If modal8 exists on the page and
         // is currently open, then close it.
         } else if(modal8 && event.target == modal8) {
 
             // Close modal8 by removing the class.
+            // Also remove the overflowHidden class
+            // to enable page scrolling again.
             modal8.classList.remove('bg-active');
+            document.body.classList.remove('overflowHidden');
 
         // If modal9 exists on the page and
         // is currently open, then close it.
         } else if(modal9 && event.target == modal9) {
 
             // Close modal9 by removing the class.
+            // Also remove the overflowHidden class
+            // to enable page scrolling again.
             modal9.classList.remove('bg-active');
+            document.body.classList.remove('overflowHidden');
 
         // If modal10 exists on the page and
         // is currently open, then close it.
         } else if(modal10 && event.target == modal10) {
 
             // Close modal10 by removing the class.
+            // Also remove the overflowHidden class
+            // to enable page scrolling again.
             modal10.classList.remove('bg-active');
+            document.body.classList.remove('overflowHidden');
         }
-
-        // Remove the class that prevents the page
-        // from scrolling when a modal is open.
-        document.body.classList.remove('overflowHidden');
     }
 }
