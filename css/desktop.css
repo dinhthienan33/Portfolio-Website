@@ -33,6 +33,10 @@
         margin-left: 3.5px;
     }
 
+    .nav-heading:hover {
+        color: var(--bluer-color);
+    }
+
     .nav-heading-text {
         color: var(--light-font);
         text-decoration: none;

@@ -33,6 +33,10 @@
         margin-left: 3.5px;
     }
 
+    .nav-heading:hover {
+        color: var(--bluer-color);
+    }
+
     .menu {
         margin-top: 0px;
         margin-bottom: 10px;
@@ -95,6 +99,10 @@
         display: inline-block;
         margin-top: 3px;
         margin-left: 3.5px;
+    }
+
+    .nav-heading:hover {
+        color: var(--bluer-color);
     }
 
     .nav-heading-text {
