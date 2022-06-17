@@ -1623,6 +1623,8 @@ html {
     }
 
     .message-modal-dialog {
+        padding-bottom: 30px;
+        padding-top: 30px;
         margin-top: auto;
         margin-bottom: auto;
         margin-left: 20px;
