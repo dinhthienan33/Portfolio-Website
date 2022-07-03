@@ -10,11 +10,11 @@
  *
  */
 
- @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
 
- /* ====================================================================
-                    INITIAL/UNIVERSAL SETTINGS Section
- ==================================================================== */
+/* ====================================================================
+                INITIAL/UNIVERSAL SETTINGS Section
+==================================================================== */
 
 /* Create the root of the CSS file to make dynamic variables. */
 :root {
@@ -1292,9 +1292,10 @@ html {
     }
 
     .modal-dialog {
-        margin-top: auto;
+        padding-bottom: 20px;
         padding-top: 20px;
-        margin-bottom: 20px;
+        margin-top: auto;
+        margin-bottom: auto;
         margin-left: 20px;
         margin-right: 20px;
     }

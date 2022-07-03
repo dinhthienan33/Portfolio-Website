@@ -10,7 +10,7 @@
  *
  */
 
- /* Largest Desktop View */    
+/* Largest Desktop View */    
 @media (min-width: 1300px) {
 
     /* ====================================================================
@@ -799,9 +799,10 @@
     }
 
     .modal-dialog {
-        margin-top: auto;
+        padding-bottom: 40px;
         padding-top: 40px;
-        margin-bottom: 40px;
+        margin-top: auto;
+        margin-bottom: auto;
     }
 
     .modal-container {
