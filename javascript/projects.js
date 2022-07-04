@@ -35,6 +35,14 @@ function loadContent(event) {
 // CAN ALWAYS ADD NEW PROJECT OBJECTS HERE.
 let myProjects = [
   {
+    "project-id": "portfolio-item11",
+    "project-ref": "#portfolioModal11",
+    "project-image": "images/travelblog.png",
+    "project-image-alt": "travelblog-img",
+    "project-name": "Travel Blog (Nothing yet)",
+    "project-brief": "Will be Completed December 2022!",
+  }, 
+  {
     "project-id": "portfolio-item10",
     "project-ref": "#portfolioModal10",
     "project-image": "images/compiler-grammar.png",
