@@ -1152,6 +1152,9 @@
     }
 
     .modal-text {
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
         margin-bottom: 1rem;
         line-height: 1.5;
     }
@@ -1166,10 +1169,12 @@
 
     .modal-viewer-link {
         color: var(--dark-font);
+        text-decoration: underline;
+        text-decoration-color: var(--bluer-color);
     }
 
-    .modal-viewer-link:hover {
-        color: var(--bluer-color);
+    .modal-viewer-link:hover b {
+        font-weight: normal !important;
     }
 
     .bottom-button-container {
