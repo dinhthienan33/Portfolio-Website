@@ -14,9 +14,6 @@
  * 
  */
 
-// Wait to load the JavaScript until all of the HTML content is loaded (DON'T NEED THIS???).
-// document.addEventListener("DOMContentLoaded", loadContent); // --> COMMENT OUT FOR NOW!!!
-
 // --> SECTION: Style the links in the navbar.
 
 // Get the elements in the navbar by their ids.

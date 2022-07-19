@@ -15,9 +15,6 @@
  * 
  */
 
-// Wait to load the JavaScript until all of the HTML content is loaded (DON'T NEED THIS???).
-// document.addEventListener("DOMContentLoaded", loadContent); // --> COMMENT OUT FOR NOW!!!
-
 // --> SECTION: Add the functions for the email feature.
 
 // Wait to load the JavaScript until all of the HTML content is loaded.

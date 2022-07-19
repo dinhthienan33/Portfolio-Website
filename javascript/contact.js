@@ -17,9 +17,6 @@
  * 
  */
 
-// Wait to load the JavaScript until all of the HTML content is loaded (DON'T NEED THIS???).
-// document.addEventListener("DOMContentLoaded", loadContent); // --> COMMENT OUT FOR NOW!!!
-
 // --> SECTION: Add the functions for the email feature on the contact page.
 
 // Wait to load the JavaScript until all of the HTML content is loaded.

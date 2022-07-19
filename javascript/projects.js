@@ -17,7 +17,7 @@
  * 
  */
 
-// Wait to load the JavaScript until all of the HTML content is loaded (FIX LATER).
+// Wait to load the JavaScript until all of the HTML content is loaded.
 document.addEventListener("DOMContentLoaded", loadContent);
 
 // Add the content to the page.
