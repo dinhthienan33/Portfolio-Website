@@ -225,8 +225,8 @@ html {
     @media (max-width: 370px) {
 
         nav {
-            padding-left: 10px;
-            padding-right: 10px;
+            padding-left: 10px !important;
+            padding-right: 10px !important;
         }
     }
 
@@ -1252,11 +1252,6 @@ html {
 
     @media (max-width: 450px) {
 
-        .portfolio-item {
-            margin-top: 15px;
-            margin-bottom: 15px;
-        }
-
         .projects-card {
             position: relative;
             min-width: 365px;
@@ -1283,11 +1278,6 @@ html {
     }
 
     @media (max-width: 410px) {
-
-        .portfolio-item {
-            margin-top: 15px;
-            margin-bottom: 15px;
-        }
 
         .projects-card {
             position: relative;
@@ -1328,11 +1318,6 @@ html {
     }
 
     @media (max-width: 370px) {
-
-        .portfolio-item {
-            margin-top: 15px;
-            margin-bottom: 15px;
-        }
 
         .projects-card {
             position: relative;
