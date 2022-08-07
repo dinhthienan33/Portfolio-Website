@@ -222,6 +222,14 @@ html {
                         NAVBAR Section (All Pages)
     ==================================================================== */
 
+    @media (max-width: 370px) {
+
+        nav {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+
     .navbar-container {
         width: 100%;
         margin: 0 auto;
@@ -1163,34 +1171,8 @@ html {
         max-width: 400px;
         background-color: var(--whiter-color);
         border-radius: 0.5em;
-        height: 400px;
+        height: 401px;
         transition: all .2s ease-in-out;
-    }
-
-    @media (max-width: 450px) {
-
-        .projects-card {
-            position: relative;
-            min-width: 365px;
-            max-width: 365px;
-            background-color: var(--whiter-color);
-            border-radius: 0.5em;
-            height: 400px;
-            transition: all .2s ease-in-out;
-        }
-    }
-
-    @media (max-width: 400px) {
-
-        .projects-card {
-            position: relative;
-            min-width: 310px;
-            max-width: 310px;
-            background-color: var(--whiter-color);
-            border-radius: 0.5em;
-            height: 400px;
-            transition: all .2s ease-in-out;
-        }
     }
 
     .portfolio-item {
@@ -1266,6 +1248,128 @@ html {
         font-size: 17px;
         margin-top: 4px;
         font-style: italic;
+    }
+
+    @media (max-width: 450px) {
+
+        .portfolio-item {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        .projects-card {
+            position: relative;
+            min-width: 365px;
+            max-width: 365px;
+            background-color: var(--whiter-color);
+            border-radius: 0.5em;
+            height: 371px;
+            transition: all .2s ease-in-out;
+        }
+
+        .projects-pic {
+            opacity: 1;
+            display: block;
+            transition: .5s ease;
+            margin-left: 0;
+            margin-right: 0;
+            margin-top: auto;
+            margin-bottom: auto;
+            width: 100%;
+            height: 265px;
+            border-top-left-radius: 0.5em;
+            border-top-right-radius: 0.5em;
+        }
+    }
+
+    @media (max-width: 410px) {
+
+        .portfolio-item {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        .projects-card {
+            position: relative;
+            min-width: 310px;
+            max-width: 310px;
+            background-color: var(--whiter-color);
+            border-radius: 0.5em;
+            height: 315px;
+            transition: all .2s ease-in-out;
+        }
+
+        .projects-pic {
+            opacity: 1;
+            display: block;
+            transition: .5s ease;
+            margin-left: 0;
+            margin-right: 0;
+            margin-top: auto;
+            margin-bottom: auto;
+            width: 100%;
+            height: 225px;
+            border-top-left-radius: 0.5em;
+            border-top-right-radius: 0.5em;
+        }
+
+        .projects-card-container {
+            min-height: 90px !important;
+            max-height: 90px !important;
+        }
+
+        .projects-title {
+            font-size: 20px !important;
+        }
+
+        .specific-projects-text {
+            font-size: 15px !important;
+        }
+    }
+
+    @media (max-width: 370px) {
+
+        .portfolio-item {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        .projects-card {
+            position: relative;
+            min-width: 265px;
+            max-width: 265px;
+            background-color: var(--whiter-color);
+            border-radius: 0.5em;
+            height: 245px;
+            transition: all .2s ease-in-out;
+        }
+
+        .projects-pic {
+            opacity: 1;
+            display: block;
+            transition: .5s ease;
+            margin-left: 0;
+            margin-right: 0;
+            margin-top: auto;
+            margin-bottom: auto;
+            width: 100%;
+            height: 165px;
+            border-top-left-radius: 0.5em;
+            border-top-right-radius: 0.5em;
+        }
+
+        .projects-card-container {
+            min-height: 80px !important;
+            max-height: 80px !important;
+        }
+
+        .projects-title {
+            font-size: 17px !important;
+        }
+
+        .specific-projects-text {
+            font-size: 12px !important;
+        }
     }
 
     /* Section for Modals */

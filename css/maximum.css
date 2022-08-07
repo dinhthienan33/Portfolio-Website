@@ -696,7 +696,7 @@
         max-width: 400px;
         background-color: var(--whiter-color);
         border-radius: 0.5em;
-        height: 400px; 
+        height: 401px; 
         transition: all .2s ease-in-out;
     }
 
