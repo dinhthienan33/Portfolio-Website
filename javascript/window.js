@@ -61,7 +61,7 @@ function addWindowClearFunctions() {
     // Use the window.onclick function as a universal function
     // to close any given modal that is open on the website
     // when any area outside of the given modal is clicked.
-    window.onclick = function(event) {
+    window.addEventListener("click", function(event) {
 
         // If the message modal exists on the page and
         // is currently open, then close it.
@@ -183,5 +183,5 @@ function addWindowClearFunctions() {
             modal10.classList.remove('bg-active');
             document.body.classList.remove('overflowHidden');
         }
-    }
+    });
 }
