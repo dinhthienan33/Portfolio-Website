@@ -2,8 +2,9 @@
 ## **[View my Portfolio Website Here](https://andrewkrause.dev/)**
 [//]: <> (https://krause2023.github.io/Portfolio-Site/)
 
-
 <p>&nbsp;</p>
+
+<img width="1680" alt="Screen Shot 2022-09-08 at 12 30 46 AM" src="https://user-images.githubusercontent.com/57727121/189041949-6adbc4a9-4c96-437e-8aa1-dfc386a453a1.png">
 
 ## Description
 **_Portfolio Website to Showcase my Skills_** <br/>
