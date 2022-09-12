@@ -228,8 +228,10 @@
     }
 
     .container {
-        padding: 1.5rem;
         max-width: 700px;
+        padding-top: 48px !important;
+        padding-bottom: 48px !important;
+        padding: 1.5rem;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 20px;
@@ -350,6 +352,7 @@
 
     .resume-container {
         max-width: 700px;
+        padding-top: 48px !important;
         padding: 1.5rem;
         margin-left: auto;
         margin-right: auto;
@@ -774,6 +777,7 @@
 
     .timeline-container {
         max-width: 700px;
+        padding-bottom: 48px !important;
         padding: 1.5rem;
         margin-left: auto;
         margin-right: auto;
@@ -941,7 +945,9 @@
     }
 
     .projects-container {
-        max-width: 700px;
+        max-width: 500px;
+        padding-top: 48px !important;
+        padding-bottom: 48px !important;
         padding: 1.5rem;
         margin-left: auto;
         margin-right: auto;
@@ -986,10 +992,11 @@
     .portfolio-item {
         text-decoration: none;
         color: var(--dark-font);
-        margin-left: 20px;
-        margin-right: 20px;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        transform: scale(0.93);
     }
 
     .projects-pic {
@@ -1255,6 +1262,8 @@
 
     .contact-container {
         max-width: 700px;
+        padding-top: 48px !important;
+        padding-bottom: 48px !important;
         padding: 1.5rem;
         margin-left: auto;
         margin-right: auto;
@@ -1699,7 +1708,7 @@
     }
 
     .footer-row {
-        max-width: 675px;
+        max-width: 350px;
         margin-left: auto;
         margin-right: auto;
         display: flex;
@@ -1710,20 +1719,17 @@
     }
 
     .footer-content {
-        flex: 40%;
-        margin-bottom: 24px;
+        margin-bottom: 15px;
         font-size: 14px;
     }
 
     .footer-icons {
-        flex: 40%;
         margin-bottom: 24px;
     }
 
     .footer-links-list {
-        flex: 40%;
         text-align: center;
-        margin-bottom: 24px;
+        margin-bottom: 20px;
     }
 
     .footer-link {

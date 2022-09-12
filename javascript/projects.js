@@ -114,14 +114,14 @@ let myProjects = [
     "project-name": "Java Pong",
     "project-brief": "Adaptation of the pong game.",
   },
-  // {
-  //   "project-id": "portfolio-item1",
-  //   "project-ref": "#portfolioModal1",
-  //   "project-image": "images/firstdrawing.png",
-  //   "project-image-alt": "firstdrawing-img",
-  //   "project-name": "First Java Program",
-  //   "project-brief": "Simple drawing made with Java.",
-  // },
+  {
+    "project-id": "portfolio-item1",
+    "project-ref": "#portfolioModal1",
+    "project-image": "images/firstdrawing.png",
+    "project-image-alt": "firstdrawing-img",
+    "project-name": "First Java Program",
+    "project-brief": "Simple drawing made with Java.",
+  },
 ];
 
 /*
@@ -286,11 +286,11 @@ let myProjectModals = [
     
     "modal-links": [
       {
-        "modal-link-reference": "https://github.com/Krause2023/Patient-Care-Manager",
+        "modal-link-reference": "https://github.com/Andrew-EKrause/Patient-Care-Manager",
         "modal-link-description": "View project on GitHub",
       },
       {
-        "modal-link-reference": "https://patient-care-manager.herokuapp.com/home",
+        "modal-link-reference": "https://patient-care-manager.herokuapp.com/",
         "modal-link-description": "View project online",
       },
     ],
@@ -341,7 +341,7 @@ let myProjectModals = [
     
     "modal-links": [
       {
-        "modal-link-reference": "https://github.com/Krause2023/CS224-ParkFinder-Web_App",
+        "modal-link-reference": "https://github.com/Andrew-EKrause/ParkFinder-Web-App",
         "modal-link-description": "View project on GitHub",
       },
       {
@@ -406,7 +406,7 @@ let myProjectModals = [
     
     "modal-links": [
       {
-        "modal-link-reference": "https://github.com/Krause2023/CS341-Aptiv-Web_App",
+        "modal-link-reference": "https://github.com/Andrew-EKrause/TeamAptiv-Web-App",
         "modal-link-description": "View project on GitHub",
       },
       {
@@ -456,11 +456,11 @@ let myProjectModals = [
     
     "modal-links": [
       {
-        "modal-link-reference": "https://github.com/Krause2023/App-Promotion-Webpage",
+        "modal-link-reference": "https://github.com/Andrew-EKrause/HabitHelper-Promotional-Webpage",
         "modal-link-description": "View project on GitHub",
       },
       {
-        "modal-link-reference": "https://krause2023.github.io/App-Promotion-Webpage/",
+        "modal-link-reference": "https://andrew-ekrause.github.io/HabitHelper-Promotional-Webpage/",
         "modal-link-description": "View project online",
       },
     ],
@@ -501,11 +501,11 @@ let myProjectModals = [
     
     "modal-links": [
       {
-        "modal-link-reference": "https://github.com/Krause2023/Personal-Webpage",
+        "modal-link-reference": "https://github.com/Andrew-EKrause/Personal-Webpage",
         "modal-link-description": "View project on GitHub",
       },
       {
-        "modal-link-reference": "https://krause2023.github.io/Personal-Webpage/",
+        "modal-link-reference": "https://andrew-ekrause.github.io/Personal-Webpage/",
         "modal-link-description": "View project online",
       },
     ],
@@ -536,7 +536,7 @@ let myProjectModals = [
     
     "modal-links": [
       {
-        "modal-link-reference": "https://github.com/Krause2023/Office-Hour-Simulation",
+        "modal-link-reference": "https://github.com/Andrew-EKrause/Office-Hour-Simulation",
         "modal-link-description": "View project on GitHub",
       },
     ],
@@ -567,7 +567,7 @@ let myProjectModals = [
     
     "modal-links": [
       {
-        "modal-link-reference": "https://github.com/Krause2023/Hash-Table",
+        "modal-link-reference": "https://github.com/Andrew-EKrause/Hash-Table",
         "modal-link-description": "View project on GitHub",
       },
     ],
@@ -593,39 +593,39 @@ let myProjectModals = [
     
     "modal-links": [
       {
-        "modal-link-reference": "https://github.com/Krause2023/Java-Pong",
+        "modal-link-reference": "https://github.com/Andrew-EKrause/Java-Pong",
         "modal-link-description": "View project on GitHub",
       },
     ],
 
     "modal-bottom-button": "bottom-exit-modal2",
   },
-  // {
-  //   "modal-id": "portfolioModal1",
-  //   "modal-span-id": "exit-modal1",
-  //   "modal-heading": "First Java Program",
-  //   "modal-subheading": "Simple drawing created using different shape classes in Java.",
-  //   "modal-description": "The project is a simple program written in Java that generates an image of a clock tower on my university campus as well as some background features. The image is comprised of different shapes that are manipulated in both size and location to form the simple image. I created this project during my freshman year of college in my first computer science class.",
+  {
+    "modal-id": "portfolioModal1",
+    "modal-span-id": "exit-modal1",
+    "modal-heading": "First Java Program",
+    "modal-subheading": "Simple drawing created using different shape classes in Java.",
+    "modal-description": "The project is a simple program written in Java that generates an image of a clock tower on my university campus as well as some background features. The image is comprised of different shapes that are manipulated in both size and location to form the simple image. I created this project during my freshman year of college in my first computer science class.",
 
-  //   "modal-images-text": [
-  //     {
-  //       "modal-image": "images/firstdrawing-images/firstdrawing2.png", 
-  //       "modal-image-description": "Drawing generated by the Java program. The drawing is a simple collection of shapes that form the image.",
-  //       "modal-image-alt": "firstdrawing2-img", 
-  //     }, 
-  //   ],
+    "modal-images-text": [
+      {
+        "modal-image": "images/firstdrawing-images/firstdrawing2.png", 
+        "modal-image-description": "Drawing generated by the Java program. The drawing is a simple collection of shapes that form the image.",
+        "modal-image-alt": "firstdrawing2-img", 
+      }, 
+    ],
 
-  //   "modal-final-text": "The First Java Program project is hosted in a GitHub repository on my account. To view more details about this project and run it, visit my repository via the link provided below.",
+    "modal-final-text": "The First Java Program project is hosted in a GitHub repository on my account. To view more details about this project and run it, visit my repository via the link provided below.",
     
-  //   "modal-links": [
-  //     {
-  //       "modal-link-reference": "https://github.com/Krause2023/Java-Drawing",
-  //       "modal-link-description": "View project on GitHub",
-  //     },
-  //   ],
+    "modal-links": [
+      {
+        "modal-link-reference": "https://github.com/Andrew-EKrause/Java-Drawing",
+        "modal-link-description": "View project on GitHub",
+      },
+    ],
 
-  //   "modal-bottom-button": "bottom-exit-modal1",
-  // },
+    "modal-bottom-button": "bottom-exit-modal1",
+  },
 ];
 
 /*
@@ -817,15 +817,15 @@ function addProjectModals() {
 function addModalFunctions() {
 
   // MODAL 1
-  // var anchor1 = document.getElementById("portfolio-item1");
-  // var modal1 = document.getElementById("portfolioModal1");
+  var anchor1 = document.getElementById("portfolio-item1");
+  var modal1 = document.getElementById("portfolioModal1");
 
-  // // When the user clicks the button, open the modal.
-  // anchor1.onclick = function() {
-  //   modal1.classList.add('bg-active');
-  //   modal1.scrollTo(0, 0);
-  //   document.body.classList.add('overflowHidden');
-  // }
+  // When the user clicks the button, open the modal.
+  anchor1.onclick = function() {
+    modal1.classList.add('bg-active');
+    modal1.scrollTo(0, 0);
+    document.body.classList.add('overflowHidden');
+  }
 
   // ==================================================================
 
@@ -948,12 +948,12 @@ function addModalFunctions() {
   // Get the FIRST element that closes the modal (the big 'X').
   // ==================================================================
 
-  // var bigX1 = document.getElementById("exit-modal1");
+  var bigX1 = document.getElementById("exit-modal1");
 
-  // bigX1.onclick = function() {
-  //   modal1.classList.remove('bg-active');
-  //   document.body.classList.remove('overflowHidden');
-  // }
+  bigX1.onclick = function() {
+    modal1.classList.remove('bg-active');
+    document.body.classList.remove('overflowHidden');
+  }
 
   var bigX2 = document.getElementById("exit-modal2");
 
@@ -1022,12 +1022,12 @@ function addModalFunctions() {
   // Get the SECOND element that closes the modal (the small 'x').
   // ==================================================================
 
-  // var smallX1 = document.getElementById("bottom-exit-modal1");
+  var smallX1 = document.getElementById("bottom-exit-modal1");
 
-  // smallX1.onclick = function() {
-  //   modal1.classList.remove('bg-active');
-  //   document.body.classList.remove('overflowHidden');
-  // }
+  smallX1.onclick = function() {
+    modal1.classList.remove('bg-active');
+    document.body.classList.remove('overflowHidden');
+  }
 
   var smallX2 = document.getElementById("bottom-exit-modal2");
 

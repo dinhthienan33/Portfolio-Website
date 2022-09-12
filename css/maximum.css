@@ -18,6 +18,7 @@
     ==================================================================== */
     
     .container {
+        padding-top: 48px !important;
         padding: 1.5rem;
         max-width: 1100px;
         margin-left: auto;
@@ -645,7 +646,7 @@
 }
 
 /* Largest Desktop View for Projects Section */    
-@media (min-width: 1460px) {
+@media (min-width: 1350px) {
 
     /* ====================================================================
                           PROJECTS Section (Page 3)                             
@@ -658,7 +659,7 @@
     }
 
     .projects-container {
-        max-width: 1400px;
+        max-width: 1308px;
         padding: 1.5rem;
         margin-left: auto;
         margin-right: auto;
@@ -703,10 +704,11 @@
     .portfolio-item {
         text-decoration: none;
         color: var(--dark-font);
-        margin-top: 20px;
-        margin-bottom: 20px;
-        margin-left: 25.3px;
-        margin-right: 25.3px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        transform: scale(0.93);
     }
 
     .projects-pic {
