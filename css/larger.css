@@ -46,7 +46,6 @@
     }
 
     .menu-link {
-        /* font-family: 'Open Sans', sans-serif; */
         font-size: 18px;
         font-weight: bold;
         text-decoration: none;
@@ -131,51 +130,23 @@
     }
 
     .menu-link {
-        /* font-family: 'Open Sans', sans-serif; */
         font-size: 17px;
         font-weight: bold;
         text-decoration: none;
         color: var(--whiter-color);
         position: relative;
-        margin-left: 30px;
-    }
-    
-    /* CHANGE THE SLIDER CODE LATER AT SOME POINT (ASK DAD IF YOU FORGET WHAT HE MEANT) */
-    .menu-link:before {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 1px;
-        bottom: 0;
-        left: 0;
-        background-color: var(--whiter-color);
-        visibility: hidden;
-        transform: scaleX(0);
-        transition: all 0.3s ease-in-out;
+        padding-bottom: 20px;
+        border-bottom: 4px solid transparent;
     }
 
-    .menu-link:hover:before {
-        visibility: visible;
-        transform: scaleX(1);
+    .menu-link:hover {
+        color: var(--whiter-color);
+        border-bottom: 4px solid var(--whiter-color);
     }
 
     .is-active {
-        font-weight: bold;
-        text-decoration: none;
         color: var(--whiter-color);
-        position: relative;
-    }
-    
-    .is-active:before {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 1px;
-        bottom: 0;
-        left: 0;
-        background-color: var(--whiter-color);
-        visibility: visible;
-        transform: scaleX(1);
+        border-bottom: 4px solid var(--whiter-color);
     }
 
     .menu-about {

@@ -1,4 +1,4 @@
-/*  
+/*
  * The JavaScript file is utilized by ALL pages
  * of the website. The file provides a simple
  * function for closing any modal that is open
@@ -7,7 +7,7 @@
  *
  * Author: Andrew Krause
  * Date: 01/31/2022
- * 
+ *
  */
 
 // --> SECTION: Add the functions for the email feature.
@@ -43,7 +43,7 @@ function addWindowClearFunctions() {
     // Select all of the project modals on the website in
     // order to remove the features that are causing them 
     // to show if needed.
-    // var modal1 = document.getElementById("portfolioModal1");
+    var modal1 = document.getElementById("portfolioModal1");
     var modal2 = document.getElementById("portfolioModal2");
     var modal3 = document.getElementById("portfolioModal3");
     var modal4 = document.getElementById("portfolioModal4");
@@ -83,15 +83,15 @@ function addWindowClearFunctions() {
             confirmModal.classList.remove('confirm-bg-active');
             document.body.classList.remove('overflowHidden');
 
-        // // If modal1 exists on the page and
-        // // is currently open, then close it.
-        // } else if(modal1 && event.target == modal1) {
+        // If modal1 exists on the page and
+        // is currently open, then close it.
+        } else if(modal1 && event.target == modal1) {
 
-        //     // Close modal1 by removing the class.
-        //     // Also remove the overflowHidden class
-        //     // to enable page scrolling again.
-        //     modal1.classList.remove('bg-active');
-        //     document.body.classList.remove('overflowHidden');
+            // Close modal1 by removing the class.
+            // Also remove the overflowHidden class
+            // to enable page scrolling again.
+            modal1.classList.remove('bg-active');
+            document.body.classList.remove('overflowHidden');
 
         // If modal2 exists on the page and
         // is currently open, then close it.
