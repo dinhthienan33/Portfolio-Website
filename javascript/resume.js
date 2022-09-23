@@ -174,7 +174,7 @@ let myCertifications = [
   {
     "certification-img": "images/codewithmosh.png",
     "certification-alt": "codewithmosh-img",
-    "certification-title": "The Ultimate Django Series: Part 1",
+    "certification-title": "The Ultimate Django Series: Part One",
     "certification-source": "Code With Mosh Certification",
     "certification-description": "The certification was earned by taking a course on the basics of Django, a framework for web development in Python. The total amount of work was 5 hours.",
   },

@@ -38,9 +38,6 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
 
-        <!-- Title of website -->
-        <title>Andrew Krause</title>
-
         <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -54,34 +51,38 @@
                 emailjs.init("dJW9REn-mZZUUmf_P");
             })();
         </script>
+
+        <!-- Title of website -->
+        <title>Andrew Krause</title>
     </head>
     <body id="top">
-        <main> 
-            <!-- Responsive Navbar -->
-            <header id="navbar">
-                <nav>
-                    <div class="navbar-container">
-                        <a class="nav-heading-text" href="index.html">
-                            <b class="nav-heading">Andrew Krause</b>
-                        </a>
-                        <ul class="menu">
-                            <li>
-                                <a id="menu-about" class="menu-link menu-about" href="index.html">About</a>
-                            </li>
-                            <li>
-                                <a id="menu-resume" class="is-active menu-link menu-resume" href="resume.html">Resume</a>
-                            </li>
-                            <li>
-                                <a id="menu-projects" class="menu-link menu-projects" href="projects.html">Projects</a>
-                            </li>
-                            <li>
-                                <a id="menu-contact" class="menu-link menu-contact" href="contact.html">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </header>
+        <!-- Responsive navbar of page -->
+        <header id="navbar">
+            <nav>
+                <div class="navbar-container">
+                    <a class="nav-heading-text" href="index.html">
+                        <b class="nav-heading">Andrew Krause</b>
+                    </a>
+                    <ul class="menu">
+                        <li>
+                            <a id="menu-about" class="menu-link menu-about" href="index.html">About</a>
+                        </li>
+                        <li>
+                            <a id="menu-resume" class="is-active menu-link menu-resume" href="resume.html">Resume</a>
+                        </li>
+                        <li>
+                            <a id="menu-projects" class="menu-link menu-projects" href="projects.html">Projects</a>
+                        </li>
+                        <li>
+                            <a id="menu-contact" class="menu-link menu-contact" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
 
+        <!-- Main content of the resume.html page -->
+        <article> 
             <!-- Resume Overview -->
             <section id="resume">
                 <div class="resume-container slide-from-left">
@@ -261,13 +262,13 @@
                                 <h5 class="timeline-year">2019 - Present</h5>
                                 <h4 class="timeline-event">
                                     <a class="timeline-event-heading" href="https://www.uwlax.edu/" target="_blank">
-                                        University of Wisconsin - La Crosse, La Crosse, WI
+                                        UW - La Crosse, La Crosse, WI
                                     </a>
                                 </h4>
                                 <p>
-                                    I have been attending UWL since 2019 to obtain a bachelor's 
-                                    degree in Computer Science. I have  completed my minor in
-                                    Mathematics.
+                                    I have been attending the University of Wisconsin - La Crosse 
+                                    since 2019 to obtain a bachelor's degree in Computer Science. 
+                                    I have  completed my minor in Mathematics.
                                 </p>
                             </div>
                         </div>
@@ -291,116 +292,117 @@
                     </div>
                 </div>
             </section>
-        </main>      
-        
-        <!-- Contact modal with email functionality through EmailJS -->
-        <div id="messageModal" role="dialog" class="message-modal-bg">
-            <div class="message-modal-dialog">
-                <div class="message-close-modal-position">
-                    <span id="exit-message-modal" class="message-modal-close" href="#close"><i class="message-modal-x-icon fa fa-solid fa-circle-xmark fa-2x"></i></span>
-                </div>
-                <div class="message-modal-container"> 
-                    <!-- Message Modal Information and Content -->
-                    <div class="message-modal-information">
-                        <div class="message-modal-content">
-                            <div class="message-modal-row">
-                                <div class="col-lg-10 mx-auto">
-                                    <div class="message-modal-body">
-                                        <!-- Message and Heading -->
-                                        <h2 class="message-modal-heading">Message Me</h2>
-                                        <p class="message-modal-text message-subheading-text-center">Fill out the fields and click the send button.</p>
 
-                                        <!-- Form to process user input for the message -->
-                                        <form action="#">
-                                            <input id="message-email" class="message-email-subject-input" placeholder="Your Email Address" type="email" required>
-                                            <input id="message-subject" class="message-email-subject-input" placeholder="Subject of Message" type="text" required>
-                                            <textarea id="message-body" class="message-body-input" placeholder="Body of Message" type="text" required></textarea>
-
-                                            <!-- Send Button on Bottom of Message Modal -->
-                                            <div class="message-bottom-button-container">
-                                                <button type="submit" id="bottom-send-message-modal" class="btn btn-dark btn-l message-model-send message-bottom-modal-button"> 
-                                                    <i class="fa-solid fa-paper-plane"></i> Send
-                                                </button>
-                                            </div>
-                                        </form>
-
-                                    </div>
-                                </div>
-                            </div>
+            <!-- Contact modal with email functionality through EmailJS -->
+            <section>
+                <div id="messageModal" role="dialog" class="message-modal-bg">
+                    <div class="message-modal-dialog">
+                        <div class="message-close-modal-position">
+                            <span id="exit-message-modal" class="message-modal-close" href="#close"><i class="message-modal-x-icon fa fa-solid fa-circle-xmark fa-2x"></i></span>
                         </div>
-                    </div>
-                </div>
-            </div> 
-        </div>
-
-        <!-- Confirmation modal to display AFTER the user sends through EmailJS -->
-        <div id="confirmModal" role="dialog" class="confirm-modal-bg">
-            <div class="confirm-modal-dialog">
-                <div class="confirm-modal-container"> 
-                    <!-- Confirm Modal Information and Content -->
-                    <div class="confirm-modal-information">
-                        <div class="confirm-modal-content">
-                            <div class="confirm-modal-row">
-                                <div class="col-lg-10 mx-auto">
-                                    <div class="confirm-modal-body">
-                                        <!-- Message and Heading -->
-                                        <h2 class="confirm-modal-heading">Message sent.</h2>
-                                        <h2 class="confirm-modal-heading">Thank you!</h2>
-                                        <p class="confirm-modal-text confirm-subheading-text-center">Click okay to close this message.</p>
-
-                                        <!-- Close Button of Confirmation Modal -->
-                                        <div class="message-bottom-button-container">
-                                            <a id="confirm-bottom-exit" class="btn btn-dark btn-l confirm-model-close confirm-bottom-modal-button" href="#close"> 
-                                                Okay
-                                            </a>
+                        <div class="message-modal-container"> 
+                            <!-- Message Modal Information and Content -->
+                            <div class="message-modal-information">
+                                <div class="message-modal-content">
+                                    <div class="message-modal-row">
+                                        <div class="col-lg-10 mx-auto">
+                                            <div class="message-modal-body">
+                                                <!-- Message and Heading -->
+                                                <h2 class="message-modal-heading">Message Me</h2>
+                                                <p class="message-modal-text message-subheading-text-center">Fill out the fields and click the send button.</p>
+        
+                                                <!-- Form to process user input for the message -->
+                                                <form action="#">
+                                                    <input id="message-email" class="message-email-subject-input" placeholder="Your Email Address" type="email" required>
+                                                    <input id="message-subject" class="message-email-subject-input" placeholder="Subject of Message" type="text" required>
+                                                    <textarea id="message-body" class="message-body-input" placeholder="Body of Message" type="text" required></textarea>
+        
+                                                    <!-- Send Button on Bottom of Message Modal -->
+                                                    <div class="message-bottom-button-container">
+                                                        <button type="submit" id="bottom-send-message-modal" class="btn btn-dark btn-l message-model-send message-bottom-modal-button"> 
+                                                            <i class="fa-solid fa-paper-plane"></i> Send
+                                                        </button>
+                                                    </div>
+                                                </form>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> 
                 </div>
-            </div> 
-        </div>
+        
+                <!-- Confirmation modal to display AFTER the user sends through EmailJS -->
+                <div id="confirmModal" role="dialog" class="confirm-modal-bg">
+                    <div class="confirm-modal-dialog">
+                        <div class="confirm-modal-container"> 
+                            <!-- Confirm Modal Information and Content -->
+                            <div class="confirm-modal-information">
+                                <div class="confirm-modal-content">
+                                    <div class="confirm-modal-row">
+                                        <div class="col-lg-10 mx-auto">
+                                            <div class="confirm-modal-body">
+                                                <!-- Message and Heading -->
+                                                <h2 class="confirm-modal-heading">Message sent.</h2>
+                                                <h2 class="confirm-modal-heading">Thank you!</h2>
+                                                <p class="confirm-modal-text confirm-subheading-text-center">Click okay to close this message.</p>
+        
+                                                <!-- Close Button of Confirmation Modal -->
+                                                <div class="message-bottom-button-container">
+                                                    <a id="confirm-bottom-exit" class="btn btn-dark btn-l confirm-model-close confirm-bottom-modal-button" href="#close"> 
+                                                        Okay
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </section>
+        </article>     
+        
+        <!-- Footer of page with name and dynamic year -->
+        <footer id="footer" data-visible="true">
+            <div class="footer-row">
+                <p class="footer-content">Copyright &copy Andrew Krause <script>document.write(new Date().getFullYear())</script></p>
+                <ul class="footer-links-list">
+                    <li>
+                        <a class="footer-link" href="resume.html">Resume</a>
+                    </li>
+                    <li>
+                        <a class="footer-link" href="projects.html">Projects</a>
+                    </li>
+                    <li>
+                        <a class="footer-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <ul class="footer-icons">
+                    <li>
+                        <a id="message-item" class="header-icon" onClick="get_messageID(this.id)">
+                            <i class="fas mail fa-envelope fa-2x"></i>
+                            <script>
+                                function get_messageID(messageItem) {
+                                    return messageItem.id;
+                                }
+                            </script>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="header-icon" href="https://www.linkedin.com/in/andrew-krause-b6aa21179/" target="_blank">
+                            <i class="fab fa-linkedin fa-2x"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="header-icon" href="https://github.com/Andrew-EKrause" target="_blank">
+                            <i class="fab fa-github fa-2x"></i>   
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
     </body>
-
-    <!-- Footer with name and dynamic year -->
-    <footer id="footer" data-visible="true">
-        <div class="footer-row">
-            <p class="footer-content">Copyright &copy Andrew Krause <script>document.write(new Date().getFullYear())</script></p>
-            <ul class="footer-links-list">
-                <li>
-                    <a class="footer-link" href="resume.html">Resume</a>
-                </li>
-                <li>
-                    <a class="footer-link" href="projects.html">Projects</a>
-                </li>
-                <li>
-                    <a class="footer-link" href="contact.html">Contact</a>
-                </li>
-            </ul>
-            <ul class="footer-icons">
-                <li>
-                    <a id="message-item" class="header-icon" onClick="get_messageID(this.id)">
-                        <i class="fas mail fa-envelope fa-2x"></i>
-                        <script>
-                            function get_messageID(messageItem) {
-                                return messageItem.id;
-                            }
-                        </script>
-                    </a>
-                </li>
-                <li>
-                    <a class="header-icon" href="https://www.linkedin.com/in/andrew-krause-b6aa21179/" target="_blank">
-                        <i class="fab fa-linkedin fa-2x"></i>
-                    </a>
-                </li>
-                <li>
-                    <a class="header-icon" href="https://github.com/Andrew-EKrause" target="_blank">
-                        <i class="fab fa-github fa-2x"></i>   
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </footer>
 </html>

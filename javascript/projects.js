@@ -31,7 +31,7 @@ function loadContent(event) {
 
 // --> SECTION: Add the project cards to the DOM.
 
-// List of project objects.
+// List of project card objects.
 // CAN ALWAYS ADD NEW PROJECT OBJECTS HERE.
 let myProjects = [
   {
@@ -203,7 +203,7 @@ function addProjects() {
 
 // --> SECTION: Add the project modals to the DOM.
 
-// List of project modals.
+// List of project modal objects.
 // CAN ALWAYS ADD NEW MODAL OBJECTS HERE.
 let myProjectModals = [ 
   {
@@ -724,31 +724,35 @@ function addProjectModals() {
     // This is completed via a for-each loop that visits each
     // element in the object images and captions attribute array.
     myProjectModals["modal-images-text"].forEach(modalImages => {
-    
+
       // Create the div that stores a given image and description.
       let descriptiveDiv = document.createElement("div");
       descriptiveDiv.setAttribute("class", "col-lg-4 col-md-6 mb-5 modal-pic-card");
       modalBodyDiv.appendChild(descriptiveDiv);
 
-      // Create the descriptive image that goes within the div.
+      // Create the figure element to help store the image and its caption.
+      let descriptiveDivFigure = document.createElement("figure");
+      descriptiveDiv.appendChild(descriptiveDivFigure);
+
+      // Create the descriptive image that goes within the figure.
       let descriptiveDivImage = document.createElement("img");
       descriptiveDivImage.setAttribute("class", "modal-info-pic");
       descriptiveDivImage.setAttribute("src", modalImages["modal-image"]);
       descriptiveDivImage.setAttribute("alt", modalImages["modal-image-alt"]);
-      descriptiveDiv.appendChild(descriptiveDivImage);
+      descriptiveDivFigure.appendChild(descriptiveDivImage);
 
-      // Create another div to store the actual description.
-      let descriptiveDivContainer = document.createElement("div");
-      descriptiveDivContainer.setAttribute("class", "modal-pic-container");
-      descriptiveDivContainer.setAttribute("src", modalImages["modal-image"]);
-      descriptiveDivContainer.setAttribute("alt", modalImages["modal-image-alt"]);
-      descriptiveDiv.appendChild(descriptiveDivContainer);
+      // Create a figcaption to help store the actual description.
+      let descriptiveDivFigcaption = document.createElement("figcaption");
+      descriptiveDivFigcaption.setAttribute("class", "modal-pic-container");
+      descriptiveDivFigcaption.setAttribute("src", modalImages["modal-image"]);
+      descriptiveDivFigcaption.setAttribute("alt", modalImages["modal-image-alt"]);
+      descriptiveDivFigure.appendChild(descriptiveDivFigcaption);
 
       // Create a paragraph tag to store the actual description.
       let descriptiveDivParagraph = document.createElement("p");
       descriptiveDivParagraph.setAttribute("class", "modal-pic-text");
       descriptiveDivParagraph.appendChild(document.createTextNode(modalImages["modal-image-description"]));
-      descriptiveDivContainer.appendChild(descriptiveDivParagraph);
+      descriptiveDivFigcaption.appendChild(descriptiveDivParagraph);
     });
 
     // Create a paragraph tag to store the final description of the project.
@@ -816,7 +820,7 @@ function addProjectModals() {
  */
 function addModalFunctions() {
 
-  // MODAL 1
+  // MODAL 1 - open modal function.
   var anchor1 = document.getElementById("portfolio-item1");
   var modal1 = document.getElementById("portfolioModal1");
 
@@ -829,7 +833,7 @@ function addModalFunctions() {
 
   // ==================================================================
 
-  // MODAL 2
+  // MODAL 2 - open modal function.
   var anchor2 = document.getElementById("portfolio-item2");
   var modal2 = document.getElementById("portfolioModal2");
 
@@ -842,7 +846,7 @@ function addModalFunctions() {
 
   // ==================================================================
 
-  // MODAL 3
+  // MODAL 3 - open modal function.
   var anchor3 = document.getElementById("portfolio-item3");
   var modal3 = document.getElementById("portfolioModal3");
 
@@ -855,7 +859,7 @@ function addModalFunctions() {
 
   // ==================================================================
 
-  // MODAL 4
+  // MODAL 4 - open modal function.
   var anchor4 = document.getElementById("portfolio-item4");
   var modal4 = document.getElementById("portfolioModal4");
 
@@ -868,7 +872,7 @@ function addModalFunctions() {
 
   // ==================================================================
 
-  // MODAL 5
+  // MODAL 5 - open modal function.
   var anchor5 = document.getElementById("portfolio-item5");
   var modal5 = document.getElementById("portfolioModal5");
 
@@ -881,7 +885,7 @@ function addModalFunctions() {
 
   // ==================================================================
 
-  // MODAL 6
+  // MODAL 6 - open modal function.
   var anchor6 = document.getElementById("portfolio-item6");
   var modal6 = document.getElementById("portfolioModal6");
 
@@ -894,7 +898,7 @@ function addModalFunctions() {
 
   // ==================================================================
 
-  // MODAL 7
+  // MODAL 7 - open modal function.
   var anchor7 = document.getElementById("portfolio-item7");
   var modal7 = document.getElementById("portfolioModal7");
 
@@ -907,7 +911,7 @@ function addModalFunctions() {
 
   // ==================================================================
 
-  // MODAL 8
+  // MODAL 8 - open modal function.
   var anchor8 = document.getElementById("portfolio-item8");
   var modal8 = document.getElementById("portfolioModal8");
 
@@ -920,7 +924,7 @@ function addModalFunctions() {
 
   // ==================================================================
 
-  // MODAL 9
+  // MODAL 9 - open modal function.
   var anchor9 = document.getElementById("portfolio-item9");
   var modal9 = document.getElementById("portfolioModal9");
 
@@ -933,7 +937,7 @@ function addModalFunctions() {
 
   // ==================================================================
 
-  // MODAL 10
+  // MODAL 10 - open modal function.
   var anchor10 = document.getElementById("portfolio-item10");
   var modal10 = document.getElementById("portfolioModal10");
 
@@ -948,71 +952,109 @@ function addModalFunctions() {
   // Get the FIRST element that closes the modal (the big 'X').
   // ==================================================================
 
+  // MODAL 1 - close modal top.
   var bigX1 = document.getElementById("exit-modal1");
 
+  // When the user clicks the top button, close the modal.
   bigX1.onclick = function() {
     modal1.classList.remove('bg-active');
     document.body.classList.remove('overflowHidden');
   }
 
+  // ==================================================================
+
+  // MODAL 2 - close modal top.
   var bigX2 = document.getElementById("exit-modal2");
 
+  // When the user clicks the top button, close the modal.
   bigX2.onclick = function() {
     modal2.classList.remove('bg-active');
     document.body.classList.remove('overflowHidden');
   }
 
+  // ==================================================================
+
+  // MODAL 3 - close modal top.
   var bigX3 = document.getElementById("exit-modal3");
 
+  // When the user clicks the top button, close the modal.
   bigX3.onclick = function() {
     modal3.classList.remove('bg-active');
     document.body.classList.remove('overflowHidden');
   }
 
+  // ==================================================================
+
+  // MODAL 4 - close modal top.
   var bigX4 = document.getElementById("exit-modal4");
 
+  // When the user clicks the top button, close the modal.
   bigX4.onclick = function() {
     modal4.classList.remove('bg-active');
     document.body.classList.remove('overflowHidden');
   }
 
+  // ==================================================================
+
+  // MODAL 5 - close modal top.
   var bigX5 = document.getElementById("exit-modal5");
 
+  // When the user clicks the top button, close the modal.
   bigX5.onclick = function() {
     modal5.classList.remove('bg-active');
     document.body.classList.remove('overflowHidden');
   }
 
+  // ==================================================================
+
+  // MODAL 6 - close modal top.
   var bigX6 = document.getElementById("exit-modal6");
 
+  // When the user clicks the top button, close the modal.
   bigX6.onclick = function() {
     modal6.classList.remove('bg-active');
     document.body.classList.remove('overflowHidden');
   }
 
+  // ==================================================================
+
+  // MODAL 7 - close modal top.
   var bigX7 = document.getElementById("exit-modal7");
 
+  // When the user clicks the top button, close the modal.
   bigX7.onclick = function() {
     modal7.classList.remove('bg-active');
     document.body.classList.remove('overflowHidden');
   }
 
+  // ==================================================================
+
+  // MODAL 8 - close modal top.
   var bigX8 = document.getElementById("exit-modal8");
 
+  // When the user clicks the top button, close the modal.
   bigX8.onclick = function() {
     modal8.classList.remove('bg-active');
     document.body.classList.remove('overflowHidden');
   }
 
+  // ==================================================================
+
+  // MODAL 9 - close modal top.
   var bigX9 = document.getElementById("exit-modal9");
 
+  // When the user clicks the top button, close the modal.
   bigX9.onclick = function() {
     modal9.classList.remove('bg-active');
     document.body.classList.remove('overflowHidden');
   }
 
+  // ==================================================================
+
+  // MODAL 10 - close modal top.
   var bigX10 = document.getElementById("exit-modal10");
 
+  // When the user clicks the top button, close the modal.
   bigX10.onclick = function() {
     modal10.classList.remove('bg-active');
     document.body.classList.remove('overflowHidden');
@@ -1022,71 +1064,109 @@ function addModalFunctions() {
   // Get the SECOND element that closes the modal (the small 'x').
   // ==================================================================
 
+  // MODAL 1 - close modal bottom.
   var smallX1 = document.getElementById("bottom-exit-modal1");
 
+  // When the user clicks the bottom button, close the modal.
   smallX1.onclick = function() {
     modal1.classList.remove('bg-active');
     document.body.classList.remove('overflowHidden');
   }
 
+  // ==================================================================
+
+  // MODAL 2 - close modal bottom.
   var smallX2 = document.getElementById("bottom-exit-modal2");
 
+  // When the user clicks the bottom button, close the modal.
   smallX2.onclick = function() {
     modal2.classList.remove('bg-active');
     document.body.classList.remove('overflowHidden');
   }
 
+  // ==================================================================
+
+  // MODAL 3 - close modal bottom.
   var smallX3 = document.getElementById("bottom-exit-modal3");
 
+  // When the user clicks the bottom button, close the modal.
   smallX3.onclick = function() {
     modal3.classList.remove('bg-active');
     document.body.classList.remove('overflowHidden');
   }
 
+  // ==================================================================
+
+  // MODAL 4 - close modal bottom.
   var smallX4 = document.getElementById("bottom-exit-modal4");
 
+  // When the user clicks the bottom button, close the modal.
   smallX4.onclick = function() {
     modal4.classList.remove('bg-active');
     document.body.classList.remove('overflowHidden');
   }
 
+  // ==================================================================
+
+  // MODAL 5 - close modal bottom.
   var smallX5 = document.getElementById("bottom-exit-modal5");
 
+  // When the user clicks the bottom button, close the modal.
   smallX5.onclick = function() {
     modal5.classList.remove('bg-active');
     document.body.classList.remove('overflowHidden');
   }
 
+  // ==================================================================
+
+  // MODAL 6 - close modal bottom.
   var smallX6 = document.getElementById("bottom-exit-modal6");
 
+  // When the user clicks the bottom button, close the modal.
   smallX6.onclick = function() {
     modal6.classList.remove('bg-active');
     document.body.classList.remove('overflowHidden');
   }
 
+  // ==================================================================
+
+  // MODAL 7 - close modal bottom.
   var smallX7 = document.getElementById("bottom-exit-modal7");
 
+  // When the user clicks the bottom button, close the modal.
   smallX7.onclick = function() {
     modal7.classList.remove('bg-active');
     document.body.classList.remove('overflowHidden');
   }
 
+  // ==================================================================
+
+  // MODAL 8 - close modal bottom.
   var smallX8 = document.getElementById("bottom-exit-modal8");
 
+  // When the user clicks the bottom button, close the modal.
   smallX8.onclick = function() {
     modal8.classList.remove('bg-active');
     document.body.classList.remove('overflowHidden');
   }
 
+  // ==================================================================
+
+  // MODAL 9 - close modal bottom.
   var smallX9 = document.getElementById("bottom-exit-modal9");
 
+  // When the user clicks the bottom button, close the modal.
   smallX9.onclick = function() {
     modal9.classList.remove('bg-active');
     document.body.classList.remove('overflowHidden');
   }
 
+  // ==================================================================
+
+  // MODAL 10 - close modal bottom.
   var smallX10 = document.getElementById("bottom-exit-modal10");
 
+  // When the user clicks the bottom button, close the modal.
   smallX10.onclick = function() {
     modal10.classList.remove('bg-active');
     document.body.classList.remove('overflowHidden');
