@@ -67,6 +67,26 @@
     padding: 0;
 }
 
+/* =============================== */
+/* LIST THE FONTS YOU CAN USE HERE */
+/* =============================== */
+/*
+font-family: 'Bitter', serif;
+font-family: 'Cardo', serif;
+font-family: 'Josefin Slab', serif;
+font-family: 'Libre Franklin', sans-serif;
+font-family: 'Lora', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Rokkitt', serif;
+font-family: 'Rubik', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Unna', serif;
+font-family: 'Zilla Slab', serif;
+*/
+/* =============================== */
+
 /* Set the background color as well as some additional attributes of the website. */
 body {
     min-height: 100vh;
@@ -161,26 +181,6 @@ p {
     font-family: 'Lora', serif;
     font-size: 18px;
 }
-
-/* =============================== */
-/* LIST THE FONTS YOU CAN USE HERE */
-/* =============================== */
-/*
-font-family: 'Bitter', serif;
-font-family: 'Cardo', serif;
-font-family: 'Josefin Slab', serif;
-font-family: 'Libre Franklin', sans-serif;
-font-family: 'Lora', serif;
-font-family: 'Montserrat', sans-serif;
-font-family: 'Open Sans', sans-serif;
-font-family: 'Raleway', sans-serif;
-font-family: 'Rokkitt', serif;
-font-family: 'Rubik', sans-serif;
-font-family: 'Source Sans Pro', sans-serif;
-font-family: 'Unna', serif;
-font-family: 'Zilla Slab', serif;
-*/
-/* =============================== */
 
 /* Ensure that the footer always sticks to the bottom of the screen. */
 footer {

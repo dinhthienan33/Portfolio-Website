@@ -37,7 +37,7 @@ let myProjects = [
   {
     "project-id": "portfolio-item11",
     "project-ref": "#portfolioModal11",
-    "project-image": "images/travelblog.png",
+    "project-image": "images/travelblog-images/travelblog.png",
     "project-image-alt": "travelblog-img",
     "project-name": "Travel Blog (Nothing yet)",
     "project-brief": "Will be Completed December 2022!",
@@ -45,7 +45,7 @@ let myProjects = [
   {
     "project-id": "portfolio-item10",
     "project-ref": "#portfolioModal10",
-    "project-image": "images/compiler-grammar.png",
+    "project-image": "images/compiler-images/compiler-grammar.png",
     "project-image-alt": "compiler-grammar-img",
     "project-name": "Simple Compiler",
     "project-brief": "Compiler written for a C-like language.",
@@ -53,7 +53,7 @@ let myProjects = [
   {
     "project-id": "portfolio-item9",
     "project-ref": "#portfolioModal9",
-    "project-image": "images/pcm-home.png",
+    "project-image": "images/patientcaremanager-images/pcm-home.png",
     "project-image-alt": "pcm-img",
     "project-name": "Patient Care Manager",
     "project-brief": "Web application written using Node.js.",
@@ -61,7 +61,7 @@ let myProjects = [
   {
     "project-id": "portfolio-item8",
     "project-ref": "#portfolioModal8",
-    "project-image": "images/parkfinder.png",
+    "project-image": "images/parkfinder-images/parkfinder-home.png",
     "project-image-alt": "parkfinder-img",
     "project-name": "Park Finder",
     "project-brief": "Web application written using Django.",
@@ -69,7 +69,7 @@ let myProjects = [
   {
     "project-id": "portfolio-item7",
     "project-ref": "#portfolioModal7",
-    "project-image": "images/teamaptiv.png",
+    "project-image": "images/teamaptiv-images/teamaptiv-card.png",
     "project-image-alt": "teamaptiv-img",
     "project-name": "Team Aptiv",
     "project-brief": "Web application written using Node.js.",
@@ -77,7 +77,7 @@ let myProjects = [
   {
     "project-id": "portfolio-item6",
     "project-ref": "#portfolioModal6",
-    "project-image": "images/apppromotion.png",
+    "project-image": "images/apppromotion-images/apppromotion-home.png",
     "project-image-alt": "apppromotion-img",
     "project-name": "Promotional Webpage",
     "project-brief": "Webpage made to practice Bootstrap.",
@@ -85,7 +85,7 @@ let myProjects = [
   {
     "project-id": "portfolio-item5",
     "project-ref": "#portfolioModal5",
-    "project-image": "images/firstpersonal.png",
+    "project-image": "images/personalwebpage-images/firstpersonal-home.png",
     "project-image-alt": "personalwebpage-img",
     "project-name": "First Personal Webpage",
     "project-brief": "Simple website made with HTML/CSS.",
@@ -93,7 +93,7 @@ let myProjects = [
   {
     "project-id": "portfolio-item4",
     "project-ref": "#portfolioModal4",
-    "project-image": "images/officesimulation.png",
+    "project-image": "images/officesimulation-images/officesimulation-card.png",
     "project-image-alt": "officesimulation-img",
     "project-name": "Office Hours Simulation",
     "project-brief": "Program to simulate office hours.",
@@ -101,7 +101,7 @@ let myProjects = [
   {
     "project-id": "portfolio-item3",
     "project-ref": "#portfolioModal3",
-    "project-image": "images/hashtable.png",
+    "project-image": "images/hashtable-images/hashtable-drawing.png",
     "project-image-alt": "hashtable-img",
     "project-name": "Hash Table",
     "project-brief": "Data structure written using Java.",
@@ -109,7 +109,7 @@ let myProjects = [
   {
     "project-id": "portfolio-item2",
     "project-ref": "#portfolioModal2",
-    "project-image": "images/javapong.png",
+    "project-image": "images/javapong-images/javapong-card.png",
     "project-image-alt": "javapong-img",
     "project-name": "Java Pong",
     "project-brief": "Adaptation of the pong game.",
@@ -117,7 +117,7 @@ let myProjects = [
   {
     "project-id": "portfolio-item1",
     "project-ref": "#portfolioModal1",
-    "project-image": "images/firstdrawing.png",
+    "project-image": "images/firstdrawing-images/firstdrawing-card.png",
     "project-image-alt": "firstdrawing-img",
     "project-name": "First Java Program",
     "project-brief": "Simple drawing made with Java.",
@@ -215,7 +215,7 @@ let myProjectModals = [
 
     "modal-images-text": [
       {
-        "modal-image": "images/compiler-grammar.png", 
+        "modal-image": "images/compiler-images/compiler-grammar.png", 
         "modal-image-description": "Part of compiler grammar. The project can be executed on a terminal and the output can then be run in a Mars Simulator. Please contact me to visit my GitHub repository for additional details.",
         "modal-image-alt": "compiler-grammar-img", 
       }, 
@@ -241,7 +241,7 @@ let myProjectModals = [
 
     "modal-images-text": [
       {
-        "modal-image": "images/pcm-home.png",
+        "modal-image": "images/patientcaremanager-images/pcm-home.png",
         "modal-image-description": "Home page of Patient Care Manager website.", 
         "modal-image-alt": "pcm-img", 
       },  
@@ -306,7 +306,7 @@ let myProjectModals = [
 
     "modal-images-text": [
       {
-        "modal-image": "images/parkfinder.png",
+        "modal-image": "images/parkfinder-images/parkfinder-home.png",
         "modal-image-description": "Home page of Park Finder website.", 
         "modal-image-alt": "parkfinder-img", 
       }, 
@@ -426,7 +426,7 @@ let myProjectModals = [
 
     "modal-images-text": [
       {
-        "modal-image": "images/apppromotion.png", 
+        "modal-image": "images/apppromotion-images/apppromotion-home.png", 
         "modal-image-description": "Home page of app promotion website.",
         "modal-image-alt": "apppromotion-img", 
       },
@@ -476,7 +476,7 @@ let myProjectModals = [
 
     "modal-images-text": [
       {
-        "modal-image": "images/firstpersonal.png", 
+        "modal-image": "images/personalwebpage-images/firstpersonal-home.png", 
         "modal-image-description": "Home page of personal website.",
         "modal-image-alt": "personalwebpage-img", 
       },
@@ -552,7 +552,7 @@ let myProjectModals = [
 
     "modal-images-text": [
       {
-        "modal-image": "images/hashtable.png", 
+        "modal-image": "images/hashtable-images/hashtable-drawing.png", 
         "modal-image-description": "A hash table is a data structure that maps certain keys to different values. An example of utilizing a hash table would be encrypting user information such as account passwords.",
         "modal-image-alt": "hashtable-img", 
       },
@@ -609,7 +609,7 @@ let myProjectModals = [
 
     "modal-images-text": [
       {
-        "modal-image": "images/firstdrawing-images/firstdrawing2.png", 
+        "modal-image": "images/firstdrawing-images/firstdrawing-home.png", 
         "modal-image-description": "Drawing generated by the Java program. The drawing is a simple collection of shapes that form the image.",
         "modal-image-alt": "firstdrawing2-img", 
       }, 

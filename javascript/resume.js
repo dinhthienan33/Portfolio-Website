@@ -151,28 +151,28 @@ function addSkills() {
 // CAN ALWAYS ADD NEW CERTIFICATION OBJECTS HERE.
 let myCertifications = [
   {
-    "certification-img": "images/udemy.png",
+    "certification-img": "images/certifications-images/udemy.png",
     "certification-alt": "udemy-img",
     "certification-title": "Agile Fundamentals: Including Scrum and Kanban - 2020",
     "certification-source": "Udemy Certification",
     "certification-description": "I earned a certification in the basics of Agile by working on the course over the winter of 2020. The course was a total of 4.5 hours.",
   },
   {
-    "certification-img": "images/udemy.png",
+    "certification-img": "images/certifications-images/udemy.png",
     "certification-alt": "udemy-img",
     "certification-title": "The Complete 2021 Web Development Bootcamp",
     "certification-source": "Udemy Certification",
     "certification-description": "Certificate was earned by taking a course over the summer of 2021 that equated to about 55 hours of work. I learned the basics of web frontend and backend development.",
   },
   {
-    "certification-img": "images/codewithmosh.png",
+    "certification-img": "images/certifications-images/codewithmosh.png",
     "certification-alt": "codewithmosh-img",
     "certification-title": "The Ultimate Git Course",
     "certification-source": "Code With Mosh Certification",
     "certification-description": "The certificate was earned by taking a course over the summer of 2021 that equated to about 5 hours of work. I learned the basics of web frontend and backend development.",
   },
   {
-    "certification-img": "images/codewithmosh.png",
+    "certification-img": "images/certifications-images/codewithmosh.png",
     "certification-alt": "codewithmosh-img",
     "certification-title": "The Ultimate Django Series: Part One",
     "certification-source": "Code With Mosh Certification",
@@ -248,28 +248,28 @@ function addCertifications() {
 // CAN ALWAYS ADD NEW VOLUNTEER OBJECTS HERE.
 let myVolunteer = [
   {
-    "volunteer-img": "images/uwl.png",
+    "volunteer-img": "images/achievements-images/uwl-red.png",
     "volunteer-alt": "uwl-img",
     "volunteer-title": "UWL Campus Move-In Assistant",
     "volunteer-subheading": "Volunteering, September 2021",
     "volunteer-description": "I helped students move into their dormitory rooms for the Fall semester at the University of Wisconsin - La Crosse. I also helped to set up the rooms for the new students.",
   },
   {
-    "volunteer-img": "images/bestbuddies.png",
+    "volunteer-img": "images/achievements-images/bestbuddies.png",
     "volunteer-alt": "bestbuddies-img",
     "volunteer-title": "Best Buddies Hot Food Stand",
     "volunteer-subheading": "Volunteering, April 2021",
     "volunteer-description": "I helped raise money for the special needs program, the Best Buddies, by running a hot dog stand in La Crosse.",
   },
   {
-    "volunteer-img": "images/deanslistuwl.png",
+    "volunteer-img": "images/achievements-images/deanslistuwl.png",
     "volunteer-alt": "uwl-img",
     "volunteer-title": "Dean's List Spring 2022",
     "volunteer-subheading": "Academic Award",
     "volunteer-description": "Maintained a GPA of 3.5 or higher for the semester.",
   },
   {
-    "volunteer-img": "images/deanslistuwl.png",
+    "volunteer-img": "images/achievements-images/deanslistuwl.png",
     "volunteer-alt": "uwl-img",
     "volunteer-title": "Dean's List Sophomore Year",
     "volunteer-subheading": "Academic Award",
