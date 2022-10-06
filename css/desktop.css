@@ -1245,35 +1245,11 @@
     }
 
     /* Icons in Skills Section */
-    .fa-phone-alt {
+    .contact-icon {
         color: var(--black-color);
     }
 
-    .fa-phone-alt:hover {
-        color: var(--black-color);
-    }
-
-    .contact-envelope {
-        color: var(--black-color);
-    }
-
-    .contact-envelope:hover {
-        color: var(--black-color);
-    }
-
-    .contact-linkedin {
-        color: var(--black-color);
-    }
-
-    .contact-linkedin:hover {
-        color: var(--black-color);
-    }
-
-    .contact-github {
-        color: var(--black-color);
-    }
-
-    .contact-github:hover {
+    .contact-icon:hover {
         color: var(--black-color);
     }
 
