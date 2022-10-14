@@ -215,6 +215,29 @@ html {
     }
 }
 
+/* Styles for Fixed Navbar on Mobile View */
+@media (max-width: 650px) {
+
+    .fixed-mobile-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%; 
+        z-index: 99;
+        background-color: var(--black-color);
+        margin-top: 0px !important;
+        margin-bottom: 40px !important;
+        padding: 18px 32px;
+        border-bottom: 1px solid var(--gray-font);
+        color: var(--light-font);
+    }
+
+    .fixed-padding {
+        padding-top: 62px !important;
+    }
+}
+
 /* Mobile View */
 @media (max-width: 750px) {
 
@@ -266,7 +289,6 @@ html {
         color: var(--light-font);
     }
 
-    /* CHANGE THE SLIDER CODE LATER AT SOME POINT (ASK DAD IF YOU FORGET WHAT HE MEANT) */
     .menu {
         margin-top: 15px;
         margin-bottom: 10px;
@@ -303,7 +325,7 @@ html {
     ==================================================================== */
     
     #about {
-        padding-top: 0rem;
+        padding-top: 0px;
         height: 100%; 
     }
     
@@ -446,7 +468,7 @@ html {
     ==================================================================== */
 
     #resume {
-        padding-top: 0rem;
+        padding-top: 0px;
         color: var(--whiter-color);
         background-color: var(--black-color);
     }
@@ -1090,7 +1112,7 @@ html {
     ==================================================================== */
 
     #projects {
-        padding-top: 0rem;
+        padding-top: 0px;
         color: var(--dark-font);
         background-color: var(--dark-font);
     }
@@ -1530,7 +1552,7 @@ html {
     ==================================================================== */
 
     #contact {
-        padding-top: 0rem;
+        padding-top: 0px;
         color: var(--whiter-color);
         background-color: var(--black-color);
         height: 100%;

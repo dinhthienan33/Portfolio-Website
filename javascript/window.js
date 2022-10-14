@@ -185,3 +185,39 @@ function addWindowClearFunctions() {
         }
     });
 }
+
+/*
+ * The function adds the behavior that causes
+ * the navigational bar with the links to stick
+ * to the top of the page after the user has
+ * scrolled a certain distance. This ONLY occurs
+ * on smaller device sizes like mobile devices.
+ */
+$(window).scroll(function(){
+
+    // If the user has scrolled 40 pixels from the
+    // top of the page, add the classes to certain
+    // elements to fix a part of the navigational
+    // bar to the top of the screen. This action 
+    // only occurs when the screen width is smaller
+    // (like on a mobile device).
+    if ($(window).scrollTop() >= 40) {
+        $('.menu').addClass('fixed-mobile-header');
+        $('#about').addClass('fixed-padding');
+        $('#resume').addClass('fixed-padding');
+        $('#projects').addClass('fixed-padding');
+        $('#contact').addClass('fixed-padding');
+
+    // Otherwise, remove the classes that were added
+    // to fix a part of the navigational bar on top
+    // of the screen (if they exist). This action 
+    // only occurs when the screen width is smaller
+    // (like on a mobile device).
+    } else {
+        $('.menu').removeClass('fixed-mobile-header');
+        $('#about').removeClass('fixed-padding');
+        $('#resume').removeClass('fixed-padding');
+        $('#projects').removeClass('fixed-padding');
+        $('#contact').removeClass('fixed-padding');
+    }
+});
