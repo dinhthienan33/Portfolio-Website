@@ -35,13 +35,21 @@ function loadContent(event) {
 // CAN ALWAYS ADD NEW PROJECT OBJECTS HERE.
 let myProjects = [
   {
-    "project-id": "portfolio-item11",
-    "project-ref": "#portfolioModal11",
+    "project-id": "portfolio-item12", // !!! DO NOT YET HAVE THE MODAL FOR THIS YET! ADD WHEN YOU COMPLETE IT !!!
+    "project-ref": "#portfolioModal12",
     "project-image": "images/travelblog-images/travelblog.png",
     "project-image-alt": "travelblog-img",
     "project-name": "Travel Blog (Nothing yet)",
     "project-brief": "Will be Completed December 2022!",
-  }, 
+  },
+  {
+    "project-id": "portfolio-item11",
+    "project-ref": "#portfolioModal11",
+    "project-image": "images/riversideburgerbash-images/rbb-home.png",
+    "project-image-alt": "travelblog-img",
+    "project-name": "Restaurant Webpage",
+    "project-brief": "Webpage made to practice responsiveness.",
+  },
   {
     "project-id": "portfolio-item10",
     "project-ref": "#portfolioModal10",
@@ -205,7 +213,57 @@ function addProjects() {
 
 // List of project modal objects.
 // CAN ALWAYS ADD NEW MODAL OBJECTS HERE.
-let myProjectModals = [ 
+let myProjectModals = [
+  {
+    "modal-id": "portfolioModal11",
+    "modal-span-id": "exit-modal11",
+    "modal-heading": "Resaurant Webpage",
+    "modal-subheading": "Webpage made for a fictional restaurant.",
+    "modal-description": "The restaurant website project was created to practice my skills in HTML, CSS, and responsive layout design. The site was made in my Intro to Web Design class at the University of Wisconsin - La Crosse. A major focus of the project was to design a website that was responsive to different screen sizes. The RBB website can be viewed on devices ranging from a desktop to a mobile phone. An important note is that all the images used in the project belong to different sources. I attributed all the images used for the website in a document attached to my GitHub repository.",
+
+    "modal-images-text": [
+      {
+        "modal-image": "images/riversideburgerbash-images/rbb-home.png",
+        "modal-image-description": "Home page of restaurant website.", 
+        "modal-image-alt": "rbb-img", 
+      },  
+      {
+        "modal-image": "images/riversideburgerbash-images/rbb-burgers.png", 
+        "modal-image-description": "Burgers menu page. Users can view the different burger meal options offered by the restaurant. A CSS counter is used to number the burger menu items.",
+        "modal-image-alt": "rbb-burgers-img", 
+      }, 
+      {
+        "modal-image": "images/riversideburgerbash-images/rbb-appetizers.png", 
+        "modal-image-description": "Appetizers menu page. Users can view the different appetizer options offered by the restaurant. A CSS counter is used to number the appetizer menu items.",
+        "modal-image-alt": "rbb-appetizers-img", 
+      },
+      {
+        "modal-image": "images/riversideburgerbash-images/rbb-beverages.png",
+        "modal-image-description": "Beverages menu page. Users can view the different beverage options offered by the restaurant. A CSS counter is used to number the beverage menu items.",
+        "modal-image-alt": "rbb-beverages-img", 
+      },
+      {
+        "modal-image": "images/riversideburgerbash-images/rbb-bill.png",
+        "modal-image-description": "Sample bill page. Users can view a sample bill for a hypothetical order placed by a customer. The order is displayed in an HTML table. The table itself is not completely responsive.",
+        "modal-image-alt": "rbb-bill-img", 
+      },
+    ],
+
+    "modal-final-text": "The restaurant webpage is hosted on GitHub pages, which is a free service. Given the fact that the website is comprised primarily of HTML and CSS, hosting it on a more complex server that can process requests was not needed.",
+    
+    "modal-links": [
+      {
+        "modal-link-reference": "https://github.com/Andrew-EKrause/RBB-Restaurant-Webpage",
+        "modal-link-description": "View project on GitHub",
+      },
+      {
+        "modal-link-reference": "https://andrew-ekrause.github.io/RBB-Restaurant-Webpage/",
+        "modal-link-description": "View project online",
+      },
+    ],
+
+    "modal-bottom-button": "bottom-exit-modal11",
+  },
   {
     "modal-id": "portfolioModal10",
     "modal-span-id": "exit-modal10",
@@ -949,6 +1007,19 @@ function addModalFunctions() {
   }
 
   // ==================================================================
+
+  // MODAL 11 - open modal function.
+  var anchor11 = document.getElementById("portfolio-item11");
+  var modal11 = document.getElementById("portfolioModal11");
+
+  // When the user clicks the button, open the modal.
+  anchor11.onclick = function() {
+    modal11.classList.add('bg-active');
+    modal11.scrollTo(0, 0);
+    document.body.classList.add('overflowHidden');
+  }
+
+  // ==================================================================
   // Get the FIRST element that closes the modal (the big 'X').
   // ==================================================================
 
@@ -1061,6 +1132,17 @@ function addModalFunctions() {
   }
 
   // ==================================================================
+
+  // MODAL 11 - close modal top.
+  var bigX11 = document.getElementById("exit-modal11");
+
+  // When the user clicks the top button, close the modal.
+  bigX11.onclick = function() {
+    modal11.classList.remove('bg-active');
+    document.body.classList.remove('overflowHidden');
+  }
+
+  // ==================================================================
   // Get the SECOND element that closes the modal (the small 'x').
   // ==================================================================
 
@@ -1169,6 +1251,17 @@ function addModalFunctions() {
   // When the user clicks the bottom button, close the modal.
   smallX10.onclick = function() {
     modal10.classList.remove('bg-active');
+    document.body.classList.remove('overflowHidden');
+  }
+
+  // ==================================================================
+
+  // MODAL 11 - close modal bottom.
+  var smallX11 = document.getElementById("bottom-exit-modal11");
+
+  // When the user clicks the bottom button, close the modal.
+  smallX11.onclick = function() {
+    modal11.classList.remove('bg-active');
     document.body.classList.remove('overflowHidden');
   }
 }
