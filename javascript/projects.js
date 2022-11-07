@@ -48,7 +48,7 @@ let myProjects = [
     "project-image": "images/riversideburgerbash-images/rbb-home.png",
     "project-image-alt": "travelblog-img",
     "project-name": "Restaurant Webpage",
-    "project-brief": "Webpage made to practice responsiveness.",
+    "project-brief": "Webpage made to practice clean design.",
   },
   {
     "project-id": "portfolio-item10",
