@@ -218,6 +218,7 @@ $(window).scroll(function(){
         $('#resume').addClass('fixed-padding');
         $('#projects').addClass('fixed-padding');
         $('#contact').addClass('fixed-padding');
+        $('#notfound').addClass('fixed-padding');
 
     // Otherwise, remove the classes that were added
     // to fix a part of the navigational bar on top
@@ -230,5 +231,6 @@ $(window).scroll(function(){
         $('#resume').removeClass('fixed-padding');
         $('#projects').removeClass('fixed-padding');
         $('#contact').removeClass('fixed-padding');
+        $('#notfound').removeClass('fixed-padding');
     }
 });
