@@ -74,6 +74,10 @@
     #resume {
         padding-top: 60px;
     }
+
+    #notfound {
+        padding-top: 80px;
+    }
 }
 
 /* Larger Mobile or Desktop View */
@@ -1330,6 +1334,94 @@
     .contact-inline {
         display: inline-block;
     }
+
+
+
+
+
+    /* ====================================================================
+                            404 PAGE Section (All pages)
+    ==================================================================== */
+
+    #notfound {
+        padding-top: 80px;
+    }
+
+    .notfound-container {
+        max-width: 700px;
+        padding-top: 48px !important;
+        padding-bottom: 48px !important;
+        padding: 1.5rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+
+    .notfound-row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .notfound-pic-column-404 {
+        height: fit-content;
+        width: fit-content;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .notfound-pic {
+        width: 15rem;
+    }
+
+    .notfound-column-404 {
+        height: fit-content;
+    }
+
+    .notfound-heading {
+        text-align: center;
+        font-size: 50px; 
+        margin-bottom: 1rem;
+    }
+
+    .notfound-content {
+        margin-bottom: 1rem;
+        line-height: 1.5;
+    }
+
+    .notfound-error-code {
+        margin-bottom: 1rem;
+        line-height: 1.5;
+        font-weight: bold;  
+        font-size: 25px;
+    }
+
+    @media (max-width: 1000px) {
+
+        .notfound-error-code {
+            text-align: center;
+        }
+    }
+
+    .notfound-link-404 {
+        text-decoration: none;
+        display: inline-block;
+        color: var(--bluer-color);
+        vertical-align: central;
+        align-items: center;
+        text-align: center;
+        line-height: 1.5; 
+    }
+
+    .notfound-link-404:hover {
+        text-decoration: underline;
+    }
+
+
+
+
 
     /* ====================================================================== 
                             MESSAGE Section (All pages)

@@ -1272,6 +1272,93 @@
         display: inline-block;
     }
 
+
+
+
+
+
+
+
+    /* ====================================================================
+                            404 PAGE Section (All pages)
+    ==================================================================== */
+
+    #notfound {
+        padding-top: 60px;
+    }
+
+    .notfound-container {
+        padding: 1.5rem;
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .notfound-row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: start;
+        justify-content: flex-start;
+    }
+
+    .notfound-pic-column-404 {
+        display: block;
+        margin-top: 0;
+        align-items: start;
+        padding: 1rem;
+        flex: 30%;
+    }
+
+    .notfound-pic {
+        width: 15rem;
+    }
+
+    .notfound-column-404 {
+        height: fit-content;
+        flex: 60%;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .notfound-heading {
+        text-align: left;
+        font-size: 50px; 
+        margin-bottom: 1rem;
+    }
+
+    .notfound-content {
+        margin-bottom: 1rem;
+        line-height: 1.5;
+    }
+
+    .notfound-error-code {
+        margin-bottom: 1rem;
+        line-height: 1.5;
+        font-weight: bold;  
+        font-size: 25px;
+    }
+
+    .notfound-link-404 {
+        text-decoration: none;
+        display: inline-block;
+        color: var(--bluer-color);
+        vertical-align: central;
+        align-items: center;
+        text-align: center;
+        line-height: 1.5; 
+    }
+
+    .notfound-link-404:hover {
+        text-decoration: underline;
+    }
+
+
+
+
+
     /* ====================================================================== 
                             MESSAGE Section (All pages)
     ====================================================================== */ 

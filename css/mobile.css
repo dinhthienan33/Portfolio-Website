@@ -1659,6 +1659,95 @@ html {
         display: inline-block;
     }
 
+
+
+
+
+    /* ====================================================================
+                            404 PAGE Section (All pages)
+    ==================================================================== */
+
+    #notfound {
+        padding-top: 0px;
+        height: 100%; 
+    }
+
+    .notfound-container {
+        max-width: 500px;
+        padding-top: 40px !important;
+        padding: 1.5rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .notfound-row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .notfound-pic-column-404 {
+        height: fit-content;
+        width: fit-content;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .notfound-pic {
+        width: 15rem;
+    }
+
+    .notfound-column-404 {
+        height: fit-content;
+    }
+
+    .notfound-heading {
+        font-size: 50px; 
+        margin-bottom: 1rem;
+    }
+
+    @media (max-width: 430px) {
+
+        .notfound-heading {
+            font-size: 45px; 
+            margin-bottom: 1rem;
+        }
+    }
+
+    .notfound-content {
+        margin-bottom: 1rem;
+        line-height: 1.5;
+    }
+
+    .notfound-error-code {
+        margin-bottom: 1rem;
+        line-height: 1.5;
+        font-weight: bold;  
+        font-size: 25px;
+    }
+
+    .notfound-link-404 {
+        text-decoration: none;
+        display: inline-block;
+        color: var(--bluer-color);
+        vertical-align: central;
+        align-items: center;
+        text-align: center;
+        line-height: 1.5; 
+    }
+
+    .notfound-link-404:hover {
+        text-decoration: underline;
+    }
+
+    
+
+
+
+
+
     /* ====================================================================== 
                             MESSAGE Section (All pages)
     ====================================================================== */ 
