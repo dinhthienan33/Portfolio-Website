@@ -212,7 +212,7 @@ $(window).scroll(function(){
     // bar to the top of the screen. This action 
     // only occurs when the screen width is smaller
     // (like on a mobile device).
-    if ($(window).scrollTop() >= 40) {
+    if ($(window).scrollTop() >= 50) {
         $('.menu').addClass('fixed-mobile-header');
         $('#about').addClass('fixed-padding');
         $('#resume').addClass('fixed-padding');
