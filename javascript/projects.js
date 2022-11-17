@@ -244,7 +244,7 @@ let myProjectModals = [
       },
       {
         "modal-image": "images/riversideburgerbash-images/rbb-bill.png",
-        "modal-image-description": "Sample bill page. Users can view a sample bill for a hypothetical order placed by a customer. The order is displayed in an HTML table. The table itself is not completely responsive.",
+        "modal-image-description": "Customer bill page. Users can calculate out their bill for orders they place. The order calculations are displayed in an HTML table. There is not a database or service connected to any of these actions.",
         "modal-image-alt": "rbb-bill-img", 
       },
     ],
