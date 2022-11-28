@@ -116,6 +116,12 @@ h1 {
         font-family: 'Lora', serif;
         font-size: 45px !important;
     }
+
+    /* Make heading text for 404 not found page slightly smaller */
+    .notfound-heading {
+        font-family: 'Lora', serif;
+        font-size: 42px !important;
+    }
 }
 
 /* Set the font style for h2 tags. */
@@ -245,11 +251,17 @@ html {
                         NAVBAR Section (All Pages)
     ==================================================================== */
 
-    @media (max-width: 370px) {
+    @media (max-width: 400px) { /* ORIGINALLY --> 375px */
 
         nav {
-            padding-left: 10px !important;
-            padding-right: 10px !important;
+            padding-left: 15px !important; /* ORIGINALLY --> 10px */
+            padding-right: 15px !important;
+        }
+
+        /* Include a style for the Fixed Navbar on smaller mobile screens */
+        .fixed-mobile-header {
+            padding-left: 15px !important;
+            padding-right: 15px !important;
         }
     }
 
