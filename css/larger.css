@@ -81,7 +81,7 @@
 }
 
 /* Larger Mobile or Desktop View */
-@media (min-width: 750px) {
+@media (min-width: 751px) {
 
     /* ====================================================================
                         NAVBAR Section (All Pages)
@@ -404,6 +404,10 @@
 
     .resume-file:hover {
         background-color: var(--whiter-color);
+    }
+
+    .resume-file-second {
+        margin-right: 0px;
     }
 
     /* ====================================================================
@@ -1296,7 +1300,7 @@
     }
 
     .contact-circle {
-        background-color: var(--whiter-color);
+        background-color: var(--bluer-color);
         height: 60px;
         width: 60px;
         border-radius: 50%;

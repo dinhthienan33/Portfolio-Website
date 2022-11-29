@@ -549,14 +549,20 @@ html {
         justify-content: flex-start;
     }
 
+    .resume-courses li {
+        margin: 0.25rem 0rem;
+        width: 100%;
+    }
+
     .resume-file {
         /* font-family: 'Open Sans', sans-serif; */
         display: inline-block;
         margin-top: 5px;
         margin-bottom: 5px;
-        margin-right: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
         height: 60px; /* Should match line-height attribute */
-        width: 200px;
+        width: 100%;
         background-color: var(--bluer-color);
         text-decoration: none;
         color: var(--black-color);
@@ -1633,7 +1639,7 @@ html {
     }
 
     .contact-circle {
-        background-color: var(--whiter-color);
+        background-color: var(--bluer-color);
         height: 60px;
         width: 60px;
         border-radius: 50%;
