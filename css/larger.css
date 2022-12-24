@@ -384,7 +384,6 @@
     }
 
     .resume-file {
-        /* font-family: 'Open Sans', sans-serif; */
         display: inline-block;
         margin-top: 5px;
         margin-bottom: 5px;
@@ -400,14 +399,16 @@
         align-items: center;
         text-align: center;
         line-height: 60px; /* Should match height attribute */
+        transition: 0.5s;
+    }
+
+    .resume-file-second {
+        margin-left: 0px;
+        margin-right: 0px;
     }
 
     .resume-file:hover {
         background-color: var(--whiter-color);
-    }
-
-    .resume-file-second {
-        margin-right: 0px;
     }
 
     /* ====================================================================
@@ -1145,6 +1146,13 @@
         line-height: 1.5;
     }
 
+    .modal-links-container {
+        margin-top: 25px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 350px;
+    }
+
     .subheading-text-center {
         text-align: center;
     }
@@ -1153,44 +1161,64 @@
         text-align: center;
     }
 
-    .modal-viewer-link {
-        color: var(--dark-font);
-        text-decoration: underline;
-        text-decoration-color: var(--bluer-color);
+    .modal-link-item {
+        background-color: var(--bluer-color);
+        padding: 10px;
+        margin-top: 16px;
+        margin-bottom: 0px;
+        border-radius: 0.5em;
+        width: 100%;
+        border: 2px solid transparent;
+        transition: 0.5s;
     }
 
-    .modal-viewer-link:hover b {
-        font-weight: normal !important;
+    .modal-link-item:hover {
+        background-color: var(--whiter-color);
+        border: 2px solid var(--bluer-color);
+    }
+
+    .modal-viewer-link {
+        color: var(--dark-font);
+        text-decoration: none;
     }
 
     .bottom-button-container {
-        width: fit-content;
         margin: auto;
+        max-width: 350px;
     }   
 
     .fa-times-bottom {
         color: var(--whiter-color);
+        background-color: transparent;
+        transition: 0.5s;
     }
 
     .bottom-modal-button {
         display: inline-block;
-        margin-top: 10px;
+        margin-top: 16px;
         margin-bottom: 10px;
-        height: 60px; /* Should match line-height attribute */
+        padding: 10px;
         width: 130px;
         background-color: var(--black-color);
         color: var(--whiter-color);
         text-decoration: none;
+        border: 2px solid transparent;
         border-radius: 0.5em;
-        border-style: none;
         align-items: center;
         text-align: center;
-        line-height: 60px; /* Should match height attribute */
+        width: 100%;
+        transition: 0.5s;
     }
 
-    .bottom-button-container:hover * {
+    .bottom-modal-button:hover {
         color: var(--black-color);
-        background-color: var(--bluer-color);
+        border: 2px solid var(--black-color);
+        background-color: var(--whiter-color);
+    }
+
+    .bottom-modal-button:hover .fa-times-bottom {
+        color: var(--black-color);
+        background-color: transparent;
     }
 
     /* Section for Descriptive Images in Modal */

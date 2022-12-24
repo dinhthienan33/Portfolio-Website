@@ -87,7 +87,7 @@
 <!-- HTML STRUCTURE OF MODALS CREATED ON PROJECTS -->
 <!-- PAGE OF WEBSITE THROUGH THE JAVASCRIPT. -->
 <!-- Park Finder Modal -->
-<div id="portfolioModal8" role="dialog" class="modal-bg">
+<div id="portfolioModal100" role="dialog" class="modal-bg">
     <div class="modal-dialog">
         <div class="close-modal-position">
             <span id="exit-modal8" class="modal-close" href="#close"><i class="modal-x-icon fa fa-solid fa-circle-xmark fa-2x"></i></span>
@@ -112,7 +112,7 @@
                                 </p>
                                 <!-- Descriptive Modal Images -->
                                 <div class="col-lg-4 col-md-6 mb-5 modal-pic-card">
-                                    <img class="modal-info-pic" src="images/parkfinder.png" alt="parkfinder-img">
+                                    <img class="modal-info-pic" src="images/parkfinder-images/parkfinder-home.png" alt="parkfinder-img">
                                     <div class="modal-pic-container">
                                         <p class="modal-pic-text">
                                             Home page of Park Finder website.
@@ -161,24 +161,27 @@
                                     The Park Finder website is hosted on a Heroku server. Heroku is a cloud platform 
                                     that offers a secure place to host server-based projects on the world wide web.
                                 </p>
-                                <!-- Link to Project on GitHub -->
-                                <div class="modal-text modal-text-center">
-                                    <a href="https://github.com/Krause2023/CS224-ParkFinder-Web_App" target="_blank" class="modal-text modal-viewer-link" >
-                                        <b>View project on GitHub</b>
-                                    </a>
-                                </div>
-                                <!-- Link to Project on the World Wide Web -->
-                                <div class="modal-text modal-text-center">
-                                    <a href="https://park-finder-project.herokuapp.com/" target="_blank" class="modal-text modal-viewer-link" >
-                                        <b>View project online</b>
-                                    </a>
-                                </div>
-                                <br>
-                                <!-- Close Button on Bottom of Modal -->
-                                <div class="bottom-button-container">
-                                    <a id="bottom-exit-modal8" class="btn btn-dark btn-l model-close bottom-modal-button" href="#close"> 
-                                        <i class="fa fa-times fa-times-bottom"></i> Close
-                                    </a>
+                                <!-- Container for links and close button -->
+                                <div class="modal-links-container">
+                                        <!-- Link to Project on GitHub -->
+                                    <div class="modal-text modal-text-center modal-link-item">
+                                        <a href="https://github.com/Krause2023/CS224-ParkFinder-Web_App" target="_blank" class="modal-text modal-viewer-link" >
+                                            <b><i class="fa-brands fa-github"></i> View project on GitHub</b>
+                                        </a>
+                                    </div>
+                                    <!-- Link to Project on the World Wide Web -->
+                                    <div class="modal-text modal-text-center modal-link-item">
+                                        <a href="https://park-finder-project.herokuapp.com/" target="_blank" class="modal-text modal-viewer-link" >
+                                            <b><i class="fa-solid fa-arrow-up-right-from-square"></i> View project online</b>
+                                        </a>
+                                    </div>
+
+                                    <!-- Close Button on Bottom of Modal -->
+                                    <div class="bottom-button-container">
+                                        <a id="bottom-exit-modal8" class="btn btn-dark btn-l model-close bottom-modal-button" href="#close"> 
+                                            <i class="fa fa-times fa-times-bottom"></i> Close
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>

@@ -40,7 +40,7 @@ let myProjects = [
     "project-image": "images/travelblog-images/travelblog.png",
     "project-image-alt": "travelblog-img",
     "project-name": "Travel Blog (Nothing yet)",
-    "project-brief": "Will be Completed December 2022!",
+    "project-brief": "Will be Completed Summer 2022!",
   },
   {
     "project-id": "portfolio-item11",
@@ -254,11 +254,13 @@ let myProjectModals = [
     "modal-links": [
       {
         "modal-link-reference": "https://github.com/Andrew-EKrause/RBB-Restaurant-Webpage",
-        "modal-link-description": "View project on GitHub",
+        "modal-link-icon": "fa-brands fa-github",
+        "modal-link-description": " View project on GitHub",
       },
       {
         "modal-link-reference": "https://andrew-ekrause.github.io/RBB-Restaurant-Webpage/",
-        "modal-link-description": "View project online",
+        "modal-link-icon": "fa-solid fa-arrow-up-right-from-square",
+        "modal-link-description": " View project online",
       },
     ],
 
@@ -284,7 +286,8 @@ let myProjectModals = [
     "modal-links": [
       {
         "modal-link-reference": "contact.html",
-        "modal-link-description": "Contact me to view project",
+        "modal-link-icon": "fa-solid fa-phone",
+        "modal-link-description": " Contact me to view project",
       },
     ],
 
@@ -345,11 +348,13 @@ let myProjectModals = [
     "modal-links": [
       {
         "modal-link-reference": "https://github.com/Andrew-EKrause/Patient-Care-Manager",
-        "modal-link-description": "View project on GitHub",
+        "modal-link-icon": "fa-brands fa-github",
+        "modal-link-description": " View project on GitHub",
       },
       {
         "modal-link-reference": "https://patient-care-manager.herokuapp.com/",
-        "modal-link-description": "View project online",
+        "modal-link-icon": "fa-solid fa-arrow-up-right-from-square",
+        "modal-link-description": " View project online",
       },
     ],
 
@@ -400,11 +405,13 @@ let myProjectModals = [
     "modal-links": [
       {
         "modal-link-reference": "https://github.com/Andrew-EKrause/ParkFinder-Web-App",
-        "modal-link-description": "View project on GitHub",
+        "modal-link-icon": "fa-brands fa-github",
+        "modal-link-description": " View project on GitHub",
       },
       {
         "modal-link-reference": "https://park-finder-project.herokuapp.com/",
-        "modal-link-description": "View project online",
+        "modal-link-icon": "fa-solid fa-arrow-up-right-from-square",
+        "modal-link-description": " View project online",
       },
     ],
 
@@ -465,11 +472,13 @@ let myProjectModals = [
     "modal-links": [
       {
         "modal-link-reference": "https://github.com/Andrew-EKrause/TeamAptiv-Web-App",
-        "modal-link-description": "View project on GitHub",
+        "modal-link-icon": "fa-brands fa-github",
+        "modal-link-description": " View project on GitHub",
       },
       {
         "modal-link-reference": "https://team-aptiv-project.herokuapp.com/",
-        "modal-link-description": "View project online",
+        "modal-link-icon": "fa-solid fa-arrow-up-right-from-square",
+        "modal-link-description": " View project online",
       },
     ],
 
@@ -515,11 +524,13 @@ let myProjectModals = [
     "modal-links": [
       {
         "modal-link-reference": "https://github.com/Andrew-EKrause/HabitHelper-Promotional-Webpage",
-        "modal-link-description": "View project on GitHub",
+        "modal-link-icon": "fa-brands fa-github",
+        "modal-link-description": " View project on GitHub",
       },
       {
         "modal-link-reference": "https://andrew-ekrause.github.io/HabitHelper-Promotional-Webpage/",
-        "modal-link-description": "View project online",
+        "modal-link-icon": "fa-solid fa-arrow-up-right-from-square",
+        "modal-link-description": " View project online",
       },
     ],
 
@@ -560,11 +571,13 @@ let myProjectModals = [
     "modal-links": [
       {
         "modal-link-reference": "https://github.com/Andrew-EKrause/Personal-Webpage",
-        "modal-link-description": "View project on GitHub",
+        "modal-link-icon": "fa-brands fa-github",
+        "modal-link-description": " View project on GitHub",
       },
       {
         "modal-link-reference": "https://andrew-ekrause.github.io/Personal-Webpage/",
-        "modal-link-description": "View project online",
+        "modal-link-icon": "fa-solid fa-arrow-up-right-from-square",
+        "modal-link-description": " View project online",
       },
     ],
 
@@ -595,7 +608,8 @@ let myProjectModals = [
     "modal-links": [
       {
         "modal-link-reference": "https://github.com/Andrew-EKrause/Office-Hour-Simulation",
-        "modal-link-description": "View project on GitHub",
+        "modal-link-icon": "fa-brands fa-github",
+        "modal-link-description": " View project on GitHub",
       },
     ],
 
@@ -626,7 +640,8 @@ let myProjectModals = [
     "modal-links": [
       {
         "modal-link-reference": "https://github.com/Andrew-EKrause/Hash-Table",
-        "modal-link-description": "View project on GitHub",
+        "modal-link-icon": "fa-brands fa-github",
+        "modal-link-description": " View project on GitHub",
       },
     ],
 
@@ -652,7 +667,8 @@ let myProjectModals = [
     "modal-links": [
       {
         "modal-link-reference": "https://github.com/Andrew-EKrause/Java-Pong",
-        "modal-link-description": "View project on GitHub",
+        "modal-link-icon": "fa-brands fa-github",
+        "modal-link-description": " View project on GitHub",
       },
     ],
 
@@ -678,7 +694,8 @@ let myProjectModals = [
     "modal-links": [
       {
         "modal-link-reference": "https://github.com/Andrew-EKrause/Java-Drawing",
-        "modal-link-description": "View project on GitHub",
+        "modal-link-icon": "fa-brands fa-github",
+        "modal-link-description": " View project on GitHub",
       },
     ],
 
@@ -819,15 +836,20 @@ function addProjectModals() {
     finalDescriptionParagraph.appendChild(document.createTextNode(myProjectModals["modal-final-text"]));
     modalBodyDiv.appendChild(finalDescriptionParagraph);
 
+    // Create the div that contains the modal links and close button.
+    let linkContainerDiv = document.createElement("div");
+    linkContainerDiv.setAttribute("class", "modal-links-container");
+    modalBodyDiv.appendChild(linkContainerDiv);
+
     // Create the link(s) to the project for each modal.
     // This is completed via a for-each loop that visits each
     // element in the object links attribute array.
     myProjectModals["modal-links"].forEach(modalLink => {
 
-      // Create a div to store the links for the project.
+      // Create a div to store the link content for the project.
       let modalLinkDiv = document.createElement("div");
-      modalLinkDiv.setAttribute("class", "modal-text modal-text-center");
-      modalBodyDiv.appendChild(modalLinkDiv);
+      modalLinkDiv.setAttribute("class", "modal-text modal-text-center modal-link-item");
+      linkContainerDiv.appendChild(modalLinkDiv);
 
       // Create an anchor tag to store the actual link for the project.
       let modalLinkAnchor = document.createElement("a");
@@ -838,18 +860,21 @@ function addProjectModals() {
 
       // Create a b tag to store the link text.
       let modalLinkB = document.createElement("b");
-      modalLinkB.appendChild(document.createTextNode(modalLink["modal-link-description"]));
       modalLinkAnchor.appendChild(modalLinkB);
-    });
 
-    // Create a break to add space between the links and the bottom button.
-    let modalBreakTag = document.createElement("br");
-    modalBodyDiv.appendChild(modalBreakTag);
+      // Create a i tag for the link icon.
+      let modalLinkIcon = document.createElement("i");
+      modalLinkIcon.setAttribute("class", modalLink["modal-link-icon"]);
+      modalLinkB.appendChild(modalLinkIcon);
+
+      // Add the text for the b tag that stores the link text.
+      modalLinkB.appendChild(document.createTextNode(modalLink["modal-link-description"]));
+    });
 
     // Create a div to store the bottom close button.
     let modalCloseButtonDiv = document.createElement("div");
     modalCloseButtonDiv.setAttribute("class", "bottom-button-container");
-    modalBodyDiv.appendChild(modalCloseButtonDiv);
+    linkContainerDiv.appendChild(modalCloseButtonDiv);
 
     // Create an anchor tag to show the bottom close button.
     let modalCloseButtonAnchor = document.createElement("a");
