@@ -922,15 +922,17 @@
         text-align: center;
     }
 
-    .modal-text-center {
-        text-align: center;
-    }
-
     .modal-link-item {
+        display: block;
         background-color: var(--bluer-color);
+        color: var(--dark-font);
+        text-align: center;
+        text-decoration: none;
         padding: 10px;
         margin-top: 16px;
         margin-bottom: 0px;
+        margin-left: auto;
+        margin-right: auto;
         border-radius: 0.5em;
         width: 100%;
         border: 2px solid transparent;
@@ -942,16 +944,6 @@
         border: 2px solid var(--bluer-color);
     }
 
-    .modal-viewer-link {
-        color: var(--dark-font);
-        text-decoration: none;
-    }
-
-    .bottom-button-container {
-        margin: auto;
-        max-width: 350px;
-    }
-
     .fa-times-bottom {
         color: var(--whiter-color);
         background-color: transparent;
@@ -959,7 +951,7 @@
     }
 
     .bottom-modal-button {
-        display: inline-block;
+        display: block;
         margin-top: 16px;
         margin-bottom: 10px;
         padding: 10px;

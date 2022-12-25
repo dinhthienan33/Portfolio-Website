@@ -61,7 +61,7 @@
 <!-- HTML STRUCTURE OF PROJECT CARDS CREATED ON -->
 <!-- PROJECTS PAGE OF WEBSITE THROUGH THE JAVASCRIPT. -->
 <!-- Django Web Application -->
-<a id="portfolio-item8" onClick="get_id(this.id)" class="portfolio-item" data-toggle="modal" href="#portfolioModal8">
+<a id="portfolio-item100" onClick="get_id(this.id)" class="portfolio-item" data-toggle="modal" href="#portfolioModal100">
     <script>
         function get_ID(portItem) {
             return portItem.id;
@@ -163,18 +163,14 @@
                                 </p>
                                 <!-- Container for links and close button -->
                                 <div class="modal-links-container">
-                                        <!-- Link to Project on GitHub -->
-                                    <div class="modal-text modal-text-center modal-link-item">
-                                        <a href="https://github.com/Krause2023/CS224-ParkFinder-Web_App" target="_blank" class="modal-text modal-viewer-link" >
-                                            <b><i class="fa-brands fa-github"></i> View project on GitHub</b>
-                                        </a>
-                                    </div>
+                                    <!-- Link to Project on GitHub -->
+                                    <a href="https://github.com/Krause2023/CS224-ParkFinder-Web_App" target="_blank" class="modal-link-item">
+                                        <b><i class="fa-brands fa-github"></i> View project on GitHub</b>
+                                    </a>
                                     <!-- Link to Project on the World Wide Web -->
-                                    <div class="modal-text modal-text-center modal-link-item">
-                                        <a href="https://park-finder-project.herokuapp.com/" target="_blank" class="modal-text modal-viewer-link" >
-                                            <b><i class="fa-solid fa-arrow-up-right-from-square"></i> View project online</b>
-                                        </a>
-                                    </div>
+                                    <a href="https://park-finder-project.herokuapp.com/" target="_blank" class="modal-link-item" >
+                                        <b><i class="fa-solid fa-arrow-up-right-from-square"></i> View project online</b>
+                                    </a>
 
                                     <!-- Close Button on Bottom of Modal -->
                                     <div class="bottom-button-container">

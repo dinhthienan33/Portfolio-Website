@@ -846,17 +846,12 @@ function addProjectModals() {
     // element in the object links attribute array.
     myProjectModals["modal-links"].forEach(modalLink => {
 
-      // Create a div to store the link content for the project.
-      let modalLinkDiv = document.createElement("div");
-      modalLinkDiv.setAttribute("class", "modal-text modal-text-center modal-link-item");
-      linkContainerDiv.appendChild(modalLinkDiv);
-
       // Create an anchor tag to store the actual link for the project.
       let modalLinkAnchor = document.createElement("a");
       modalLinkAnchor.setAttribute("href", modalLink["modal-link-reference"]);
       modalLinkAnchor.setAttribute("target", "_blank");
-      modalLinkAnchor.setAttribute("class", "modal-text modal-viewer-link");
-      modalLinkDiv.appendChild(modalLinkAnchor);
+      modalLinkAnchor.setAttribute("class", "modal-link-item");
+      linkContainerDiv.appendChild(modalLinkAnchor);
 
       // Create a b tag to store the link text.
       let modalLinkB = document.createElement("b");
@@ -871,17 +866,12 @@ function addProjectModals() {
       modalLinkB.appendChild(document.createTextNode(modalLink["modal-link-description"]));
     });
 
-    // Create a div to store the bottom close button.
-    let modalCloseButtonDiv = document.createElement("div");
-    modalCloseButtonDiv.setAttribute("class", "bottom-button-container");
-    linkContainerDiv.appendChild(modalCloseButtonDiv);
-
     // Create an anchor tag to show the bottom close button.
     let modalCloseButtonAnchor = document.createElement("a");
     modalCloseButtonAnchor.setAttribute("id", myProjectModals["modal-bottom-button"]);
     modalCloseButtonAnchor.setAttribute("class", "btn btn-dark btn-l model-close bottom-modal-button");
     modalCloseButtonAnchor.setAttribute("href", "#close");
-    modalCloseButtonDiv.appendChild(modalCloseButtonAnchor);
+    linkContainerDiv.appendChild(modalCloseButtonAnchor);
 
     // Create an i tag to include the bottom close button icon.
     let modalCloseButtonI = document.createElement("i");
