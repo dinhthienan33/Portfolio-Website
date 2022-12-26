@@ -1743,13 +1743,14 @@
         align-items: center;
         text-align: center;
         line-height: 60px; /* Should match height attribute */
+        transition: 0.5s;
     }
 
-    .confirm-bottom-button-container:hover * {
+    .confirm-bottom-modal-button:hover {
         color: var(--black-color);
         background-color: var(--bluer-color);
     }
-
+    
     /* ====================================================================
                             FOOTER Section (All Pages)
     ==================================================================== */
