@@ -264,9 +264,9 @@ let myVolunteer = [
   {
     "volunteer-img": "images/achievements-images/deanslistuwl.png",
     "volunteer-alt": "uwl-img",
-    "volunteer-title": "Dean's List Spring 2022",
+    "volunteer-title": "Dean's List Spring, Fall 2022",
     "volunteer-subheading": "Academic Award",
-    "volunteer-description": "Maintained a GPA of 3.5 or higher for the semester.",
+    "volunteer-description": "Maintained a GPA of 3.5 or higher for the Spring 2022 and Fall 2022 semesters.",
   },
   {
     "volunteer-img": "images/achievements-images/deanslistuwl.png",
