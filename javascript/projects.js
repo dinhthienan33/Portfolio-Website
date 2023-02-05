@@ -40,7 +40,7 @@ let myProjects = [
     "project-image": "images/travelblog-images/travelblog.png",
     "project-image-alt": "travelblog-img",
     "project-name": "Travel Blog (Nothing yet)",
-    "project-brief": "Will be Completed Summer 2022!",
+    "project-brief": "Will be Completed Summer 2023!",
   },
   {
     "project-id": "portfolio-item11",
