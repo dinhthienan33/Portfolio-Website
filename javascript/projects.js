@@ -40,7 +40,7 @@ let myProjects = [
     "project-image": "images/travelblog-images/travelblog.png",
     "project-image-alt": "travelblog-img",
     "project-name": "Travel Blog (Nothing yet)",
-    "project-brief": "Will be Completed Summer 2023!",
+    "project-brief": "Will be Completed December 2023!",
   },
   {
     "project-id": "portfolio-item11",
@@ -48,7 +48,7 @@ let myProjects = [
     "project-image": "images/riversideburgerbash-images/rbb-home.png",
     "project-image-alt": "travelblog-img",
     "project-name": "Restaurant Webpage",
-    "project-brief": "Webpage made to practice clean design.",
+    "project-brief": "Webpage made to practice design.",
   },
   {
     "project-id": "portfolio-item10",

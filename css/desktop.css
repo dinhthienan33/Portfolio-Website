@@ -1008,7 +1008,7 @@
     .modal-dialog {
         padding-bottom: 40px;
         padding-top: 40px;
-        margin-top: auto;
+        margin-top: 0px;
         margin-bottom: auto;
     }
 
@@ -1403,7 +1403,7 @@
     .message-modal-dialog {
         padding-bottom: 30px;
         padding-top: 30px;
-        margin-top: auto;
+        margin-top: 0px;
         margin-bottom: auto;
         margin-left: 20px;
         margin-right: 20px;
@@ -1607,7 +1607,7 @@
     }
 
     .confirm-modal-dialog {
-        margin-top: auto;
+        margin-top: 0px;
         margin-bottom: auto;
         margin-left: 20px;
         margin-right: 20px;
