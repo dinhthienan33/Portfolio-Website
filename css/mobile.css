@@ -102,6 +102,17 @@ body {
     scroll-behavior: smooth;
 }
 
+/*
+    Set the color of text whenever a user highlights 
+    text with their cursor on the Travel Blog website.
+    The CSS selector below sets the desired highlight 
+    color as well as the desired text color.
+*/
+::selection {
+    background-color: var(--bluer-color);
+    color: var(--black-color);
+}
+
 /* Set the font style for h1 tags. */
 h1 {
     font-family: 'Lora', serif;
