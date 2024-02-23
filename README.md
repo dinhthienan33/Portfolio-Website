@@ -5,7 +5,7 @@
 <p>&nbsp;</p>
 
 ###### Home Page of Portfolio Website
-<img width="1679" alt="Screen Shot 2023-02-05 at 10 36 41 AM" src="https://user-images.githubusercontent.com/57727121/216832077-4bbc355e-66db-4f74-98c8-59de0409d5c1.png">
+<img width="1280" alt="Personal-Website-About-Page" src="https://i.ibb.co/pLzFf9r/Screenshot-2024-02-22-at-10-14-17-PM.png">
 
 ## Description
 **_Portfolio Website to Showcase my Skills_** <br/>
