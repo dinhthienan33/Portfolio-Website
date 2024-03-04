@@ -5,7 +5,7 @@
 <p>&nbsp;</p>
 
 ###### Home Page of Portfolio Website
-<img width="1280" alt="Personal-Website-About-Page" src="https://i.ibb.co/pLzFf9r/Screenshot-2024-02-22-at-10-14-17-PM.png">
+<img width="1280" alt="Personal-Website-About-Page" src="https://github.com/Andrew-EKrause/Portfolio-Website/assets/57727121/bfc1d06a-4a33-4e23-8651-e964368ac335">
 
 ## Description
 **_Portfolio Website to Showcase my Skills_** <br/>
