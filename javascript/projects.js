@@ -39,7 +39,7 @@ let myProjects = [
     "project-ref": "#portfolioModal12",
     "project-image": "images/travelblog-images/travelblog.png",
     "project-image-alt": "travelblog-img",
-    "project-name": "Travel Blog (Nothing yet)",
+    "project-name": "TravelBlog (Nothing yet)",
     "project-brief": "Will be Completed December 2025!",
   },
   {
