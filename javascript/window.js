@@ -54,6 +54,7 @@ function addWindowClearFunctions() {
     var modal9 = document.getElementById("portfolioModal9");
     var modal10 = document.getElementById("portfolioModal10");
     var modal11 = document.getElementById("portfolioModal11");
+    var modal12 = document.getElementById("portfolioModal12");
 
     // ==================================================================
     // When the user clicks anywhere outside of a given modal, close it.
@@ -188,10 +189,20 @@ function addWindowClearFunctions() {
         // is currently open, then close it.
         } else if(modal11 && event.target == modal11) {
 
-            // Close modal10 by removing the class.
+            // Close modal11 by removing the class.
             // Also remove the overflowHidden class
             // to enable page scrolling again.
             modal11.classList.remove('bg-active');
+            document.body.classList.remove('overflowHidden');
+
+        // If modal12 exists on the page and
+        // is currently open, then close it.
+        } else if(modal12 && event.target == modal12) {
+
+            // Close modal12 by removing the class.
+            // Also remove the overflowHidden class
+            // to enable page scrolling again.
+            modal12.classList.remove('bg-active');
             document.body.classList.remove('overflowHidden');
         }
     });

@@ -35,12 +35,12 @@ function loadContent(event) {
 // CAN ALWAYS ADD NEW PROJECT OBJECTS HERE.
 let myProjects = [
   {
-    "project-id": "portfolio-item12", // !!! DO NOT YET HAVE THE MODAL FOR THIS YET! ADD WHEN YOU COMPLETE IT !!!
+    "project-id": "portfolio-item12",
     "project-ref": "#portfolioModal12",
     "project-image": "images/travelblog-images/travelblog.png",
     "project-image-alt": "travelblog-img",
-    "project-name": "TravelBlog (Nothing yet)",
-    "project-brief": "Will be Completed December 2025!",
+    "project-name": "TravelBlog",
+    "project-brief": "In Progress...Maybe 2026 Release",
   },
   {
     "project-id": "portfolio-item11",
@@ -64,7 +64,7 @@ let myProjects = [
     "project-image": "images/patientcaremanager-images/pcm-home.png",
     "project-image-alt": "pcm-img",
     "project-name": "Patient Care Manager",
-    "project-brief": "Web application written using Node.js.",
+    "project-brief": "Web application written using Express.js.",
   }, 
   {
     "project-id": "portfolio-item8",
@@ -80,7 +80,7 @@ let myProjects = [
     "project-image": "images/teamaptiv-images/teamaptiv-card.png",
     "project-image-alt": "teamaptiv-img",
     "project-name": "Team Aptiv",
-    "project-brief": "Web application written using Node.js.",
+    "project-brief": "Web application written using Express.js.",
   },
   {
     "project-id": "portfolio-item6",
@@ -215,6 +215,103 @@ function addProjects() {
 // CAN ALWAYS ADD NEW MODAL OBJECTS HERE.
 let myProjectModals = [
   {
+    "modal-id": "portfolioModal12",
+    "modal-span-id": "exit-modal12",
+    "modal-heading": "TravelBlog",
+    "modal-subheading": "Social media web app created for blogging.",
+    "modal-description": "The TravelBlog web application allows users to share their love of travel through blogging. Users can create an account with the website to make content that will be displayed for other people to view. The web app enables content to be shared in the form of blogs, which are based on a given individual's trips and adventures. Each blog created by a user is comprised of posts, which can contain the text and image content. Future features include: Email verification, image uploads, connecting with other users, tracking where you have visited in the world based on your blogging, and advertising capability.",
+
+    "modal-images-text": [
+      {
+        "modal-image": "images/travelblog-images/travelblog-homepage.png",
+        "modal-image-description": "Home page of TravelBlog. The website also has a dark mode.", 
+        "modal-image-alt": "tb-img", 
+      },
+      {
+        "modal-image": "images/travelblog-images/travelblog-viewbloggers.png", 
+        "modal-image-description": "Bloggers page. If a user clicks on a given blogger's card, they can view that blogger's profile.",
+        "modal-image-alt": "rbb-burgers-img", 
+      },
+      {
+        "modal-image": "images/travelblog-images/travelblog-viewbloggerprofile.png", 
+        "modal-image-description": "Blogger profile page. Users can view the blogs a blogger has created as well as their bio.",
+        "modal-image-alt": "rbb-appetizers-img", 
+      },
+      {
+        "modal-image": "images/travelblog-images/travelblog-viewblog.png",
+        "modal-image-description": "Blog page. Users can view blogs, which belong to a given blogger. Within a blog, there can be zero or more posts.",
+        "modal-image-alt": "rbb-beverages-img", 
+      },
+      {
+        "modal-image": "images/travelblog-images/travelblog-viewpost.png",
+        "modal-image-description": "Post page. Users can view posts, which belong to a given blog. Within a post, there is text and image content.",
+        "modal-image-alt": "rbb-beverages-img", 
+      },
+      {
+        "modal-image": "images/travelblog-images/travelblog-register.png",
+        "modal-image-description": "Sign-up page. Users can create an account with TravelBlog. The user has the option to create an account using Google OAuth.",
+        "modal-image-alt": "rbb-beverages-img", 
+      },
+      {
+        "modal-image": "images/travelblog-images/travelblog-login.png",
+        "modal-image-description": "Login page. Users can login to their TravelBlog account on this page. They also have the ability to sign in with Google OAuth if that is how their account was created.",
+        "modal-image-alt": "rbb-beverages-img", 
+      },
+      {
+        "modal-image": "images/travelblog-images/travelblog-about.png",
+        "modal-image-description": "About page. Users can read about TravelBlog and access the Policy and Terms of Use pages from here.",
+        "modal-image-alt": "rbb-bill-img", 
+      },
+      {
+        "modal-image": "images/travelblog-images/travelblog-help.png",
+        "modal-image-description": "Help page. Users can read how to use TravelBlog and message an admin if they have a question.",
+        "modal-image-alt": "rbb-bill-img", 
+      },
+      {
+        "modal-image": "images/travelblog-images/travelblog-homepagesignedin.png",
+        "modal-image-description": "Home page of TravelBlog when a user is signed in to their account.", 
+        "modal-image-alt": "tb-img", 
+      },
+      {
+        "modal-image": "images/travelblog-images/travelblog-usersownprofile.png",
+        "modal-image-description": "User profile page. Users can access their profile after they sign-up or sign-in to create/edit content.",
+        "modal-image-alt": "rbb-bill-img", 
+      },
+      {
+        "modal-image": "images/travelblog-images/travelblog-usereditprofile.png",
+        "modal-image-description": "Edit account page. Users can edit their profile information when signed in.",
+        "modal-image-alt": "rbb-bill-img", 
+      },
+      {
+        "modal-image": "images/travelblog-images/travelblog-usercreateblog.png",
+        "modal-image-description": "Create blog page. If signed in, users can create a new blog that can serve as a container of posts. Users can also edit their blogs.",
+        "modal-image-alt": "rbb-bill-img", 
+      },
+      {
+        "modal-image": "images/travelblog-images/travelblog-usercreatepost.png",
+        "modal-image-description": "Create post page. If signed in, users can create a new post that can contain text and image content. Users can also edit their posts.",
+        "modal-image-alt": "rbb-bill-img", 
+      },
+    ],
+
+    "modal-final-text": "The TravelBlog web application is hosted on a Heroku server. The website also uses services from Heroku like a SQL database and Redis. Cloudflare, a separate service, is used for handling network routing and traffic. If you have any questions regarding the technical details of TravelBlog, feel free to contact me.",
+    
+    "modal-links": [
+      {
+        "modal-link-reference": "contact.html",
+        "modal-link-icon": "fa-solid fa-phone",
+        "modal-link-description": " Contact me to view on GitHub",
+      },
+      {
+        "modal-link-reference": "https://travelblog.social/",
+        "modal-link-icon": "fa-solid fa-arrow-up-right-from-square",
+        "modal-link-description": " View project online",
+      },
+    ],
+
+    "modal-bottom-button": "bottom-exit-modal12",
+  },
+  {
     "modal-id": "portfolioModal11",
     "modal-span-id": "exit-modal11",
     "modal-heading": "Resaurant Webpage",
@@ -226,12 +323,12 @@ let myProjectModals = [
         "modal-image": "images/riversideburgerbash-images/rbb-home.png",
         "modal-image-description": "Home page of restaurant website.", 
         "modal-image-alt": "rbb-img", 
-      },  
+      },
       {
         "modal-image": "images/riversideburgerbash-images/rbb-burgers.png", 
         "modal-image-description": "Burgers menu page. Users can view the different burger meal options offered by the restaurant. A CSS counter is used to number the burger menu items.",
         "modal-image-alt": "rbb-burgers-img", 
-      }, 
+      },
       {
         "modal-image": "images/riversideburgerbash-images/rbb-appetizers.png", 
         "modal-image-description": "Appetizers menu page. Users can view the different appetizer options offered by the restaurant. A CSS counter is used to number the appetizer menu items.",
@@ -278,7 +375,7 @@ let myProjectModals = [
         "modal-image": "images/compiler-images/compiler-grammar.png", 
         "modal-image-description": "Part of compiler grammar. The project can be executed on a terminal and the output can then be run in a Mars Simulator. Please contact me to visit my GitHub repository for additional details.",
         "modal-image-alt": "compiler-grammar-img", 
-      }, 
+      },
     ],
 
     "modal-final-text": "The Compiler project is hosted in a GitHub repository on my account. Given the need to maintain academic integrity, I have restricted access to this project. If you wish to view it, please contact me.",
@@ -297,7 +394,7 @@ let myProjectModals = [
     "modal-id": "portfolioModal9",
     "modal-span-id": "exit-modal9",
     "modal-heading": "Patient Care Manager",
-    "modal-subheading": "Web application created using Node.js as framework.",
+    "modal-subheading": "Web application created using Express.js as framework.",
     "modal-description": "Patient Care Manager (PCM) was created as a semester project for a databases class at my university. The project is an implementation of fullstack web development. HTML, CSS, JavaScript, and a SQL database were used to create the website. The PCM project was created for the purpose of helping Mayo Clinic (in actuality it is not used by the health organization), a leading provider in health care, organize and manage hospital information. Users can interact with Patient, Treatment, Provider, and Department data. Users have the ability to view the different entity types in the database, create new data, edit existing data, and remove data.",
 
     "modal-images-text": [
@@ -305,12 +402,12 @@ let myProjectModals = [
         "modal-image": "images/patientcaremanager-images/pcm-home.png",
         "modal-image-description": "Home page of Patient Care Manager website.", 
         "modal-image-alt": "pcm-img", 
-      },  
+      },
       {
         "modal-image": "images/patientcaremanager-images/pcm-about.png", 
         "modal-image-description": "About page. Users can read about the features of the web application as well as download a project document with additional details.",
         "modal-image-alt": "pcm-about-img", 
-      }, 
+      },
       {
         "modal-image": "images/patientcaremanager-images/pcm-view.png", 
         "modal-image-description": "Views page. Users can select which table in the database they would like to view and interact with. In the following images below, the user has selected the Patients table.", 
@@ -372,22 +469,22 @@ let myProjectModals = [
         "modal-image": "images/parkfinder-images/parkfinder-home.png",
         "modal-image-description": "Home page of Park Finder website.", 
         "modal-image-alt": "parkfinder-img", 
-      }, 
+      },
       {
         "modal-image": "images/parkfinder-images/parkfinder-about.png", 
         "modal-image-description": "About page of Park Finder website. Descriptions of the site features are provided.", 
         "modal-image-alt": "parkfinder-about-img", 
-      }, 
+      },
       {
         "modal-image": "images/parkfinder-images/parkfinder-select.png", 
         "modal-image-description": "State selection page. Users choose a state in order to find locations in that state.", 
         "modal-image-alt": "parkfinder-select-img", 
-      }, 
+      },
       {
         "modal-image": "images/parkfinder-images/parkfinder-specific.png", 
         "modal-image-description": "Parks and places to view are presented as a list of modules within any given state selected by the user.",
         "modal-image-alt": "parkfinder-specific-img", 
-      }, 
+      },
       {
         "modal-image": "images/parkfinder-images/parkfinder-location.png",
         "modal-image-description": "Each module, representing a location, can be expanded to view more details about that park or place.",
@@ -421,7 +518,7 @@ let myProjectModals = [
     "modal-id": "portfolioModal7",
     "modal-span-id": "exit-modal7",
     "modal-heading": "Team Aptiv",
-    "modal-subheading": "Web application created using Node.js as framework.",
+    "modal-subheading": "Web application created using Express.js as framework.",
     "modal-description": "Team Aptiv was created as a collaborative semester long project for a Software Engineering class at my university. The project is an implementation of fullstack web development. Team Aptiv is a website created for the purpose of helping the nonprofit organization of Aptiv. The site hosts different community events created by an admin user. Other users have the ability  to view the events. If the other users obtain an account with the Team Aptiv website, they can sign up for the events and donate to the events.",
 
     "modal-images-text": [
@@ -429,17 +526,17 @@ let myProjectModals = [
         "modal-image": "images/teamaptiv-images/teamaptiv-home.png",
         "modal-image-description": "Home page of Team Aptiv website.", 
         "modal-image-alt": "teamaptiv-img", 
-      }, 
+      },
       {
         "modal-image": "images/teamaptiv-images/teamaptiv-events.png", 
         "modal-image-description": "Events page. Users can view the different community events that are created and posted by an admin user.", 
         "modal-image-alt": "teamaptiv-events-img", 
-      }, 
+      },
       {
         "modal-image": "images/teamaptiv-images/teamaptiv-specific.png", 
         "modal-image-description": "Specific event page. Users can view the details of each event such as the time, location, number of needed volunteers, and donation goal.",
         "modal-image-alt": "teamaptiv-specific-img", 
-      }, 
+      },
       {
         "modal-image": "images/teamaptiv-images/teamaptiv-mission.png",
         "modal-image-description": "Mission page. On this page, users can download a user help manual, see the organization mission statement, and make an unrestricted donation to the company (payment functions not implemented).",
@@ -447,12 +544,12 @@ let myProjectModals = [
       },
       {
         "modal-image": "images/teamaptiv-images/teamaptiv-register.png",
-        "modal-image-description": "Registration screen for user to create an account with Team Aptiv. The user has the option to create an account using their Google account via Oauth.",
+        "modal-image-description": "Registration screen for user to create an account with Team Aptiv. The user has the option to create an account using their Google account via OAuth.",
         "modal-image-alt": "teamaptiv-register-img", 
       },
       {
         "modal-image": "images/teamaptiv-images/teamaptiv-login.png",
-        "modal-image-description": "Login screen for user to obtain an account with Team Aptiv. The user has the ability to sign into their account with Google Oauth as well.",
+        "modal-image-description": "Login screen for user to obtain an account with Team Aptiv. The user has the ability to sign into their account with Google OAuth as well.",
         "modal-image-alt": "teamaptiv-login-img", 
       },
       {
@@ -501,12 +598,12 @@ let myProjectModals = [
         "modal-image": "images/apppromotion-images/apppromotion-ad.png",
         "modal-image-description": "Attributes section of website. Here the top features of the app that the website is promoting are highlighted.", 
         "modal-image-alt": "apppromotion-ad-img", 
-      }, 
+      },
       {
         "modal-image": "images/apppromotion-images/apppromotion-users.png", 
         "modal-image-description": "User section of website. Users who have used the app are listed with a brief quote promoting the app. This information is presented through a Bootstrap carousel (users are fake just like the Habit Helper app they are reviewing).", 
         "modal-image-alt": "apppromotion-users-img", 
-      }, 
+      },
       {
         "modal-image": "images/apppromotion-images/apppromotion-cost.png",
         "modal-image-description": "Price plan section of the website. The different monthly plans and their respective prices are listed out.",
@@ -553,12 +650,12 @@ let myProjectModals = [
         "modal-image": "images/personalwebpage-images/firstpersonal-about.png",
         "modal-image-description": "About section. I provide a brief description of my educational background as well as my interests and hobbies.", 
         "modal-image-alt": "personalwebpage-about-img", 
-      }, 
+      },
       {
         "modal-image": "images/personalwebpage-images/firstpersonal-skills.png", 
         "modal-image-description": "Skills section. I list my skills in Computer Science along with a brief description of each skill.", 
         "modal-image-alt": "personalwebpage-skills-img", 
-      }, 
+      },
       {
         "modal-image": "images/personalwebpage-images/firstpersonal-contact.png",
         "modal-image-description": "Contact section. I list out my contact information as well as a button linked to a mail application from which the user can message me from.",
@@ -1035,6 +1132,19 @@ function addModalFunctions() {
   }
 
   // ==================================================================
+
+  // MODAL 12 - open modal function.
+  var anchor12 = document.getElementById("portfolio-item12");
+  var modal12 = document.getElementById("portfolioModal12");
+
+  // When the user clicks the button, open the modal.
+  anchor12.onclick = function() {
+    modal12.classList.add('bg-active');
+    modal12.scrollTo(0, 0);
+    document.body.classList.add('overflowHidden');
+  }
+
+  // ==================================================================
   // Get the FIRST element that closes the modal (the big 'X').
   // ==================================================================
 
@@ -1158,6 +1268,17 @@ function addModalFunctions() {
   }
 
   // ==================================================================
+
+  // MODAL 12 - close modal top.
+  var bigX12 = document.getElementById("exit-modal12");
+
+  // When the user clicks the top button, close the modal.
+  bigX12.onclick = function() {
+    modal12.classList.remove('bg-active');
+    document.body.classList.remove('overflowHidden');
+  }
+
+  // ==================================================================
   // Get the SECOND element that closes the modal (the small 'x').
   // ==================================================================
 
@@ -1277,6 +1398,17 @@ function addModalFunctions() {
   // When the user clicks the bottom button, close the modal.
   smallX11.onclick = function() {
     modal11.classList.remove('bg-active');
+    document.body.classList.remove('overflowHidden');
+  }
+
+  // ==================================================================
+
+  // MODAL 12 - close modal bottom.
+  var smallX12 = document.getElementById("bottom-exit-modal12");
+
+  // When the user clicks the bottom button, close the modal.
+  smallX12.onclick = function() {
+    modal12.classList.remove('bg-active');
     document.body.classList.remove('overflowHidden');
   }
 }
