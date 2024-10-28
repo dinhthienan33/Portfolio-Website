@@ -219,7 +219,7 @@ let myProjectModals = [
     "modal-span-id": "exit-modal12",
     "modal-heading": "TravelBlog",
     "modal-subheading": "Social media web app created for blogging.",
-    "modal-description": "The TravelBlog web application allows users to share their love of travel through blogging. Users can create an account with the website to make content that will be displayed for other people to view. The web app enables content to be shared in the form of blogs, which are based on a given individual's trips and adventures. Each blog created by a user is comprised of posts, which can contain the text and image content. Future features include: Email verification, image uploads, connecting with other users, tracking where you have visited in the world based on your blogging, and advertising capability.",
+    "modal-description": "The TravelBlog web application allows users to share their love of travel through blogging. Users can create an account with the website to make content that will be displayed for other people to view. The web app enables content to be shared in the form of blogs, which are based on a given individual's trips and adventures. Each blog created by a user is comprised of posts, which can contain the text and image content. Future features will include: Email verification, image uploads, connecting with other users, tracking where you have visited in the world based on your blogging, and advertising capability.",
 
     "modal-images-text": [
       {
@@ -294,7 +294,7 @@ let myProjectModals = [
       },
     ],
 
-    "modal-final-text": "The TravelBlog web application is hosted on a Heroku server. The website also uses services from Heroku like a SQL database and Redis. Cloudflare, a separate service, is used for handling network routing and traffic. If you have any questions regarding the technical details of TravelBlog, feel free to contact me.",
+    "modal-final-text": "The TravelBlog web application is hosted on a Heroku server. The website also uses services from Heroku like a SQL database and Redis. Cloudflare, a separate service, is used for handling network routing and traffic. If you have any questions on the technical details of TravelBlog, feel free to contact me.",
     
     "modal-links": [
       {
