@@ -11,7 +11,7 @@
  *
  * Author: Andrew Krause
  * Date: 01/31/2022
- * 
+ *
  */
 
 // --> SECTION: Style the links in the navbar.

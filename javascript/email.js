@@ -5,14 +5,14 @@
  * functions for sending an email to the owner
  * of the portfolio website by using an API
  * called EmailJS.
- * 
+ *
  * NOTE: All of the window click events and
  * functions are located in the windows.js 
  * file!
  *
  * Author: Andrew Krause
  * Date: 01/31/2022
- * 
+ *
  */
 
 // --> SECTION: Add the functions for the email feature.

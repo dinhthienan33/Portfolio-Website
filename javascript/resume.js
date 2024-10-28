@@ -11,7 +11,7 @@
  *
  * Author: Andrew Krause
  * Date: 01/31/2022
- * 
+ *
  */
 
 // Wait to load the JavaScript until all of the HTML content is loaded.

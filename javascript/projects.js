@@ -7,11 +7,11 @@
  * building the components of the projects.html page.
  * JS objects are used to create new project cards
  * and new modals on the projects page.
- * 
+ *
  * NOTE: All of the window click events and
  * functions are located in the windows.js 
  * file!
- * 
+ *
  * Author: Andrew Krause
  * Date: 01/31/2022
  * 
@@ -294,7 +294,7 @@ let myProjectModals = [
       },
     ],
 
-    "modal-final-text": "The TravelBlog web application is hosted on a Heroku server. The website also uses services from Heroku like a SQL database and Redis. Cloudflare, a separate service, is used for handling network routing and traffic. If you have any questions on the technical details of TravelBlog, feel free to contact me.",
+    "modal-final-text": "The TravelBlog web application is hosted on a Heroku server. The website also uses services from Heroku like a SQL database and Redis. Cloudflare, a separate service, is used for handling network routing and traffic. If you have any questions about the technical details of TravelBlog, feel free to contact me.",
     
     "modal-links": [
       {
