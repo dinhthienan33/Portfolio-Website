@@ -32,6 +32,24 @@ function loadContent(event) {
 // CAN ALWAYS ADD NEW SKILL OBJECTS HERE.
 let mySkills = [
   {
+    "skill-icon": "fa azure icon-azure fa-2x",
+    "skill-style-padding": "padding-left: 0px; padding-top: 5px;",
+    "skill-name": "Azure",
+    "skill-description": "I have used Azure resources during my experiences at Kwik Trip. I have used event hubs, service buses, iot hubs, function apps, and app insights as part of developing solutions at the company. I have been working with these tools for about 1.5 years.",
+  },
+  {
+    "skill-icon": "fa-solid fa-desktop fa-2x",
+    "skill-style-padding": "padding-left: 0px; padding-top: 5px;",
+    "skill-name": "ASP.NET Core",
+    "skill-description": "I have used ASP.NET Core for about 1.5 years to create web applications at Kwik Trip. These web apps have been used by the company to process and display significant amounts of data to help the IT department complete important tasks.",
+  },
+  {
+    "skill-icon": "fa csharp icon-csharp fa-2x",
+    "skill-style-padding": "padding-left: 0px; padding-top: 12px;",
+    "skill-name": "C#-Programming",
+    "skill-description": "I have used C# as one of the primary programming languages at the company of Kwik Trip. I have written web apps, function apps, and console apps using the language. I have been working with this technology for about 1.5 years.",
+  },
+  {
     "skill-icon": "fab java fa-java fa-2x",
     "skill-style-padding": "padding-left: 0px; padding-top: 0px;",
     "skill-name": "Java",
@@ -46,19 +64,19 @@ let mySkills = [
   {
     "skill-icon": "fab python fa-python fa-2x",
     "skill-style-padding": "padding-left: 0px; padding-top: 2px;",
-    "skill-name": "Python/Django",
+    "skill-name": "Python, Django",
     "skill-description": "I have had 1 year of experience with Python and Django. I have used my knowledge of Django, a Python-based web technology, to build websites such as a Park Finder application that allows users to find national parks and places in the United States.",
   },
   {
     "skill-icon": "fas git fa-code-branch fa-2x",
     "skill-style-padding": "padding-left: 0px; padding-top: 2px;",
-    "skill-name": "Git/GitHub",
+    "skill-name": "Git, GitHub",
     "skill-description": "I have utilized both Git and GitHub throughout the process of creating my projects. I have a GitHub account where I host a number of projects in public repositories. I have used version control to collaborate with team members and develop different web applications.",
   },
   {
     "skill-icon": "fas code fa-code fa-2x",
     "skill-style-padding": "padding-left: 0px; padding-top: 2px;",
-    "skill-name": "HTML/CSS/JavaScript",
+    "skill-name": "HTML, CSS, JavaScript",
     "skill-description": "I have spent a significant amount of time familiarizing myself with HTML, CSS, and JavaScript for web development. I have had about 1 year working with these languages. I have built web applications such as this website, my personal webpage, and a Team Aptiv application that services different users.",
   },
   {

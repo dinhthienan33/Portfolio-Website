@@ -274,7 +274,7 @@ let myProjectModals = [
       },
       {
         "modal-image": "images/travelblog-images/travelblog-usersownprofile.png",
-        "modal-image-description": "User profile page. Users can access their profile after they sign-up or sign-in to create/edit content.",
+        "modal-image-description": "User profile page. Users can access their profile after they sign-up or sign-in to create and edit content.",
         "modal-image-alt": "rbb-bill-img", 
       },
       {
