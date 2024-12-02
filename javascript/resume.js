@@ -32,7 +32,7 @@ function loadContent(event) {
 // CAN ALWAYS ADD NEW SKILL OBJECTS HERE.
 let mySkills = [
   {
-    "skill-icon": "fa azure icon-azure fa-2x",
+    "skill-icon": "azure icon-azure fa-2x",
     "skill-style-padding": "padding-left: 0px; padding-top: 5px;",
     "skill-name": "Azure",
     "skill-description": "I have used Azure resources during my experiences at Kwik Trip. I have used event hubs, service buses, iot hubs, function apps, and app insights as part of developing solutions at the company. I have been working with these tools for about 1.5 years.",
@@ -44,7 +44,7 @@ let mySkills = [
     "skill-description": "I have used ASP.NET Core for about 1.5 years to create web applications at Kwik Trip. These web apps have been used by the company to process and display significant amounts of data to help the IT department complete important tasks.",
   },
   {
-    "skill-icon": "fa csharp icon-csharp fa-2x",
+    "skill-icon": "csharp icon-csharp fa-2x",
     "skill-style-padding": "padding-left: 0px; padding-top: 12px;",
     "skill-name": "C#-Programming",
     "skill-description": "I have used C# as one of the primary programming languages at the company of Kwik Trip. I have written web apps, function apps, and console apps using the language. I have been working with this technology for about 1.5 years.",
@@ -56,8 +56,8 @@ let mySkills = [
     "skill-description": "I have had 3.5 years of experience with Java. I have used the language primarily for creating data structures such as binary trees and hash tables. I have also used the language to create simple games including a simplified version of pong.",
   },
   {
-    "skill-icon": "fa c-programming icon-c fa-2x",
-    "skill-style-padding": "padding-left: 8px; padding-top: 14px;",
+    "skill-icon": "c-programming icon-c fa-2x",
+    "skill-style-padding": "padding-left: 16px; padding-top: 22px; display: flex;",
     "skill-name": "C-Programming",
     "skill-description": "I have worked with the C programming language for 3 years. I have used the lower level language to create simple data structures such as linked lists as well as a simulation project.",
   },
@@ -92,7 +92,7 @@ let mySkills = [
     "skill-description": "I have used Node.js to help build the backend of different web applications. I am familiar with modules in Node.js such as Express, Request, Bcrypt and Oauth. I have been working with this technology for about 1 year.",
   },
   {
-    "skill-icon": "fa mongodb icon-mongodb fa-2x",
+    "skill-icon": "mongodb icon-mongodb fa-2x",
     "skill-style-padding": "padding-left: 0px; padding-top: 8px;",
     "skill-name": "MongoDB",
     "skill-description": "I have had about 1 year of experience with MongoDB. I have used it to create databases for the majority of my web application projects.",
