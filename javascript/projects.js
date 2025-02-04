@@ -39,7 +39,7 @@ let myProjects = [
     "project-ref": "#portfolioModal12",
     "project-image": "images/travelblog-images/travelblog.png",
     "project-image-alt": "travelblog-img",
-    "project-name": "TravelBlog",
+    "project-name": "RAG store assistant",
     "project-brief": "In Progress...Maybe 2026 Release",
   },
   {
@@ -47,7 +47,7 @@ let myProjects = [
     "project-ref": "#portfolioModal11",
     "project-image": "images/riversideburgerbash-images/rbb-home.png",
     "project-image-alt": "travelblog-img",
-    "project-name": "Restaurant Webpage",
+    "project-name": "Angel Hack 2024",
     "project-brief": "Webpage made to practice design.",
   },
   {
@@ -55,7 +55,7 @@ let myProjects = [
     "project-ref": "#portfolioModal10",
     "project-image": "images/compiler-images/compiler-grammar.png",
     "project-image-alt": "compiler-grammar-img",
-    "project-name": "Simple Compiler",
+    "project-name": "DSC2024",
     "project-brief": "Compiler written for a C-like language.",
   }, 
   {
@@ -63,7 +63,7 @@ let myProjects = [
     "project-ref": "#portfolioModal9",
     "project-image": "images/patientcaremanager-images/pcm-home.png",
     "project-image-alt": "pcm-img",
-    "project-name": "Patient Care Manager",
+    "project-name": "HCM-AI-HUBEW",
     "project-brief": "Web application written using Express.js.",
   }, 
   {
@@ -71,7 +71,7 @@ let myProjects = [
     "project-ref": "#portfolioModal8",
     "project-image": "images/parkfinder-images/parkfinder-home.png",
     "project-image-alt": "parkfinder-img",
-    "project-name": "Park Finder",
+    "project-name": "RL-in-FPSGame",
     "project-brief": "Web application written using Django.",
   },
   {
@@ -79,7 +79,7 @@ let myProjects = [
     "project-ref": "#portfolioModal7",
     "project-image": "images/teamaptiv-images/teamaptiv-card.png",
     "project-image-alt": "teamaptiv-img",
-    "project-name": "Team Aptiv",
+    "project-name": "Recognition Emotion on Vietnamese social media",
     "project-brief": "Web application written using Express.js.",
   },
   {
@@ -87,7 +87,7 @@ let myProjects = [
     "project-ref": "#portfolioModal6",
     "project-image": "images/apppromotion-images/apppromotion-home.png",
     "project-image-alt": "apppromotion-img",
-    "project-name": "Promotional Webpage",
+    "project-name": "Weather forcasting",
     "project-brief": "Webpage made to practice Bootstrap.",
   },
   {
@@ -95,7 +95,7 @@ let myProjects = [
     "project-ref": "#portfolioModal5",
     "project-image": "images/personalwebpage-images/firstpersonal-home.png",
     "project-image-alt": "personalwebpage-img",
-    "project-name": "First Personal Webpage",
+    "project-name": " Library Management",
     "project-brief": "Simple website made with HTML/CSS.",
   },
   {
@@ -111,7 +111,7 @@ let myProjects = [
     "project-ref": "#portfolioModal3",
     "project-image": "images/hashtable-images/hashtable-drawing.png",
     "project-image-alt": "hashtable-img",
-    "project-name": "Hash Table",
+    "project-name": "Sokoban Game for Reinforcement Learning",
     "project-brief": "Data structure written using Java.",
   },
   {
@@ -119,7 +119,7 @@ let myProjects = [
     "project-ref": "#portfolioModal2",
     "project-image": "images/javapong-images/javapong-card.png",
     "project-image-alt": "javapong-img",
-    "project-name": "Java Pong",
+    "project-name": "Auto Detection",
     "project-brief": "Adaptation of the pong game.",
   },
   {
@@ -127,7 +127,7 @@ let myProjects = [
     "project-ref": "#portfolioModal1",
     "project-image": "images/firstdrawing-images/firstdrawing-card.png",
     "project-image-alt": "firstdrawing-img",
-    "project-name": "First Java Program",
+    "project-name": "Pose Estimator",
     "project-brief": "Simple drawing made with Java.",
   },
 ];

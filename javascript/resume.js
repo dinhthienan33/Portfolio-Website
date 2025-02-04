@@ -34,25 +34,25 @@ let mySkills = [
   {
     "skill-icon": "azure icon-azure fa-2x",
     "skill-style-padding": "padding-left: 0px; padding-top: 5px;",
-    "skill-name": "Azure",
+    "skill-name": "Golang",
     "skill-description": "I have used Azure resources during my experiences at Kwik Trip. I have used event hubs, service buses, iot hubs, function apps, and app insights as part of developing solutions at the company. I have been working with these tools for about 1.5 years.",
   },
   {
     "skill-icon": "fa-solid fa-desktop fa-2x",
     "skill-style-padding": "padding-left: 0px; padding-top: 5px;",
-    "skill-name": "ASP.NET Core",
+    "skill-name": "Docker",
     "skill-description": "I have used ASP.NET Core for about 1.5 years to create web applications at Kwik Trip. These web apps have been used by the company to process and display significant amounts of data to help the IT department complete important tasks.",
   },
   {
     "skill-icon": "csharp icon-csharp fa-2x",
     "skill-style-padding": "padding-left: 0px; padding-top: 12px;",
-    "skill-name": "C#-Programming",
+    "skill-name": "Jupyter/Colab",
     "skill-description": "I have used C# as one of the primary programming languages at the company of Kwik Trip. I have written web apps, function apps, and console apps using the language. I have been working with this technology for about 1.5 years.",
   },
   {
     "skill-icon": "fab java fa-java fa-2x",
     "skill-style-padding": "padding-left: 0px; padding-top: 0px;",
-    "skill-name": "Java",
+    "skill-name": "React.js",
     "skill-description": "I have had 3.5 years of experience with Java. I have used the language primarily for creating data structures such as binary trees and hash tables. I have also used the language to create simple games including a simplified version of pong.",
   },
   {
@@ -76,19 +76,19 @@ let mySkills = [
   {
     "skill-icon": "fas code fa-code fa-2x",
     "skill-style-padding": "padding-left: 0px; padding-top: 2px;",
-    "skill-name": "HTML, CSS, JavaScript",
+    "skill-name": "Ruby",
     "skill-description": "I have spent a significant amount of time familiarizing myself with HTML, CSS, and JavaScript for web development. I have had about 1 year working with these languages. I have built web applications such as this website, my personal webpage, and a Team Aptiv application that services different users.",
   },
   {
     "skill-icon": "fab bootstrap fa-bootstrap fa-2x",
     "skill-style-padding": "padding-left: 0px; padding-top: 1px;",
-    "skill-name": "Bootstrap",
+    "skill-name": "Linux",
     "skill-description": "I have used Bootstrap as a frontend library for developing websites. Bootstrap provides a plethora of useful tools for styling web applications, and I have learned an extensive amount of information about the technology.",
   },
   {
     "skill-icon": "fab node fa-node-js fa-2x",
     "skill-style-padding": "padding-left: 0px; padding-top: 1px;",
-    "skill-name": "Node.js",
+    "skill-name": "AWS",
     "skill-description": "I have used Node.js to help build the backend of different web applications. I am familiar with modules in Node.js such as Express, Request, Bcrypt and Oauth. I have been working with this technology for about 1 year.",
   },
   {
@@ -169,14 +169,14 @@ function addSkills() {
 // CAN ALWAYS ADD NEW CERTIFICATION OBJECTS HERE.
 let myCertifications = [
   {
-    "certification-img": "images/certifications-images/udemy.png",
+    "certification-img": "dl.png",
     "certification-alt": "udemy-img",
     "certification-title": "Agile Fundamentals: Including Scrum and Kanban - 2020",
     "certification-source": "Udemy Certification",
     "certification-description": "I earned a certification in the basics of Agile by working on the course over the winter of 2020. The course was a total of 4.5 hours.",
   },
   {
-    "certification-img": "images/certifications-images/udemy.png",
+    "certification-img": "gg.png",
     "certification-alt": "udemy-img",
     "certification-title": "The Complete 2021 Web Development Bootcamp",
     "certification-source": "Udemy Certification",
